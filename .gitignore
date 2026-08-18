@@ -4,3 +4,17 @@ data/
 logs/
 *.tar.gz
 *.log
+
+# 大文件备份（不提交到git，单独飞书备份）
+archive/*.tar.gz
+archive/00-原始层/*.tar.gz
+archive/01-素材层/*.tar.gz
+*.tar.gz
+!archive/model_assets_*.tar.gz
+
+# 运行时数据
+data/engine_state.json
+data/*.log
+logs/
+__pycache__/
+*.pyc

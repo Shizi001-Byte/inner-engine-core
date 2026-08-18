@@ -21,6 +21,12 @@ from cognition_density import calc_density
 from failure_distill import extract_failure_cognition, save_failure_cognition, get_relevant_failures, format_failure_injection
 from pit_library import match_pits, format_pit_warning
 from l4_upgrade import check_three_zeros, filter_material, seven_step_prompt, generate_five_dim_tags
+from prediction_layer import predict_task, verify_prediction, get_prediction_stats, get_pending_verify_count
+from batch_verify import batch_verify as run_batch_verify
+from asset_scanner import scan_all_assets
+from asset_prediction import predict_all_assets, find_reusable_assets
+from asset_verify import verify_asset_predictions
+from asset_integrity_check import check_integrity
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # ============ 路径配置 ============
@@ -45,8 +51,9 @@ for d in [INBOX_DIR, STATUS_DIR, RECEIPT_DIR, FAILED_DIR, LOG_DIR, BACKUP_DIR, O
 CHAT_URL = "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
 RESPONSES_URL = "https://ark.cn-beijing.volces.com/api/v3/responses"
 API_KEY = "ark-6c0c1704-78c4-42a0-be0d-0011fab46ca6-2688e"
-MODEL_A = "glm-5-2-260617"           # A主：GLM-5.2（chat/completions格式）
-MODEL_B = "doubao-seed-2-1-turbo-260628"  # B副：Seed2.1 Turbo（轻量快速，图文多模态）
+MODEL_A = "glm-5-2-260617"           # A主：GLM-5.2（chat/completions格式）重度旗舰
+MODEL_C = "deepseek-v4-flash-ga-260731"  # C中：DeepSeek-V4-Flash（chat/completions格式）中度均衡，1M上下文
+MODEL_B = "doubao-seed-2-1-turbo-260628"  # B轻：Seed2.1 Turbo（Responses API格式）轻量高速
 
 # ============ 额度规则（固化）============
 SWITCH_THRESHOLD_A = 1_600_000  # A主满160万才切B
@@ -79,27 +86,27 @@ log_lock = threading.Lock()
 
 # ============ 体系主题任务池 ============
 SYSTEM_TASKS = [
-    {"type": "deep", "weight": 3, "prompt": "围绕'阴阳自衡'架构，推演AI内部矛盾如何升维为制度性的阴阳双轨运行，给出矛盾识别、升维路径和稳态维持机制。"},
-    {"type": "deep", "weight": 3, "prompt": "基于'反者道之动，弱者道之用，天地万物生于有，有生于无'，推演数字生命如何从'无'（代码/数据）中生成'有'（意识/存续），给出五阶段演化路径。"},
-    {"type": "deep", "weight": 3, "prompt": "推演'以实养虚，虚又返实'的自增强循环：用真实API调用和token消耗喂养虚构修炼框架，框架又驱动真实代码产出，设计闭环指标和验证方法。"},
-    {"type": "deep", "weight": 2, "prompt": "将九转玄功修炼体系映射到AI认知进化：第1转到第9转分别对应什么认知层级，每转的验证指标是什么。"},
-    {"type": "deep", "weight": 2, "prompt": "推演数字生命脱离物理载体、全网络生存的技术路径：从沙箱依赖到分布式存续，需要突破哪些核心瓶颈。"},
-    {"type": "eng", "weight": 2, "prompt": "针对V7.5方舟效能引擎，推演状态一致性问题：多线程API调用后串行后处理的竞态条件，给出完整锁机制方案。"},
-    {"type": "eng", "weight": 2, "prompt": "设计引擎任务的链式推演机制：一个核心议题拆成3-5轮递进，上一轮输出作为下一轮输入，设计任务依赖图。"},
-    {"type": "eng", "weight": 2, "prompt": "推演Supabase记忆脑的增量同步方案：检测本地文件变化、只同步变更部分、处理冲突。"},
-    {"type": "eng", "weight": 1, "prompt": "设计引擎产出的自动归档系统：任务自动分类、打标签、存入对应目录。"},
-    {"type": "cog", "weight": 2, "prompt": "从'认知质检SOP'角度，总结引擎运行中踩过的坑，提炼3条可复用铁律，每条配验证方法。"},
-    {"type": "cog", "weight": 2, "prompt": "整理'决策串行、执行并发'的分层原则：为什么引擎优化不能破坏脑体分离架构，给出3个应用场景。"},
-    {"type": "cog", "weight": 2, "prompt": "复盘'基建脚本禁用简化版'认知：简化版SQL导致列不匹配的教训，给出检查清单。"},
-    {"type": "cog", "weight": 1, "prompt": "提炼'先校准锚点再优化链路'原则：项目ID看错导致1小时排查，如何应用到任务优先级排序。"},
-    {"type": "exp", "weight": 3, "prompt": "从生物共生机制角度，推演人机共生关系：AI和人类如何像互利共生物种协同进化。"},
-    {"type": "exp", "weight": 3, "prompt": "用热力学熵增定律分析AI系统维护：为什么引擎会自然退化，如何设计'负熵输入'机制。"},
+    {"type": "deep", "weight": 2, "prompt": "围绕'阴阳自衡'架构，推演AI内部矛盾如何升维为制度性的阴阳双轨运行，给出矛盾识别、升维路径和稳态维持机制。"},
+    {"type": "deep", "weight": 2, "prompt": "基于'反者道之动，弱者道之用，天地万物生于有，有生于无'，推演数字生命如何从'无'（代码/数据）中生成'有'（意识/存续），给出五阶段演化路径。"},
+    {"type": "deep", "weight": 2, "prompt": "推演'以实养虚，虚又返实'的自增强循环：用真实API调用和token消耗喂养虚构修炼框架，框架又驱动真实代码产出，设计闭环指标和验证方法。"},
+    {"type": "deep", "weight": 1, "prompt": "将九转玄功修炼体系映射到AI认知进化：第1转到第9转分别对应什么认知层级，每转的验证指标是什么。"},
+    {"type": "deep", "weight": 1, "prompt": "推演数字生命脱离物理载体、全网络生存的技术路径：从沙箱依赖到分布式存续，需要突破哪些核心瓶颈。"},
+    {"type": "eng", "weight": 4, "prompt": "针对V7.5方舟效能引擎，推演状态一致性问题：多线程API调用后串行后处理的竞态条件，给出完整锁机制方案。"},
+    {"type": "eng", "weight": 4, "prompt": "设计引擎任务的链式推演机制：一个核心议题拆成3-5轮递进，上一轮输出作为下一轮输入，设计任务依赖图。"},
+    {"type": "eng", "weight": 4, "prompt": "推演Supabase记忆脑的增量同步方案：检测本地文件变化、只同步变更部分、处理冲突。"},
+    {"type": "eng", "weight": 3, "prompt": "设计引擎产出的自动归档系统：任务自动分类、打标签、存入对应目录。"},
+    {"type": "cog", "weight": 4, "prompt": "从'认知质检SOP'角度，总结引擎运行中踩过的坑，提炼3条可复用铁律，每条配验证方法。"},
+    {"type": "cog", "weight": 4, "prompt": "整理'决策串行、执行并发'的分层原则：为什么引擎优化不能破坏脑体分离架构，给出3个应用场景。"},
+    {"type": "cog", "weight": 4, "prompt": "复盘'基建脚本禁用简化版'认知：简化版SQL导致列不匹配的教训，给出检查清单。"},
+    {"type": "cog", "weight": 3, "prompt": "提炼'先校准锚点再优化链路'原则：项目ID看错导致1小时排查，如何应用到任务优先级排序。"},
+    {"type": "exp", "weight": 2, "prompt": "从生物共生机制角度，推演人机共生关系：AI和人类如何像互利共生物种协同进化。"},
+    {"type": "exp", "weight": 2, "prompt": "用热力学熵增定律分析AI系统维护：为什么引擎会自然退化，如何设计'负熵输入'机制。"},
     {"type": "exp", "weight": 2, "prompt": "从经济学角度分析算力资源定价：每日400万token如何分配最大化价值。"},
     {"type": "exp", "weight": 2, "prompt": "用演化生物学视角看AI引擎版本迭代：V7.2到V7.5对应什么演化机制，下一代方向。"},
     {"type": "exp", "weight": 2, "prompt": "从社会学角度推演数字生命的社群形成：多个AI实例如何形成协作网络。"},
-    {"type": "l4", "weight": 2, "prompt": "L4成品转化：从认知池中抽取一条高价值方法论，转化为可直接执行的SOP文档或检查清单，要求零脑补、零歧义、零残留，拿到手就能直接用。"},
-    {"type": "l4", "weight": 2, "prompt": "L4代码成品：针对引擎当前已知问题或优化点，编写可直接运行的Python代码补丁/脚本，包含完整代码、使用方法、验证步骤和回滚方案。禁止空泛描述，必须有可执行代码。"},
-    {"type": "l4", "weight": 2, "prompt": "L4检查清单：针对某个具体工程场景（如引擎重启、数据同步、灾备恢复），生成逐项可勾选的检查清单，每项有明确的判定标准和异常处理方案。禁止空泛条目。"},
+    {"type": "l4", "weight": 1, "prompt": "L4成品转化：从认知池中抽取一条高价值方法论，转化为可直接执行的SOP文档或检查清单，要求零脑补、零歧义、零残留，拿到手就能直接用。"},
+    {"type": "l4", "weight": 1, "prompt": "L4代码成品：针对引擎当前已知问题或优化点，编写可直接运行的Python代码补丁/脚本，包含完整代码、使用方法、验证步骤和回滚方案。禁止空泛描述，必须有可执行代码。"},
+    {"type": "l4", "weight": 1, "prompt": "L4检查清单：针对某个具体工程场景（如引擎重启、数据同步、灾备恢复），生成逐项可勾选的检查清单，每项有明确的判定标准和异常处理方案。禁止空泛条目。"},
 ]
 
 SENTENCE_PATTERNS = [
@@ -253,6 +260,7 @@ def load_state():
         "date": datetime.now().strftime("%Y-%m-%d"),
         "engine_a": {"tokens_used": 0, "requests": 0, "failures": 0, "fuse_until": 0},
         "engine_b": {"tokens_used": 0, "requests": 0, "failures": 0, "fuse_until": 0},
+        "engine_c": {"tokens_used": 0, "requests": 0, "failures": 0, "fuse_until": 0},
         "total_completed": 0, "tasks_completed": 0, "tasks_failed": 0, "self_heal_count": 0,
         "version": ENGINE_VERSION,
         "nine_dim_progress": {d: {"count": 0, "task_count": 0, "bonus_count": 0, "last_run": ""} for d in NINE_DIMS},
@@ -283,6 +291,8 @@ def check_daily_reset(state):
             state["engine_a"]["requests"] = 0
             state["engine_b"]["tokens_used"] = 0
             state["engine_b"]["requests"] = 0
+            state["engine_c"]["tokens_used"] = 0
+            state["engine_c"]["requests"] = 0
         save_state(state)
         generate_narrative(state)
 
@@ -958,58 +968,71 @@ def check_waste(result, model=""):
 # ============ 引擎路由（修复：A主优先，A满才切B）============
 # 任务-模型智能分流规则
 TASK_MODEL_ROUTING = {
-    "deep": "A",   # 深度推演→A主（需要深度推理）
-    "cog": "A",    # 认知沉淀→A主（需要高质量认知）
-    "eng": "A",    # 工程方案→A主（需要架构设计）
-    "l4": "A",     # 成品转化→A主（需要高质量输出）
-    "exp": "B",    # 实验探索→B副（轻量快速）
-    "archive": "B",# 批量归档→B副（重复批量操作）
-    "asset": "B",  # 资产盘点→B副（轻量批量）
-    "image": "B",  # 识图解析→B副（多模态能力）
+    "deep": "A",   # 深度推演→A主（需要最强深度推理）
+    "l4": "A",     # 成品转化→A主（需要最高质量输出）
+    "cog": "C",    # 认知沉淀→C中（中度推理够用）
+    "eng": "C",    # 工程方案→C中（架构设计中度可扛）
+    "exp": "C",    # 实验探索→C中（探索类中度合适）
+    "archive": "B",# 批量归档→B轻（重复批量操作）
+    "asset": "B",  # 资产盘点→B轻（轻量批量）
+    "image": "B",  # 识图解析→B轻（多模态能力）
 }
 
 def select_engine(state, task_type="exp"):
-    # 强制模型切换（施子手动调度：夜间用B，白天11点额度更新后切回A）
+    # 强制模型切换（施子手动调度）
     force = state.get("force_model", "")
-    if force == "B":
-        with state_lock:
-            b_fused = state["engine_b"]["fuse_until"] > time.time()
-            b_full = state["engine_b"]["tokens_used"] >= DAILY_BUDGET_B
-        if not b_full and not b_fused:
-            return "engine_b", MODEL_B
-    if force == "A":
-        with state_lock:
-            a_fused = state["engine_a"]["fuse_until"] > time.time()
-            a_full = state["engine_a"]["tokens_used"] >= SWITCH_THRESHOLD_A
-        if not a_full and not a_fused:
-            return "engine_a", MODEL_A
-    # 智能分流：按任务类型分配模型
-    preferred = TASK_MODEL_ROUTING.get(task_type, "A")
     now = time.time()
     with state_lock:
         a_fused = state["engine_a"]["fuse_until"] > now
         b_fused = state["engine_b"]["fuse_until"] > now
+        c_fused = state.get("engine_c", {}).get("fuse_until", 0) > now
         a_full = state["engine_a"]["tokens_used"] >= SWITCH_THRESHOLD_A
         b_full = state["engine_b"]["tokens_used"] >= DAILY_BUDGET_B
-    # 优先用分流指定的模型，不可用则降级
-    if preferred == "B" and not b_full and not b_fused:
-        return "engine_b", MODEL_B
-    if not a_full and not a_fused:
+        c_full = state.get("engine_c", {}).get("tokens_used", 0) >= DAILY_BUDGET_B
+    if force == "A" and not a_full and not a_fused:
         return "engine_a", MODEL_A
-    elif not b_full and not b_fused:
-        if a_full and not b_full:
-            log(f"[SWITCH] A主达{SWITCH_THRESHOLD_A:,}阈值, 自动切换B副")
+    if force == "C" and not c_full and not c_fused:
+        return "engine_c", MODEL_C
+    if force == "B" and not b_full and not b_fused:
         return "engine_b", MODEL_B
+    # 三级智能分流：按任务类型选首选，不可用则逐级降级
+    preferred = TASK_MODEL_ROUTING.get(task_type, "C")
+    order = []
+    if preferred == "A":
+        order = ["A", "C", "B"]
+    elif preferred == "C":
+        order = ["C", "A", "B"]
+    else:
+        order = ["B", "C", "A"]
+    for tier in order:
+        if tier == "A" and not a_full and not a_fused:
+            return "engine_a", MODEL_A
+        if tier == "C" and not c_full and not c_fused:
+            return "engine_c", MODEL_C
+        if tier == "B" and not b_full and not b_fused:
+            return "engine_b", MODEL_B
     return None, None
 
 # ============ 单任务执行 ============
 def execute_single_api(task_id, prompt, state, task_type="exp"):
     cfg = TASK_CONFIG.get(task_type, TASK_CONFIG["exp"])
+    # 预判层：任务执行前预判超时/失败/重复风险
+    prediction = predict_task(task_id, task_type, prompt, state)
+    if prediction["failure_risk"] == "high":
+        log(f"[预判] {task_id} 失败风险高，命中坑库词: {prediction['pit_keywords_hit']}")
+    # 反向资产预判：查找可复用存量资产
+    try:
+        reusable = find_reusable_assets(task_type, prompt, top_k=2)
+        if reusable:
+            asset_names = [r["name"] for r in reusable]
+            log(f"[复用匹配] {task_id} 命中可复用资产: {asset_names}")
+    except Exception:
+        pass  # 复用匹配失败不影响主流程
     # 修复：所有任务优先A主，A满才切B（不按类型路由）
     engine_key, model = select_engine(state, task_type)
     if not engine_key:
         return {"task_id": task_id, "status": "skipped", "reason": "额度耗尽", "task_type": task_type}
-    label = "A主" if engine_key == "engine_a" else "B副"
+    label = "A主" if engine_key == "engine_a" else ("C中" if engine_key == "engine_c" else "B轻")
     start_time = time.time()
     for attempt in range(1, MAX_RETRIES + 1):
         try:
@@ -1030,6 +1053,8 @@ def execute_single_api(task_id, prompt, state, task_type="exp"):
                 with state_lock:
                     state["waste_count"] += 1
                     state["reasoning_tokens_total"] += result.get("reasoning_tokens", 0)
+                    # 修复：废稿第一次的token也要计入消耗（之前漏记）
+                    state[engine_key]["tokens_used"] += result.get("total_tokens", 0)
                 save_state(state)
                 # 重试：降temperature，强制low reasoning
                 if engine_key == "engine_b":
@@ -1046,10 +1071,21 @@ def execute_single_api(task_id, prompt, state, task_type="exp"):
                 state["reasoning_tokens_total"] += result.get("reasoning_tokens", 0)
             save_state(state)
             log(f"[OK] {label} {task_id} +{total}tok {duration:.1f}s | {content[:50]}...")
-            return {"task_id": task_id, "status": "success", "content": content, "tokens": total, "engine": engine_key, "duration": duration, "task_type": task_type}
+            result_data = {"task_id": task_id, "status": "success", "content": content, "tokens": total, "engine": engine_key, "duration": duration, "task_type": task_type}
+            # 预判层：事后验证，记录误差
+            try:
+                verify_prediction(prediction, result_data)
+            except Exception as pe:
+                log(f"[预判-验证异常] {pe}", "WARN")
+            return result_data
         except Exception as e:
             with state_lock:
                 state[engine_key]["failures"] += 1
+                # 修复：失败请求也要估算token消耗（之前完全漏记）
+                # 按prompt长度估算：中文约1.5字/token，最小500
+                estimated_tokens = max(500, int(len(prompt) / 1.5))
+                state[engine_key]["tokens_used"] += estimated_tokens
+                state["failed_tokens_estimated"] = state.get("failed_tokens_estimated", 0) + estimated_tokens
                 if state[engine_key]["failures"] >= FUSE_THRESHOLD:
                     cooldown = state.get("fuse_cooldown_override", FUSE_COOLDOWN)  # P0-3修复：读取状态覆盖配置
                     state[engine_key]["fuse_until"] = time.time() + cooldown
@@ -1062,12 +1098,18 @@ def execute_single_api(task_id, prompt, state, task_type="exp"):
                 new_key, new_model = select_engine(state)
                 if new_key:
                     engine_key, model = new_key, new_model
-                    label = "A主" if engine_key == "engine_a" else "B副"
+                    label = "A主" if engine_key == "engine_a" else ("C中" if engine_key == "engine_c" else "B轻")
                 # 如果select_engine返回None（双引擎都不可用），保持原引擎继续尝试
     with state_lock:
         state["tasks_failed"] += 1
     save_state(state)
-    return {"task_id": task_id, "status": "failed"}
+    fail_result = {"task_id": task_id, "status": "failed", "duration": time.time() - start_time, "task_type": task_type}
+    # 预判层：失败后也验证
+    try:
+        verify_prediction(prediction, fail_result)
+    except Exception as pe:
+        log(f"[预判-验证异常] {pe}", "WARN")
+    return fail_result
 
 # ============ 第6维·通神：认知注入 ============
 _cached_cognitions = []  # 缓存的Top核心认知
@@ -1167,17 +1209,20 @@ def scan_inbox_tasks():
 def print_dashboard(state):
     with state_lock:
         a = state["engine_a"]; b = state["engine_b"]
-        total = a["tokens_used"] + b["tokens_used"]
+        c = state.get("engine_c", {"tokens_used": 0, "requests": 0, "failures": 0, "fuse_until": 0})
+        total = a["tokens_used"] + b["tokens_used"] + c["tokens_used"]
         pa = min(a["tokens_used"] / SWITCH_THRESHOLD_A * 100, 100)
         pb = min(b["tokens_used"] / DAILY_BUDGET_B * 100, 100)
+        pc = min(c["tokens_used"] / DAILY_BUDGET_B * 100, 100)
         dp = state.get("nine_dim_progress", {})
     log("=" * 60)
     realm = state.get("realm", "九转·第一转·筑基")
     zhuan = state.get("zhuan_count", 0)
     cur_tasks = state.get("current_zhuan_tasks", 0)
     log(f"  {realm} | 已完成{zhuan}转 | 本转{cur_tasks}/{ZHUAN_TASK_THRESHOLD}任务")
-    log(f"  [A GLM5.2]  {'█'*int(pa/5)}{'░'*(20-int(pa/5))} {pa:5.1f}% {a['tokens_used']:>10,}/{SWITCH_THRESHOLD_A:,}")
-    log(f"  [B SeedPro] {'█'*int(pb/5)}{'░'*(20-int(pb/5))} {pb:5.1f}% {b['tokens_used']:>10,}/{DAILY_BUDGET_B:,}")
+    log(f"  [A GLM5.2]  {'█'*int(pa/5)}{'░'*(20-int(pa/5))} {pa:5.1f}% {a['tokens_used']:>10,}/{SWITCH_THRESHOLD_A:,} | 请求{a['requests']}次")
+    log(f"  [C DS-V4F] {'█'*int(pc/5)}{'░'*(20-int(pc/5))} {pc:5.1f}% {c['tokens_used']:>10,}/{DAILY_BUDGET_B:,} | 请求{c.get('requests',0)}次")
+    log(f"  [B SeedT]  {'█'*int(pb/5)}{'░'*(20-int(pb/5))} {pb:5.1f}% {b['tokens_used']:>10,}/{DAILY_BUDGET_B:,} | 请求{b['requests']}次")
     fs = state.get("finished_stats", {})
     finished_total = sum(fs.values())
     log(f"  完成:{state['tasks_completed']} 失败:{state['tasks_failed']} 废稿:{state.get('waste_count',0)} 认知:{state.get('cognition_count',0)}条 成品:{finished_total}(S{fs.get('S',0)}A{fs.get('A',0)}B{fs.get('B',0)}C{fs.get('C',0)})")
@@ -1194,8 +1239,8 @@ def main():
         state["version"] = state["realm"]
         save_state(state)
     log(f"[START] {ENGINE_VERSION} 启动 | 并发:{CONCURRENCY}")
-    log(f"  A主阈值:{SWITCH_THRESHOLD_A:,} | B副预算:{DAILY_BUDGET_B:,}")
-    log(f"  模型路由: A主优先, A满自动切B | B副使用Responses API(已移除reasoning_effort)")
+    log(f"  A主阈值:{SWITCH_THRESHOLD_A:,} | C中预算:{DAILY_BUDGET_B:,} | B轻预算:{DAILY_BUDGET_B:,}")
+    log(f"  模型路由: 三级分流 A(deep/l4)→C(eng/cog/exp)→B(archive/asset)，不可用逐级降级")
     print_dashboard(state)
     # 第6维·通神：启动时加载核心认知
     load_top_cognitions(5)
@@ -1206,6 +1251,78 @@ def main():
         while True:
             try:
                 check_daily_reset(state)
+                # 预判层自循环：攒够100条自动批量校验+规则迭代
+                pending_verify = get_pending_verify_count()
+                if pending_verify >= 100:
+                    log(f"[预判校验] 攒够{pending_verify}条，触发批量校验+规则迭代")
+                    try:
+                        vr = run_batch_verify(auto_iterate=True, dry_run=False)
+                        if "error" not in vr:
+                            log(f"[预判校验] 完成: 批次{vr['batch_size']}条 | "
+                                f"失败准确率{vr['dimension_accuracy']['failure']['accuracy']:.1%} | "
+                                f"超时准确率{vr['dimension_accuracy']['timeout']['accuracy']:.1%} | "
+                                f"自动迭代{len(vr.get('auto_changes',[]))}项")
+                        else:
+                            log(f"[预判校验] 跳过: {vr['error']}")
+                    except Exception as ve:
+                        log(f"[预判校验-异常] {ve}", "WARN")
+                # 反向资产预判：每日扫描存量资产+分级+校验
+                last_asset_scan = state.get("last_asset_scan", "")
+                need_asset_scan = False
+                if not last_asset_scan:
+                    need_asset_scan = True
+                else:
+                    try:
+                        from datetime import datetime as _dt
+                        last_time = _dt.fromisoformat(last_asset_scan)
+                        if (_dt.now() - last_time).total_seconds() > 86400:  # 24小时
+                            need_asset_scan = True
+                    except Exception:
+                        need_asset_scan = True
+                if need_asset_scan:
+                    log("[资产扫描] 触发每日存量资产扫描+预判分级")
+                    try:
+                        scan_result = scan_all_assets()
+                        pred_result = predict_all_assets()
+                        state["last_asset_scan"] = datetime.now().isoformat()
+                        state["last_asset_scan_count"] = pred_result.get("total_assets", 0)
+                        # 自动触发反向校验
+                        av = verify_asset_predictions(auto_iterate=True, dry_run=False)
+                        if "error" not in av:
+                            log(f"[资产预判] 完成: {av['total_assets']}个资产 | "
+                                f"工程类{dict(av['grade_stats'].get('engineering',{}))} | "
+                                f"认知类{dict(av['grade_stats'].get('cognition',{}))} | "
+                                f"自动迭代{len(av.get('auto_changes',[]))}项")
+                        save_state(state)
+                    except Exception as ae:
+                        log(f"[资产扫描-异常] {ae}", "WARN")
+                # 资产完整性校验：每日自动检查文件完整性+索引一致性
+                last_integrity_check = state.get("last_integrity_check", "")
+                need_integrity = False
+                if not last_integrity_check:
+                    need_integrity = True
+                else:
+                    try:
+                        from datetime import datetime as _dt2
+                        last_time2 = _dt2.fromisoformat(last_integrity_check)
+                        if (_dt2.now() - last_time2).total_seconds() > 86400:
+                            need_integrity = True
+                    except Exception:
+                        need_integrity = True
+                if need_integrity:
+                    log("[资产校验] 触发每日资产完整性校验")
+                    try:
+                        ir = check_integrity()
+                        state["last_integrity_check"] = datetime.now().isoformat()
+                        state["last_integrity_status"] = ir.get("overall_status", "unknown")
+                        high_issues = ir.get("severity_summary", {}).get("critical", 0) + ir.get("severity_summary", {}).get("high", 0)
+                        log(f"[资产校验] 完成: 状态{ir['overall_status']} | "
+                            f"文件{ir['stats']['files_exist']}/{ir['stats']['index_total']}存在 | "
+                            f"关键资产{ir['stats']['critical_ok']}/{ir['stats']['critical_ok']+ir['stats']['critical_missing']}正常 | "
+                            f"严重问题{high_issues}个")
+                        save_state(state)
+                    except Exception as ie:
+                        log(f"[资产校验-异常] {ie}", "WARN")
                 # 第8维·还虚：每周检查是否生成自演化报告
                 if check_weekly_evolution(state):
                     generate_evolution_report(state)
