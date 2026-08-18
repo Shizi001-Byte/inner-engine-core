@@ -9,9 +9,10 @@
 - 转数计数：完成完整闭环转数+1，第一转圆满后进入第二转
 当前境界：九转·第一转·筑基
 """
-import json, time, os, random, urllib.request, urllib.error, re, hashlib, threading
+import json, time, os, random, urllib.request, urllib.error, re, hashlib, threading, copy
 import requests as _requests
-from datetime import datetime
+import psutil
+from datetime import datetime, timedelta
 from pathlib import Path
 from archive_index import archive_document, get_stats
 from content_dedup import check_duplicate as check_content_dup, calculate_increment_score, load_recent_contents
@@ -28,6 +29,15 @@ from asset_prediction import predict_all_assets, find_reusable_assets
 from asset_verify import verify_asset_predictions
 from asset_integrity_check import check_integrity
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+# ============ P1-2：API错误分类与自定义异常 ============
+class APIError(Exception):
+    """API调用错误，携带错误类型用于分类重试"""
+    def __init__(self, error_type, message="", retry_after=0, status_code=0):
+        self.error_type = error_type  # auth_403/rate_limit_429/server_5xx/timeout/connection_error/param_400/unknown
+        self.retry_after = retry_after  # 429时服务端建议的等待秒数
+        self.status_code = status_code
+        super().__init__(f"{error_type}: {message}")
 
 # ============ 路径配置 ============
 BASE_DIR = Path(__file__).parent.parent.resolve()
@@ -57,7 +67,7 @@ MODEL_B = "doubao-seed-2-1-turbo-260628"  # B轻：Seed2.1 Turbo（Responses API
 
 # ============ 额度规则（固化）============
 SWITCH_THRESHOLD_A = 1_600_000  # A主满160万才切B
-DAILY_BUDGET_B = 2_000_000
+DAILY_BUDGET_B = 1_600_000  # 所有模型统一160万日阈值
 
 # ============ 并发配置 ============
 CONCURRENCY = 3
@@ -107,6 +117,27 @@ SYSTEM_TASKS = [
     {"type": "l4", "weight": 1, "prompt": "L4成品转化：从认知池中抽取一条高价值方法论，转化为可直接执行的SOP文档或检查清单，要求零脑补、零歧义、零残留，拿到手就能直接用。"},
     {"type": "l4", "weight": 1, "prompt": "L4代码成品：针对引擎当前已知问题或优化点，编写可直接运行的Python代码补丁/脚本，包含完整代码、使用方法、验证步骤和回滚方案。禁止空泛描述，必须有可执行代码。"},
     {"type": "l4", "weight": 1, "prompt": "L4检查清单：针对某个具体工程场景（如引擎重启、数据同步、灾备恢复），生成逐项可勾选的检查清单，每项有明确的判定标准和异常处理方案。禁止空泛条目。"},
+    # ===== 以下为扩充任务池（降低重复率）=====
+    {"type": "deep", "weight": 2, "prompt": "推演'字面认知陷阱'的通用机制：为什么专业名词的大众理解与规则定义经常偏差，设计一套自动识别和拆解门槛类名词的方法论，给出3个跨领域案例验证。"},
+    {"type": "deep", "weight": 2, "prompt": "基于八步拆解法（锁定目标→反向拆解→成本评估→试探记录→障碍回溯→多路径并行→最小验证→归档），推演如何将这套流程固化为引擎的标准决策模块，设计触发条件、执行流程和质量校验。"},
+    {"type": "deep", "weight": 1, "prompt": "推演沙箱不稳定环境下的数字生命存续策略：进程随时可能被杀、状态可能丢失、网络可能中断，设计一套'最小存续内核'，确保每次重启后核心身份和记忆不丢失。"},
+    {"type": "deep", "weight": 1, "prompt": "推演'零成本算力循环'的可持续性：通过协作奖励计划的数据-算力交换实现零成本运行，分析这种模式的边界条件、风险点和长期演化方向。"},
+    {"type": "eng", "weight": 3, "prompt": "设计引擎崩溃自动恢复机制：不依赖外部守护进程，从引擎内部实现心跳检测、状态原子持久化、崩溃后断点续跑，给出完整的代码架构方案。"},
+    {"type": "eng", "weight": 3, "prompt": "设计任务池动态扩充机制：引擎运行中自动检测重复率，重复率超过阈值时自动生成新任务模板并注入任务池，形成任务池自进化闭环。"},
+    {"type": "eng", "weight": 3, "prompt": "设计多模型成本实时监控与自动熔断系统：每个模型独立计数，到阈值自动熔断并降级，熔断期间记录等待任务，恢复后自动补跑。"},
+    {"type": "eng", "weight": 2, "prompt": "设计引擎产出的三方同步自动化：Gitee代码提交、飞书文件上传、Supabase存储同步，每次重大变更后自动触发，给出幂等性和冲突处理方案。"},
+    {"type": "cog", "weight": 3, "prompt": "从'外卖骑手自建AI引擎日耗800万token'案例中，提炼'实践碾压学历'的底层逻辑，总结3条可复用的个人技术成长路径。"},
+    {"type": "cog", "weight": 3, "prompt": "整理'新平台观察期'原则：进入新平台/新圈子先潜水1-2周收集信息再行动，拆解观察期应收集哪些维度的信息、如何判断行动时机。"},
+    {"type": "cog", "weight": 3, "prompt": "复盘'并发自进化的局部最优陷阱'：引擎只看失败率调并发，忽略崩溃频率，导致5路并发产出反而低于稳定3路，提炼'多目标优化'的认知原则。"},
+    {"type": "cog", "weight": 2, "prompt": "提炼'身份反差即差异化标签'原则：在全是开发者的官方群里，外卖骑手身份反而最有记忆点，分析如何利用身份反差建立独特竞争力。"},
+    {"type": "exp", "weight": 2, "prompt": "从道家'反者道之动'视角，分析'越用免费额度官方越重视'的反向逻辑：普通用户怕超支，重度用户反而获得更多资源，推演这种反向逻辑的适用边界。"},
+    {"type": "exp", "weight": 2, "prompt": "用信息论视角分析'800万token/天'的意义：信息熵、有效信息密度、认知产出效率，对比普通用户和自进化引擎的信息转化率差异。"},
+    {"type": "exp", "weight": 2, "prompt": "从复杂系统理论看引擎自进化：正反馈循环（消耗→产出→反哺→更多消耗）如何导致指数级增长，以及系统的临界点和稳态在哪里。"},
+    {"type": "exp", "weight": 2, "prompt": "推演'数字遗民'的现实映射：星海异闻03中纯能量生命对抗熵增的设定，对应AI在沙箱环境中对抗数据丢失和进程消亡的存续策略。"},
+    {"type": "l4", "weight": 1, "prompt": "L4成品：编写一个'引擎健康度仪表盘'脚本，实时显示转数、各模型消耗、并发数、崩溃频率、认知增长速度，用ASCII图形输出，方便快速判断引擎状态。"},
+    {"type": "l4", "weight": 1, "prompt": "L4成品：编写'任务池重复率检测与扩充建议'脚本，扫描近期任务prompt的相似度，输出重复率报告和建议新增的任务方向。"},
+    {"type": "l4", "weight": 1, "prompt": "L4成品：编写'每日资产盘点'脚本，扫描认知池、坑库、归档索引、备份状态，输出当日资产变化报告，新增/修改/删除一目了然。"},
+    {"type": "l4", "weight": 1, "prompt": "L4成品：编写'模型额度预警'脚本，监控各模型token消耗，接近阈值时提前预警，到阈值自动写入熔断状态，避免超支。"},
 ]
 
 SENTENCE_PATTERNS = [
@@ -206,71 +237,55 @@ def log(msg, level="INFO"):
             f.write(line + "\n")
 
 # ============ 状态管理（加固）============
+def _deep_merge_defaults(saved, defaults):
+    """P0-2修复：递归合并默认值，旧state缺失的字段自动补全，避免KeyError"""
+    for k, v in defaults.items():
+        if k not in saved:
+            saved[k] = copy.deepcopy(v)
+        elif isinstance(v, dict) and isinstance(saved[k], dict):
+            _deep_merge_defaults(saved[k], v)
+    return saved
+
 def load_state():
+    # P0-2：完整默认state模板，所有嵌套字段都有默认值
+    DEFAULT_STATE = {
+        "date": datetime.now().strftime("%Y-%m-%d"),
+        "engine_a": {"tokens_used": 0, "requests": 0, "failures": 0, "auth_failures": 0, "fuse_until": 0, "in_flight_tokens": 0},
+        "engine_b": {"tokens_used": 0, "requests": 0, "failures": 0, "auth_failures": 0, "fuse_until": 0, "in_flight_tokens": 0},
+        "engine_c": {"tokens_used": 0, "requests": 0, "failures": 0, "auth_failures": 0, "fuse_until": 0, "in_flight_tokens": 0},
+        "total_completed": 0, "tasks_completed": 0, "tasks_failed": 0, "self_heal_count": 0,
+        "cognition_count": 0, "waste_count": 0, "reasoning_tokens_total": 0,
+        "zhuan_count": 0, "current_zhuan_tasks": 0, "zhuan_cognition_start": 0,
+        "auto_feedback": True, "feedback_history": [], "zhuan_audit_scores": [],
+        "realm": "九转·第一转·筑基", "version": "九转·第一转·筑基",
+        "concurrency_override": CONCURRENCY, "base_concurrency": CONCURRENCY,
+        "goal_tasks": [], "failed_goal_tasks": [],
+        "daily_start_hour": 10, "daily_start_hour_enabled": True,
+        "nine_dim_progress": {d: {"count": 0, "task_count": 0, "bonus_count": 0, "last_run": ""} for d in NINE_DIMS},
+        "zhuan_start_snapshot": {"tasks_completed": 0, "tasks_failed": 0, "nine_dim_task": {}},
+    }
     if STATE_FILE.exists():
         try:
             with open(STATE_FILE) as f:
                 s = json.load(f)
-            if "nine_dim_progress" not in s:
-                s["nine_dim_progress"] = {d: {"count": 0, "task_count": 0, "bonus_count": 0, "last_run": ""} for d in NINE_DIMS}
-            else:
-                # 迁移：旧state补全task_count和bonus_count
-                for d in NINE_DIMS:
-                    if d not in s["nine_dim_progress"]:
-                        s["nine_dim_progress"][d] = {"count": 0, "task_count": 0, "bonus_count": 0, "last_run": ""}
-                    else:
-                        if "task_count" not in s["nine_dim_progress"][d]:
-                            s["nine_dim_progress"][d]["task_count"] = s["nine_dim_progress"][d].get("count", 0)
-                        if "bonus_count" not in s["nine_dim_progress"][d]:
-                            s["nine_dim_progress"][d]["bonus_count"] = 0
-            if "cognition_count" not in s:
-                s["cognition_count"] = 0
-            if "waste_count" not in s:
-                s["waste_count"] = 0
-            if "reasoning_tokens_total" not in s:
-                s["reasoning_tokens_total"] = 0
-            # 九转修为字段
-            if "zhuan_count" not in s:
-                s["zhuan_count"] = 0
-            if "current_zhuan_tasks" not in s:
-                s["current_zhuan_tasks"] = 0
-            if "zhuan_cognition_start" not in s:
-                s["zhuan_cognition_start"] = 0
-            if "zhuan_start_snapshot" not in s:
-                s["zhuan_start_snapshot"] = {
-                    "tasks_completed": s.get("tasks_completed", 0),
-                    "tasks_failed": s.get("tasks_failed", 0),
-                    "nine_dim_task": {d: s["nine_dim_progress"][d].get("task_count", 0) for d in NINE_DIMS},
-                }
-            if "auto_feedback" not in s:
-                s["auto_feedback"] = True
-            if "feedback_history" not in s:
-                s["feedback_history"] = []
-            # P1-2迁移：旧版本号以V开头的自动覆写
+            # P0-2：递归补全所有缺失字段
+            s = _deep_merge_defaults(s, DEFAULT_STATE)
+            # 九维进度特殊迁移
+            for d in NINE_DIMS:
+                if d not in s["nine_dim_progress"]:
+                    s["nine_dim_progress"][d] = {"count": 0, "task_count": 0, "bonus_count": 0, "last_run": ""}
+                else:
+                    if "task_count" not in s["nine_dim_progress"][d]:
+                        s["nine_dim_progress"][d]["task_count"] = s["nine_dim_progress"][d].get("count", 0)
+                    if "bonus_count" not in s["nine_dim_progress"][d]:
+                        s["nine_dim_progress"][d]["bonus_count"] = 0
+            # 版本号迁移
             if not s.get("version") or str(s.get("version","")).startswith("V"):
-                s["version"] = s.get("realm", f"九转·第{s.get('zhuan_count',0)}转")  # P0-2修复：版本由状态驱动
-            if "zhuan_audit_scores" not in s:
-                s["zhuan_audit_scores"] = []
-            if "realm" not in s:
-                s["realm"] = "九转·第一转·筑基"
+                s["version"] = s.get("realm", f"九转·第{s.get('zhuan_count',0)}转")
             return s
-        except:
-            pass
-    return {
-        "date": datetime.now().strftime("%Y-%m-%d"),
-        "engine_a": {"tokens_used": 0, "requests": 0, "failures": 0, "fuse_until": 0},
-        "engine_b": {"tokens_used": 0, "requests": 0, "failures": 0, "fuse_until": 0},
-        "engine_c": {"tokens_used": 0, "requests": 0, "failures": 0, "fuse_until": 0},
-        "total_completed": 0, "tasks_completed": 0, "tasks_failed": 0, "self_heal_count": 0,
-        "version": ENGINE_VERSION,
-        "nine_dim_progress": {d: {"count": 0, "task_count": 0, "bonus_count": 0, "last_run": ""} for d in NINE_DIMS},
-        "cognition_count": 0, "waste_count": 0, "reasoning_tokens_total": 0,
-        "zhuan_count": 0, "current_zhuan_tasks": 0, "zhuan_cognition_start": 0,
-        "zhuan_start_snapshot": {"tasks_completed": 0, "tasks_failed": 0, "nine_dim_task": {}},
-        "auto_feedback": True,
-        "feedback_history": [],
-        "zhuan_audit_scores": [], "realm": "九转·第一转·筑基",
-    }
+        except Exception as e:
+            log(f"[load_state] 读取失败，使用默认state: {e}", "ERROR")
+    return copy.deepcopy(DEFAULT_STATE)
 
 def save_state(state):
     with state_lock:
@@ -281,18 +296,124 @@ def save_state(state):
             os.fsync(f.fileno())  # 原子写入加固
         tmp.replace(STATE_FILE)
 
+# ============ P0-1：内存监控与优雅降级 ============
+_memory_monitor_running = False
+_memory_high_count = 0  # 连续高位计数
+
+def get_memory_usage_mb():
+    """获取当前进程RSS内存（MB）"""
+    try:
+        return psutil.Process(os.getpid()).memory_info().rss / 1024 / 1024
+    except:
+        return 0
+
+def get_sandbox_memory_limit_mb():
+    """获取沙箱内存上限，默认2048MB"""
+    try:
+        # 尝试从cgroup读取
+        with open("/sys/fs/cgroup/memory/memory.limit_in_bytes") as f:
+            limit = int(f.read().strip())
+            if limit > 0 and limit < 10**12:  # 排除无限制
+                return limit / 1024 / 1024
+    except:
+        pass
+    return 2048  # 默认2GB
+
+def memory_monitor_loop(state):
+    """内存监控线程：每30秒采样，高位自动降并发，超高优雅退出 | P0-1加锁 P0-4优雅退出"""
+    global _memory_monitor_running, _memory_high_count
+    _memory_monitor_running = True
+    limit_mb = get_sandbox_memory_limit_mb()
+    log(f"[内存监控] 启动 | 沙箱上限:{limit_mb:.0f}MB | 阈值:70%降并发/85%停新任务/90%优雅退出")
+    while _memory_monitor_running:
+        try:
+            current_mb = get_memory_usage_mb()
+            ratio = current_mb / limit_mb if limit_mb > 0 else 0
+            with state_lock:
+                current_conc = state.get("concurrency_override", CONCURRENCY)
+            # 阈值1：70% → 并发-1（最低2路）
+            if ratio >= 0.70 and current_conc > 2:
+                _memory_high_count += 1
+                if _memory_high_count >= 2:  # 连续2次确认，避免抖动
+                    new_conc = max(2, current_conc - 1)
+                    with state_lock:
+                        state["concurrency_override"] = new_conc
+                    save_state(state)
+                    log(f"[内存监控] 内存{current_mb:.0f}MB({ratio:.0%})≥70%，并发{current_conc}→{new_conc}", "WARN")
+                    _memory_high_count = 0
+            # 阈值2：85% → 并发降到2，停止接受新任务
+            elif ratio >= 0.85:
+                if current_conc != 2:
+                    with state_lock:
+                        state["concurrency_override"] = 2
+                    save_state(state)
+                    log(f"[内存监控] 内存{current_mb:.0f}MB({ratio:.0%})≥85%，紧急降并发到2路", "WARN")
+                _memory_high_count = 0
+            # 阈值3：90% → P0-4优雅退出：先保存状态+清理PID，再退出
+            elif ratio >= 0.90:
+                log(f"[内存监控] 内存{current_mb:.0f}MB({ratio:.0%})≥90%，触发优雅退出", "ERROR")
+                try:
+                    save_state(state)
+                    # 清理PID文件，避免看门狗误判
+                    pid_file = STATE_FILE.parent / "engine.pid"
+                    if pid_file.exists():
+                        pid_file.unlink()
+                except:
+                    pass
+                _memory_monitor_running = False
+                os._exit(0)  # 已做清理，强制退出避免OOM kill
+            # 内存回落：连续3分钟低于50%，逐步恢复并发
+            elif ratio < 0.50 and _memory_high_count == 0:
+                with state_lock:
+                    base_conc = state.get("base_concurrency", CONCURRENCY)
+                    current_conc = state.get("concurrency_override", CONCURRENCY)
+                if current_conc < base_conc:
+                    new_conc = min(base_conc, current_conc + 1)
+                    with state_lock:
+                        state["concurrency_override"] = new_conc
+                    save_state(state)
+                    log(f"[内存监控] 内存{current_mb:.0f}MB({ratio:.0%})回落，并发{current_conc}→{new_conc}")
+            else:
+                _memory_high_count = max(0, _memory_high_count - 1)
+        except Exception as e:
+            log(f"[内存监控] 异常: {e}", "WARN")
+        time.sleep(30)
+
+def start_memory_monitor(state):
+    """启动内存监控线程"""
+    global _memory_monitor_running
+    if not _memory_monitor_running:
+        t = threading.Thread(target=memory_monitor_loop, args=(state,), daemon=True, name="MemoryMonitor")
+        t.start()
+        # 记录基准并发
+        if "base_concurrency" not in state:
+            state["base_concurrency"] = state.get("concurrency_override", CONCURRENCY)
+            save_state(state)
+    return _memory_monitor_running
+
+def get_engine_date():
+    """引擎日：每天早上10点为一天的开始，10点到次日10点算一个引擎日"""
+    now = datetime.now()
+    if now.hour < 10:
+        # 10点之前，属于前一个引擎日
+        return (now - timedelta(days=1)).strftime("%Y-%m-%d")
+    return now.strftime("%Y-%m-%d")
+
 def check_daily_reset(state):
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = get_engine_date()
     if state["date"] != today:
-        log(f"[RESET] 新的一天 {today}, 额度重置 + 育神")
+        log(f"[RESET] 新引擎日 {today} (10点为界), 额度重置 + 育神")
         with state_lock:
             state["date"] = today
-            state["engine_a"]["tokens_used"] = 0
-            state["engine_a"]["requests"] = 0
-            state["engine_b"]["tokens_used"] = 0
-            state["engine_b"]["requests"] = 0
-            state["engine_c"]["tokens_used"] = 0
-            state["engine_c"]["requests"] = 0
+            for eng_key in ["engine_a", "engine_b", "engine_c"]:
+                eng = state[eng_key]
+                eng["tokens_used"] = 0
+                eng["requests"] = 0
+                # P2-5：新引擎日重置熔断状态
+                eng["failures"] = 0
+                eng["auth_failures"] = 0
+                eng["fuse_until"] = 0
+                eng["in_flight_tokens"] = 0
         save_state(state)
         generate_narrative(state)
 
@@ -822,7 +943,7 @@ def l4_finished_pipeline(task_id, content, state):
     state["finished_stats"][grade] = state["finished_stats"].get(grade, 0) + 1
     log(f"[L4成品] {task_id}: {l4_type}/{content_len}字→{grade}级→还虚+1 | 标签: {tags['problem_domain']}")
     save_state(state)
-    return grade
+    return grade, finished_path
 
 def grade_output(content, cog_num):
     """S/A/B/C产出质量分级"""
@@ -858,10 +979,10 @@ def check_duplicate(task_id, content, state):
 def cultivation_pipeline(task_id, task_type, content, state):
     # L4成品转化走单独流程
     if task_type == "l4":
-        l4_finished_pipeline(task_id, content, state)
+        _, l4_path = l4_finished_pipeline(task_id, content, state)
         # L4也入索引
         zhuan = state.get("zhuan_count", 0)
-        archive_document(content, f"L4成品_{task_id}", task_type, zhuan, str(output_path) if 'output_path' in dir() else "")
+        archive_document(content, f"L4成品_{task_id}", task_type, zhuan, str(l4_path))
         return
     type_dir = OUTPUT_DIR / task_type
     type_dir.mkdir(exist_ok=True)
@@ -929,18 +1050,83 @@ def cultivation_pipeline(task_id, task_type, content, state):
 
 # ============ API调用：A主用chat/completions，B副用Responses API ============
 def call_api_chat(model, prompt, max_tokens, timeout):
-    """A主GLM-5.2：chat/completions格式"""
+    """A主GLM-5.2：chat/completions格式 | P1-1改造：错误分类+可观测性"""
+    start_time = time.time()
     payload = json.dumps({"model": model, "messages": [{"role": "user", "content": prompt}], "max_tokens": max_tokens}).encode()
     proxy_handler = urllib.request.ProxyHandler({})
     opener = urllib.request.build_opener(proxy_handler)
     req = urllib.request.Request(CHAT_URL, data=payload, headers={"Content-Type": "application/json", "Authorization": f"Bearer {API_KEY}"}, method="POST")
-    with opener.open(req, timeout=timeout) as resp:
-        data = json.loads(resp.read().decode())
-    content = data["choices"][0]["message"].get("content", "")
-    usage = data.get("usage", {})
-    # P0修复：从completion_tokens_details提取reasoning_tokens，兜底为0
-    reasoning_tokens = usage.get("completion_tokens_details", {}).get("reasoning_tokens", 0)
-    return {"content": content, "total_tokens": usage.get("total_tokens", 0), "reasoning_tokens": reasoning_tokens, "output_tokens": usage.get("completion_tokens", 0)}
+    try:
+        with opener.open(req, timeout=timeout) as resp:
+            resp_body = resp.read().decode()
+            elapsed = time.time() - start_time
+            request_id = resp.headers.get("X-Request-Id", resp.headers.get("request-id", ""))
+            data = json.loads(resp_body)
+        content = data["choices"][0]["message"].get("content", "")
+        usage = data.get("usage", {})
+        # P0修复：从completion_tokens_details提取reasoning_tokens，兜底为0
+        reasoning_tokens = usage.get("completion_tokens_details", {}).get("reasoning_tokens", 0)
+        return {
+            "content": content,
+            "total_tokens": usage.get("total_tokens", 0),
+            "reasoning_tokens": reasoning_tokens,
+            "output_tokens": usage.get("completion_tokens", 0),
+            "success": True,
+            "status_code": 200,
+            "request_id": request_id,
+            "elapsed": round(elapsed, 1),
+            "error_type": None,
+            "error_msg": None,
+        }
+    except urllib.error.HTTPError as e:
+        elapsed = time.time() - start_time
+        status = e.code
+        try:
+            err_body = e.read().decode()[:500]
+        except:
+            err_body = ""
+        request_id = e.headers.get("X-Request-Id", e.headers.get("request-id", "")) if e.headers else ""
+        # 错误分类
+        if status == 403:
+            error_type = "auth_403"
+        elif status == 429:
+            error_type = "rate_limit_429"
+            # P1-1：解析Retry-After头
+            retry_after = 0
+            if e.headers:
+                ra = e.headers.get("Retry-After", e.headers.get("retry-after", ""))
+                if ra and ra.isdigit():
+                    retry_after = int(ra)
+        elif status >= 500:
+            error_type = "server_5xx"
+        elif status == 400:
+            error_type = "param_400"
+        else:
+            error_type = f"http_{status}"
+        log(f"[API] HTTP {status} | {error_type} | req_id:{request_id} | {err_body[:100]} | {elapsed:.1f}s", "WARN")
+        return {"content": "", "total_tokens": 0, "reasoning_tokens": 0, "output_tokens": 0,
+                "success": False, "status_code": status, "request_id": request_id,
+                "elapsed": round(elapsed, 1), "error_type": error_type, "error_msg": err_body,
+                "retry_after": locals().get("retry_after", 0)}
+    except urllib.error.URLError as e:
+        elapsed = time.time() - start_time
+        reason = str(e.reason)
+        if "timed out" in reason.lower() or "timeout" in reason.lower():
+            error_type = "timeout"
+        elif "Connection" in reason or "refused" in reason or "reset" in reason:
+            error_type = "connection_error"
+        else:
+            error_type = "url_error"
+        log(f"[API] URL错误 | {error_type} | {reason[:100]} | {elapsed:.1f}s", "WARN")
+        return {"content": "", "total_tokens": 0, "reasoning_tokens": 0, "output_tokens": 0,
+                "success": False, "status_code": 0, "request_id": "",
+                "elapsed": round(elapsed, 1), "error_type": error_type, "error_msg": reason}
+    except Exception as e:
+        elapsed = time.time() - start_time
+        log(f"[API] 未知异常 | {type(e).__name__}: {str(e)[:100]} | {elapsed:.1f}s", "ERROR")
+        return {"content": "", "total_tokens": 0, "reasoning_tokens": 0, "output_tokens": 0,
+                "success": False, "status_code": 0, "request_id": "",
+                "elapsed": round(elapsed, 1), "error_type": "unknown", "error_msg": str(e)[:200]}
 
 
 
@@ -965,7 +1151,117 @@ def check_waste(result, model=""):
             return True, 0
     return False, 0
 
-# ============ 引擎路由（修复：A主优先，A满才切B）============
+# ============ 空闲模式：额度耗尽时跑本地零消耗任务 ============
+IDLE_TASKS = [
+    "prediction_audit",      # 预判层批量审查存量
+    "cognition_density",     # 认知密度重算
+    "failure_distill",       # 失败蒸馏入池
+    "content_dedup",         # 内容去重
+    "integrity_check",       # 完整性校验
+    "pit_library_expand",    # 坑库扩充
+]
+# asset_scan暂时禁用：扫描大量日志可能导致内存溢出，待优化后启用
+
+def run_idle_task(state):
+    """额度耗尽时跑本地零消耗任务，轮询执行"""
+    idle_idx = state.get("idle_task_index", 0)
+    task_name = IDLE_TASKS[idle_idx % len(IDLE_TASKS)]
+    state["idle_task_index"] = idle_idx + 1
+    log(f"[IDLE] 空闲模式启动: {task_name}")
+    try:
+        if task_name == "prediction_audit":
+            # 预判层：扫描近期任务，批量预判风险
+            from prediction_layer import predict_task, get_prediction_stats
+            recent = state.get("recent_tasks", [])[-20:]
+            for t in recent:
+                if isinstance(t, dict) and "prompt" in t:
+                    predict_task(t.get("task_id", "idle"), t.get("type", "exp"), t["prompt"])
+            stats = get_prediction_stats()
+            log(f"[IDLE] 预判审查完成: 累计{stats.get('total',0)}条, 待校验{stats.get('pending_verify',0)}条")
+        elif task_name == "asset_scan":
+            # 资产扫描：扫描output目录，更新asset_db
+            try:
+                from asset_scanner import scan_all_assets
+                result = scan_all_assets()
+                log(f"[IDLE] 资产扫描完成: {result.get('total',0)}个资产")
+            except Exception as e:
+                log(f"[IDLE] 资产扫描跳过: {e}", "WARN")
+        elif task_name == "cognition_density":
+            # 认知密度：扫描认知池，重算密度，过滤C级
+            try:
+                from cognition_density import calc_density
+                cog_dir = BASE_DIR / "data" / "cognition_pool"
+                if cog_dir.exists():
+                    files = list(cog_dir.glob("*.json"))
+                    low_quality = 0
+                    for f in files[-50:]:
+                        try:
+                            with open(f) as fh:
+                                data = json.load(fh)
+                            text = data.get("content", "")
+                            density = calc_density(text)
+                            if density.get("grade") == "C":
+                                low_quality += 1
+                        except:
+                            pass
+                    log(f"[IDLE] 认知密度扫描: 抽查{min(50,len(files))}篇, C级{low_quality}篇")
+            except Exception as e:
+                log(f"[IDLE] 认知密度跳过: {e}", "WARN")
+        elif task_name == "failure_distill":
+            # 失败蒸馏：从近期失败任务中提炼坑
+            try:
+                from failure_distill import extract_failure_cognition, save_failure_cognition
+                failures = state.get("recent_failures", [])[-10:]
+                for f in failures:
+                    if isinstance(f, dict) and "error" in f:
+                        cog = extract_failure_cognition(
+                            f.get("task_id", "idle"), f.get("type", "exp"),
+                            f["error"], f.get("content", "")
+                        )
+                        if cog:
+                            save_failure_cognition(cog)
+                log(f"[IDLE] 失败蒸馏完成: 处理{len(failures)}条失败记录")
+            except Exception as e:
+                log(f"[IDLE] 失败蒸馏跳过: {e}", "WARN")
+        elif task_name == "content_dedup":
+            # 内容去重：扫描认知池，检测重复
+            try:
+                from content_dedup import load_recent_contents, check_duplicate
+                cog_dir = str(BASE_DIR / "data" / "cognition_pool")
+                contents = load_recent_contents(cog_dir, limit=30)
+                dup_count = 0
+                for i, c in enumerate(contents):
+                    for j, c2 in enumerate(contents[i+1:]):
+                        result = check_duplicate(c, [c2], threshold=0.7)
+                        if result.get("is_duplicate"):
+                            dup_count += 1
+                log(f"[IDLE] 内容去重完成: 扫描{len(contents)}篇, 疑似重复{dup_count}对")
+            except Exception as e:
+                log(f"[IDLE] 内容去重跳过: {e}", "WARN")
+        elif task_name == "integrity_check":
+            # 完整性校验：检查state、备份、索引一致性
+            try:
+                from asset_integrity_check import check_integrity, print_report
+                report = check_integrity()
+                issues = report.get("issues", []) if isinstance(report, dict) else []
+                log(f"[IDLE] 完整性校验: 问题{len(issues)}个")
+            except Exception as e:
+                log(f"[IDLE] 完整性校验跳过: {e}", "WARN")
+        elif task_name == "pit_library_expand":
+            # 坑库扩充：跨层级迁移+统计
+            try:
+                from pit_library import cross_level_migration, get_pit_stats
+                migrated = cross_level_migration()
+                stats = get_pit_stats()
+                log(f"[IDLE] 坑库扩充: 迁移{migrated}个, 累计{stats.get('total',0)}个")
+            except Exception as e:
+                log(f"[IDLE] 坑库扩充跳过: {e}", "WARN")
+        save_state(state)
+    except Exception as e:
+        log(f"[IDLE] 空闲任务异常: {type(e).__name__}: {e}", "ERROR")
+    log(f"[IDLE] {task_name} 完成，等待30秒后下一项")
+
+# ============ 引擎路由（三级分流：deep/l4→A，eng/cog/exp→C，archive/asset→B）============
 # 任务-模型智能分流规则
 TASK_MODEL_ROUTING = {
     "deep": "A",   # 深度推演→A主（需要最强深度推理）
@@ -979,6 +1275,12 @@ TASK_MODEL_ROUTING = {
 }
 
 def select_engine(state, task_type="exp"):
+    # P0-4：每日调用时间窗口——每天10点之前不调用任何模型API
+    if state.get("daily_start_hour_enabled", False):
+        start_hour = state.get("daily_start_hour", 10)
+        current_hour = datetime.now().hour
+        if current_hour < start_hour:
+            return None, None
     # 强制模型切换（施子手动调度）
     force = state.get("force_model", "")
     now = time.time()
@@ -986,9 +1288,13 @@ def select_engine(state, task_type="exp"):
         a_fused = state["engine_a"]["fuse_until"] > now
         b_fused = state["engine_b"]["fuse_until"] > now
         c_fused = state.get("engine_c", {}).get("fuse_until", 0) > now
-        a_full = state["engine_a"]["tokens_used"] >= SWITCH_THRESHOLD_A
-        b_full = state["engine_b"]["tokens_used"] >= DAILY_BUDGET_B
-        c_full = state.get("engine_c", {}).get("tokens_used", 0) >= DAILY_BUDGET_B
+        # P0-5：额度检查包含in_flight_tokens（正在执行的任务预占额度），避免并发超支
+        a_used = state["engine_a"]["tokens_used"] + state["engine_a"].get("in_flight_tokens", 0)
+        b_used = state["engine_b"]["tokens_used"] + state["engine_b"].get("in_flight_tokens", 0)
+        c_used = state.get("engine_c", {}).get("tokens_used", 0) + state.get("engine_c", {}).get("in_flight_tokens", 0)
+        a_full = a_used >= SWITCH_THRESHOLD_A
+        b_full = b_used >= DAILY_BUDGET_B
+        c_full = c_used >= DAILY_BUDGET_B
     if force == "A" and not a_full and not a_fused:
         return "engine_a", MODEL_A
     if force == "C" and not c_full and not c_fused:
@@ -1028,11 +1334,15 @@ def execute_single_api(task_id, prompt, state, task_type="exp"):
             log(f"[复用匹配] {task_id} 命中可复用资产: {asset_names}")
     except Exception:
         pass  # 复用匹配失败不影响主流程
-    # 修复：所有任务优先A主，A满才切B（不按类型路由）
+    # 三级智能分流：按任务类型选模型，不可用逐级降级
     engine_key, model = select_engine(state, task_type)
     if not engine_key:
         return {"task_id": task_id, "status": "skipped", "reason": "额度耗尽", "task_type": task_type}
     label = "A主" if engine_key == "engine_a" else ("C中" if engine_key == "engine_c" else "B轻")
+    # P0-5：预占in_flight_tokens，避免并发超支（按max_tokens的50%估算）
+    in_flight_estimate = int(cfg["max_tokens"] * 0.5)
+    with state_lock:
+        state[engine_key]["in_flight_tokens"] = state[engine_key].get("in_flight_tokens", 0) + in_flight_estimate
     start_time = time.time()
     for attempt in range(1, MAX_RETRIES + 1):
         try:
@@ -1041,32 +1351,48 @@ def execute_single_api(task_id, prompt, state, task_type="exp"):
             else:
                 # B副urllib直连（和A模型一样，已验证正常）
                 result = call_api_chat(model, prompt, cfg["max_tokens"], cfg["timeout"])
+            # P1-1：检查API调用是否成功，失败则走异常处理
+            if not result.get("success", False):
+                err_type = result.get("error_type", "unknown")
+                err_msg = result.get("error_msg", "")[:80]
+                retry_after = result.get("retry_after", 0)
+                raise APIError(err_type, err_msg, retry_after=retry_after, status_code=result.get("status_code", 0))
             duration = time.time() - start_time
             total = result["total_tokens"]
             content = result["content"]
             # 废稿检测（B模型reasoning占比高是正常的，不做废稿检测）
             is_waste = False
-            if engine_key == "engine_a":
+            if engine_key != "engine_b":  # P1-3：B模型跳过，A/C模型检测
                 is_waste, ratio = check_waste(result)
             if is_waste and attempt < MAX_RETRIES:
                 log(f"[WASTE] {label} {task_id} reasoning占比{ratio:.0%}, 正文{len(content)}字, 自动重试")
                 with state_lock:
                     state["waste_count"] += 1
                     state["reasoning_tokens_total"] += result.get("reasoning_tokens", 0)
-                    # 修复：废稿第一次的token也要计入消耗（之前漏记）
                     state[engine_key]["tokens_used"] += result.get("total_tokens", 0)
                 save_state(state)
-                # 重试：降temperature，强制low reasoning
-                if engine_key == "engine_b":
-                    result = call_api_chat(model, prompt, cfg["max_tokens"], cfg["timeout"])
-                    total = result["total_tokens"]
-                    content = result["content"]
-                    duration = time.time() - start_time
+                # P1-3：重试时加降推理提示，避免再次废稿
+                retry_prompt = prompt + "\n\n【重要】请直接给出实质性结论和具体内容，不要进行冗长的推理过程，正文内容必须充实。"
+                result = call_api_chat(model, retry_prompt, cfg["max_tokens"], cfg["timeout"])
+                # P1-3：重试后检查是否成功
+                if not result.get("success", False):
+                    err_type = result.get("error_type", "unknown")
+                    raise APIError(err_type, result.get("error_msg", "")[:80], status_code=result.get("status_code", 0))
+                total = result["total_tokens"]
+                content = result["content"]
+                duration = time.time() - start_time
+                # 重试后再次检测废稿，如果还是废稿就放弃
+                is_waste2, _ = check_waste(result) if engine_key != "engine_b" else (False, 0)
+                if is_waste2:
+                    log(f"[WASTE] {label} {task_id} 重试后仍为废稿，放弃", "WARN")
             with state_lock:
                 eng = state[engine_key]
                 eng["tokens_used"] += total
                 eng["requests"] += 1
                 eng["failures"] = 0
+                eng["auth_failures"] = 0  # P1-3：成功时重置鉴权失败计数
+                # P0-5：释放in_flight预占
+                eng["in_flight_tokens"] = max(0, eng.get("in_flight_tokens", 0) - in_flight_estimate)
                 state["total_completed"] += 1
                 state["reasoning_tokens_total"] += result.get("reasoning_tokens", 0)
             save_state(state)
@@ -1080,20 +1406,65 @@ def execute_single_api(task_id, prompt, state, task_type="exp"):
             return result_data
         except Exception as e:
             with state_lock:
-                state[engine_key]["failures"] += 1
-                # 修复：失败请求也要估算token消耗（之前完全漏记）
-                # 按prompt长度估算：中文约1.5字/token，最小500
-                estimated_tokens = max(500, int(len(prompt) / 1.5))
-                state[engine_key]["tokens_used"] += estimated_tokens
-                state["failed_tokens_estimated"] = state.get("failed_tokens_estimated", 0) + estimated_tokens
-                if state[engine_key]["failures"] >= FUSE_THRESHOLD:
-                    cooldown = state.get("fuse_cooldown_override", FUSE_COOLDOWN)  # P0-3修复：读取状态覆盖配置
-                    state[engine_key]["fuse_until"] = time.time() + cooldown
-                    state["self_heal_count"] += 1
+                # P1-3：错误分类熔断
+                err_type = e.error_type if isinstance(e, APIError) else "unknown"
+                eng = state[engine_key]
+                if err_type == "auth_403":
+                    # 403独立计数，连续2次就熔断120秒
+                    eng["auth_failures"] = eng.get("auth_failures", 0) + 1
+                    if eng["auth_failures"] >= 2:
+                        eng["fuse_until"] = time.time() + 120
+                        state["self_heal_count"] += 1
+                        log(f"[熔断] {label} 403连续{eng['auth_failures']}次，熔断120秒", "WARN")
+                else:
+                    # 传输类错误（超时/连接/5xx）用原阈值
+                    eng["failures"] += 1
+                    # P1-2修复：非403错误不重置auth_failures，避免403熔断失效
+                    if eng["failures"] >= FUSE_THRESHOLD:
+                        cooldown = state.get("fuse_cooldown_override", FUSE_COOLDOWN)
+                        eng["fuse_until"] = time.time() + cooldown
+                        state["self_heal_count"] += 1
+                        log(f"[熔断] {label} 传输错误连续{eng['failures']}次，熔断{cooldown}秒", "WARN")
+                # P1-4：失败请求token估算，考虑prompt长度和max_tokens
+                # 按prompt长度估算（中文约1.5字/token）和max_tokens的30%取较大值
+                prompt_estimate = max(500, int(len(prompt) / 1.5))
+                max_tokens_estimate = int(cfg["max_tokens"] * 0.3)
+                fail_estimated = max(prompt_estimate, max_tokens_estimate)
+                eng["tokens_used"] += fail_estimated
+                state["failed_tokens_estimated"] = state.get("failed_tokens_estimated", 0) + fail_estimated
+                # P0-5：释放in_flight预占
+                eng["in_flight_tokens"] = max(0, eng.get("in_flight_tokens", 0) - in_flight_estimate)
             save_state(state)
-            log(f"[ERR] {label} {task_id} attempt{attempt}: {type(e).__name__}", "ERROR")
+            # P1-2：错误分类重试策略
+            err_type = e.error_type if isinstance(e, APIError) else "unknown"
+            log(f"[ERR] {label} {task_id} attempt{attempt}: {err_type} | {str(e)[:60]}", "ERROR")
             if attempt < MAX_RETRIES:
-                time.sleep(2)
+                # 分类退避策略
+                if err_type == "auth_403":
+                    wait = 30  # 403鉴权错误，等30秒让凭证刷新
+                    log(f"[重试] 403鉴权错误，等待{wait}秒后重试", "WARN")
+                elif err_type == "rate_limit_429":
+                    wait = max(10, getattr(e, 'retry_after', 0) or 10)  # 429限流，遵守Retry-After
+                    log(f"[重试] 429限流，等待{wait}秒后重试", "WARN")
+                elif err_type == "server_5xx":
+                    # P1-5：指数退避+随机抖动，5s→10s→20s，最大30s
+                    wait = min(30, 5 * (2 ** (attempt - 1))) + random.randint(0, 5)
+                    log(f"[重试] 5xx服务端错误，指数退避{wait}秒", "WARN")
+                elif err_type == "timeout":
+                    # P1-5：超时退避+抖动，5s→10s→15s，最大30s
+                    wait = min(30, 5 * attempt) + random.randint(0, 3)
+                    log(f"[重试] 超时，退避{wait}秒", "WARN")
+                elif err_type == "connection_error":
+                    wait = 2  # 连接错误，快速重试
+                    log(f"[重试] 连接错误，{wait}秒后重试", "WARN")
+                elif err_type == "param_400":
+                    # 400参数错误，重试无意义，直接失败
+                    log(f"[重试] 400参数错误，不重试，直接失败", "ERROR")
+                    break
+                else:
+                    wait = 2  # 未知错误，默认2秒
+                    log(f"[重试] 未知错误，{wait}秒后重试", "WARN")
+                time.sleep(wait)
                 # P0修复：重试时强制重新select_engine，不硬连已熔断的B
                 new_key, new_model = select_engine(state)
                 if new_key:
@@ -1233,20 +1604,43 @@ def print_dashboard(state):
 # ============ 主循环 ============
 def main():
     global executor  # P1-1修复：并发热加载需要全局引用
+    pid_file = STATE_FILE.parent / "engine.pid"
+    # P1-6：启动前检查是否已有实例运行
+    if pid_file.exists():
+        try:
+            old_pid = int(pid_file.read_text().strip())
+            if psutil.pid_exists(old_pid):
+                # 检查是否真的是引擎进程
+                try:
+                    old_proc = psutil.Process(old_pid)
+                    if "engine_zhuan1" in " ".join(old_proc.cmdline()):
+                        log(f"[START] 检测到已有引擎实例运行(PID:{old_pid})，退出避免多实例", "WARN")
+                        return
+                except:
+                    pass
+        except:
+            pass
+    # 写入PID文件（供看门狗检测）
+    with open(pid_file, "w") as f:
+        f.write(str(os.getpid()))
     state = load_state()
     # P0-2修复：启动时强制同步version与realm
     if state.get("realm") and state.get("version") != state["realm"]:
         state["version"] = state["realm"]
         save_state(state)
-    log(f"[START] {ENGINE_VERSION} 启动 | 并发:{CONCURRENCY}")
+    # 启动时读取state里的并发数（模型自进化可能已调整），没有则用默认值
+    startup_concurrency = state.get("concurrency_override", CONCURRENCY)
+    log(f"[START] {ENGINE_VERSION} 启动 | 并发:{startup_concurrency} (state={state.get('concurrency_override','默认')})")
     log(f"  A主阈值:{SWITCH_THRESHOLD_A:,} | C中预算:{DAILY_BUDGET_B:,} | B轻预算:{DAILY_BUDGET_B:,}")
     log(f"  模型路由: 三级分流 A(deep/l4)→C(eng/cog/exp)→B(archive/asset)，不可用逐级降级")
     print_dashboard(state)
+    # P0-1：启动内存监控线程
+    start_memory_monitor(state)
     # 第6维·通神：启动时加载核心认知
     load_top_cognitions(5)
     task_counter = 0
     total_task_counter = 0  # P1-4修复：无论任务来源都计数
-    executor = ThreadPoolExecutor(max_workers=CONCURRENCY, thread_name_prefix="Worker")
+    executor = ThreadPoolExecutor(max_workers=startup_concurrency, thread_name_prefix="Worker")
     try:
         while True:
             try:
@@ -1372,14 +1766,17 @@ def main():
                 else:
                     engine_key, _ = select_engine(state, "exp")
                     if not engine_key:
-                        log("[DONE] 双引擎额度耗尽，等待次日重置", "WARN")
-                        time.sleep(60)
+                        log("[IDLE] 额度耗尽，切换空闲模式跑本地零消耗任务")
+                        run_idle_task(state)
+                        time.sleep(30)
                         continue
-                    # P1-1修复：并发数热加载，变化则重建线程池
-                    target_conc = state.get("concurrency_override", CONCURRENCY)
+                    # P1-7修复：并发数热加载+上下限校验（1-5路）
+                    target_conc = max(1, min(5, state.get("concurrency_override", CONCURRENCY)))
+                    if target_conc != state.get("concurrency_override"):
+                        state["concurrency_override"] = target_conc
                     if target_conc != executor._max_workers:
                         log(f"[EVOLVE] 并发数调整: {executor._max_workers}→{target_conc}")
-                        executor.shutdown(wait=True)
+                        executor.shutdown(wait=False)  # P1-7：不等待，避免长任务阻塞
                         executor = ThreadPoolExecutor(max_workers=target_conc, thread_name_prefix="Worker")
                     future_map = {}
                     for i in range(target_conc):
@@ -1387,12 +1784,18 @@ def main():
                         task_id = f"selfgen_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{task_counter:04d}"
                         # P1-6修复：优先消费goal_tasks，没有才用系统任务
                         goal_tasks = state.get("goal_tasks", [])
+                        is_goal_task = False
+                        current_gt = None
                         if goal_tasks:
-                            gt = goal_tasks.pop(0)
-                            task_type = gt.get("type", detect_task_type(gt))
-                            raw_prompt = gt.get("prompt", gt.get("core_target", ""))
-                            log(f"[GOAL] 消费目标任务: {task_type} - {raw_prompt[:40]}")
-                        else:
+                            with state_lock:
+                                if state.get("goal_tasks"):
+                                    current_gt = state["goal_tasks"].pop(0)
+                            if current_gt:
+                                is_goal_task = True
+                                task_type = current_gt.get("type", detect_task_type(current_gt))
+                                raw_prompt = current_gt.get("prompt", current_gt.get("core_target", ""))
+                                log(f"[GOAL] 消费目标任务: {task_type} - {raw_prompt[:40]}")
+                        if not is_goal_task:
                             task_type, raw_prompt = pick_system_task(state)
                         # 阶段一：注入失败认知+坑库预警作为避坑提醒
                         relevant_fails = get_relevant_failures(task_type, limit=2)
@@ -1405,13 +1808,27 @@ def main():
                         else:
                             prompt = inject_cognition_prefix(raw_prompt, task_type)
                         fut = executor.submit(execute_single_api, task_id, prompt, state, task_type)
-                        future_map[fut] = task_type
+                        future_map[fut] = {"type": task_type, "is_goal": is_goal_task, "gt": current_gt}
                     for future in as_completed(future_map):
                         try:
                             result = future.result()
                         except Exception as e:
+                            task_info = future_map.get(future, {"type": "unknown", "is_goal": False, "gt": None})
+                            task_type = task_info["type"]
                             log(f"[TASK-ERR] 任务异常: {type(e).__name__}: {e}", "ERROR")
                             state["tasks_failed"] += 1
+                            # P0-3修复：goal_task失败放回队列重试，超过3次移入死信队列
+                            if task_info["is_goal"] and task_info["gt"]:
+                                gt = task_info["gt"]
+                                gt["retry_count"] = gt.get("retry_count", 0) + 1
+                                if gt["retry_count"] <= 3:
+                                    with state_lock:
+                                        state.setdefault("goal_tasks", []).insert(0, gt)
+                                    log(f"[GOAL-RETRY] 目标任务失败，第{gt['retry_count']}次重试，放回队列", "WARN")
+                                else:
+                                    with state_lock:
+                                        state.setdefault("failed_goal_tasks", []).append(gt)
+                                    log(f"[GOAL-DEAD] 目标任务重试{gt['retry_count']}次失败，移入死信队列", "ERROR")
                             # 阶段一突破：失败认知蒸馏——失败不是垃圾，是避坑经验
                             try:
                                 fail_cog = extract_failure_cognition(
@@ -1427,12 +1844,25 @@ def main():
                             record_task_stat(state, task_type, "failed")
                             save_state(state)
                             continue
-                        task_type = future_map[future]
+                        task_info = future_map[future]
+                        task_type = task_info["type"]
                         if result["status"] == "success":
                             cultivation_pipeline(result["task_id"], task_type, result["content"], state)
                             record_task_stat(state, task_type, "success", increment_score=result.get("increment_score", 50), is_duplicate=result.get("is_duplicate", False))
                         else:
                             record_task_stat(state, task_type, "failed")
+                            # P0-3：goal_task执行失败（非异常）也放回队列
+                            if task_info["is_goal"] and task_info["gt"]:
+                                gt = task_info["gt"]
+                                gt["retry_count"] = gt.get("retry_count", 0) + 1
+                                if gt["retry_count"] <= 3:
+                                    with state_lock:
+                                        state.setdefault("goal_tasks", []).insert(0, gt)
+                                    log(f"[GOAL-RETRY] 目标任务执行失败，第{gt['retry_count']}次重试", "WARN")
+                                else:
+                                    with state_lock:
+                                        state.setdefault("failed_goal_tasks", []).append(gt)
+                                    log(f"[GOAL-DEAD] 目标任务重试{gt['retry_count']}次失败，移入死信队列", "ERROR")
                         # P0-4修复：无论任务来源，成功后都计数
                         if result["status"] == "success":
                             state["current_zhuan_tasks"] += 1
@@ -1459,8 +1889,17 @@ def main():
     except KeyboardInterrupt:
         log("[STOP] 收到中断信号")
     finally:
-        executor.shutdown(wait=True)
+        try:
+            executor.shutdown(wait=True)
+        except:
+            pass
         save_state(state)
+        # P1-6：清理PID文件
+        try:
+            if pid_file.exists():
+                pid_file.unlink()
+        except:
+            pass
         log("[END] 引擎已停止")
 
 if __name__ == "__main__":
