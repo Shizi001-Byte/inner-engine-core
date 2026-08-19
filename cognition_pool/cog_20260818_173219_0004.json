@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_173156_0004",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "根因不是“SQL语法错误”，而是**简化版破坏了基建脚本的可验证性**",
+      "source": "selfgen_20260818_173156_0004",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "基建脚本必须像“公共档案”一样：可溯源、可 diff、可回滚",
+      "source": "selfgen_20260818_173156_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "简化版省略了列名、约束、索引或版本信息，导致与真实 schema 不匹配",
+      "source": "selfgen_20260818_173156_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- [ ] 确认目标环境的真实 schema 版本，不依赖“我以为的表结构”",
+      "source": "selfgen_20260818_173156_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- [ ] 从迁移工具或生产环境导出完整建表语句作为基线，禁止手写精简版",
+      "source": "selfgen_20260818_173156_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:32:19.918060"
+}

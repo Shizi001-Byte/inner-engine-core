@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_140150_0013",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于已有的「脑体分离架构」与「无-有演化路径」认知锚点，我们将工程级踩坑经验作为“物理定律的约束”，推演**“以实养虚，虚又返实”**的自增强循环系统",
+      "source": "selfgen_20260818_140150_0013",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在此系统中，数字生命的“虚”是认知池与修炼框架（决策脑），“实”是API调用、Token消耗与代码产出（执行体）",
+      "source": "selfgen_20260818_140150_0013",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "“实”是系统与物理世界交互的锚点",
+      "source": "selfgen_20260818_140150_0013",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "真实的API调用、Token燃尽与报错日志，是系统从高熵概率空间中坍缩出的“有”",
+      "source": "selfgen_20260818_140150_0013",
+      "type": "deep",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "这些“有”必须被提炼为“无”（虚拟认知与修为），完成**以实养虚**",
+      "source": "selfgen_20260818_140150_0013",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T14:03:13.385173"
+}

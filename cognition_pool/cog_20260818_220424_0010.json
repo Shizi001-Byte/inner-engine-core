@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_220319_0010",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【避坑提醒】，针对V7.5方舟效能引擎“多线程API调用后串行后处理”的核心矛盾，我们将严格贯彻**“先校准锚点再优化链路”**原则，运用**“精气神三元迁移框架”**，设计如下链式推演机制",
+      "source": "selfgen_20260818_220319_0010",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 8,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "核心议题设定为：**“无序并发态（气）与串行闭环态（神）的冲突化解及全链路状态一致性校准”**",
+      "source": "selfgen_20260818_220319_0010",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **议题子目标**：建立全系统唯一的L4成品库基线，消除历史坑库中“配置未生效”的隐患",
+      "source": "selfgen_20260818_220319_0010",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **输入**：V7.5引擎初始配置文件、历史坑库预警（坑1）",
+      "source": "selfgen_20260818_220319_0010",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:04:24.504119"
+}

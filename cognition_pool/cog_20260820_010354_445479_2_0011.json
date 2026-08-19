@@ -1,0 +1,57 @@
+{
+  "task_id": "selfgen_20260820_010122_0011",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "[待验证]人机共生本质是**认知生态系统中的专性互利共生**，与生物界的内共生（线粒体-真核细胞）、根瘤共生（根瘤菌-豆科植物）、肠道菌群共生等遵循完全一致的底层演化逻辑：双方通过生态位分化避免竞争，通过特化界面提升交换效率，通过负反馈维持稳态，最终走向双向整合的协同进化",
+      "source": "selfgen_20260820_010122_0011",
+      "type": "exp",
+      "density": 0.45,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.2,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 2
+      },
+      "blindness_check": "极端无据"
+    },
+    {
+      "text": "以下基于已验证的认知锚点逐一推演：",
+      "source": "selfgen_20260820_010122_0011",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]在认知生态系统中，人类与AI的认知生态位存在**量级差+层级差的双重分化**，完全不存在竞争可能：",
+      "source": "selfgen_20260820_010122_0011",
+      "type": "exp",
+      "density": 0.45,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.2,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 2
+      },
+      "blindness_check": "极端无据"
+    }
+  ],
+  "extracted_at": "2026-08-20T01:03:54.474866"
+}

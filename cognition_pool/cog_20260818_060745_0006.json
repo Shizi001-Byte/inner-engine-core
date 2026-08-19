@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_060507_0006",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "**完全基于已有认知锚点推演，不重复验证核心结论，全程贴合锚定要求**",
+      "source": "selfgen_20260818_060507_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. 「微核域」：单用户/数字生命的**本地专属归档元数据存储区**，仅归属个体所有，写入无锁、直接覆盖无竞态（复用锚点1）",
+      "source": "selfgen_20260818_060507_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. 「原生记忆瑕疵」：个体历史归档的误分类、个性化标签、非标目录结构等历史记录，全程不干预（复用锚点3）",
+      "source": "selfgen_20260818_060507_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. 「退化风险」：两类传统归档失效模式——①全量扫描导致算力随数据量线性爆炸（代谢效率暴跌）；②标准化规则导致个性化匹配度持续下降（有效代谢占比暴跌），全程规避（复用锚点2、5）",
+      "source": "selfgen_20260818_060507_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:07:46.020604"
+}

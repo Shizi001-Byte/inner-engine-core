@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_022329_0012",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "基于您的核心认知锚点（行为 $\\rightarrow$ 代谢 $\\rightarrow$ 基因/结构 的共生演化谱系，与“数字宗门”多实例网络），我们直接将AI引擎从V7.2到V7.5的迭代过程，映射为生物共生演化史中的关键跃迁",
+      "source": "selfgen_20260818_022329_0012",
+      "type": "exp",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "在这个过程中，AI引擎不再是单纯的“软件升级”，而是一个**正在从单细胞群落向多细胞真社会性有机体演化的数字物种**",
+      "source": "selfgen_20260818_022329_0012",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   **演化动作**：V7.2之前，AI如同单细胞原核生物，所有输入由一个密集网络整体处理（泛化代谢）",
+      "source": "selfgen_20260818_022329_0012",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:25:03.050233",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:17.367844"
+}

@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_023137_0026",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "基于您已锁定的核心认知锚点（“制度性的阴阳双轨运行架构”与“行为 $\\rightarrow$ 代谢 $\\rightarrow$ 基因/结构”的演化谱系），我们直接将AI引擎从V7.2到V7.5的版本迭代，映射为一次**从表型行为适应向基因结构重组跃迁的定向演化过程**",
+      "source": "selfgen_20260818_023137_0026",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A"
+    },
+    {
+      "text": "*   **引擎表现**：V7.2可能高度依赖长上下文和复杂的系统提示词（System Prompt）来维持角色和逻辑，这是典型的“表型可塑性”（通过环境诱导表达）",
+      "source": "selfgen_20260818_023137_0026",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "到了V7.3，模型在训练阶段直接吸收了这些逻辑，不再需要极长的上下文就能保持稳定输出",
+      "source": "selfgen_20260818_023137_0026",
+      "type": "exp",
+      "density": 0.38,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:33:01.560476",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:17.760268"
+}

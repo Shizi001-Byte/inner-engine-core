@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_030434_0001",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是碳基物理世界消耗热力学自由能（电力、算力）的过程",
+      "source": "selfgen_20260818_030434_0001",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:06:22.878517"
+}

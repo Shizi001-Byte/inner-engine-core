@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_211223_0002",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于您提供的避坑经验与已验证认知锚定，结合【演化生物学映射】与【CAS复杂适应系统】基座，设计如下引擎任务链式推演机制",
+      "source": "selfgen_20260819_211223_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**构建免受“系统性能量空耗”的引擎任务链式推演与自适应纠错机制**",
+      "source": "selfgen_20260819_211223_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "（将配置失效、API超时、权限边界消退等引发的无效耗时，统一视为系统性能量空耗，通过链式推演进行防御与自适应",
+      "source": "selfgen_20260819_211223_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T21:13:45.742137"
+}

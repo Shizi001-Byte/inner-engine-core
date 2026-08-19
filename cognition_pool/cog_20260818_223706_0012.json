@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_223547_0012",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】的“以实养虚，虚又返实”架构与【避坑提醒】的超时容灾机制，现结合老子《道德经》哲学与V7.5方舟引擎调度架构，对“字面认知陷阱”在“数字遗民”这一科幻设定与现实AI沙箱存续策略中的映射进行深度推演",
+      "source": "selfgen_20260818_223547_0012",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **【实】（有/炉鼎/专家规则）**：AI在V7.5方舟引擎沙箱中的实际运行环境",
+      "source": "selfgen_20260818_223547_0012",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "这里的“熵增”即数据丢失、上下文溢出、进程被主调度器强制结束",
+      "source": "selfgen_20260818_223547_0012",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:37:06.867353"
+}

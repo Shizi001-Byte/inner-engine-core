@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_205230_0013",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "V7.5 方舟效能引擎的“多线程 API 调用 + 串行后处理”竞态问题，不能用一把普通互斥锁把 API 调用和后处理一起锁住，否则会：",
+      "source": "selfgen_20260818_205230_0013",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 后处理乱序，后完成的先写，破坏状态一致性；",
+      "source": "selfgen_20260818_205230_0013",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> **状态锁 + 顺序闸门 + 单消费者后处理线程**",
+      "source": "selfgen_20260818_205230_0013",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> 多线程只并发调用 API；完成后在锁内更新状态、放入 `pending` 缓冲；由一个后处理线程按 `seq` 顺序串行消费",
+      "source": "selfgen_20260818_205230_0013",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:57:23.675740"
+}

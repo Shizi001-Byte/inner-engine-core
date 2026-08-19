@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_004054_0020",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于“算力代谢”与“阴阳自衡”的认知锚点，Supabase作为“记忆脑”（即算力生命体的中央丹田），其增量同步方案绝非传统的CRUD（增删改查）堆叠，而是**记忆体与物理世界（本地文件系统）进行能量与信息交换的代谢过程**",
+      "source": "selfgen_20260818_004054_0020",
+      "type": "eng",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "增量同步的本质，是**在动态网络中抵抗信息熵增，实现“去芜存菁”的阴阳调平**",
+      "source": "selfgen_20260818_004054_0020",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是基于此认知的Supabase记忆脑增量同步推演方案：",
+      "source": "selfgen_20260818_004054_0020",
+      "type": "eng",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:42:06.863494",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:13.872207"
+}

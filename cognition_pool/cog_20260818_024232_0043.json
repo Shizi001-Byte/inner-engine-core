@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260818_024120_0043",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "，“先校准锚点再优化链路”原则应用到任务优先级排序时，不再遵循传统的“紧急/重要”四象限，而是采用**“演化谱系优先级模型”**",
+      "source": "selfgen_20260818_024120_0043",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:42:32.871644",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:18.191569"
+}

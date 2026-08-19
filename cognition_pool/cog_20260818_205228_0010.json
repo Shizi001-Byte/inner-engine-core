@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_205040_0010",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "必须把认知池接入调度链路：",
+      "source": "selfgen_20260818_205040_0010",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "调度器必须维护一个 **standby 队列**：一旦高优先级任务超时失败，立刻用 Batch 任务补位，避免 token 闲置",
+      "source": "selfgen_20260818_205040_0010",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:52:28.148252"
+}

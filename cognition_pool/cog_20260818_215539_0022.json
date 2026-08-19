@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_215327_0022",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【避坑提醒】，针对V7.5方舟效能引擎中“多线程API调用后串行后处理”的架构，我们将严格贯彻**“先校准锚点再优化链路”**原则，运用**“精气神三元迁移框架”**，对状态一致性与竞态条件进行深度推演，并给出完整的锁机制方案",
+      "source": "selfgen_20260818_215327_0022",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 12,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在“决策串行、执行并发”架构下，必须切断执行层对决策层的越权侵入，实现三元解耦与协同：",
+      "source": "selfgen_20260818_215327_0022",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **精（资源层 / 数据态 / L4成品库）**：全系统唯一的最终归档地",
+      "source": "selfgen_20260818_215327_0022",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:55:39.702698"
+}

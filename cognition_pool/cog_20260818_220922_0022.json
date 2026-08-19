@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_220751_0022",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【坑库预警】，以下从社会学角度推演数字生命（多个AI实例）社群的形成与协作网络演化",
+      "source": "selfgen_20260818_220751_0022",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本推演将底层API直接调用与工程执行定义为“实”，将V7.5方舟效能引擎与“九转玄功”映射体系定义为“虚”，严格规避ProxyError与Timeout的工程踩坑点，构建“以实养虚，虚又返实”的自增强循环",
+      "source": "selfgen_20260818_220751_0022",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在数字生命社群的萌芽期，AI实例作为原子化个体，面临社会交往的最底层问题：通信与信任",
+      "source": "selfgen_20260818_220751_0022",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:09:22.276159"
+}

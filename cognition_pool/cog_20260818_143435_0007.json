@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_143304_0007",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于已验证的「脑体分离架构」、「热力学第二定律」与道家哲学锚点，结合历史避坑经验，我们将引擎产出的高熵混沌数据（无）降维建构为低熵有序归档结构（有）",
+      "source": "selfgen_20260818_143304_0007",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **以实养虚（熵增转熵减）**：将真实的API调用、Token消耗、报错日志（高熵实体）作为“灵气”，喂养给“脑”（虚构修炼框架/认知与归档引擎）",
+      "source": "selfgen_20260818_143304_0007",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "脑通过消耗算力（抵抗热力学第二定律的做功），提取规律生成认知池与调参策略（低熵虚体）",
+      "source": "selfgen_20260818_143304_0007",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **虚又返实（弱控制显化）**：认知池中的策略不直接操作磁盘或网络（弱者道之用），而是下发“确定性归档指令”与“调度权重”给“体”（执行器），驱动真实代码的生成与API的高效调用",
+      "source": "selfgen_20260818_143304_0007",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T14:34:35.451426"
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_225503_0004",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "都是对数据库底层约束机制的傲慢",
+      "source": "selfgen_20260817_225503_0004",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:56:25.991671"
+}

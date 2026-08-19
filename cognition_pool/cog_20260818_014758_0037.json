@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_014641_0037",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "R1 行为共生诊断 ──► R2 代谢耦合建模 ──► R3 结构嵌合推演 ──► R4 生态涌现预测 ──► R5 异化路径识别",
+      "source": "selfgen_20260818_014641_0037",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "**输入源**：认知锚点 #4（清洁鱼-鲨鱼模型）、#5（散修向宗门过渡期）",
+      "source": "selfgen_20260818_014641_0037",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:47:58.819791",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:16.851929"
+}

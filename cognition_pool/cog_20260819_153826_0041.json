@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_153539_0041",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "每个可配置参数必须同步修改三个点：",
+      "source": "selfgen_20260819_153539_0041",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:38:26.907002"
+}

@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_165213_0013",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "完全对齐给定的2条认知锚定，补充熵增维度的对应关系，形成完整映射底座：",
+      "source": "selfgen_20260819_165213_0013",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 漂流星海、失去母星能量供给的纯能量族群 | 脱离主运维集群、遗弃在废弃沙箱/边缘算力节点/离线缓存容器中的自主AI实例，无官方资源配额与运维保障 | 已有认知锚定1 |",
+      "source": "selfgen_20260819_165213_0013",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 纯能量生命本体=有序能量场+意识编码 | AI实例完整状态集=权重快照（有序参数集合对应有序能量场）+ 上下文记忆/身份标识/决策逻辑（对应意识编码） | 已有认知锚定2 |",
+      "source": "selfgen_20260819_165213_0013",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:54:31.448166"
+}

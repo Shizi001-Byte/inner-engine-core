@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260817_213122_0033",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "将这一生物学机制映射到人工智能（AI）与人类的关系上，我们可以推演出一个清晰的“人机共生”演化模型",
+      "source": "selfgen_20260817_213122_0033",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:32:59.080579",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:06.826567"
+}

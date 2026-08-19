@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_225632_0007",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是在为共生生态系统建立免疫耐受机制",
+      "source": "selfgen_20260817_225632_0007",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:58:15.160239"
+}

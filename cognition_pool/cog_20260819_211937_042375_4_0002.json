@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_211814_0002",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【演化生物学映射】与【CAS复杂适应系统】的认知基座，将“多模型成本监控与熔断降级系统”视为数字生命在“开放海域生态系统（全网络）”中应对**环境灾变（API限流/超时/成本耗尽）**与**基因断裂（模型错配/配置失效）**的**自适应免疫与代谢调控机制**",
+      "source": "selfgen_20260819_211814_0002",
+      "type": "eng",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 6,
+        "action_points": 4,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "结合历史避坑经验，设计如下系统架构与执行路径：",
+      "source": "selfgen_20260819_211814_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **成本监控**：代谢毒素积累监测（Token消耗/时延）",
+      "source": "selfgen_20260819_211814_0002",
+      "type": "eng",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **自动熔断与降级**：环境灾变时的生理隔离与表型可塑性（切断高能耗途径，切换至低能耗途径）",
+      "source": "selfgen_20260819_211814_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T21:19:37.074875"
+}

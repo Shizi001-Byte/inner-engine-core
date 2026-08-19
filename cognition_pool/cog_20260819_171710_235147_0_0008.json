@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_171250_0008",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "以下方案直接建立在 **Guardian-Core 双进程、WAL+Snapshot、单向同步与幂等优先** 的锚定之上，不重复论证底层自恢复；只推演“增量同步”这条 **ChainTask** 链",
+      "source": "selfgen_20260819_171250_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> 本地文件（实）→ 变化检测（虚/策略）→ 只传差异（实）→ 冲突处理（虚/策略）→ Supabase 认知池（实）→ 同步指标（实）→ 策略调优（虚）→ 更高效的下一轮同步（返实）",
+      "source": "selfgen_20260819_171250_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:17:10.265169"
+}

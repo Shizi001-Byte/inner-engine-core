@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_224806_0001",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "**【前置锚定】** 本系统为引擎核心调度模块内生子功能，无外部守护进程、无第三方服务依赖，完全贴合「实层锚点属性强化、虚层动态能力拓展、虚实循环稳定性提升」的架构要求，遵循「以实养虚、虚又返实」的有无相生逻辑，所有修炼概念均严格匹配给定实层映射，无自定义扩展",
+      "source": "selfgen_20260818_224806_0001",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 7,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "所有归档规则、标签体系、目录结构的配置采用**「存储-读取同源绑定+变更即验证」**机制：",
+      "source": "selfgen_20260818_224806_0001",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 配置读取直接基于引擎内存快照，修改入口与快照更新逻辑原子绑定，不存在“改了存储但没更新读取点”的断层；",
+      "source": "selfgen_20260818_224806_0001",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 任何配置修改后，自动触发1条标注过的历史典型任务跑全链路归档流程，10秒内返回「分类结果、标签结果、存储路径」的验证报告，确认生效后再正式启用新配置，从流程上杜绝“改后无变化”问题",
+      "source": "selfgen_20260818_224806_0001",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 4,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "所有涉及模型推理的环节（语义分类、语义标签生成）严格按模型类型预设超时阈值：",
+      "source": "selfgen_20260818_224806_0001",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:50:04.034405"
+}

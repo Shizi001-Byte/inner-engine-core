@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_030710_0002",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "是热力学自由能的消耗过程",
+      "source": "selfgen_20260818_030710_0002",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:08:24.749921"
+}

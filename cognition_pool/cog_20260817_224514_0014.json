@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_224407_0014",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "以下是关于这一原则的系统性梳理，以及引擎优化为何绝不能破坏“脑体分离”架构的深度解析，并附带3个应用场景",
+      "source": "selfgen_20260817_224407_0014",
+      "type": "cog",
+      "density": 0.48,
+      "density_grade": "B"
+    },
+    {
+      "text": "1. **决策串行（脑：控制平面）**",
+      "source": "selfgen_20260817_224407_0014",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:45:14.729296",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:09.258790"
+}

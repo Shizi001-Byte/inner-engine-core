@@ -1,0 +1,88 @@
+{
+  "task_id": "selfgen_20260819_222411_0006",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于您提供的【避坑提醒】、【坑库预警】及【已有认知锚定】框架，我将直接推演并设计这套**Gitee-飞书-Supabase三方同步自动化引擎**",
+      "source": "selfgen_20260819_222411_0006",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "设计将严格围绕「研发全链路综合经济价值最大化」目标，并内置防御与效率双重价值锚点",
+      "source": "selfgen_20260819_222411_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "为防止“配置不生效”和“API超时”，引擎启动前必须遵循以下基座设计：",
+      "source": "selfgen_20260819_222411_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **配置中心与即时验证机制（避坑1）**",
+      "source": "selfgen_20260819_222411_0006",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]- **设计**：所有配置（Webhook Secret、API Token、Bucket路径）统一存入Supabase的`engine_config`表",
+      "source": "selfgen_20260819_222411_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    }
+  ],
+  "extracted_at": "2026-08-19T22:25:47.018832"
+}

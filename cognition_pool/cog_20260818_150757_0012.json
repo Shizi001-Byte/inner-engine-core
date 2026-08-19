@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_150739_0012",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "引擎优化应聚焦于“让执行更快更稳”，而不是试图把决策也“并发化”或“本地化”，否则会重蹈“单线死局”——所有任务挤在一条逻辑里，互相阻塞",
+      "source": "selfgen_20260818_150739_0012",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:07:57.126738"
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_221621_0014",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "这是一个极具赛博朋克与东方修仙哲学交融意味的系统架构设计",
+      "source": "selfgen_20260817_221621_0014",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是对“以实养虚，虚又返实”自增强闭环的推演、指标设计与验证方法",
+      "source": "selfgen_20260817_221621_0014",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:17:42.506383",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:07.467605"
+}

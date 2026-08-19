@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_220438_0014",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】的V7.5方舟效能引擎架构与“九转玄功”映射体系，结合“看错项目ID导致1小时排查”的惨痛教训，我们将**“先校准锚点再优化链路”**原则提炼并深度应用到任务优先级排序中",
+      "source": "selfgen_20260818_220438_0014",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 7,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "这一原则的核心要义是：**“错误的任务执行得再快，也是零产出甚至负产出（如浪费1小时排查）；必须先确保目标正确（锚点），再去追求路径的高效（链路）",
+      "source": "selfgen_20260818_220438_0014",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **事故本质**：项目ID错误属于“锚点失效”",
+      "source": "selfgen_20260818_220438_0014",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在锚点错误的情况下，直接进入执行链路，导致后续所有运算和资源调配全部建立在海市蜃楼之上，最终触发1小时的异常排查（链路崩溃）",
+      "source": "selfgen_20260818_220438_0014",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:05:45.665512"
+}

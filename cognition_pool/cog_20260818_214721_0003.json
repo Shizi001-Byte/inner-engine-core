@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_214558_0003",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于“先校准锚点再优化链路”原则，看错项目ID导致1小时排查的教训，其本质是**“精”（底层实体/标识）的锚点发生偏移，却试图在“气”（排查链路）上找原因**",
+      "source": "selfgen_20260818_214558_0003",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在错误的锚点上优化链路，流转越快，偏离越远",
+      "source": "selfgen_20260818_214558_0003",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**“优先级排序的本质是链路（气）的编排，而排序的前提是锚点（精）的绝对校准",
+      "source": "selfgen_20260818_214558_0003",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在未校准任务的真实属性与约束前，任何优先级排序都是无效甚至有害的",
+      "source": "selfgen_20260818_214558_0003",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:47:21.218244"
+}

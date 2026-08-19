@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_190252_0033",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于历史避坑经验和已有认知锚定，设计面向「生态型/轻边际成本供给主体」的多模型成本实时监控与自动熔断系统",
+      "source": "selfgen_20260819_190252_0033",
+      "type": "eng",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "本设计严格遵循“省时间防超时、保进化防空转”的核心原则，将API调用视为系统与外界的热量交换，通过熔断机制对抗系统熵增（任务积压与同质化耗散）",
+      "source": "selfgen_20260819_190252_0033",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "为根除历史踩坑经验中的工程级隐患，系统底座配置强制实行以下规则：",
+      "source": "selfgen_20260819_190252_0033",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **模型身份与超时强制校验（避坑提醒2、坑库预警1）**",
+      "source": "selfgen_20260819_190252_0033",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "* **准确model_id映射**：接入新模型前，强制从官方文档拉取全量`model_id`",
+      "source": "selfgen_20260819_190252_0033",
+      "type": "eng",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T19:04:11.744158"
+}

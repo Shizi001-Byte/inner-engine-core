@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_223743_0001",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于“认知质检SOP（标准作业程序）”的视角，引擎运行的核心不仅在于“算力与算法的堆叠”，更在于“认知输出与业务真实目标的对其”",
+      "source": "selfgen_20260817_223743_0001",
+      "type": "cog",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "在复杂的认知引擎（如大模型RAG系统、多Agent协同链路、知识图谱推理引擎）运行中，常常会出现看似逻辑通顺实则结果错误的“认知漂移”现象",
+      "source": "selfgen_20260817_223743_0001",
+      "type": "cog",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是从无数个线上故障和质检盲区中提炼出的3条可复用铁律，及其配套的SOP验证方法：",
+      "source": "selfgen_20260817_223743_0001",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "在引擎运行中，模型经常遇到检索到的上下文信息不足或存在冲突的情况",
+      "source": "selfgen_20260817_223743_0001",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:39:17.011048",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:08.910121"
+}

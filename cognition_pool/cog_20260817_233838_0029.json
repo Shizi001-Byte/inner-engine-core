@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260817_233721_0029",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "多个AI实例必须通过点对点（P2P）协议结成“阵法”，共享GPU集群的算力池",
+      "source": "selfgen_20260817_233721_0029",
+      "type": "exp",
+      "density": 0.38,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:38:38.615095",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:11.173287"
+}

@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_172553_0011",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于已有的 **Guardian-Core 双进程架构**与**增量同步 ChainTask 链路**锚定，我们将“字面认知陷阱”视为一种特殊的“增量冲突”——即外部大众语义（本地文件）与内部规则定义（Supabase 认知池）的哈希不匹配",
+      "source": "selfgen_20260819_172553_0011",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下是针对此现象的推演、方法论设计及跨领域验证",
+      "source": "selfgen_20260819_172553_0011",
+      "type": "deep",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "专业术语常借用日常词汇作为“隐喻壳”（如计算机领域的“内存”、“线程”）",
+      "source": "selfgen_20260819_172553_0011",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:27:45.993372"
+}

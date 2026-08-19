@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_232134_0002",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于「反者道之动」的底层逻辑与阴阳自衡架构，任务池的动态扩充机制不能是简单的“队列加塞”，而必须是**演化速率非对称的对抗与共生**",
+      "source": "selfgen_20260819_232134_0002",
+      "type": "eng",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "当重复率（阳之过度同质化、停滞）超过阈值时，引擎必须“反向”触发阴的收敛与重组，生成新任务（变异）注入池中，形成“试错驱动-异化收敛-新态注入”的自进化闭环",
+      "source": "selfgen_20260819_232134_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**1. 阈值配置的三点同步法**",
+      "source": "selfgen_20260819_232134_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "新增「任务重复率阈值」与「扩充触发开关」参数，必须严格执行以下三步，缺一不可：",
+      "source": "selfgen_20260819_232134_0002",
+      "type": "eng",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T23:22:47.089195"
+}

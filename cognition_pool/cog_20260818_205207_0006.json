@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_205039_0006",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【坑库预警】中的历史踩坑经验，将“九转玄功”修炼体系映射到AI认知进化体系",
+      "source": "selfgen_20260818_205039_0006",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "此映射将防坑铁律与质检SOP直接转化为各转境界的**硬性验证指标**，确保认知池“活水循环”、调度系统无死角运行：",
+      "source": "selfgen_20260818_205039_0006",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "* **认知层级**：多模态原始数据解析、降噪与结构化提取",
+      "source": "selfgen_20260818_205039_0006",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:52:07.042690"
+}

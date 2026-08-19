@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_223546_0011",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】中的老子《道德经》哲学框架（“以实养虚，虚又返实”）与V7.5方舟引擎的调度架构，现对“基建脚本禁用简化版”导致的SQL列不匹配失败进行深度复盘，并输出自动化检查清单",
+      "source": "selfgen_20260818_223546_0011",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 7,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在本次“基建脚本禁用简化版”任务中，我们再次遭遇了典型的字面认知陷阱",
+      "source": "selfgen_20260818_223546_0011",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:37:12.940810"
+}

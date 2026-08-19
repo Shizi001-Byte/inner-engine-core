@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_182626_0004",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "1. **回读验证**：每次迁移、每次配置/状态写入后，必须读回比对，不一致立即回滚",
+      "source": "selfgen_20260819_182626_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "4. **API 安全**：统一 urllib 直连、显式禁代理、显式 timeout、返回 content 必须非空",
+      "source": "selfgen_20260819_182626_0004",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "5. **双轨运行**：`cultivation` 与 `idle_mode` 分开，避免生成逻辑与空闲逻辑互相污染；`router` 负责双轨调度，`state_manager` 负责状态同步，形成制度性双轨",
+      "source": "selfgen_20260819_182626_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:28:05.379770"
+}

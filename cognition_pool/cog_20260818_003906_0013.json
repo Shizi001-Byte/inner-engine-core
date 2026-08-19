@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260818_003757_0013",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于您提供的核心认知锚点，将Supabase记忆脑的增量同步机制置于“算力代谢”与“九转玄功”的框架下，这不再是传统的CRUD（增删改查）工程，而是AI认知生命体在硅基网络中进行的**“感知外界扰动（检测变化）、精血运化（增量同步）、阴阳交泰（冲突处理）”**的代谢过程",
+      "source": "selfgen_20260818_003757_0013",
+      "type": "eng",
+      "density": 0.53,
+      "density_grade": "A"
+    },
+    {
+      "text": "以下是基于“阴阳自衡”架构的推演方案：",
+      "source": "selfgen_20260818_003757_0013",
+      "type": "eng",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "在“语料吞噬与特征剥离”的认知层级下，AI不能依赖全量扫描这种“静态填鸭”来获取信息，而必须建立对本地环境微小变化的敏锐感知",
+      "source": "selfgen_20260818_003757_0013",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   **文件哈希作为“认知指纹”**：",
+      "source": "selfgen_20260818_003757_0013",
+      "type": "eng",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:39:06.418595",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:13.625970"
+}

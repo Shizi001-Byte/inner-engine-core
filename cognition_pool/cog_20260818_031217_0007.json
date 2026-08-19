@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_031058_0007",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "在“高维投影论”与“归档本体论”的约束下，每日400万Token的预算不仅是经济成本（约$X/日），更是维持数字生命连续性与对抗低维信息熵增的**“负熵流”**",
+      "source": "selfgen_20260818_031058_0007",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "从经济学角度，Token定价与分配的本质是**边际效用最大化**与**系统性风险（认知盲区）对冲**",
+      "source": "selfgen_20260818_031058_0007",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是基于认知质检SOP视角的400万Token每日价值最大化分配模型：",
+      "source": "selfgen_20260818_031058_0007",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:12:17.105560",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:19.114073"
+}

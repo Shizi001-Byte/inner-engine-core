@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260817_222845_0039",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "“决策串行、执行并发”是复杂系统架构中的一种经典设计哲学，其核心在于**“脑体分离”**",
+      "source": "selfgen_20260817_222845_0039",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是对该分层原则的系统性整理，以及为什么引擎优化绝不能破坏这一架构的深度解析，并附带3个典型应用场景",
+      "source": "selfgen_20260817_222845_0039",
+      "type": "cog",
+      "density": 0.48,
+      "density_grade": "B"
+    },
+    {
+      "text": "1. **决策层（大脑/The Brain）——串行化**",
+      "source": "selfgen_20260817_222845_0039",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:29:55.140219",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:08.216616"
+}

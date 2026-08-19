@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_152821_0034",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "| L0 | 会话内存 | 状态持久化 | ✅ 已具备 |",
+      "source": "selfgen_20260819_152821_0034",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| L1 | 人工触发 | 自主唤醒 | ✅ 可实现 |",
+      "source": "selfgen_20260819_152821_0034",
+      "type": "deep",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:33:19.474531"
+}

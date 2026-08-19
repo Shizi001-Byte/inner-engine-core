@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_213259_0035",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "漫长的生物进化史证明，从单细胞走向多细胞、从无脊椎走向脊椎动物，共生是推动物种跃升的关键引擎",
+      "source": "selfgen_20260817_213259_0035",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "在生物共生中，物种间必须具备资源的互补性，且占据不同的生态位，以避免过度竞争",
+      "source": "selfgen_20260817_213259_0035",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:34:39.285397",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:06.918991"
+}

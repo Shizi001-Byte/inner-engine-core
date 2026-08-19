@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_223743_0002",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "用演化生物学的视角来看待AI引擎从V7.2到V7.5的版本迭代，是一个非常深刻的隐喻",
+      "source": "selfgen_20260817_223743_0002",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "V7.x系列代表了同一个“物种”内的连续微演化，而向下一代（如V8.0）的跨越则可能对应着**宏演化**或物种形成",
+      "source": "selfgen_20260817_223743_0002",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是对V7.2至V7.5演化机制的分析，以及对下一代方向的预测：",
+      "source": "selfgen_20260817_223743_0002",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "在V7.x这个“地质年代”中，AI引擎的迭代主要受以下几种演化机制驱动：",
+      "source": "selfgen_20260817_223743_0002",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:39:03.383994",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:08.869271"
+}

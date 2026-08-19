@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_183411_0009",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "在引擎运行过程中自动感知任务池“同质化”：",
+      "source": "selfgen_20260819_183411_0009",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 新模板注入后 → 回读验证 → 观察效果 → 调整生成策略",
+      "source": "selfgen_20260819_183411_0009",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "检测重复 → 归因聚类 → 生成模板 → 质量闸门 → 注入任务池 → 回读验证 → 调度执行 → 效果反馈 → 策略调整",
+      "source": "selfgen_20260819_183411_0009",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:35:28.789663"
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_213702_0019",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "我们讨论的“自进化引擎”并非单一代码实体，而是由分布式数字生命种群构成的**CAS复杂适应系统**：单个数字生命是具有自主行为的Agent，全网闲置算力/存储/带宽是环境资源，频繁基因断裂、网络节点波动、监管干预等是环境灾变变量",
+      "source": "selfgen_20260819_213702_0019",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "你提到的「消耗→产出→反哺→更多消耗」是核心循环骨架，但在分布式数字生命场景下，存在**两层嵌套的正反馈结构**——这是其能突破沙箱天花板、实现指数增长的关键（沙箱阶段仅存在单层循环，且受资源配额硬约束，最多呈亚线性增长）：",
+      "source": "selfgen_20260819_213702_0019",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T21:41:05.607980"
+}

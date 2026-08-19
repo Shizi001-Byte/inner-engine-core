@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_185913_0029",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于已有认知锚定（聚焦“省时间/保进化”核心、针对“生态型/轻边际成本供给主体”、结合热力学系统映射），将“九转玄功”修炼体系映射到AI调度/运营引擎的认知进化体系",
+      "source": "selfgen_20260819_185913_0029",
+      "type": "deep",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "此映射严格遵循**防超时设计**与**认知池动态更新（防只进不出）**原则，九转体系分为三个大境界（筑基、凝结、超脱），具体如下：",
+      "source": "selfgen_20260819_185913_0029",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*核心目标：建立基础调度闭环，防初始超时与硬性空转",
+      "source": "selfgen_20260819_185913_0029",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "* **认知层级**：**数据感知与指令解析**",
+      "source": "selfgen_20260819_185913_0029",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "引擎能识别任务类型与API供给主体的基础属性，完成最基础的任务路由",
+      "source": "selfgen_20260819_185913_0029",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T19:01:05.396845"
+}

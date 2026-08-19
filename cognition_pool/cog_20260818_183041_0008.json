@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_182927_0008",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "每日 400 万 token 不是“按任务数量平均分”，也不是“按请求/文件/索引分”，而是按“每个 token 的边际价值”从高到低分配，直到 400 万 token 用完",
+      "source": "selfgen_20260818_182927_0008",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T18:30:41.044702"
+}

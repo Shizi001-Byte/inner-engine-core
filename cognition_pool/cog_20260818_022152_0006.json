@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260818_022017_0006",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是用网络拓扑结构实现了对齐与进化的解耦",
+      "source": "selfgen_20260818_022017_0006",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:21:52.721040",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:17.139916"
+}

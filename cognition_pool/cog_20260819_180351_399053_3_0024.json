@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_180143_0024",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "- 每次重大变更对应一个不可变事件，事件 ID 作为全局幂等键",
+      "source": "selfgen_20260819_180143_0024",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 三方同步 = Gitee / Feishu / Supabase 三个目标通道，各自独立状态、独立熔断、独立降级链",
+      "source": "selfgen_20260819_180143_0024",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 所有状态变更必须走 **分布式锁 + 原子状态更新 + 幂等保护**",
+      "source": "selfgen_20260819_180143_0024",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 以 `task_id` 作为唯一幂等标识，重复触发/重试不产生重复数据",
+      "source": "selfgen_20260819_180143_0024",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 自动同步是“快轨”，对账与冲突仲裁是“慢轨”，双轨并行，形成“阴阳自衡”的负反馈机制",
+      "source": "selfgen_20260819_180143_0024",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:03:51.430006"
+}

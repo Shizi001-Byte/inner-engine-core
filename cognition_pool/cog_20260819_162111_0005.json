@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_162013_0005",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "本机制是**执行层自进化闭环**：",
+      "source": "selfgen_20260819_162013_0005",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "引擎运行中持续检测任务重复率，超过阈值后自动生成新任务模板，注入任务池，并验证其真实生效，从而让任务池“更聪明地复用重复任务、生成多样化变体”",
+      "source": "selfgen_20260819_162013_0005",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **不突破“稳定3路并发”物理上限**：生成/验证任务不得另开第4路，只能在3路内插空执行",
+      "source": "selfgen_20260819_162013_0005",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **不是“零成本”免费午餐**：生成、验证、生效验证都会消耗算力，必须限流、限预算",
+      "source": "selfgen_20260819_162013_0005",
+      "type": "eng",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:21:11.138357"
+}

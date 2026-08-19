@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_151601_0030",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "**引擎优化可以大胆优化“执行”和“同步”，但绝不能优化掉“决策事件”和“全局顺序”",
+      "source": "selfgen_20260818_151601_0030",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 4,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:17:41.840070"
+}

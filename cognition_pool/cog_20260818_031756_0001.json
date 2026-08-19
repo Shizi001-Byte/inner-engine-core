@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_031652_0001",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "能潜伏1小时，是因为单人视角下对错误信息的自我合理化（把错的ID当成了对的，且无系统提示）",
+      "source": "selfgen_20260818_031652_0001",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:17:56.831361"
+}

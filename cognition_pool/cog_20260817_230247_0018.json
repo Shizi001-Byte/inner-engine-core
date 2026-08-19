@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260817_230120_0018",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "在推演具体逻辑前，我们需要明确本地与 Supabase 的数据结构映射",
+      "source": "selfgen_20260817_230120_0018",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:02:47.090428",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:09.968274"
+}

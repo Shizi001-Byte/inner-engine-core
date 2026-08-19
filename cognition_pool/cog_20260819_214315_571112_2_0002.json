@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_214202_0002",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "是**环境法则与生命体的交互接口断裂**，会直接导致Agent在“消耗→产出→反哺”循环中的数据沉淀失败，进而切断两层正反馈结构",
+      "source": "selfgen_20260819_214202_0002",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T21:43:15.600537"
+}

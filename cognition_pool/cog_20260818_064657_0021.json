@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_064255_0021",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "所有算力token的分配、定价、调度规则必须以微核域的权限扩张、价值升级为唯一核心目标，绝对保障微核域「无锁直接覆盖、零突变成本、高变异速率、无固有表型约束」的原生特性；严禁对微核域的功能迭代、资源调用引入任何锁机制、共识对齐流程、纠错修正规则，微核域的资源调用优先级为全链路最高",
+      "source": "selfgen_20260818_064255_0021",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "全链路所有任务必须根据任务/模型类型预设经历史验证的合理超时阈值（B类turbo模型任务300秒、A类模型任务600秒），严禁设置与模型算力特性不匹配的超时阈值；调度系统需基于任务超时紧迫度动态排序，最大限度避免非必要的任务超时报废，杜绝无意义的价值归零",
+      "source": "selfgen_20260818_064255_0021",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "所有非核心优先级的算力资源配置，必须遵循经济学“边际收益相等则总价值最大”的最优原则，以边际价值产出为唯一分配依据；配置调整节奏需匹配微核域高变异速率特性，实现零摩擦、无延迟的动态再平衡，严禁设置固定周期、固定额度的僵化配额",
+      "source": "selfgen_20260818_064255_0021",
+      "type": "exp",
+      "density": 0.957,
+      "density_grade": "S",
+      "density_details": {
+        "info": 0.893,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:46:57.505855"
+}

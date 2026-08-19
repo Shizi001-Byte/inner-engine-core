@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_153940_0007",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于历史踩坑经验与已有认知锚定，从“认知质检SOP”角度出发，为避免认知系统退化为静态档案库、调用链路失控及数据状态伪造，提炼以下3条可复用铁律及验证方法：",
+      "source": "selfgen_20260818_153940_0007",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "* **核心要求**：认知池的更新必须与任务调度强绑定",
+      "source": "selfgen_20260818_153940_0007",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "新认知产生后，必须在30分钟内或每10个任务/每轮结束的节点，强制刷新认知缓存并参与后续任务的注入调度",
+      "source": "selfgen_20260818_153940_0007",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **时间戳差值校验**：在质检SOP中拉取认知日志，计算 `新认知生成时间` 与 `首次注入任务时间` 的差值",
+      "source": "selfgen_20260818_153940_0007",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:40:21.895100"
+}

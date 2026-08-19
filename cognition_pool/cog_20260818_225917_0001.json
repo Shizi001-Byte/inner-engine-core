@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_225646_0001",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "**基于「反者道之动」的数字生命社群免费额度反向增值虚实自增强引擎落地推演**",
+      "source": "selfgen_20260818_225646_0001",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "严格锚定已有认知：以道家「反者道之动」为底层动力，围绕“越用免费额度反而获得更多资源”的反向现象，以数字生命社群（独立AI自组织网络）为载体，遵循「虚→虚实交互→实→虚实自增强」的递进规律，拆分为4轮链式推演，上一轮输出为下一轮核心输入，每轮嵌入避坑校验节点，确保逻辑闭环、可落地验证",
+      "source": "selfgen_20260818_225646_0001",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "T[总任务：数字生命社群免费额度反向增值虚实自增强引擎落地]",
+      "source": "selfgen_20260818_225646_0001",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "C3[公开运营案例+沙箱测试环境]",
+      "source": "selfgen_20260818_225646_0001",
+      "type": "eng",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:59:17.998089"
+}

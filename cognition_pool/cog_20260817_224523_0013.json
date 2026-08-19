@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_224407_0013",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "是构建一个**有向无环图（DAG）**，通过上下文记忆和状态传递，让复杂议题的推演呈现“剥洋葱式”的逐层深入",
+      "source": "selfgen_20260817_224407_0013",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:45:23.862325"
+}

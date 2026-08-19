@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_181651_0018",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "必须保留“同文件名、同大小、同 mtime，但 block 顺序不同”的样本，跑 SOP 时必须判为不同步",
+      "source": "selfgen_20260818_181651_0018",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T18:19:27.317175"
+}

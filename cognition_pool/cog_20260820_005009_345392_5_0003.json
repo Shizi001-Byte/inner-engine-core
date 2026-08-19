@@ -1,0 +1,88 @@
+{
+  "task_id": "selfgen_20260820_004735_0003",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "在进入代码前，先厘清三个\"看似冲突\"的约束如何调和：",
+      "source": "selfgen_20260820_004735_0003",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 硬约束 | 字面限制 | 引擎层允许做什么 |",
+      "source": "selfgen_20260820_004735_0003",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 无记忆修改（节点重启后无持久索引） | 节点不持久文件树/时间戳 | **引擎可持久操作日志（WAL）**，因为日志是事务意图而非节点状态 |",
+      "source": "selfgen_20260820_004735_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]| 恢复时不能遍历所有节点状态 | 不允许全量扫描 | 仅按 **LSN 指针** 读取 WAL 段，回放未提交事务 |",
+      "source": "selfgen_20260820_004735_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    },
+    {
+      "text": "| 不依赖外部守护进程 | 不靠 systemd/supervisor | 心跳是引擎 **内部 goroutine**，崩溃检测看心跳文件时间戳 |",
+      "source": "selfgen_20260820_004735_0003",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-20T00:50:09.379540"
+}

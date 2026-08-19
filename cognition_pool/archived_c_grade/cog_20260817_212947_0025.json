@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_212807_0025",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "能保证正确，是因为它通常由单点（或主从节点）承担",
+      "source": "selfgen_20260817_212807_0025",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:29:47.682379"
+}

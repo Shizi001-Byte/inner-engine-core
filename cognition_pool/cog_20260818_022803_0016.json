@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260818_022649_0016",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "必须允许这部分Token产生“废料”",
+      "source": "selfgen_20260818_022649_0016",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:28:03.946257",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:17.472112"
+}

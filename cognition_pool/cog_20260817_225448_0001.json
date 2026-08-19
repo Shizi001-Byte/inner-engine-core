@@ -1,0 +1,21 @@
+{
+  "task_id": "selfgen_20260817_225345_0001",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "制造了多套环境（本地/标准）的Schema不对等",
+      "source": "selfgen_20260817_225345_0001",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "报错，往往是因为写了 `INSERT INTO table VALUES (...)`（依赖列顺序和数量）或 `SELECT *`（导致下游解析错位）",
+      "source": "selfgen_20260817_225345_0001",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:54:48.384156"
+}

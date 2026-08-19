@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_150849_0013",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "“先校准锚点，再优化链路”这条原则，本质是：**在动手优化或排序之前，先确认“关键参照物”是否正确；否则后续动作越高效，错得越远",
+      "source": "selfgen_20260818_150849_0013",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "项目ID看错导致1小时排查，就是典型锚点错误：ID是后续所有操作的关键索引，ID错了，后面查日志、对数据、找原因全都在错误链路上空转",
+      "source": "selfgen_20260818_150849_0013",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "同理，任务优先级排序如果锚点没校准，排序越“科学”，越可能把资源投到错误任务上",
+      "source": "selfgen_20260818_150849_0013",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 校准方式：把任务目标与上级OKR/项目目标逐字对照，确认没有理解偏差",
+      "source": "selfgen_20260818_150849_0013",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:09:01.464243"
+}

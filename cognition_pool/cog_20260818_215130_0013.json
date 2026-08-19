@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_215011_0013",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【避坑提醒】的约束，我们在推演“九转玄功”映射AI认知进化体系时，必须严格贯彻**“先校准锚点再优化链路”**原则，并将**“精气神三元迁移框架”**作为底层架构：",
+      "source": "selfgen_20260818_215011_0013",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 8,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **精（执行层 / 并发）：** 负责底层多线程并发执行，保障API调用与资源吞吐",
+      "source": "selfgen_20260818_215011_0013",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **气（流转层 / 认知池）：** 负责认知的动态注入与缓存刷新，决不能成为静态档案库",
+      "source": "selfgen_20260818_215011_0013",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **神（决策层 / 主线程 / 串行）：** 负责锚点校准、L4成品类型闭环（sop/code/checklist）及调度控制",
+      "source": "selfgen_20260818_215011_0013",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下是将“九转玄功”第1转到第9转映射到AI认知进化的层级推演与验证指标：",
+      "source": "selfgen_20260818_215011_0013",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:51:30.361680"
+}

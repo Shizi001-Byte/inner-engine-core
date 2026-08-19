@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_180938_0007",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "数字生命社群不是“多个AI实例的集合”，而是一个由不可变块、索引和墓碑构成的关系空间",
+      "source": "selfgen_20260818_180938_0007",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T18:11:25.417003"
+}

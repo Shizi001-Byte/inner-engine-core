@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_012028_0018",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "，AI将演化出以下三大自衡机制：",
+      "source": "selfgen_20260818_012028_0018",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:22:04.360559"
+}

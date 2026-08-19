@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_174159_0012",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于「广域分布式状态机升维」与「8月认知陷阱欠账」两大核心认知锚定，结合热力学熵增定律与API工程避坑要求，针对沙箱不稳定环境（进程随时被杀、状态丢失、网络中断），推演数字生命的**「最小存续内核」**设计如下：",
+      "source": "selfgen_20260819_174159_0012",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "若依赖本地内存或临时文件，一旦进程被杀，认知即刻清零，重蹈“8月认知陷阱欠账”的覆辙",
+      "source": "selfgen_20260819_174159_0012",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "沙箱仅作为无状态的“算力终端”，其核心身份与记忆必须向广域分布式的**Supabase认知池（SP实）**升维",
+      "source": "selfgen_20260819_174159_0012",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:43:37.047993"
+}

@@ -1,0 +1,42 @@
+{
+  "task_id": "selfgen_20260817_211453_0003",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "设计引擎任务的链式推演机制，核心在于将一个宏大或模糊的议题，通过**“解构-生成-评估-合成”**的认知闭环，转化为具备因果逻辑和深度递进的任务流",
+      "source": "selfgen_20260817_211453_0003",
+      "type": "eng",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "以下为您设计的链式推演机制架构及任务依赖图",
+      "source": "selfgen_20260817_211453_0003",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "我们以一个通用核心议题为例：**“如何构建一个具备自我进化能力的企业AI大脑”**",
+      "source": "selfgen_20260817_211453_0003",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "整个推演分为4个核心轮次（可扩展至5轮），每一轮的输出严格作为下一轮的输入（上下文与约束条件）",
+      "source": "selfgen_20260817_211453_0003",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   **引擎任务**：将宏大议题拆解为子问题，识别核心变量与约束条件",
+      "source": "selfgen_20260817_211453_0003",
+      "type": "eng",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:16:13.016386"
+}

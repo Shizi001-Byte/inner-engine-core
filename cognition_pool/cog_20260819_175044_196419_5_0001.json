@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_174745_0001",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "**用户调用不是单纯消耗算力，而是为系统输入真实场景的状态跃迁样本，有效调用是推动系统升维的核心资产",
+      "source": "selfgen_20260819_174745_0001",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**认知反哺生成了调参建议，但并发/权重/冷却三项配置实际从未变化** — 这是必须避免的工程级失败",
+      "source": "selfgen_20260819_174745_0001",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "高可用需要至少2个引擎实例；互相发现、互相接管，不需要外部守护进程",
+      "source": "selfgen_20260819_174745_0001",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:50:44.231076"
+}

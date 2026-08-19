@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_215011_0014",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【避坑提醒】，针对L4成品转化缺陷及主线程断流问题，我们直接推演**“决策串行、执行并发”**的分层原则",
+      "source": "selfgen_20260818_215011_0014",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在多线程并发调用大模型API并由主线程串行后处理的架构中，**“脑”（决策层/主线程）**负责上下文校准、逻辑编排与L4成品的最终转化（如SOP/Code/Checklist的生成逻辑），而**“体”（执行层/工作线程）**仅负责纯粹的API调用与数据吞吐",
+      "source": "selfgen_20260818_215011_0014",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**引擎优化（如增加并发数、提升吞吐量）不能破坏脑体分离的核心原因在于：**",
+      "source": "selfgen_20260818_215011_0014",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **防止上下文断裂与状态污染：** 执行层若越权参与决策（如在工作线程内直接判断并转化L4格式），会导致上下文锚点错乱",
+      "source": "selfgen_20260818_215011_0014",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "引擎的并发优化会放大这种竞态条件，使得主线程在串行后处理时遭遇“断流”或数据结构不一致",
+      "source": "selfgen_20260818_215011_0014",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:51:22.693974"
+}

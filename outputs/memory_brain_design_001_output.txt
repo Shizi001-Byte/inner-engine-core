@@ -1,0 +1,141 @@
+```json
+{
+  "memory_brain_schema": {
+    "short_term_memory": {
+      "description": "短期记忆：存储近期交互上下文，高频读写，快速衰减",
+      "primary_key": "stm_id",
+      "fields": {
+        "stm_id": { "type": "string", "format": "uuid", "description": "主键" },
+        "user_id": { "type": "string", "index": true, "description": "用户唯一标识" },
+        "session_id": { "type": "string", "index": true, "description": "会话标识" },
+        "content": { "type": "text", "description": "记忆文本内容" },
+        "embedding": { "type": "vector", "dimension": 1536, "description": "语义向量" },
+        "timestamp": { "type": "timestamp", "index": true, "description": "记忆创建时间" },
+        "access_count": { "type": "integer", "default": 0, "description": "访问次数" },
+        "importance_score": { "type": "float", "default": 0.1, "index": true, "description": "重要性评分(0.0-1.0)" }
+      },
+      "indexes": [
+        { "name": "idx_user_session", "fields": ["user_id", "session_id"], "type": "btree" },
+        { "name": "idx_timestamp", "fields": ["timestamp"], "type": "btree" },
+        { "name": "idx_embedding", "fields": ["embedding"], "type": "hnsw" }
+      ],
+      "ttl_policy": {
+        "default_ttl": "7d",
+        "dynamic_ttl": "根据access_count动态延长，最多不超过14d",
+        "expired_action": "delete_or_archive"
+      },
+      "capacity_limit": {
+        "max_records_per_user": 1000,
+        "max_storage_size_mb": 50,
+        "eviction_policy": "LRU (最近最少使用)"
+      }
+    },
+    "long_term_memory": {
+      "description": "长期记忆：存储沉淀后的知识与事实，持久化存储，支持复杂检索",
+      "primary_key": "ltm_id",
+      "fields": {
+        "ltm_id": { "type": "string", "format": "uuid", "description": "主键" },
+        "user_id": { "type": "string", "index": true, "description": "用户唯一标识" },
+        "content": { "type": "text", "description": "记忆文本内容" },
+        "summary": { "type": "text", "description": "记忆摘要" },
+        "embedding": { "type": "vector", "dimension": 1536, "index": true, "description": "语义向量" },
+        "source_stm_ids": { "type": "array", "items": { "type": "string" }, "description": "来源短期记忆ID集合" },
+        "created_at": { "type": "timestamp", "index": true, "description": "创建时间" },
+        "last_accessed_at": { "type": "timestamp", "index": true, "description": "最后访问时间" },
+        "access_count": { "type": "integer", "default": 1, "description": "访问次数" },
+        "decay_factor": { "type": "float", "default": 1.0, "description": "记忆衰减因子" }
+      },
+      "indexes": [
+        { "name": "idx_user_ltm", "fields": ["user_id"], "type": "btree" },
+        { "name": "idx_last_accessed", "fields": ["last_accessed_at"], "type": "btree" },
+        { "name": "idx_ltm_embedding", "fields": ["embedding"], "type": "hnsw" }
+      ],
+      "ttl_policy": {
+        "default_ttl": "180d",
+        "dynamic_ttl": "每次访问刷新TTL，若长期未访问且decay_factor降至阈值以下则转移至冷存储",
+        "expired_action": "move_to_cold_storage_or_delete"
+      },
+      "capacity_limit": {
+        "max_records_per_user": 100000,
+        "max_storage_size_mb": 2048,
+        "eviction_policy": "基于decay_factor的最小权重淘汰"
+      }
+    },
+    "core_anchor": {
+      "description": "核心锚点：存储用户的核心画像、绝对偏好与关键事实，永不遗忘",
+      "primary_key": "anchor_id",
+      "fields": {
+        "anchor_id": { "type": "string", "format": "uuid", "description": "主键" },
+        "user_id": { "type": "string", "index": true, "description": "用户唯一标识" },
+        "anchor_type": { "type": "string", "enum": ["persona", "preference", "fact", "goal"], "index": true, "description": "锚点类型" },
+        "content": { "type": "text", "description": "锚点内容" },
+        "embedding": { "type": "vector", "dimension": 1536, "index": true, "description": "语义向量" },
+        "created_at": { "type": "timestamp", "description": "创建时间" },
+        "updated_at": { "type": "timestamp", "description": "更新时间" },
+        "confidence_score": { "type": "float", "default": 1.0, "description": "置信度分数" }
+      },
+      "indexes": [
+        { "name": "idx_user_anchor_type", "fields": ["user_id", "anchor_type"], "type": "btree" },
+        { "name": "idx_anchor_embedding", "fields": ["embedding"], "type": "hnsw" }
+      ],
+      "ttl_policy": {
+        "default_ttl": "-1",
+        "description": "永不过期，除非用户显式删除"
+      },
+      "capacity_limit": {
+        "max_records_per_user": 500,
+        "max_storage_size_mb": 10,
+        "eviction_policy": "无淘汰策略，超限需人工或模型合并相似锚点"
+      }
+    }
+  },
+  "promotion_mechanism": {
+    "description": "短期记忆晋升为长期记忆的触发条件",
+    "triggers": [
+      {
+        "trigger_name": "高频访问触发",
+        "condition": "access_count >= 5 且 importance_score >= 0.5",
+        "action": "提取记忆核心特征，生成摘要并写入long_term_memory"
+      },
+      {
+        "trigger_name": "高重要性触发",
+        "condition": "importance_score >= 0.8",
+        "action": "立即晋升，不等TTL结束"
+      },
+      {
+        "trigger_name": "显式指令触发",
+        "condition": "用户在交互中明确指示'记住这个'或等价意图",
+        "action": "强制晋升该条短期记忆"
+      },
+      {
+        "trigger_name": "TTL过期前压缩触发",
+        "condition": "距离TTL过期不足20%时，若同一session内存在多条相关短期记忆",
+        "action": "触发后台异步任务，将相关短期记忆合并、去重、总结为单条长期记忆"
+      }
+    ]
+  },
+  "query_patterns": {
+    "description": "记忆检索的查询模式设计",
+    "patterns": [
+      {
+        "pattern_name": "实时上下文召回 (Contextual Recall)",
+        "target_layer": "short_term_memory",
+        "query_logic": "根据当前 session_id 获取最近 N 条记忆，用于维持当前对话上下文连贯性",
+        "query_statement": "SELECT * FROM short_term_memory WHERE user_id = ? AND session_id = ? ORDER BY timestamp DESC LIMIT 10"
+      },
+      {
+        "pattern_name": "混合语义检索 (Hybrid Semantic Search)",
+        "target_layer": "long_term_memory, core_anchor",
+        "query_logic": "根据当前用户输入的 embedding 向量，在长期记忆和核心锚点中同时进行 ANN 向量近邻检索，并结合时间衰减因子重排序",
+        "query_statement": "ANN SEARCH ON long_term_memory USING idx_ltm_embedding AND core_anchor USING idx_anchor_embedding WHERE user_id = ? ORDER BY vector_distance ASC, decay_factor DESC LIMIT 5"
+      },
+      {
+        "pattern_name": "核心画像注入 (Core Profile Injection)",
+        "target_layer": "core_anchor",
+        "query_logic": "在每次对话开始时，无条件拉取用户的核心锚点（如偏好、基础设定），作为系统提示词的一部分注入LLM",
+        "query_statement": "SELECT * FROM core_anchor WHERE user_id = ? AND anchor_type IN ('persona', 'preference')"
+      }
+    ]
+  }
+}
+```

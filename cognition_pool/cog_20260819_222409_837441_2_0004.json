@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_222212_0004",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于给定的认知框架与工程避坑经验，推演「Supabase记忆脑」的增量同步方案",
+      "source": "selfgen_20260819_222212_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本方案以**研发全链路综合经济价值最大化**为价值锚点，通过机制设计落实防御价值（避免脑内数据不一致与同步故障）与效率价值（降低Token与网络IO消耗，提升协同效率）",
+      "source": "selfgen_20260819_222212_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**1. 机制设计：事件驱动 + Hash校验**",
+      "source": "selfgen_20260819_222212_0004",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T22:24:09.871240"
+}

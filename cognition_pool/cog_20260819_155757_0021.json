@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_155621_0021",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于历史踩坑经验和已有认知锚定，推演“以实养虚，虚又返实”的自增强循环，必须严守一个铁律：**引擎（虚）只能优化“手脚”（路由、调度、并发），绝不能替“大脑”（模型推理、核心逻辑）做决策",
+      "source": "selfgen_20260819_155621_0021",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下为该自增强闭环的推演方案，包含概念映射、闭环设计与避坑验证机制：",
+      "source": "selfgen_20260819_155621_0021",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在启动任何循环前，**“锚点校验”永远高于“链路优化”**",
+      "source": "selfgen_20260819_155621_0021",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **最小成本校验**：项目ID、API哈希、火山引擎端点、超时预设（B模型turbo用300秒，A模型用600秒）、凭证有效性",
+      "source": "selfgen_20260819_155621_0021",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **网络避坑**：底层统一使用 `urllib` 直连，或显式设置 `proxies=None`，杜绝全局代理导致的 `ProxyError`",
+      "source": "selfgen_20260819_155621_0021",
+      "type": "deep",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:57:57.497522"
+}

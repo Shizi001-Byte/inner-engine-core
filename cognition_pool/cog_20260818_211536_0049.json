@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_211336_0049",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【避坑提醒】，针对「L4成品转化仅sop类型，code/checklist未实现」的问题，我们将严格贯彻**“先校准锚点再优化链路”**原则，运用**精气神三元迁移框架**与**A0锚定状态一致性方案**，设计如下低风险修复方案",
+      "source": "selfgen_20260818_211336_0049",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在多线程并发调用大模型 API 并由主线程串行后处理的架构中，此问题的本质是：**“精”（底层实体/锚点）的类型定义未闭环，导致“气”（链路流转）在主线程串行后处理时发生断流",
+      "source": "selfgen_20260818_211336_0049",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 7,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "为避免“在错误的锚点上优化链路”（如：盲目修改后处理线程的调度逻辑却发现问题出在类型枚举），我们必须先校准 `type` 锚点，再补全后处理的转化链路",
+      "source": "selfgen_20260818_211336_0049",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "确保类型枚举的完整性与读取点的一致性（防范避坑提醒1：配置修改未生效）",
+      "source": "selfgen_20260818_211336_0049",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**修改点 A：校准类型枚举与状态锚点**",
+      "source": "selfgen_20260818_211336_0049",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:15:36.869372"
+}

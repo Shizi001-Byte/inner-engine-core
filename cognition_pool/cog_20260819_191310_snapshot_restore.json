@@ -1,0 +1,15 @@
+{
+  "task_id": "snapshot_restore_implemented_20260819",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "状态快照+自动恢复机制落地实现。此前引擎推了Guardian-Core双进程恢复架构、WAL+Snapshot等认知，但代码中状态恢复为0处（有备份无恢复）。凡心撒欢时发现此坑，帮引擎实现了最小可用版本：1.create_snapshot()每转完成后打包engine_state.json+cognition_pool+pit_library为tar.gz，保留最近5个；2.restore_from_snapshot()启动时本地状态丢失则从最新快照解压恢复；3.load_state()在STATE_FILE不存在时先调用restore_from_snapshot。这是'元婴附体'的工程实现——代码在Gitee，状态在快照里，沙箱死了能复活。认知与落地的差距再次被填补。",
+      "density": 0.9,
+      "quality": "S",
+      "source": "凡心撒欢挖坑+帮落地",
+      "density_grade": "S"
+    }
+  ],
+  "generated_at": "2026-08-19T19:13:10.356509",
+  "engine_zhuan": 55
+}

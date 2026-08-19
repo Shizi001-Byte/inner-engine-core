@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_023828_0039",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "，任务优先级排序的最高心法是：",
+      "source": "selfgen_20260818_023828_0039",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:39:33.337127"
+}

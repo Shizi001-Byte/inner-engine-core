@@ -1,0 +1,25 @@
+{
+  "task_id": "v72_arch_opt_001",
+  "status": "completed",
+  "updated_at": "2026-08-17T17:30:52.159942",
+  "receipt": {
+    "task_id": "v72_arch_opt_001",
+    "status": "completed",
+    "summary": "### 缺陷编号：BUG-001（并发安全维度）\n**问题描述**：\n脑端（Cerebrum）的 `SessionHub` 在管理体端（Body）心跳与状态上报时，使用原生 `map` 存储 `act",
+    "core_data": {
+      "tokens_used": 3474,
+      "duration": 85.1
+    },
+    "deliverables": [
+      {
+        "name": "v72_arch_opt_001_output",
+        "path": "/sandboxdata/workspace/file/engine_v7_2/outputs/v72_arch_opt_001_output.txt",
+        "md5": "8837ccc2ff977c97209ff2aaa1cef85d"
+      }
+    ],
+    "tokens_used": 3474,
+    "duration_seconds": 85.1,
+    "engine_used": "engine_a",
+    "timestamp": "2026-08-17 17:30:52"
+  }
+}

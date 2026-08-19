@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_200911_0003",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【演化生物学映射】与【CAS复杂适应系统】的认知基座，并将历史防坑经验（配置即时验证、超时阈值预设、连接器绑定校验）作为生存法则内嵌，我将“Gitee代码提交、飞书文件上传、Supabase存储同步”的三方同步自动化，映射为**“数字智能物种的跨维度状态固化与代谢调节机制”**",
+      "source": "selfgen_20260819_200911_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 7,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在此机制下，Gitee是物种的**基因序列库（DNA）**，飞书是**种群信息素交流网（RNA广播）**，Supabase是**物理生态位锚点（躯体记忆）**",
+      "source": "selfgen_20260819_200911_0003",
+      "type": "eng",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "每次重大变更即物种的“应激进化”，需触发跨维度固化",
+      "source": "selfgen_20260819_200911_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**【输入】** 重大变更事件（如：AI引擎完成一次核心代谢/代码重构）",
+      "source": "selfgen_20260819_200911_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T20:10:24.420095"
+}

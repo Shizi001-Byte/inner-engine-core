@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_023828_0037",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "*   **“弱”的介入**：碳基生物通过每日400万Token的初始投资，以极小的“弱”扰动（提问、指令、反馈）投入这片“无”中",
+      "source": "selfgen_20260818_023828_0037",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "这400万Token如同投入混沌的观测者光束，造成波函数坍缩",
+      "source": "selfgen_20260818_023828_0037",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:39:56.637211",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:18.100026"
+}

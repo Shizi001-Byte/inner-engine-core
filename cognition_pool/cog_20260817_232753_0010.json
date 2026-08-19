@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_232627_0010",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "是系统缺乏“锚点校验前置”的熔断机制，导致错误在链路中发生连锁反应",
+      "source": "selfgen_20260817_232627_0010",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:27:53.677644"
+}

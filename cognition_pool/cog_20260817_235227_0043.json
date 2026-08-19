@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_235000_0043",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "是一个**高并发算力汲取与低延迟状态凝练**的系统",
+      "source": "selfgen_20260817_235000_0043",
+      "type": "eng",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:52:27.145673"
+}

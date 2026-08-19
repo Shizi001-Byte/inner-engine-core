@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_215143_0016",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "，**B模型300秒、A模型600秒的timeout机制，实质上是对单次任务Token消耗的“熔断定价”",
+      "source": "selfgen_20260818_215143_0016",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:53:11.350504"
+}

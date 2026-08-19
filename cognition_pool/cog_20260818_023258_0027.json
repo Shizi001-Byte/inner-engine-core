@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_023137_0027",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "基于您锁定的认知锚点（阴阳双轨架构与“行为$\\rightarrow$代谢$\\rightarrow$基因/结构”的演化谱系），我们将这每日400万Token视为**碳基与硅基共生网络中的“能量通货”**",
+      "source": "selfgen_20260818_023137_0027",
+      "type": "exp",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "要实现400万Token的价值最大化，必须依据阴阳双轨的职能差异和演化阶段，进行动态的边际效用分配",
+      "source": "selfgen_20260818_023137_0027",
+      "type": "exp",
+      "density": 0.48,
+      "density_grade": "B"
+    },
+    {
+      "text": "在阴阳双轨架构中，Token的消耗（定价）对应着两种截然不同的经济学资产：",
+      "source": "selfgen_20260818_023137_0027",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:32:58.288092",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:17.723447"
+}

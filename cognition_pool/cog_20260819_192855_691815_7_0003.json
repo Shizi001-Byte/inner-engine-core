@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_192717_0003",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于已有的认知锚定与历史避坑经验，针对“引擎产出三方同步自动化（Gitee/飞书/Supabase）”的设计，我们需要构建一个**具备质量过滤前置、状态可恢复、幂等且能处理并发冲突**的 robust（鲁棒）系统",
+      "source": "selfgen_20260819_192717_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "结合【认知锚定1与2-5】，同步系统不能仅仅是“搬运工”，必须作为“麦克斯韦妖”在同步前进行信息熵控制，同时依赖 Guardian-Core 架构保障状态一致性",
+      "source": "selfgen_20260819_192717_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **重大变更触发**：监听引擎产出的 `commit` 或 `archive` 事件",
+      "source": "selfgen_20260819_192717_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **配置读取与验证（避坑1）**：读取最新的 Gitee/飞书/Supabase 凭证与API端点，**修改后立即通过 Ping/GetMe 接口验证配置生效**，防止旧配置导致静默失败",
+      "source": "selfgen_20260819_192717_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. **麦克斯韦妖过滤层（认知2-5）**：在同步前，计算产出内容的向量相似度与信息熵",
+      "source": "selfgen_20260819_192717_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T19:28:55.727332"
+}

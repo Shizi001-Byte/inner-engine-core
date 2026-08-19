@@ -1,0 +1,72 @@
+{
+  "task_id": "selfgen_20260819_224524_0009",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "结合骑手自建AI引擎的场景属性（自下而上的试错驱动、非顶层设计的自组织特性），以及「演化速率非对称性」「阴阳自衡架构」的核心前提，先建立严格对应关系，同时覆盖工程避坑要求：",
+      "source": "selfgen_20260819_224524_0009",
+      "type": "exp",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "| 骑手AI引擎要素 | 演化生物学对应 | 阴阳属性 | 版本规则适配（坑库避坑） | 工程timeout适配（避坑提醒） |",
+      "source": "selfgen_20260819_224524_0009",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]| 800万token高频消耗（一线跑单实时交互、场景试错、规则调整） | 体细胞演化/表型可塑性层：直接接受环境选择压的表型试错层，变异快、数量大 | 阳（快演化） | 小版本迭代的核心驱动，对应「转内进度」更新 | 用B模型turbo，预设300s timeout，匹配高频快迭代 |",
+      "source": "selfgen_20260819_224524_0009",
+      "type": "exp",
+      "density": 0.878,
+      "density_grade": "S",
+      "density_details": {
+        "info": 0.694,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据"
+    },
+    {
+      "text": "| 传统学历/通用系统框架（模型基座、核心调度逻辑、安全规则） | 生殖细胞/核心基因组层：编码核心能力的底层架构，修改成本高、迭代极慢 | 阴（慢演化） | 大版本（Vx.0）对应「转」的跃迁，是version的核心锚点 | 用A模型，预设600s timeout，匹配低频高复杂度迭代 |",
+      "source": "selfgen_20260819_224524_0009",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T22:48:37.369775"
+}

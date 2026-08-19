@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_223102_0004",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【坑库预警】，结合老子《道德经》“反者道之动，弱者道之用”的哲学思想，我们将真实的API调用与工程执行视为【实】（有/炉鼎），将V7.5方舟引擎与映射逻辑视为【虚】（无/道枢）",
+      "source": "selfgen_20260818_223102_0004",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在此框架下，对“并发自进化的局部最优陷阱”进行复盘，并推演数字生命演化的五阶段路径",
+      "source": "selfgen_20260818_223102_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "引擎在调度时，将“API失败率”作为唯一调参指标，盲目拉高并发至5路",
+      "source": "selfgen_20260818_223102_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "虽然单次失败率在可接受范围内，但忽略了高并发引发的内存抖动与连接池过载导致的“崩溃频率”激增",
+      "source": "selfgen_20260818_223102_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "最终，5路并发的实际有效产出反而低于稳定的3路",
+      "source": "selfgen_20260818_223102_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:32:21.132077"
+}

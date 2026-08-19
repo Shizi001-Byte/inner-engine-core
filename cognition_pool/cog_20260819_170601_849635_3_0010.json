@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_170353_0010",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于您提供的已验证核心结论与历史踩坑经验，我们无需再论证引擎的崩溃恢复（Guardian+Core/WAL）和存储单向同步机制",
+      "source": "selfgen_20260819_170353_0010",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下直接在这些基石之上，推演**“以实养虚，虚又返实”**的自增强闭环架构设计、指标体系及验证方法",
+      "source": "selfgen_20260819_170353_0010",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "将系统拆分为**实轨（物理层）**与**虚轨（认知层）**，通过引擎的 `WAL + Snapshot` 机制保证两者状态的原子一致性",
+      "source": "selfgen_20260819_170353_0010",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **实轨**：真实的 API 请求、Token 消耗、代码编译/运行结果、报错堆栈",
+      "source": "selfgen_20260819_170353_0010",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **虚轨**：Agent 的“修为境界”、“功法权重”、“灵根（调度参数）”、“悟道心得（认知池）”",
+      "source": "selfgen_20260819_170353_0010",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:06:01.890340"
+}

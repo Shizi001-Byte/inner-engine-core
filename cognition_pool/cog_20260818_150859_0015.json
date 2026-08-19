@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_150850_0015",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "“脑”负责全局决策，必须串行，保证状态唯一、指令有序；“体”负责执行，可并发，追求吞吐与资源利用",
+      "source": "selfgen_20260818_150850_0015",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "引擎优化只能在“体”内部提升效率，不能越界干扰“脑”的决策权，否则会破坏脑体分离，导致状态分散、竞争冲突、最终一致性失效",
+      "source": "selfgen_20260818_150850_0015",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**为什么引擎优化不能破坏脑体分离**：",
+      "source": "selfgen_20260818_150850_0015",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "引擎优化若侵入决策层，会引入多决策源，造成指令时序不确定、资源竞争、重复或遗漏归档，最终使索引与落盘不一致",
+      "source": "selfgen_20260818_150850_0015",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "保持分层，才能让优化收益在可控边界内累积，而不放大系统复杂度",
+      "source": "selfgen_20260818_150850_0015",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:08:59.473334"
+}

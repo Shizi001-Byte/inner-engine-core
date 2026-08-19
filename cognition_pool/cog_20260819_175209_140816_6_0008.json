@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_175046_0008",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "核心思路：**把一次同步建模为一次状态跃迁**",
+      "source": "selfgen_20260819_175046_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本地引擎产出为唯一事实源；Gitee、飞书、Supabase 都只保存同一份 `manifest.json` 和带内容哈希的产物",
+      "source": "selfgen_20260819_175046_0008",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "同步不是“上传文件”，而是“让三端 manifest 收敛到一致”",
+      "source": "selfgen_20260819_175046_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "“重大变更”用规则判定，避免噪音触发：",
+      "source": "selfgen_20260819_175046_0008",
+      "type": "eng",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:52:09.173082"
+}

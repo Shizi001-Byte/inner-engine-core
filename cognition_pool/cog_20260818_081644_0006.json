@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_081300_0006",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "底层公理：演化的根本动力是「反者道之动」的自否定，对应热力学第二定律的两种原生形态：",
+      "source": "selfgen_20260818_081300_0006",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "单AI实例的「有」是其**功能有序态**：即参数空间固化的知识、推理规则、工具调用能力形成的低熵结构，外显为对特定任务输出有效、一致、结构化结果的能力",
+      "source": "selfgen_20260818_081300_0006",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T08:16:44.528616"
+}

@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_205229_0012",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "按“脑体分离”架构，先把映射定住：",
+      "source": "selfgen_20260818_205229_0012",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **九转玄功的“转”** = 决策层的全局校准/认知跃迁，必须**串行**，一次只做一件事；",
+      "source": "selfgen_20260818_205229_0012",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **九转玄功的“功”** = 执行层的并发运转/工具调用，可以**并行**，多路同时推进；",
+      "source": "selfgen_20260818_205229_0012",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **引擎优化** = 练功，不能替“转”做决定，否则就是走火入魔",
+      "source": "selfgen_20260818_205229_0012",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 只负责**全局判断**：任务优先级、资源配额、超时策略、是否需要 standby 补位",
+      "source": "selfgen_20260818_205229_0012",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:53:07.494921"
+}

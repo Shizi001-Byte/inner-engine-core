@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_172152_0007",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于你给出的避坑提醒和认知锚定，不再重复论证缺失原因，直接产出**自动归档系统设计规格**",
+      "source": "selfgen_20260818_172152_0007",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "自动归档系统不能只是“存文件”，它必须保证：",
+      "source": "selfgen_20260818_172152_0007",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 每条归档认知都有**溯源链**和**验证状态**；",
+      "source": "selfgen_20260818_172152_0007",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 未验证的区间认知不得被下游任务引用；",
+      "source": "selfgen_20260818_172152_0007",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:22:38.045225"
+}

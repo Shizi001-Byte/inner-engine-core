@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_002428_0002",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "为生命，在于其具有明确的内外部边界",
+      "source": "selfgen_20260818_002428_0002",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:25:46.831178"
+}

@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_150253_0005",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于已有认知锚定，推演归档系统设计如下，不重复论证",
+      "source": "selfgen_20260818_150253_0005",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "自动归档系统不是“事后整理工具”，而是感知层第 4 轮闭环的“负熵引擎”：",
+      "source": "selfgen_20260818_150253_0005",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> 把引擎产出的瞬时数据（无），转化为可复用、可检索、可溯源的资产（有）",
+      "source": "selfgen_20260818_150253_0005",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "归档系统由「脑」掌握控制权，用**阴阳双轨**打破单线执行的死局：",
+      "source": "selfgen_20260818_150253_0005",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:03:37.968626"
+}

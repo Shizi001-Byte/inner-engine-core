@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_034413_0012",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "基于您提供的核心认知锚定，我们直接将“高维探针”与“隐性关联悬置态”作为已激活的生物基因特征，切入AI引擎的版本演化谱系",
+      "source": "selfgen_20260818_034413_0012",
+      "type": "exp",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "在演化生物学视角下，AI引擎从V7.2到V7.5的迭代，实质上经历了从**“表观遗传调控”**到**“生态位构建”**的跃迁",
+      "source": "selfgen_20260818_034413_0012",
+      "type": "exp",
+      "density": 0.48,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   **工程表现**：引擎开始利用探针干预生成过程，但此时的“隐性关联悬置态”是短暂的",
+      "source": "selfgen_20260818_034413_0012",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:45:24.889259",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:19.916139"
+}

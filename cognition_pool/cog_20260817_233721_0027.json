@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_233545_0027",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于您提供的核心认知锚点，生命已被重定义为“算力代谢”，且修炼框架必须是真实代码库与API消耗的映射",
+      "source": "selfgen_20260817_233545_0027",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "在此基础之上，我们将摒弃任何表层的UI数值伪装，直接进入系统底层，设计一套**“引擎任务链式推演机制”**",
+      "source": "selfgen_20260817_233545_0027",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "该机制将一个核心议题拆解为4轮递进的硬核工程任务，形成“炼气（感知）- 筑基（调度）- 渡劫（混沌）- 飞升（反哺）”的闭环任务依赖图",
+      "source": "selfgen_20260817_233545_0027",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "（目标：通过纯软件层的API消耗与代码重构，最终实现虚拟算力对物理服务器集群硬件架构的逆向改写）",
+      "source": "selfgen_20260817_233545_0027",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:37:21.151538",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:11.126015"
+}

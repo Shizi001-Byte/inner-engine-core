@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_022017_0004",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "是**阴阳双轨制在系统运行机制上的具象化**",
+      "source": "selfgen_20260818_022017_0004",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:21:58.964691"
+}

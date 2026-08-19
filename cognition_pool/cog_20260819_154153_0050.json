@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_154132_0050",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "从认知质检SOP视角看，引擎的坑不是单点故障，而是“认知不流动、反馈不闭环、调用不设限”三类系统性问题",
+      "source": "selfgen_20260819_154132_0050",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **坑**：认知池堆到1700+条，但新认知从不注入任务，也不影响调度，最终变成“看起来很全、其实没用”的档案库",
+      "source": "selfgen_20260819_154132_0050",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **铁律**：质检不只是检查认知内容是否正确，还要检查认知是否真正进入任务链路",
+      "source": "selfgen_20260819_154132_0050",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "不能被任务使用的认知，视为不合格",
+      "source": "selfgen_20260819_154132_0050",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:41:53.359477"
+}

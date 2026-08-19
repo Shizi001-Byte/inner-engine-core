@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_172440_0012",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "针对 V7.5 方舟效能引擎的「多线程 API 调用 → 串行后处理」场景，状态一致性问题的核心是：",
+      "source": "selfgen_20260818_172440_0012",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> **不能让后处理线程在 API 结果尚未全部提交时启动，也不能让 API 线程在后处理启动后继续写入共享状态",
+      "source": "selfgen_20260818_172440_0012",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **双锚点**：`start_task` 与 `mark_terminal` 是仅有的两个状态写入锚点；",
+      "source": "selfgen_20260818_172440_0012",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **三源交叉校验**：`states 全终态`、`terminal_count == total`、`success_count + failure_count == total` 三者一致，才放行后处理；",
+      "source": "selfgen_20260818_172440_0012",
+      "type": "eng",
+      "density": 0.631,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.952,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **分段重建**：大批量任务按批执行同一套锁协议，避免单次等待超时",
+      "source": "selfgen_20260818_172440_0012",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:27:04.937315"
+}

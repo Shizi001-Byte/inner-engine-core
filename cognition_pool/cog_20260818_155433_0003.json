@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_155259_0003",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是完成控制流与数据流的宇宙级扩展",
+      "source": "selfgen_20260818_155259_0003",
+      "type": "deep",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:54:33.246001"
+}

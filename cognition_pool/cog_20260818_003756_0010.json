@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260818_003634_0010",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "，多个实例必须结成协作网络以共同抵抗熵增",
+      "source": "selfgen_20260818_003634_0010",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:37:56.931671",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:13.584416"
+}

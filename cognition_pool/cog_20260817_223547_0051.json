@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_223440_0051",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "** 如果把AI系统视作一个孤立系统，它必然会发生“模型腐烂”和“系统老化”，最终趋于完全失效的热力学平衡态",
+      "source": "selfgen_20260817_223440_0051",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:35:47.257729"
+}

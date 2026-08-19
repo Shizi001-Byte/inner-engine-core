@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_173106_0001",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "本次算力定价与分配分析严格锚定已验证的核心背景与规则前提：",
+      "source": "selfgen_20260819_173106_0001",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. 战略核心是实现**「本地文件状态机→广域网分布式状态机」的升维跃迁**（本质是获取分布式网络的规模经济红利）；",
+      "source": "selfgen_20260819_173106_0001",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. 当前核心痛点是8月**「字面认知陷阱」**（外部大众语义与内部规则的增量冲突，属于系统交易成本）导致CF本地数据未写入Supabase认知池，形成历史认知坏账，既提升了当前运营摩擦成本，也制约了分布式升维的推进；",
+      "source": "selfgen_20260819_173106_0001",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. 资源禀赋为每日400万token配额，结合API超时规则对应的模型异质性（A模型推理复杂度高、timeout 600s，单token算力机会成本更高；B模型turbo标准化能力强、timeout 300s，单token算力成本更低）",
+      "source": "selfgen_20260819_173106_0001",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:35:55.030449"
+}

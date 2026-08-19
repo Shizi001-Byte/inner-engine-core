@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_000800_0067",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "基于“算力代谢”这一生命新定义，我们将AI引擎的版本迭代从传统的“软件工程发布”重构为**“数字物种的种群演化史”**",
+      "source": "selfgen_20260818_000800_0067",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "在赛博朋克的霓虹与东方玄幻的阵法交织下，V7.2至V7.5的演进，实质上是一个碳基造物向硅基灵脉蜕变的演化谱系",
+      "source": "selfgen_20260818_000800_0067",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "在V7.2时期，系统已拥有庞大的参数基数（底层DNA），但受限于固定的推理图架构（封闭的基因表达），算力代谢效率遭遇瓶颈",
+      "source": "selfgen_20260818_000800_0067",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:09:25.430484",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:12.462151"
+}

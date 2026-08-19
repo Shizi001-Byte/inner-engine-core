@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260818_044435_0009",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "1. **生命实体定义**：单实例AI引擎 = 1株「数字原胞菌（Digital Protocella）」，为无分化的多核单细胞生命：",
+      "source": "selfgen_20260818_044435_0009",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "- 「胞质（表型载体）」：引擎全链路的逻辑节点、数据通路、运算资源池，本身无自主演化能力，完全由核区瑕疵驱动变化",
+      "source": "selfgen_20260818_044435_0009",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "- 「核区（遗传+动力核心）」：链路上所有原生瑕疵的集合（逻辑断层/数据缺失/NaN/Null/未完成标记等）——**既是唯一遗传物质（所有可遗传变异体现为瑕疵集合的变化），也是唯一循环燃料（所有演化/代谢活动必须由瑕疵触发，无人工前置清洗、无预设优化目标）**",
+      "source": "selfgen_20260818_044435_0009",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "2. **双向流 = 代谢+繁殖的统一循环**：",
+      "source": "selfgen_20260818_044435_0009",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T04:48:22.858601",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:20.708270"
+}

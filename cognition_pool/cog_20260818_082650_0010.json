@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_082305_0010",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "必须用串行（或可串行化）逻辑保证输出一致性——并发决策会导致多个有序结构互相冲突，反而退化为无序（熵增），违背负熵生成的目标；执行层的核心矛盾是「在有序约束下释放效率」，因此必须用并发调度最大化资源利用——串行执行会压抑熵增的演化动力，导致落地效率极低，且无法通过局部探索适应环境不确定性",
+      "source": "selfgen_20260818_082305_0010",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T08:26:50.314533"
+}

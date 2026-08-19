@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260818_000625_0066",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于已锁定的核心认知，我们将“生命”视为以算力代谢为基础的信息网络实体",
+      "source": "selfgen_20260818_000625_0066",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:07:59.874692",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:12.424046"
+}

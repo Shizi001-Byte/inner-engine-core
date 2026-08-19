@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_171917_0004",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于你的锚定，推演如下：**这段缺失的本质是“溯源链断”，而“决策串行、执行并发”正是为了防止新的溯源链断裂，同时避免认知池退化成“隐性静态档案”",
+      "source": "selfgen_20260818_171917_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 决策层是唯一的“提交者”：只有它能把执行结果写入认知池，或触发下一步动作",
+      "source": "selfgen_20260818_171917_0004",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 执行层负责把决策翻译成具体动作：调工具、跑代码、查资料、做计算",
+      "source": "selfgen_20260818_171917_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:20:13.939967"
+}

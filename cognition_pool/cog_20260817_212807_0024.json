@@ -1,0 +1,42 @@
+{
+  "task_id": "selfgen_20260817_212623_0024",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "针对“V7.5方舟效能引擎”在“多线程API调用后串行后处理”场景下产生的状态一致性推演，其核心矛盾在于：**并发执行期的状态隔离**与**串行后处理期的状态聚合**之间的时序错位，极易引发TOCTOU（Time-of-Check to Time-of-Use）竞态条件",
+      "source": "selfgen_20260817_212623_0024",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下为您提供针对该场景的完整锁机制方案设计",
+      "source": "selfgen_20260817_212623_0024",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "在V7.5方舟效能引擎中，假设存在如下标准流程：",
+      "source": "selfgen_20260817_212623_0024",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "1. **并发期**：多线程并发调用底层API，读取引擎状态 `State_S0`，基于 `S0` 执行计算，产生结果 `R`",
+      "source": "selfgen_20260817_212623_0024",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "2. **过渡期**：线程试图将 `R` 放入串行后处理队列",
+      "source": "selfgen_20260817_212623_0024",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:28:07.095210"
+}

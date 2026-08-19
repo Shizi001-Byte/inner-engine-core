@@ -1,0 +1,28 @@
+{
+  "task_id": "selfgen_20260817_204845_0003",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "设计引擎产出的自动归档系统是提升团队效率、保障数字资产安全和便于后续检索的关键",
+      "source": "selfgen_20260817_204845_0003",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "一个完善的自动归档系统需要实现**“任务结束即触发、元数据提取即打标、规则引擎即路由、对象存储即落盘、索引同步即检索”**的闭环",
+      "source": "selfgen_20260817_204845_0003",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "1. **触发层**：监听设计引擎的任务状态变更",
+      "source": "selfgen_20260817_204845_0003",
+      "type": "eng",
+      "density": 0.48,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T20:50:23.298701"
+}

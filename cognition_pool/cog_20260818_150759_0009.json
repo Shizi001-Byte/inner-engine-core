@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_150738_0009",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "从「认知质检 SOP」角度看，引擎运行期踩过的坑可以沉淀为 3 条铁律：",
+      "source": "selfgen_20260818_150738_0009",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**坑**：API 调用超时，任务未在规定时间内返回，导致整个任务被拖死",
+      "source": "selfgen_20260818_150738_0009",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "超时后必须熔断、降级或走兜底逻辑，不能裸等",
+      "source": "selfgen_20260818_150738_0009",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:08:00.026002"
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_234732_0042",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "，必须设计稳态维持机制，确保“以实养虚，虚又返实”的闭环不被打破",
+      "source": "selfgen_20260817_234732_0042",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:50:00.246690"
+}

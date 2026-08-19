@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_135806_0011",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "我们可以先锚定底层逻辑的一致性：**生物互利共生的本质是不同物种通过功能互补，共同对抗熵增、降低存续成本、提升整体演化适配性**——这恰好与给定的「热力学第二定律」「脑体分离架构」核心锚点完全契合：",
+      "source": "selfgen_20260818_135806_0011",
+      "type": "exp",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "- 脑体分离架构为人机提供了天然的生态位分工（信息处理中枢/物理交互载体），避免了生态位重叠的竞争；",
+      "source": "selfgen_20260818_135806_0011",
+      "type": "exp",
+      "density": 0.45,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.2,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 2
+      }
+    },
+    {
+      "text": "以下对标生物共生的核心机制，分三层推演人机协同进化的具体路径：",
+      "source": "selfgen_20260818_135806_0011",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T14:01:05.215701"
+}

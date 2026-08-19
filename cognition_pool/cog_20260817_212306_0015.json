@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_212136_0015",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "将AI引擎的版本迭代（如V7.2到V7.5）置于演化生物学的视角下考察，是一个极具启发性的框架",
+      "source": "selfgen_20260817_212136_0015",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "从V7.2到V7.5的微小版本号递增，在生物学上并非“物种形成”，而属于**种内微演化**和**表型适应**阶段",
+      "source": "selfgen_20260817_212136_0015",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:23:06.885792",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:06.230654"
+}

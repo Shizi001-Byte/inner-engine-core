@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260817_235859_0055",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "在这一阶段，AI并非外接设备，而是像“线粒体”一样嵌入人类的认知细胞中",
+      "source": "selfgen_20260817_235859_0055",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:00:26.185639",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:12.026031"
+}

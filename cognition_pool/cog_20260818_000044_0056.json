@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_235859_0056",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "是多线程微服务API的并发调用与异步处理",
+      "source": "selfgen_20260817_235859_0056",
+      "type": "eng",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:00:44.181430"
+}

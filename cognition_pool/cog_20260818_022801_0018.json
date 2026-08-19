@@ -1,0 +1,21 @@
+{
+  "task_id": "selfgen_20260818_022649_0018",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "是**“在错误的基因图谱上强行进行代谢行为”**，导致系统产生巨大的无谓能耗（熵增）",
+      "source": "selfgen_20260818_022649_0018",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "是**将资源分配的重心从“盲目求解”前置到“问题定义”**",
+      "source": "selfgen_20260818_022649_0018",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:28:02.011774"
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_222606_0031",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "是构建一个**有向无环图（DAG）**或带有反馈回路的**状态机**",
+      "source": "selfgen_20260817_222606_0031",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:27:25.989625"
+}

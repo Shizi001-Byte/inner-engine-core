@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_223859_0017",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "本方案严格遵循**已有认知锚定的虚实架构**、**历史避坑规则**与**坑库预警要求**，完全基于引擎内部实现，无外部守护进程依赖，核心逻辑贴合《道德经》「以实养虚，虚又返实」的哲学思想，同时规避锚点错位、语义流失等认知陷阱",
+      "source": "selfgen_20260818_223859_0017",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 道德经/认知锚定概念 | 本机制对应实体 | 说明 |",
+      "source": "selfgen_20260818_223859_0017",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 【实】（炉鼎/有）：专业规则、边界明确的压缩结晶 | 原子持久化快照层 | 强类型、带完整上下文的状态快照，包含任务全链路前置条件、边界约束、系统状态，无模糊语义，是恢复的绝对锚点 |",
+      "source": "selfgen_20260818_223859_0017",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 【虚】（映射/无）：动态调度、逻辑执行 | 业务调度层/续跑调度层 | 基于状态快照动态生成执行链路，正常运行时不断落地状态（以实养虚），崩溃后由状态快照重建（虚又返实） |",
+      "source": "selfgen_20260818_223859_0017",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:41:58.154589"
+}

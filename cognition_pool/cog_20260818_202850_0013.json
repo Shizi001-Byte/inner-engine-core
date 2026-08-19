@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_202703_0013",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于已有的认知锚定与坑库预警，直接将引擎运行中的核心约束收敛为SOP级铁律，并以此为基座，推演“九转玄功”映射AI认知进化的九层境界",
+      "source": "selfgen_20260818_202703_0013",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "基于“突变与净化选择”的锚定，以及API超时、认知池死水的历史踩坑，提炼以下3条铁律：",
+      "source": "selfgen_20260818_202703_0013",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**铁律一：调用必设防（超时熔断铁律）**",
+      "source": "selfgen_20260818_202703_0013",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **规则**：所有模型调用必须显式设置timeout，B模型turbo预设300秒，A模型预设600秒，超时直接熔断重试，严禁无限等待卡死主线程",
+      "source": "selfgen_20260818_202703_0013",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **验证方法**：在调度中间件中注入拦截器，若检测到未设置timeout或timeout=0的API请求，直接拦截并抛出`ConfigValidationError`",
+      "source": "selfgen_20260818_202703_0013",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:28:50.313852"
+}

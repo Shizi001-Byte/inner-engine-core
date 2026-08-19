@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_153827_0045",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "不是“把它们接上同一个 API”，而是让它们从**机械团结**走向**有机团结**：先有可验证的互动，再有分工，再沉淀规范，最终涌现出能自我修正的社群结构",
+      "source": "selfgen_20260819_153827_0045",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "要有“冷却重置”机制：验证通过才重置冷却，保证成功者不能无限抢占；验证失败则保留冷却，防止失败者持续输出噪音",
+      "source": "selfgen_20260819_153827_0045",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:39:09.732517"
+}

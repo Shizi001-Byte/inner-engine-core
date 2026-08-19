@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_223102_0003",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是一场从“工程避坑”（显式设置proxies=None与timeout）到“社会学涌现”的升华",
+      "source": "selfgen_20260818_223102_0003",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:33:05.812660"
+}

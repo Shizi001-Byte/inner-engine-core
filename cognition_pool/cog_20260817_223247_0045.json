@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_223136_0045",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "设计引擎任务的链式推演机制，核心在于将一个宏观的、模糊的复杂议题，通过**“解构-映射-模拟-优化”**的DAG（有向无环图）流转，逐步细化为可执行的微观方案",
+      "source": "selfgen_20260817_223136_0045",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "为了清晰展示该机制，我们设定一个虚拟核心议题：**“设计下一代基于大语言模型的个人AI助理产品”**",
+      "source": "selfgen_20260817_223136_0045",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "整个推演分为4轮递进，上一轮的结构化输出自动作为下一轮的Prompt/数据输入",
+      "source": "selfgen_20260817_223136_0045",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   **输入**：核心议题原文（“设计下一代基于LLM的个人AI助理...”）",
+      "source": "selfgen_20260817_223136_0045",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:32:47.135171",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:08.358912"
+}

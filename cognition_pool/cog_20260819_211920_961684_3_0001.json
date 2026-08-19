@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_211813_0001",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "，必须推演一套**增量同步与冲突消解方案**",
+      "source": "selfgen_20260819_211813_0001",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T21:19:20.997067"
+}

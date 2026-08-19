@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_150739_0011",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "以认知质检SOP视角看，引擎运行中最致命的坑不是单点故障，而是三类结构性问题：**认知板结、调用失控、流程单线**",
+      "source": "selfgen_20260818_150739_0011",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**坑**：认知池堆到 1700+ 条，但新认知从不注入任务，也不影响调度，最终变成静态档案库",
+      "source": "selfgen_20260818_150739_0011",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**铁律**：每 10 任务或每轮结束必须刷新认知缓存；新认知入库后 30 分钟内必须参与一次注入；长期无命中或失效认知必须降权/淘汰",
+      "source": "selfgen_20260818_150739_0011",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 扫描认知池，检查是否存在“入库时间 > 30 分钟但从未参与注入”的认知，数量应为 0；",
+      "source": "selfgen_20260818_150739_0011",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 统计最近 10 个任务中携带新增认知的比例，应达到设定阈值（如 ≥80%）；",
+      "source": "selfgen_20260818_150739_0011",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:08:22.178318"
+}

@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_170941_0003",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "> 锚定前提：本推演建立在 Guardian-Core 双进程架构、WAL+Snapshot 持久化、认知池 30 分钟注入规则之上，不重复论证底层机制",
+      "source": "selfgen_20260819_170941_0003",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "任何专业术语在\"规则定义→大众传播→任务执行\"的链路上经历三重映射：",
+      "source": "selfgen_20260819_170941_0003",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 符号层 | S1 | 日常语料 | 字面词形触发的日常语义网络 |",
+      "source": "selfgen_20260819_170941_0003",
+      "type": "deep",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:11:53.337810"
+}

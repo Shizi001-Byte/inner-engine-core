@@ -1,0 +1,14 @@
+{
+  "container_type": "Kata Containers",
+  "cgroup_version": "v2",
+  "cpu_cores": 2,
+  "memory_gb": 4,
+  "swap": 0,
+  "disk_root_gb": 10,
+  "persistent_dir": "/sandboxdata/workspace",
+  "backup_dir": "/sandboxdata/data",
+  "idle_recycle_hours": 24,
+  "dns_servers": ["100.96.0.2", "100.96.0.3"],
+  "dns_timeout_s": 5,
+  "network_interfaces": ["eth0", "eth1"]
+}

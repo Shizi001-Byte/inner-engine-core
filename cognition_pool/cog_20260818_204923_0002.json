@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_204833_0002",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "以下三条直接作为认知质检SOP的强制检查项：",
+      "source": "selfgen_20260818_204833_0002",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**坑：** 认知池已积累1700+条，但新认知从不注入任务，也不影响调度，最终变成静态档案库",
+      "source": "selfgen_20260818_204833_0002",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**铁律：** 每完成10个任务或每轮调度结束，必须刷新认知缓存；所有30分钟内产生的新认知，必须出现在后续任务的候选认知集中",
+      "source": "selfgen_20260818_204833_0002",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **日志审计**：每次任务输出 `candidate_cognition_ids` 和 `new_cognition_created_at`；扫描最近30分钟新增的认知ID，若后续任务候选集缺失该ID，立即告警",
+      "source": "selfgen_20260818_204833_0002",
+      "type": "cog",
+      "density": 0.97,
+      "density_grade": "S",
+      "density_details": {
+        "info": 0.926,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **时间戳巡检**：检查认知缓存的最大 `last_refresh_ts`，超过30分钟未刷新即判不合格",
+      "source": "selfgen_20260818_204833_0002",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:49:23.418155"
+}

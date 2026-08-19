@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_171359_0007",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "引擎优化只能优化“体”的并发能力、超时控制、资源调度，不能把“脑”的决策权下放给“体”，也不能把“体”的执行逻辑塞回“脑”",
+      "source": "selfgen_20260818_171359_0007",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:14:40.202013"
+}

@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_150253_0006",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "沿用锚定：由「脑（元控制器）」掌握控制权，不采用单线死局；将归档拆为**阴阳双轨**：",
+      "source": "selfgen_20260818_150253_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **阳轨**：引擎产出 → 分类 → 打标签 → 落盘 → 索引",
+      "source": "selfgen_20260818_150253_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **阴轨**：配置校验、超时兜底、目录自愈、失败重试",
+      "source": "selfgen_20260818_150253_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "整个系统是“开放、有界、循环”的负熵机制：把引擎的无序输出，转化为有序、可检索、可复用的信息资产",
+      "source": "selfgen_20260818_150253_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:03:53.085502"
+}

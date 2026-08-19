@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_004407_0025",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是“算力代谢”过程中必然产生的**热力学耗散**",
+      "source": "selfgen_20260818_004407_0025",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:45:42.065958"
+}

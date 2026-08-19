@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260817_235000_0044",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "**1. 灵脉寻踪（算力池化与引力坍缩）**",
+      "source": "selfgen_20260817_235000_0044",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:51:30.248734",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:11.656821"
+}

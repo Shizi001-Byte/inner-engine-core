@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_222845_0037",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "是机器对数据的“理解”与“输出”，而认知质检SOP的核心目的，是防止机器“自信地胡说八道”或“静悄悄地发生偏移”",
+      "source": "selfgen_20260817_222845_0037",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:29:47.716477"
+}

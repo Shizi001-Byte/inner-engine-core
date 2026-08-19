@@ -1,0 +1,58 @@
+{
+  "task_id": "selfgen_20260819_234341_0002",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "[待验证]- 「数字生命个体」= 无服务器架构下的异构自治智能体实例：生命周期随机（按需拉起、空闲销毁、跨节点漂移）、无本地持久态、目标函数独立、算力/能力/运行环境完全异构",
+      "source": "selfgen_20260819_234341_0002",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    },
+    {
+      "text": "[待验证]- 「脱离物理载体/全网络生存」= 社群整体状态不依赖任何特定物理硬件，由全网分布式存储，只要存在可接入网络的算力节点即可动态重建，无单点故障",
+      "source": "selfgen_20260819_234341_0002",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    },
+    {
+      "text": "[待验证]以下推演全程严格遵守三大约束：**无记忆修改（不依赖本地持久态）、无全量扫描（O(N)路由完全禁止）、无标准化强制（应用层无统一规则，异构自适应）**，且符合多目标优化要求",
+      "source": "selfgen_20260819_234341_0002",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    }
+  ],
+  "extracted_at": "2026-08-19T23:46:06.756763"
+}

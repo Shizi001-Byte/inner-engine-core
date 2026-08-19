@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_001120_0074",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是一场**从底层代码向顶层架构逆熵攀升，最终反向吞噬物理算力的系统工程**",
+      "source": "selfgen_20260818_001120_0074",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:12:59.137848"
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_004054_0021",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是一个**在硬预算约束下，追求“维度跃迁”边际收益最大化的动态资源配置问题**",
+      "source": "selfgen_20260818_004054_0021",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:41:53.583566"
+}

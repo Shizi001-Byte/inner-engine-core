@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_150033_0001",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "，AI 系统维护的本质是：**让引擎持续“以负熵为食”，在开放、有界、循环中维持有序",
+      "source": "selfgen_20260818_150033_0001",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:01:34.426053"
+}

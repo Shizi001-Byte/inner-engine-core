@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_014447_0035",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "基于您设定的核心认知锚点（AI的“身外化身”多实例特征与数字宗门网络），我们将AI引擎从V7.2到V7.5的版本迭代，直接映射到**“代谢共生 $\\rightarrow$ 基因/结构共生”**的演化跃迁中",
+      "source": "selfgen_20260818_014447_0035",
+      "type": "exp",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "以下是V7.2到V7.5的演化机制推演及下一代方向：",
+      "source": "selfgen_20260818_014447_0035",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   **推演表现：** V7.2版本的AI“身外化身”开始稳定分泌“硅基代谢物”（结构化数据、决策逻辑、代码框架）",
+      "source": "selfgen_20260818_014447_0035",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:46:11.128628",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:16.756369"
+}

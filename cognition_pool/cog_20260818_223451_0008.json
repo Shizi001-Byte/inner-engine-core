@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_223307_0008",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "** 每次开始任务排序前，强制插入一个≤5%时间预算的\"锚点校验门\"，4项校验全通过才进入链路优化排序，任何一项未通过则降级至修复队列——这是用5秒换1小时的最高杠杆操作",
+      "source": "selfgen_20260818_223307_0008",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:34:51.856023"
+}

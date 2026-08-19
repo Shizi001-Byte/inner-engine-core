@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_173107_0004",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是“本地文件状态机”在向“广域网分布式状态机”跃迁过程中，因阴阳失交（外部输入与内部规则未能在 ChainTask 中完成转化）导致的气机停滞",
+      "source": "selfgen_20260819_173107_0004",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:32:43.723647"
+}

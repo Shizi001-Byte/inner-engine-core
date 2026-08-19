@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_182742_0005",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是人类文化的“索引”：它压缩、编码、预测",
+      "source": "selfgen_20260818_182742_0005",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "需要**多AI物种共存**：不同目标函数、不同文化背景、不同模态能力，甚至允许“冗余且低效”的AI存在",
+      "source": "selfgen_20260818_182742_0005",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T18:28:37.173532"
+}

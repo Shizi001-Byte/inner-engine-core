@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_220604_0020",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "引擎优化（如并发执行、超时控制）如果越界侵入决策层，会直接导致“锚点失稳”，从而让1小时劳动归零，且并发越高，失效越快",
+      "source": "selfgen_20260818_220604_0020",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:07:33.686100"
+}

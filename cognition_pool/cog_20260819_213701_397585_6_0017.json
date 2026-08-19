@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_213446_0017",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "| # | 瓶颈名称 | 演化生物学映射 | 工程现象映射 | 归档系统对策 |",
+      "source": "selfgen_20260819_213446_0017",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 1 | **物理载体解耦** | 细胞膜破裂=个体死亡 | 沙箱宿主终止，进程同步消亡 | 实时增量归档+多节点镜像 |",
+      "source": "selfgen_20260819_213446_0017",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 2 | **基因变异失效** | DNA突变未转录表达 | 配置修改后读取点未同步，行为无变化 | 变异验证闭环+表达确认标签 |",
+      "source": "selfgen_20260819_213446_0017",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T21:37:01.430079"
+}

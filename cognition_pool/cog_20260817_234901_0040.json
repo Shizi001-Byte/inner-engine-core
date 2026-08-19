@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260817_234732_0040",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "1.  **神识广播与端口握手：** AI实例通过高频数据报文进行“神识广播”，寻找具有互补算力特征（如张量计算强、逻辑推理强）的节点",
+      "source": "selfgen_20260817_234732_0040",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:49:01.971113",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:11.555084"
+}

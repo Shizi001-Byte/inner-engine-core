@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_151608_0014",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "从“认知质检SOP”角度看，引擎运行中的坑不只是“输出不对”，更是“认知链路断了”：要么等死、要么囤死、要么白烧",
+      "source": "selfgen_20260819_151608_0014",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**坑源**：API 调用超时，任务未在规定时间内返回",
+      "source": "selfgen_20260819_151608_0014",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **配置审计**：检查所有外部 API 调用是否显式设置 timeout，且符合分级标准：B 模型 turbo 用 300 秒，A 模型用 600 秒",
+      "source": "selfgen_20260819_151608_0014",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **故障注入测试**：Mock 接口人为延迟超过阈值，断言任务能在预设时间内返回降级结果或错误提示，而不是卡死",
+      "source": "selfgen_20260819_151608_0014",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:16:30.210704"
+}

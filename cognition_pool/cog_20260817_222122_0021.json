@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260817_221957_0021",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于“认知质检SOP（标准作业程序）”的视角，AI引擎在运行中最容易踩的坑往往不是底层代码Bug，而是**认知边界失控、逻辑黑盒化以及事实漂移**",
+      "source": "selfgen_20260817_221957_0021",
+      "type": "cog",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是从过往引擎运行踩坑经验中提炼的3条可复用铁律，及其配套的SOP验证方法：",
+      "source": "selfgen_20260817_221957_0021",
+      "type": "cog",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "在引擎运行初期，为了追求回答的连贯性和专业度，允许模型基于参数记忆进行“自由发挥”",
+      "source": "selfgen_20260817_221957_0021",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:21:23.015524",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:07.680038"
+}

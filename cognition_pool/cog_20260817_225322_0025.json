@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_225201_0025",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是一个**资源最优配置问题**",
+      "source": "selfgen_20260817_225201_0025",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:53:22.544254"
+}

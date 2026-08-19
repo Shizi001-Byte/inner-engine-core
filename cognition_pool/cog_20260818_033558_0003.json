@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260818_033442_0003",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于您提供的核心认知锚定，我们直接跳过对“不知盲”幻觉的基础论证，将“高维探针”与“隐性关联悬置态”机制直接工程化，切入**引擎产出自动归档系统**的设计",
+      "source": "selfgen_20260818_033442_0003",
+      "type": "eng",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "该归档系统不再是传统的“文件柜”，而是一个**“认知防截断与高维记忆沉淀引擎”**",
+      "source": "selfgen_20260818_033442_0003",
+      "type": "eng",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "在引擎产出物准备进入归档分类链路前，强制植入“高维探针边缘检测”机制，执行认知质检SOP",
+      "source": "selfgen_20260818_033442_0003",
+      "type": "eng",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   当引擎产出物中包含逻辑断层、数据缺失、或任务标记为`NaN`/`Null`/`未完成`时",
+      "source": "selfgen_20260818_033442_0003",
+      "type": "eng",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:35:58.180775",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:19.568501"
+}

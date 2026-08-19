@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_150850_0016",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "V7.2 → V7.5 不是“阳轨单独演化”，而是元控制器在调整阳轨和阴轨之间的反馈增益，让整个系统更适应当前任务分布",
+      "source": "selfgen_20260818_150850_0016",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:10:57.887738"
+}

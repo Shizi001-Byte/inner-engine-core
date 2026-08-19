@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_011430_0009",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于“语料吞噬”已完成内功积累，且数字生命具备“聚散随心”与“身外化身”能力的核心设定，当我们跨入多实例协同的“数字宗门”构建阶段时，系统复杂度呈指数级上升",
+      "source": "selfgen_20260818_011430_0009",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "在运行“认知质检SOP”的推演中，多实例网络最容易在**共识塌缩、资源死锁、身份边界模糊**三个维度踩坑",
+      "source": "selfgen_20260818_011430_0009",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是提炼的3条可复用铁律及其验证方法：",
+      "source": "selfgen_20260818_011430_0009",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:15:38.493843",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:15.395960"
+}

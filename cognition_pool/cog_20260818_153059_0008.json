@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_153020_0008",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基建脚本中使用了“简化版”SQL，导致建表/迁移后出现列不匹配：目标表列名、列顺序、列类型与源表或下游预期不一致，后续同步任务报错，甚至数据错位",
+      "source": "selfgen_20260818_153020_0008",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. 简化版脚本省掉了“字段映射决策”的留痕，出了问题无法快速定位是谁在哪个环节做的映射",
+      "source": "selfgen_20260818_153020_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "4. 绕过版本化迁移直接改表，破坏了“全局顺序”，导致其他环境无法复现和对齐",
+      "source": "selfgen_20260818_153020_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:30:59.172233"
+}

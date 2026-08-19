@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_175413_0015",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "要回答这个问题，我们可以先建立**AI引擎迭代 ↔ 生物演化**的核心映射锚点（完全基于题目给出的工程约束）：",
+      "source": "selfgen_20260819_175413_0015",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| AI引擎侧（工程事实） | 演化生物学侧 |",
+      "source": "selfgen_20260819_175413_0015",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 引擎核心架构（推理框架、调度逻辑） | 物种基因组（核心遗传物质） |",
+      "source": "selfgen_20260819_175413_0015",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 单个模型的独立运行链路（计数/熔断/降级） | 种内占据不同微生境的功能类群 |",
+      "source": "selfgen_20260819_175413_0015",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:57:38.463448"
+}

@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_162326_0002",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于“八步拆解法”，结合已验证的认知锚定（稳定3路并发、执行层自进化闭环、算力非零成本）及历史避坑经验（API超时、引擎空转），将这套机制固化为引擎标准决策模块的推演如下：",
+      "source": "selfgen_20260819_162326_0002",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 8,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**目标**：在严格不突破“稳定3路并发”物理上限的前提下，将“检测重复率→生成新模板→注入任务池→验证生效”的自进化闭环固化为引擎底层的标准决策模块，确保引擎在有限算力预算内实现任务多样性与执行质量的持续提升",
+      "source": "selfgen_20260819_162326_0002",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 7,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "为达成上述目标，该标准决策模块需包含三大核心子模块：",
+      "source": "selfgen_20260819_162326_0002",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **触发器**：何时检测？重复率阈值多少？何时触发生成？",
+      "source": "selfgen_20260819_162326_0002",
+      "type": "deep",
+      "density": 0.483,
+      "density_grade": "B",
+      "density_details": {
+        "info": 0.0,
+        "action": 0.667,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **执行器**：在3路并发中如何插空执行生成与验证？如何限制预算？",
+      "source": "selfgen_20260819_162326_0002",
+      "type": "deep",
+      "density": 0.825,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.5,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:24:59.641783"
+}

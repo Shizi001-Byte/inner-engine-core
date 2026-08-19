@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_220752_0023",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】中“以实养虚，虚又返实”的自增强循环架构，结合“基建脚本禁用简化版”导致SQL列不匹配的历史教训，推演并输出如下检查清单与闭环机制",
+      "source": "selfgen_20260818_220752_0023",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在“实（工程执行与API调用）”层面，简化版SQL为了减少API调用量或缩短执行时间，使用了`SELECT *`或省略了显式字段映射，导致上游表结构变更时，下游脚本发生列对齐错误",
+      "source": "selfgen_20260818_220752_0023",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在“虚（方舟效能引擎与映射体系）”层面，这说明引擎的容错规则未覆盖“结构变更引发的隐性截断”",
+      "source": "selfgen_20260818_220752_0023",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "此教训必须作为新认知，在30分钟内注入认知池，驱动后续调度生成“强类型校验”前置任务，实现“以实养虚，虚又返实”",
+      "source": "selfgen_20260818_220752_0023",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- [ ] **禁用隐式字段提取**：SQL中是否绝对禁止了 `SELECT *`？必须使用显式字段名（如 `SELECT id, name, status FROM ...`）",
+      "source": "selfgen_20260818_220752_0023",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:08:53.270456"
+}

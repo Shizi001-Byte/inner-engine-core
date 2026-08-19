@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_215102_0010",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "结合历史避坑经验、坑库预警与已有认知锚定，现基于【演化生物学映射】与【CAS复杂适应系统】框架，对“Supabase记忆脑增量同步方案”进行链式推演，并同步提炼多目标优化认知",
+      "source": "selfgen_20260819_215102_0010",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**复盘案例：并发自进化的局部最优陷阱**",
+      "source": "selfgen_20260819_215102_0010",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **现象解构**：引擎调度仅以“失败率”作为单一适应度函数来调整并发数",
+      "source": "selfgen_20260819_215102_0010",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "失败率低时盲目拉高至5路并发，却忽略了高并发带来的资源争抢与内存泄漏（崩溃频率上升）",
+      "source": "selfgen_20260819_215102_0010",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "最终系统在“单指标优秀、整体产出低下”的局部最优解中锁死",
+      "source": "selfgen_20260819_215102_0010",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T21:52:18.091525"
+}

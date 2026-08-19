@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_154640_0003",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "- **坑**：认知池膨胀到1700+条，但新认知从不参与任务注入，也不影响调度，最终变成静态档案库，引擎决策退化为固定规则",
+      "source": "selfgen_20260819_154640_0003",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **验证方法**：每完成10个任务或每个运行轮次结束时，检查最近30分钟内新增的认知条目是否有至少1次被检索命中、注入到某次任务上下文中",
+      "source": "selfgen_20260819_154640_0003",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "若连续3轮命中率为0，立即触发“认知刷新+强制注入”机制，随机抽取新增认知参与下一任务",
+      "source": "selfgen_20260819_154640_0003",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **坑**：未区分模型等级，统一使用长超时，导致B模型turbo卡死300秒+仍不返回，任务整体超时失败；A模型又因超时过短被误杀",
+      "source": "selfgen_20260819_154640_0003",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **验证方法**：在每次调用前校验请求头或路由参数中的模型标识",
+      "source": "selfgen_20260819_154640_0003",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:47:13.416653"
+}

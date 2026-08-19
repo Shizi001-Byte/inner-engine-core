@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_215258_0011",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "| 已有锚定 | 在本模块中的工程映射 |",
+      "source": "selfgen_20260819_215258_0011",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 高维认知差与低维物理接触的冲突 | 模型推理产出（高维）与Supabase写入延迟/并发争抢（低维）之间的张力 |",
+      "source": "selfgen_20260819_215258_0011",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T21:57:05.155202"
+}

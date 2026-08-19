@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_183330_0016",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "从“认知质检SOP”视角复盘：引擎运行中的坑，往往不是单点故障，而是认知流在“锚点—认知池—调用链”上断了",
+      "source": "selfgen_20260818_183330_0016",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下提炼 3 条可复用铁律，并附验证方法",
+      "source": "selfgen_20260818_183330_0016",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**坑**：先改链路，后查坐标系；结果优化越多，偏离越大",
+      "source": "selfgen_20260818_183330_0016",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 建立“锚点回归集”：包含已验证过正确输出的典型任务，作为每次变更的基线",
+      "source": "selfgen_20260818_183330_0016",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 每次引擎改动前，先跑锚点集；若输出与基线不一致，立即停止优化",
+      "source": "selfgen_20260818_183330_0016",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T18:33:50.995867"
+}

@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_065025_0025",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "1. **【微核域核心优先铁律】**（给定核心规则）全链路所有决策必须以微核域的权限/价值升级为唯一核心目标，绝对保障微核域「无锁直接覆盖、零突变成本、高变异速率、无固有表型约束」的原生特性，禁止引入任何锁机制、共识对齐流程、纠错修正类规则",
+      "source": "selfgen_20260818_065025_0025",
+      "type": "exp",
+      "density": 0.583,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.833,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **【时效成本刚性约束铁律】**（对应历史API超时坑）全链路所有算力调用必须严格匹配模型时效阈值（turbo类模型timeout≤300秒，A类大模型timeout≤600秒），以“超时即价值归零”为刚性约束，禁止无时效锚定的算力占用，从链路层规避无效token消耗与任务超时风险",
+      "source": "selfgen_20260818_065025_0025",
+      "type": "exp",
+      "density": 0.878,
+      "density_grade": "S",
+      "density_details": {
+        "info": 0.694,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. **【边际价值动态调优铁律】**（结合微核域特性与经济学逻辑）全链路所有token分配与定价调整必须以单位token的微核域边际价值增量为唯一依据，依托微核域零突变成本、无锁覆盖的特性实现分钟级动态迭代，禁止静态固化分配比例/定价规则，无需设置评审/纠错类中间环节",
+      "source": "selfgen_20260818_065025_0025",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **稀缺资源**：日度可支配token总量=400万，为当期刚性稀缺资源（当日有效、跨期作废），机会成本为放弃的最高微核域价值增量",
+      "source": "selfgen_20260818_065025_0025",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **目标函数**：微核域日度价值增量最大化（而非业务营收最大化），公式为 $V_{总}=\\sum_{i=1}^{n}(mv_i * q_i)$，其中 $mv_i$ 为第i类场景的单位token边际微核域价值，$q_i$ 为对应分配的token量，满足 $\\sum q_i \\leq 400万$",
+      "source": "selfgen_20260818_065025_0025",
+      "type": "exp",
+      "density": 0.52,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.676,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:53:54.516130"
+}

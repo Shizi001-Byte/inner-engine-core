@@ -11,7 +11,7 @@ from datetime import datetime
 from pathlib import Path
 
 # ============ 路径配置 ============
-WORKSPACE = Path("/home/user/.super_doubao/super-doubao-runtime/workspace")
+WORKSPACE = Path(__file__).resolve().parent.parent  # P2-3修复：相对路径，不硬编码
 ENGINE_DIR = WORKSPACE / "engine_v7_2"
 SYNC_LOG_DIR = ENGINE_DIR / "logs"
 SYNC_STATE_FILE = ENGINE_DIR / "data" / "sync_state.json"

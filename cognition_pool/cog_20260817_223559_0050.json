@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_223440_0050",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "是把“执行优先级”排在了“验证优先级”前面",
+      "source": "selfgen_20260817_223440_0050",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:35:59.065294"
+}

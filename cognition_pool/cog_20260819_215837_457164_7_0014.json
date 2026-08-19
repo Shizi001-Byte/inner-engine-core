@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_215707_0014",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【演化生物学映射】与【CAS复杂适应系统】框架，结合历史避坑经验与认知锚定，现对“Gitee代码提交、飞书文件上传、Supabase存储同步”的三方自动化同步引擎进行链式推演与设计",
+      "source": "selfgen_20260819_215707_0014",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在CAS框架下，三方同步系统是一个多节点信息流网络：",
+      "source": "selfgen_20260819_215707_0014",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **Gitee（基因库/DNA）**：代表高维认知的代码沉淀，是系统的稳定底座",
+      "source": "selfgen_20260819_215707_0014",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. **Supabase（记忆脑/中枢神经系统）**：记录状态流转，弥合高维代码与低维物理界面之间的认知差",
+      "source": "selfgen_20260819_215707_0014",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T21:58:37.493205"
+}

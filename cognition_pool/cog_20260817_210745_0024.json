@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260817_210607_0024",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "针对V7.4九维闭环引擎在“多线程API调用后串行后处理”这一架构下，状态一致性问题是核心痛点",
+      "source": "selfgen_20260817_210607_0024",
+      "type": "eng",
+      "density": 0.51,
+      "density_grade": "A"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:07:46.038484",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:05.689109"
+}

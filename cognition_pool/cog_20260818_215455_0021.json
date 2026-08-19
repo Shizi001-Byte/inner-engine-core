@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_215327_0021",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【避坑提醒】，针对V7.5方舟效能引擎中“多线程API调用后串行后处理”的架构，我们将严格贯彻**“先校准锚点再优化链路”**原则，运用**“精气神三元迁移框架”**，推演Supabase记忆脑的增量同步方案",
+      "source": "selfgen_20260818_215327_0021",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 12,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在“决策串行、执行并发”的架构下，Supabase记忆脑的增量同步（本地文件变化检测、只同步变更部分、处理冲突）必须解决**“并发执行层的无序变更产生” vs “串行决策层的锚点校验与状态闭环”**这一核心矛盾",
+      "source": "selfgen_20260818_215327_0021",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 9,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在触发任何Supabase同步动作前，主线程必须先完成锚点校准，彻底规避历史踩坑经验：",
+      "source": "selfgen_20260818_215327_0021",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **配置锚点校验**：确认Supabase的`Table`与`Schema`读写点配置一致，避免“配置修改后未生效”的致命坑",
+      "source": "selfgen_20260818_215327_0021",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **质量检测锚点校验**：对多线程API回调的产物进行分类校验",
+      "source": "selfgen_20260818_215327_0021",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:54:55.663808"
+}

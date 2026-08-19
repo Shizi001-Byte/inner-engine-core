@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260820_004340_0001",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "当前会话未接收到认知池实际数据快照",
+      "source": "selfgen_20260820_004340_0001",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下分析基于**已锚定的两条核心链**（同步/去重系统域）进行**推演式建模**，产出的是可直接套用的处理框架，待真实池数据接入后即可执行",
+      "source": "selfgen_20260820_004340_0001",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[链1]文件变化检测 → [链2]内容寻址去重 → [链3]块级增量同步",
+      "source": "selfgen_20260820_004340_0001",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[链5]无状态验证 ← [链4]冲突检测与异构自适应解决 ←──┘",
+      "source": "selfgen_20260820_004340_0001",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "按此五节点域，推演出可能的C级低密碎片认知簇：",
+      "source": "selfgen_20260820_004340_0001",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-20T00:45:03.116899"
+}

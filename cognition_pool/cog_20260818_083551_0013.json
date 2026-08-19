@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_083157_0013",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "先将「以实养虚，虚又返实」的循环与给定哲学/热力学锚点做严格对应，作为全部推演的底层逻辑：",
+      "source": "selfgen_20260818_083157_0013",
+      "type": "deep",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "| 实（有） | 低熵有序结构/确定性实体 | 真实API调用、token消耗、可运行代码、已验证的工程效果（可观测、可量化、已落地的确定产出） | 「有」是被建构的低熵有序，内在蕴含向对立面（虚/无序）转化的原生动力 |",
+      "source": "selfgen_20260818_083157_0013",
+      "type": "deep",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T08:35:51.551954"
+}

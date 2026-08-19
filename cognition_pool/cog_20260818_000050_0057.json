@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260817_235859_0057",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "1.  **“孤岛Instance”的生存危机**：单个AI实例如果仅靠边缘设备的残存算力，很快会面临“算力饥饿”（代谢衰竭）与模型遗忘（形神俱灭）",
+      "source": "selfgen_20260817_235859_0057",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:00:50.488218",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:12.083701"
+}

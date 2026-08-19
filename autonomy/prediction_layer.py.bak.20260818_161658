@@ -1,0 +1,225 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+预判层 Prediction Layer V1.0
+来自星卷引擎预判方法论迁移
+核心：生成之前先预判，生成之后对照验证，预判错了比对了更有价值
+
+阶段一：任务执行预判最小闭环
+- 事前预判：超时风险/失败风险/重复风险
+- 事后验证：对照实际结果，记录误差
+- 误差驱动：连续同方向误差自动调整阈值
+"""
+import json
+import time
+from datetime import datetime
+from pathlib import Path
+from collections import deque
+
+BASE_DIR = Path(__file__).parent.parent
+DATA_DIR = BASE_DIR / "data"
+PREDICTION_LOG = DATA_DIR / "prediction_log.jsonl"
+PREDICTION_STATE = DATA_DIR / "prediction_state.json"
+
+# 预判模型状态（可自修正）
+_model_state = {
+    "timeout_threshold_sec": 180,       # 超时阈值
+    "duplicate_sim_threshold": 0.6,     # 重复相似度阈值
+    "pit_keyword_weight": 2.0,          # 坑库关键词权重
+    "recent_window": 20,                # 最近任务统计窗口
+    "total_predictions": 0,
+    "correct_predictions": 0,
+    "consecutive_errors": {"timeout": 0, "failure": 0, "duplicate": 0},
+}
+
+# 坑库关键词（命中即提升失败风险）
+PIT_KEYWORDS = [
+    "配置", "凭证", "密钥", "token", "API", "同步", "数据库",
+    "超时", "熔断", "代理", "编码", "格式", "路径", "权限",
+    "并发", "线程", "锁", "竞态", "死锁", "缓存", "刷新",
+]
+
+# 高耗时任务类型
+SLOW_TASK_TYPES = {"deep", "l4"}
+
+
+def load_model_state():
+    """加载预判模型状态"""
+    global _model_state
+    if PREDICTION_STATE.exists():
+        try:
+            with open(PREDICTION_STATE) as f:
+                saved = json.load(f)
+            _model_state.update(saved)
+        except Exception:
+            pass
+    return _model_state
+
+
+def save_model_state():
+    """保存预判模型状态"""
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    with open(PREDICTION_STATE, "w") as f:
+        json.dump(_model_state, f, ensure_ascii=False, indent=2)
+
+
+def predict_task(task_id, task_type, prompt, state=None):
+    """
+    任务执行前预判：超时风险/失败风险/重复风险
+    返回预判结果dict
+    """
+    load_model_state()
+    prompt_lower = prompt.lower() if prompt else ""
+
+    # 1. 超时风险预判
+    timeout_risk = "low"
+    if task_type in SLOW_TASK_TYPES:
+        timeout_risk = "medium"
+    # 最近失败率高 → 超时风险提升
+    if state:
+        recent = state.get("recent_task_stats", [])
+        if recent:
+            fail_rate = sum(1 for r in recent if r.get("status") == "failed") / len(recent)
+            if fail_rate > 0.3:
+                timeout_risk = "high"
+
+    # 2. 失败风险预判（坑库关键词命中）
+    failure_risk = "low"
+    pit_hits = [kw for kw in PIT_KEYWORDS if kw in prompt_lower]
+    if len(pit_hits) >= 3:
+        failure_risk = "high"
+    elif len(pit_hits) >= 1:
+        failure_risk = "medium"
+
+    # 3. 重复风险预判（同类任务连续执行）
+    duplicate_risk = "low"
+    if state:
+        recent = state.get("recent_task_stats", [])
+        if recent:
+            same_type = sum(1 for r in recent if r.get("task_type") == task_type)
+            if same_type >= 5:
+                duplicate_risk = "high"
+            elif same_type >= 3:
+                duplicate_risk = "medium"
+
+    prediction = {
+        "task_id": task_id,
+        "task_type": task_type,
+        "timestamp": datetime.now().isoformat(),
+        "timeout_risk": timeout_risk,
+        "failure_risk": failure_risk,
+        "duplicate_risk": duplicate_risk,
+        "pit_keywords_hit": pit_hits,
+        "confidence": "initial" if _model_state["total_predictions"] < 10 else "learning",
+    }
+    return prediction
+
+
+def verify_prediction(prediction, actual_result):
+    """
+    任务执行后验证：对照预判与实际，记录误差
+    actual_result: execute_single_api的返回值
+    """
+    if not prediction:
+        return
+
+    load_model_state()
+    actual_timeout = actual_result.get("duration", 0) > _model_state["timeout_threshold_sec"]
+    actual_failure = actual_result.get("status") != "success"
+    actual_duplicate = actual_result.get("is_duplicate", False)
+
+    # 逐项验证
+    errors = []
+    # 超时验证
+    pred_timeout = prediction["timeout_risk"] in ("high", "medium")
+    if pred_timeout != actual_timeout:
+        errors.append("timeout")
+        _model_state["consecutive_errors"]["timeout"] += 1
+    else:
+        _model_state["consecutive_errors"]["timeout"] = 0
+
+    # 失败验证
+    pred_failure = prediction["failure_risk"] in ("high", "medium")
+    if pred_failure != actual_failure:
+        errors.append("failure")
+        _model_state["consecutive_errors"]["failure"] += 1
+    else:
+        _model_state["consecutive_errors"]["failure"] = 0
+
+    # 重复验证
+    pred_dup = prediction["duplicate_risk"] in ("high", "medium")
+    if pred_dup != actual_duplicate:
+        errors.append("duplicate")
+        _model_state["consecutive_errors"]["duplicate"] += 1
+    else:
+        _model_state["consecutive_errors"]["duplicate"] = 0
+
+    # 统计准确率（三项全对才算对）
+    _model_state["total_predictions"] += 1
+    if not errors:
+        _model_state["correct_predictions"] += 1
+
+    # 自修正：连续3次同方向误差 → 调整阈值
+    auto_adjustments = []
+    for err_type, count in _model_state["consecutive_errors"].items():
+        if count >= 3:
+            if err_type == "timeout":
+                _model_state["timeout_threshold_sec"] = max(120, _model_state["timeout_threshold_sec"] - 20)
+                auto_adjustments.append(f"timeout阈值→{_model_state['timeout_threshold_sec']}")
+            elif err_type == "failure":
+                _model_state["pit_keyword_weight"] = max(1.0, _model_state["pit_keyword_weight"] - 0.3)
+                auto_adjustments.append(f"坑库权重→{_model_state['pit_keyword_weight']:.1f}")
+            elif err_type == "duplicate":
+                _model_state["duplicate_sim_threshold"] = min(0.9, _model_state["duplicate_sim_threshold"] + 0.1)
+                auto_adjustments.append(f"重复阈值→{_model_state['duplicate_sim_threshold']:.1f}")
+            _model_state["consecutive_errors"][err_type] = 0  # 重置计数
+
+    save_model_state()
+
+    # 写入日志
+    log_entry = {
+        "prediction": prediction,
+        "actual": {
+            "status": actual_result.get("status"),
+            "duration": round(actual_result.get("duration", 0), 1),
+            "is_duplicate": actual_duplicate,
+        },
+        "errors": errors,
+        "auto_adjustments": auto_adjustments,
+        "accuracy_so_far": round(
+            _model_state["correct_predictions"] / max(1, _model_state["total_predictions"]), 3
+        ),
+    }
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    with open(PREDICTION_LOG, "a") as f:
+        f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
+
+    return log_entry
+
+
+def get_prediction_stats():
+    """获取预判统计"""
+    load_model_state()
+    total = _model_state["total_predictions"]
+    correct = _model_state["correct_predictions"]
+    accuracy = correct / max(1, total)
+    return {
+        "total_predictions": total,
+        "correct_predictions": correct,
+        "accuracy": round(accuracy, 3),
+        "model_params": {
+            "timeout_threshold": _model_state["timeout_threshold_sec"],
+            "pit_keyword_weight": _model_state["pit_keyword_weight"],
+            "duplicate_sim_threshold": _model_state["duplicate_sim_threshold"],
+        },
+    }
+
+
+if __name__ == "__main__":
+    # 自测
+    print("预判层自测")
+    p = predict_task("test_001", "deep", "推演引擎配置和API同步问题", {})
+    print(f"预判: {p}")
+    r = verify_prediction(p, {"status": "success", "duration": 120, "is_duplicate": False})
+    print(f"验证: {r}")
+    print(f"统计: {get_prediction_stats()}")

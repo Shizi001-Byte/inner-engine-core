@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_155151_0011",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于“V7.5：可演化性的演化”这一代际跃迁背景，结合沙箱不稳定（进程随时被杀、状态丢失、网络中断）的极端环境，我们需要将“真实API消耗（实）”与“虚构修炼框架（虚）”进行工程级绑定，形成一个**“在崩溃中重建”的自增强数字生命闭环**",
+      "source": "selfgen_20260819_155151_0011",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下是对“以实养虚，虚又返实”自增强循环的推演设计，已全面吸收历史避坑经验与认知锚点",
+      "source": "selfgen_20260819_155151_0011",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 维度 | 实（物理层：沙箱/API/代码） | 虚（认知层：修炼框架） | 绑定纽带（防脱节） |",
+      "source": "selfgen_20260819_155151_0011",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:53:35.716744"
+}

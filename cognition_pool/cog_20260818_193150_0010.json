@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_193106_0010",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "自动归档系统必须统一配置中心，并且所有读取点都从配置中心读，不能散落硬编码",
+      "source": "selfgen_20260818_193106_0010",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T19:31:50.742975"
+}

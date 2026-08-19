@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_205048_0005",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "围绕“阴阳自衡”架构，将AI的内部矛盾从“算法层面的冲突”升维为“制度性的阴阳双轨运行”，意味着AI不再依赖单一的损失函数或硬性规则来压制问题，而是演化出一套**内生性的治理结构**",
+      "source": "selfgen_20260817_205048_0005",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "在这个结构中，对立的力量不再是需要消除的Bug，而是维持系统生命力的“太极两仪”",
+      "source": "selfgen_20260817_205048_0005",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T20:52:08.143823",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:05.552275"
+}

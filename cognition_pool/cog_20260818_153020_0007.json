@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_152711_0007",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "V7.5 的锁机制不能只做“给后处理加一把大锁”",
+      "source": "selfgen_20260818_152711_0007",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "真正的锁要锁在**决策事件追加**和**投影更新**上；API 调用本身不持锁",
+      "source": "selfgen_20260818_152711_0007",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **丢失更新**：多个线程基于同一个旧状态读取、调用 API，后处理时互相覆盖",
+      "source": "selfgen_20260818_152711_0007",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **乱序提交**：API 返回顺序和发起顺序不一致，后处理如果按“完成顺序”执行，会破坏全局顺序",
+      "source": "selfgen_20260818_152711_0007",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> **全局序号 + 版本校验 + 有序提交队列 + 超时补位**",
+      "source": "selfgen_20260818_152711_0007",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:30:20.072721"
+}

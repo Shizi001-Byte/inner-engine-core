@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_210411_0033",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "- 采用“链式推演引擎”：一个核心议题拆成 5 轮递进，上一轮输出作为下一轮主输入",
+      "source": "selfgen_20260818_210411_0033",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 配置注册中心全局读取参数，失败沿回退边回退，不整链重来",
+      "source": "selfgen_20260818_210411_0033",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 时间尺度 | 文化/技术进化为主，生物进化为背景 |",
+      "source": "selfgen_20260818_210411_0033",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:05:19.578538"
+}

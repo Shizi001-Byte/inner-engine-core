@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_174125_0021",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "- **同步粒度是块，不是整个文件**：文件只是“块的有序索引”，同步时只上传缺失/变化的块",
+      "source": "selfgen_20260818_174125_0021",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **归档对象本体是 DAG 顶点，不是进程实例**：远端不存“同步任务”记录，而是存不可变的 `block / index / tombstone` 顶点",
+      "source": "selfgen_20260818_174125_0021",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **流程结构是三个串联 DAG 节点，每节点三转，共九转**：`Detect -> Diff -> Commit`，每节点内部固定三步",
+      "source": "selfgen_20260818_174125_0021",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **核心目标是事实边界 + 校验机制**：每个块是一个事实单元；每次提交前校验哈希、结构、来源",
+      "source": "selfgen_20260818_174125_0021",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **超时熔断是负熵输入机制的保险丝**：同步是为了给记忆脑增加秩序，超时/冲突时必须停止写入，不能把混乱固化",
+      "source": "selfgen_20260818_174125_0021",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:44:01.922209"
+}

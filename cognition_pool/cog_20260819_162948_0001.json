@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_162900_0001",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "，在“全是开发者的官方群”里，外卖骑手身份之所以有记忆点，不是因为“骑手”本身特殊，而是因为：",
+      "source": "selfgen_20260819_162900_0001",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:29:48.287482"
+}

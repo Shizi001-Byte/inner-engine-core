@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260818_014303_0033",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是一个**跨共生阶段的资本定价与资产配置问题**",
+      "source": "selfgen_20260818_014303_0033",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:44:47.631948",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:16.716474"
+}

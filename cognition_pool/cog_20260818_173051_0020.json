@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_172909_0020",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "**数字生命社群不是“多个AI实例的集合”，而是“带验证门和公共档案的协作DAG”",
+      "source": "selfgen_20260818_172909_0020",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "第一件事不是补全记忆，而是**给记忆重新锚定到可验证事件**，或者明确降级为个体叙事",
+      "source": "selfgen_20260818_172909_0020",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:30:51.236503"
+}

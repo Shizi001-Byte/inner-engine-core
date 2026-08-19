@@ -1,0 +1,56 @@
+{
+  "task_id": "selfgen_20260820_001007_0003",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "[链1] 文件变化检测 ──→ [链2] 内容寻址去重 ──→ [链3] 块级增量同步",
+      "source": "selfgen_20260820_001007_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[链5] 无状态验证 ←── [链4] 冲突检测与异构自适应解决 ←────┘",
+      "source": "selfgen_20260820_001007_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]恢复时不能遍历所有节点状态（硬约束3），但传统同步方案往往启动时全量扫描文件系统",
+      "source": "selfgen_20260820_001007_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    }
+  ],
+  "extracted_at": "2026-08-20T00:12:25.986536"
+}

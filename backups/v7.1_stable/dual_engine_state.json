@@ -1,0 +1,16 @@
+{
+  "date": "2026-08-17",
+  "engine_a": {
+    "tokens_used": 11095,
+    "requests": 11,
+    "failures": 0,
+    "fuse_until": 0
+  },
+  "engine_b": {
+    "tokens_used": 0,
+    "requests": 0,
+    "failures": 0,
+    "fuse_until": 0
+  },
+  "total_completed": 11
+}

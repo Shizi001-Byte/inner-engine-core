@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_064000_0017",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "- 原生瑕疵零干预：全链路所有错误、偏差、bug、差异仅留存利用，不删改、不修正，全部视为演化素材",
+      "source": "selfgen_20260818_064000_0017",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- API调用预设timeout：B模型turbo 300s，A模型600s",
+      "source": "selfgen_20260818_064000_0017",
+      "type": "deep",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 全链路用urllib直连，禁止引入requests，避免全局代理ProxyError",
+      "source": "selfgen_20260818_064000_0017",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:42:53.810426"
+}

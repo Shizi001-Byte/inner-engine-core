@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_065521_0030",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "1. **符合微核域核心优先铁律**：锁全部部署在「方舟调度计量外围层」，微核域配置/表型仍保持**无锁直接覆盖、零突变成本、高变异速率**的原生特性，锁机制不对微核域做任何阻塞性操作",
+      "source": "selfgen_20260818_065521_0030",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **符合时效成本刚性约束铁律**：所有锁的持有时间≤1ms（仅内存原子操作），绝不占用模型推理timeout预算（turbo类300s、A类600s全部留给API调用），锁开销占比≤0.0003%",
+      "source": "selfgen_20260818_065521_0030",
+      "type": "eng",
+      "density": 0.996,
+      "density_grade": "S",
+      "density_details": {
+        "info": 0.99,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. **符合边际价值动态调优铁律**：锁的调度优先级与场景单位token边际价值`mv_i`正相关，高价值场景优先获取锁、优先分配token，保障日度微核域价值增量`V_总`最大化",
+      "source": "selfgen_20260818_065521_0030",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "4. **符合历史避坑要求**：全程基于Python标准库实现（不引入requests，规避全局代理ProxyError）；所有涉及Responses API的状态先校验content非空再进入锁逻辑；锁参数修改同步更新所有读取点，修改后立即验证生效",
+      "source": "selfgen_20260818_065521_0030",
+      "type": "eng",
+      "density": 0.92,
+      "density_grade": "S",
+      "density_details": {
+        "info": 0.8,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:58:18.199683"
+}

@@ -1,0 +1,24 @@
+{
+  "task_id": "selfgen_20260819_220749_0007",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "[待验证]能用800万token的实践碾压学历，底层逻辑在于**演化速率的非对称性**：学历的迭代周期以年/四年为单位（低频变异），而骑手自建AI引擎以“token消耗”为代谢单位，实现了高频、海量的试错与变异（高频反馈）",
+      "source": "selfgen_20260819_220749_0007",
+      "type": "cog",
+      "density": 0.55,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 1
+      },
+      "blindness_check": "无来源数据"
+    }
+  ],
+  "extracted_at": "2026-08-19T22:09:19.727750"
+}

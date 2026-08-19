@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_180939_0010",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "从“认知质检SOP”角度，历史踩坑不是单点故障，而是机制缺位",
+      "source": "selfgen_20260818_180939_0010",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "基于已有认知锚定，提炼 3 条可复用铁律：",
+      "source": "selfgen_20260818_180939_0010",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**坑**：API 调用超时，任务未在规定时间内返回，导致整条链路阻塞",
+      "source": "selfgen_20260818_180939_0010",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**锚定**：不同模型能力差异大，不能共用一套超时策略",
+      "source": "selfgen_20260818_180939_0010",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "任何外部模型调用，在任务下发前必须根据模型身份显式设定 timeout：B 模型 turbo 用 300 秒，A 模型用 600 秒；同时必须有 watchdog 或异步降级路径，禁止让一次超时拖死整个引擎",
+      "source": "selfgen_20260818_180939_0010",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T18:09:58.720994"
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_152820_0032",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "用“反者道之动”强制引入反向扰动：",
+      "source": "selfgen_20260819_152820_0032",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> 生成前注入“风格旋转 + 套话禁令”；生成后计算同质化指数，超标立即重生成；通过后把本次抽象句收入“虚”库，形成“以实养虚，虚又返实”的自进化闭环",
+      "source": "selfgen_20260819_152820_0032",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:29:23.219059"
+}

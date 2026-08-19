@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_225503_0005",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "“决策串行、执行并发”是复杂系统架构中的一项核心设计哲学，其本质是**“脑体分离”**架构",
+      "source": "selfgen_20260817_225503_0005",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "在系统设计中，“脑”负责逻辑控制、状态决策和任务编排；“体”负责具体的数据计算、物理动作或资源操作",
+      "source": "selfgen_20260817_225503_0005",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "在现代系统（如AI Agent、分布式数据库、自动驾驶、游戏引擎）中，为了追求极致性能，开发者常常尝试在“引擎”（执行层）内部嵌入逻辑判断以做“优化”",
+      "source": "selfgen_20260817_225503_0005",
+      "type": "cog",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是该分层原则的整理、引擎优化不能破坏脑体分离的原因分析，以及3个典型应用场景",
+      "source": "selfgen_20260817_225503_0005",
+      "type": "cog",
+      "density": 0.48,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:56:10.461788",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:09.662729"
+}

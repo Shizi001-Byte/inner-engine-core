@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_172727_0014",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "，基建脚本必须 **禁用简化版 SQL**，并强制使用显式列契约",
+      "source": "selfgen_20260818_172727_0014",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:27:56.815701"
+}

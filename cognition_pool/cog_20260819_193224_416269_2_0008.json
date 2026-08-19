@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_193122_0008",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于CAS（复杂适应系统）视角与已有认知锚定，避免重复论证状态恢复机制的技术细节，以下针对“身份反差即差异化标签”原则在AI引擎产出及个体竞争力构建上的推演与修复方案：",
+      "source": "selfgen_20260819_193122_0008",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T19:32:24.449247"
+}

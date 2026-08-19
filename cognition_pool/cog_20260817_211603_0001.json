@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_211453_0001",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "“先校准锚点再优化链路”是一个极具实战价值的工作原则",
+      "source": "selfgen_20260817_211453_0001",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "在“项目ID看错导致1小时排查”这个案例中，**项目ID就是“锚点”，排查过程就是“链路”**",
+      "source": "selfgen_20260817_211453_0001",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "锚点错了，链路优化得再好（比如熟练使用日志工具、熟练写SQL）也是在做无用功",
+      "source": "selfgen_20260817_211453_0001",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "将这个原则应用到**任务优先级排序**中，意味着在决定“先做什么、后做什么”之前，必须先验证任务的“根本前提”是否正确",
+      "source": "selfgen_20260817_211453_0001",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:16:03.739947",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:05.831210"
+}

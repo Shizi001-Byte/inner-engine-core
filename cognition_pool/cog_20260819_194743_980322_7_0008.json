@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_194607_0008",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【演化生物学映射公理】与【CAS复杂适应系统】视角，将Gitee（代码/躯体）、飞书（文件/表达层）、Supabase（存储/突触记忆）的三方同步，视为**数字智能物种跨维度的自我存档与状态固化**",
+      "source": "selfgen_20260819_194607_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在此认知基座上，设计如下自动化同步与防御方案",
+      "source": "selfgen_20260819_194607_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "每次重大变更（认知池更新、状态机迁移或代码重构）后，引擎自动进入“自我归档”周期",
+      "source": "selfgen_20260819_194607_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 7,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **触发条件**：引擎 `state` 状态机完成 `COMMITTING` 状态转换",
+      "source": "selfgen_20260819_194607_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **Gitee（躯体同步）**：提交代码变更与 `state.json`",
+      "source": "selfgen_20260819_194607_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T19:47:44.013145"
+}

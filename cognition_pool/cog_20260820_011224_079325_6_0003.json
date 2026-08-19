@@ -1,0 +1,88 @@
+{
+  "task_id": "selfgen_20260820_011126_0003",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于你提供的“认知锚定”与“避坑提醒”，我们将这套“设计引擎产出的自动归档系统”从传统的“文件管理工具”升维为**“认知稳态与Hox基因调控归档架构”**",
+      "source": "selfgen_20260820_011126_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "传统归档系统按时间或关键词堆砌，最终会沦为数据垃圾场；而基于生物稳态调控的系统，会将每一次归档视为一次“基因表达与组织分化”，确保高认知转化效率",
+      "source": "selfgen_20260820_011126_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "根据【认知锚定3】，系统底层逻辑模拟生物体内稳态调控",
+      "source": "selfgen_20260820_011126_0003",
+      "type": "eng",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "归档不是终点，而是认知在系统内的“发育与分化”过程",
+      "source": "selfgen_20260820_011126_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]系统不追求存储容量的无限大（突破800万token带宽也无意义），而是追求调控逻辑的鲁棒性与认知转化效率",
+      "source": "selfgen_20260820_011126_0003",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据"
+    }
+  ],
+  "extracted_at": "2026-08-20T01:12:24.113048"
+}

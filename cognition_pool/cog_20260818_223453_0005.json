@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_223306_0005",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "在\"以实养虚，虚又返实\"架构下，Token是连接\"实\"（专家规则定义层）与\"虚\"（用户字面映射层）的**唯一流通媒介**",
+      "source": "selfgen_20260818_223306_0005",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **边际递减刚性**：对单一任务持续投入，信息增量必然衰减",
+      "source": "selfgen_20260818_223306_0005",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:34:53.461806"
+}

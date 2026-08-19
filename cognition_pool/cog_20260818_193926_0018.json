@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_193743_0018",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "本质不是单点 bug，而是“检索→生成→写入→再检索”的闭环失控：相似记忆被反复选中，生成固定模板输出，再被当作新记忆存回去，形成同质化自激",
+      "source": "selfgen_20260818_193743_0018",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "修复思路是“反者道之动”：在闭环里主动引入差异、负样本、冷却和 novelty 抑制",
+      "source": "selfgen_20260818_193743_0018",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **检索侧**：MMR + 负样本 + 记忆冷却，避免总是选同一批高相似记忆",
+      "source": "selfgen_20260818_193743_0018",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **生成侧**：强制引用记忆坐标 `(file_path, chunk_id, revision)` + 禁止套话词 + 动态 temperature",
+      "source": "selfgen_20260818_193743_0018",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T19:39:26.746792"
+}

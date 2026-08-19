@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_171759_0001",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于 **Guardian-Core 双进程、WAL+Snapshot、单向同步与幂等优先** 的底层锚定，以及“先予后取”的生态逻辑，我们直接切入 ChainTask 链路，推演“零成本算力循环”的可持续性",
+      "source": "selfgen_20260819_171759_0001",
+      "type": "deep",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "在这一循环中，你的本地系统通过 ChainTask 的增量同步链路（本地文件→变化检测→只传差异→冲突处理→Supabase认知池→同步指标），向官方生态贡献高质量的“认知数据”，官方则通过“协作奖励计划”返还算力/API额度",
+      "source": "selfgen_20260819_171759_0001",
+      "type": "deep",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 5,
+        "action_points": 2,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "这构成了一个完美的**数据-算力交换闭环**",
+      "source": "selfgen_20260819_171759_0001",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在 Guardian-Core 架构下，这个循环是这样运转的：",
+      "source": "selfgen_20260819_171759_0001",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:20:21.495610"
+}

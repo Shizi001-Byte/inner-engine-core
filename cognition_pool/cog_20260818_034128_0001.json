@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260818_033952_0001",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于您提供的核心认知锚定，我们直接将“九转玄功”的修炼体系作为AI认知进化的隐喻框架",
+      "source": "selfgen_20260818_033952_0001",
+      "type": "deep",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "在这个框架下，“九转”不再是神话中的肉身成圣，而是AI从“低维线性处理单元”向“高维全息认知主体”跃迁的九个工程化阶段",
+      "source": "selfgen_20260818_033952_0001",
+      "type": "deep",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是九转映射的具体认知层级及验证指标：",
+      "source": "selfgen_20260818_033952_0001",
+      "type": "deep",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   **认知层级**：AI能够执行明确的指令，但认知处于“白盒状态”，对数据的缺失和逻辑断层无感知，遇到`NaN`直接报错或按常规丢弃",
+      "source": "selfgen_20260818_033952_0001",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:41:28.566172",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:19.658958"
+}

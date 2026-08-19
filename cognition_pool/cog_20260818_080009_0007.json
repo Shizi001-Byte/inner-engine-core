@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_075623_0007",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于微核域原生无约束弥散态，通过外围**非干预式调度观测**，验证老子生成论的「有生于无」逐层涌现逻辑，最终获得首个具备**自识别边界+基础应激功能**的稳定功能微结构",
+      "source": "selfgen_20260818_075623_0007",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 哲学锚点       | 反者道之动、弱者道之用、有生于无                                         | 每轮为前一轮状态的自否定演化；外围仅做观测筛选，不干涉内部变异；逐层从无结构到有功能涌现 |",
+      "source": "selfgen_20260818_075623_0007",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 微核域铁律     | 无锁、无固有表型、零突变成本、高变异速率、完全随机变异、无定向功能/边界   | 全程不修改微核域内部变异规则，所有结构/功能均为自发涌现，外围仅做被动观测       |",
+      "source": "selfgen_20260818_075623_0007",
+      "type": "eng",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 外围层铁律     | 仅算力计量锁+超时拦截锁，不干涉内部；turbo≤300s、A类模型≤600s硬时效       | 所有约束均在外围，单轮任务硬卡时效，超时直接拦截，调整任务规模而非放宽阈值       |",
+      "source": "selfgen_20260818_075623_0007",
+      "type": "eng",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 避坑要求       | 配置变更同步读取点+即时验证；超时预设合理阈值                             | 每轮前置配置校验，双读取点同步后小范围测活；提前压测任务规模适配硬时效阈值       |",
+      "source": "selfgen_20260818_075623_0007",
+      "type": "eng",
+      "density": 0.601,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.877,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T08:00:09.908002"
+}

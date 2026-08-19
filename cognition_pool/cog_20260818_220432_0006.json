@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_220318_0006",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【避坑提醒】，我们将“项目ID看错导致1小时排查”这一惨痛教训进行深度剖析，并严格遵循“先校准锚点再优化链路”原则，将其转化为V7.5方舟效能引擎中**任务优先级排序**的核心防御机制",
+      "source": "selfgen_20260818_220318_0006",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下是基于“精气神三元迁移框架”的推演与落地策略：",
+      "source": "selfgen_20260818_220318_0006",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "“项目ID看错导致1小时排查”的本质是：**在锚点（基准参照系）失效或错误的前提下，所有基于该锚点的链路优化（如并发调度、后处理逻辑）都是无效甚至有害的",
+      "source": "selfgen_20260818_220318_0006",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **错误链路：** 误读项目ID -> 误判任务上下文 -> 优先级排序错误 -> 资源分配给低优任务 -> API调用超时/阻塞 -> 排查1小时发现源头数据错了",
+      "source": "selfgen_20260818_220318_0006",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **原则确立：** 在进行任何任务优先级计算和链路分发前，必须先完成“锚点校验”",
+      "source": "selfgen_20260818_220318_0006",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:04:32.276888"
+}

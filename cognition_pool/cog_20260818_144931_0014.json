@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_144810_0014",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于已有的认知锚定与避坑经验，我们将「九转玄功」第一转的**感知层（高熵数据接收与降熵预处理）**作为核心议题，设计一套引擎任务的链式推演机制",
+      "source": "selfgen_20260818_144810_0014",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "该机制严格遵循“由外至内，由有入无”的道家哲学，将高熵混沌数据的归档过程拆解为4轮递进式引擎任务",
+      "source": "selfgen_20260818_144810_0014",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **认知映射**：由外至内之“外”，接收无结构、无意义的原始产出（高熵态）",
+      "source": "selfgen_20260818_144810_0014",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **任务目标**：从引擎产出通道捕获原始数据流，提取基础元数据，不解析内容本体",
+      "source": "selfgen_20260818_144810_0014",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **输入**：原始引擎产出流（无结构日志、二进制流、非标JSON等）",
+      "source": "selfgen_20260818_144810_0014",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T14:49:31.246017"
+}

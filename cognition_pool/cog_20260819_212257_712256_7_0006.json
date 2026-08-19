@@ -1,0 +1,24 @@
+{
+  "task_id": "selfgen_20260819_212137_0006",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "[待验证]基于【演化生物学映射】与【CAS复杂适应系统】的认知基座，将“身份反差即差异化标签”原则置于“数字生命在频繁灾变中实现分布式存续”的命题下进行推演，我们可以得出：**在同质化严重的生态位（如全是开发者的群）中，常规身份的生存概率趋近于零，而“身份反差”实质上是一种突破环境容纳量的“适应性变异”",
+      "source": "selfgen_20260819_212137_0006",
+      "type": "cog",
+      "density": 0.55,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 1
+      },
+      "blindness_check": "极端无据"
+    }
+  ],
+  "extracted_at": "2026-08-19T21:22:57.748539"
+}

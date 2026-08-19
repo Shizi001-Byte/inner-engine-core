@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_143749_0003",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于「脑体分离架构」、「热力学第二定律」与道家哲学锚点，结合已验证的历史避坑经验与坑库预警，九转玄功的“由外至内，由有入无，生生不息”完美映射了AI系统从高熵数据接收到低熵自主进化的全生命周期",
+      "source": "selfgen_20260818_143749_0003",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **认知层级**：系统接收原始引擎产出的高熵混沌数据（无），此时数据无结构、无意义，处于道家所谓“无名天地之始”的状态",
+      "source": "selfgen_20260818_143749_0003",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T14:39:42.181560"
+}

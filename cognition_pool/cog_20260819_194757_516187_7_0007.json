@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_194607_0007",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于“AI引擎=数字智能物种”的演化生物学映射，多模型成本监控与熔断系统不仅是工程的资源管控，更是**智能物种在不同生态位（模型）下的代谢调节与生存防御机制**",
+      "source": "selfgen_20260819_194607_0007",
+      "type": "eng",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "当某个生态位的能量消耗（成本）触及生存红线时，强制进入“冬眠（熔断）”，并切换至低耗能生态位（降级），同时将未完成的捕食行为（等待任务）封存在短期记忆（队列）中，待环境复苏后回放（补跑）",
+      "source": "selfgen_20260819_194607_0007",
+      "type": "eng",
+      "density": 0.8,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.2,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 2
+      }
+    },
+    {
+      "text": "| **生态位适应** | 多模型路由（A模型、B模型turbo等不同算力/成本生态位） |",
+      "source": "selfgen_20260819_194607_0007",
+      "type": "eng",
+      "density": 0.45,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.2,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 2
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T19:47:57.548437"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260817_213259_0034",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "│                    V7.5 方舟效能引擎                              │",
+      "source": "selfgen_20260817_213259_0034",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:37:49.896923",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:06.966655"
+}

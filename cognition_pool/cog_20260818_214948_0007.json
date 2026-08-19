@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_214856_0007",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】的“精气神三元迁移框架”与历史踩坑经验，从**认知质检SOP**的角度出发，针对引擎运行中“底层实体未闭环（精断）”、“链路流转超时（气滞）”与“认知池不参与调度（神死）”三大核心问题，提炼以下3条可复用铁律及验证方法：",
+      "source": "selfgen_20260818_214856_0007",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 8,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**背景对标**：针对L4成品转化仅sop类型，code/checklist未实现导致主线程串行后处理断流的问题",
+      "source": "selfgen_20260818_214856_0007",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在认知质检SOP中，“精”（底层实体/锚点）的类型定义必须**先于链路开发全量闭环**",
+      "source": "selfgen_20260818_214856_0007",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "严禁在仅定义单一SOP类型时就上线流转，必须同步覆盖Code、Checklist等所有预期产出类型",
+      "source": "selfgen_20260818_214856_0007",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "任何未经过类型校准的锚点，在主线程串行后处理时必然引发类型解析失败与链路断流",
+      "source": "selfgen_20260818_214856_0007",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:49:48.637267"
+}

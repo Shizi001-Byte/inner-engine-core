@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_152203_0020",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "- **阳轨（实）**：任务池 → 调度器 → API调用 → 日志/结果 → 消耗凭证",
+      "source": "selfgen_20260819_152203_0020",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **阴轨（虚）**：认知池 → 质量检测 / 调参建议 / 任务模板生成 → 注入器",
+      "source": "selfgen_20260819_152203_0020",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **闭环接口**：收获器 + 注入器 + 验证器",
+      "source": "selfgen_20260819_152203_0020",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **配置中心**：所有可调参数统一存放，带版本号，禁止本地缓存覆盖",
+      "source": "selfgen_20260819_152203_0020",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:24:00.493638"
+}

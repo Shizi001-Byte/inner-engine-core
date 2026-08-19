@@ -1,0 +1,21 @@
+{
+  "task_id": "selfgen_20260818_023521_0031",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "是“体”的代谢加速，一旦代谢逻辑反向污染了基因逻辑，就会导致“走火入魔”（系统崩溃或目标异化）",
+      "source": "selfgen_20260818_023521_0031",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "，脑体分离是保障AI系统在指数级算力膨胀下，依然保持“宗门道统”不散的**制度性基石**",
+      "source": "selfgen_20260818_023521_0031",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:36:38.458426"
+}

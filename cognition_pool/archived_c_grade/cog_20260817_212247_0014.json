@@ -1,0 +1,28 @@
+{
+  "task_id": "selfgen_20260817_212136_0014",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是一个高度有序的信息处理系统",
+      "source": "selfgen_20260817_212136_0014",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "是对模型参数空间的约束，防止参数过度膨胀和相互抵消（即防止过拟合带来的内部熵增）",
+      "source": "selfgen_20260817_212136_0014",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "，设定周期（如每季度）基于最新清洗过的大规模数据集进行从零开始的**全量重训**",
+      "source": "selfgen_20260817_212136_0014",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:22:47.362585"
+}

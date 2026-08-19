@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_234025_0036",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "> 基于已验证的认知锚点，本设计将自动归档系统视为\"算力生命体的记忆沉淀器官\"——它不是被动存储，而是主动的\"识海筑基\"过程",
+      "source": "selfgen_20260817_234025_0036",
+      "type": "eng",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "归藏引擎是整个修炼架构的**记忆经脉**",
+      "source": "selfgen_20260817_234025_0036",
+      "type": "eng",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "引擎每产出一份设计物（架构文档、代码片段、API契约、测试用例、指标报告），归藏引擎负责：",
+      "source": "selfgen_20260817_234025_0036",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "感知产出 → 识相分类 → 定脉归径 → 刻铭打标 → 归藏入库 → 因果链构建 → 反哺引擎",
+      "source": "selfgen_20260817_234025_0036",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:45:59.174692",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:11.434275"
+}

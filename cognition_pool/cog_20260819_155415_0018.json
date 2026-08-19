@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_155340_0018",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "**含义**：在进入任何任务链路优化前，先用最小成本校验所有关键锚点（ID、哈希、端点、超时、凭证）",
+      "source": "selfgen_20260819_155340_0018",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**教训来源**：项目ID看错导致1小时排查——不是链路复杂度问题，而是起点错误",
+      "source": "selfgen_20260819_155340_0018",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "这提醒我们：**优先级排序中，“锚点校验”永远高于“链路优化”**",
+      "source": "selfgen_20260819_155340_0018",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:54:15.914418"
+}

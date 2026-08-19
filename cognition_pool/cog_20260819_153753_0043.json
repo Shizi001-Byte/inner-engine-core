@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_153540_0043",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是“被动适应”，不是自进化",
+      "source": "selfgen_20260819_153540_0043",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "是把“基因型标签”当成了“表观状态”",
+      "source": "selfgen_20260819_153540_0043",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**V7.2→V7.5 不是简单的功能堆叠，而是从“适应环境”走向“适应自身演化过程”的四步跃迁；下一代方向是“可演化性的演化（evolution of evolvability）”",
+      "source": "selfgen_20260819_153540_0043",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "V7.2 本质上是“被动适应”，不是自进化",
+      "source": "selfgen_20260819_153540_0043",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:37:53.993228"
+}

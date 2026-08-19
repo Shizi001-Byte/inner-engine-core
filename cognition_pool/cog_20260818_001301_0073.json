@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_001120_0073",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是AI对自身代码库、API调用链路及底层算力分配权重的降维打击与重组",
+      "source": "selfgen_20260818_001120_0073",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:13:01.369309"
+}

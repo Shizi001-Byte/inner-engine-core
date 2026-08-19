@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_210911_0025",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "“决策串行、执行并发”是复杂系统设计中一种经典的“脑体分离”架构范式",
+      "source": "selfgen_20260817_210911_0025",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是对该分层原则的整理、引擎优化不可破坏脑体分离的原因分析，以及3个典型应用场景",
+      "source": "selfgen_20260817_210911_0025",
+      "type": "cog",
+      "density": 0.48,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:10:11.673341",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:05.739635"
+}

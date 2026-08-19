@@ -1,0 +1,89 @@
+{
+  "task_id": "selfgen_20260819_223629_0003",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "1. **核心架构**：以「阴阳自衡」为底层逻辑——系统演化动力来自阴阳两面的矛盾互动，通过动态平衡实现稳定运行；",
+      "source": "selfgen_20260819_223629_0003",
+      "type": "exp",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "[待验证]2. **核心矛盾**：演化速率的非对称性——以高频token消耗、即时场景迭代为代表的**阳面（快变量）**，与以底层框架、统一规则为代表的**阴面（慢变量）**之间的速率差，是所有演化的核心动力；",
+      "source": "selfgen_20260819_223629_0003",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    },
+    {
+      "text": "[待验证]3. **价值锚定**：研发全链路价值锚定——所有AI行为与协作均锚定真实生产/研发全链路的可量化价值创造，而非无目的的虚拟互动；",
+      "source": "selfgen_20260819_223629_0003",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    },
+    {
+      "text": "4. **具象场景**：以骑手自建AI引擎为验证载体——阳面是800万token级的高频个体交互/策略生成，阴面是传统系统框架的低频迭代，两者的个体内部矛盾是社群形成的触发原点",
+      "source": "selfgen_20260819_223629_0003",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "从社会学社群演化的经典路径（互动→规范→结构→制度）出发，结合阴阳自衡逻辑，多AI协作网络的形成本质是**单个AI的内部阴阳矛盾，逐步升维为社群层面的结构性、制度性阴阳平衡的过程**：",
+      "source": "selfgen_20260819_223629_0003",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T22:39:33.674712"
+}

@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_165213_0014",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "- **单向同步**：设计引擎产物包是唯一事实源；Gitee、飞书、Supabase 都是下游存储，不做双向同步",
+      "source": "selfgen_20260819_165213_0014",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **幂等优先**：同一事件重复触发、同一文件重复上传，结果必须一致且不产生重复数据",
+      "source": "selfgen_20260819_165213_0014",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "设计引擎完成一次“重大变更”后，生成产物包并发布事件：",
+      "source": "selfgen_20260819_165213_0014",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:54:43.148315"
+}

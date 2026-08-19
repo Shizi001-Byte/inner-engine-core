@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_192245_0001",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "现状: SYSTEM_TASKS = [41个硬编码模板]",
+      "source": "selfgen_20260819_192245_0001",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1451次执行 → 平均每模板重复35次 → 信息熵趋零 → 局部最优锁死",
+      "source": "selfgen_20260819_192245_0001",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**根因链**：输入端固化 → 产出同质化 → 认知池污染 → 反哺上下文重复 → 进一步固化",
+      "source": "selfgen_20260819_192245_0001",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "CAS系统的「消耗→产出→反哺」循环在输入端就断了",
+      "source": "selfgen_20260819_192245_0001",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T19:27:16.327300"
+}

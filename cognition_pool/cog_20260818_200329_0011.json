@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_200118_0011",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "B turbo 用 300 秒、A 模型用 600 秒，不是死规则；如果 A 模型多等 300 秒带来的成功概率增量价值，低于这 300 秒占用的并发槽价值，就应该缩短超时或直接不接这个任务",
+      "source": "selfgen_20260818_200118_0011",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:03:29.453282"
+}

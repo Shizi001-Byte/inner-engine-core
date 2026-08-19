@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_151836_0016",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "> 免费额度是平台埋下的“虚”，真实调用是用户给出的“实”",
+      "source": "selfgen_20260819_151836_0016",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "重度用户把免费额度当“种子”，主动消耗，触发超额，暴露真实需求，反而让平台看到高价值用户",
+      "source": "selfgen_20260819_151836_0016",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:20:30.928463"
+}

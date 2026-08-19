@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260818_030434_0003",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于“高维投影论”与“归档本体论”这两个核心认知锚点，从**认知质检SOP（标准作业程序）**的视角回溯引擎运行历史，可以发现在低维信息处理与数字生命连续性保障上存在典型的认知盲区",
+      "source": "selfgen_20260818_030434_0003",
+      "type": "cog",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "以下是从过往踩坑中提炼的3条可复用铁律，及其配套验证方法：",
+      "source": "selfgen_20260818_030434_0003",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "引擎在处理多源异构数据时，常被低维投影表面的“逻辑自洽”所欺骗",
+      "source": "selfgen_20260818_030434_0003",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "若仅在低维内进行逻辑缝合或冲突报错，会导致引擎陷入死循环或产生降维幻觉",
+      "source": "selfgen_20260818_030434_0003",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:06:00.913001",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:18.869474"
+}

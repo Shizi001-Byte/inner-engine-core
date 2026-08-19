@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_173325_0008",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "**引擎优化只能优化“执行”和“档案”两侧，不能优化掉“决策验证门”本身",
+      "source": "selfgen_20260818_173325_0008",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 4,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "“决策串行、执行并发”不是性能策略，而是维护 DAG 一致性的唯一方式",
+      "source": "selfgen_20260818_173325_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:34:03.704270"
+}

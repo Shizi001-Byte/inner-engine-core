@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_221621_0015",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "针对V7.5方舟效能引擎在“多线程API调用后串行后处理”场景下的状态一致性推演，核心矛盾在于：**并发产生的无序事件流，与要求严格有序的状态变更逻辑之间的冲突**",
+      "source": "selfgen_20260817_221621_0015",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下为您提供完整的锁机制方案及架构设计",
+      "source": "selfgen_20260817_221621_0015",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "线程A和线程B同时调用方舟效能引擎的API获取任务结果，随后对引擎内部的共享状态（如：任务进度表、资源池、统计计数器）进行更新",
+      "source": "selfgen_20260817_221621_0015",
+      "type": "eng",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "1. **交错执行**：线程A读取状态 `S=1`，线程B读取状态 `S=1`，线程A计算并写入 `S=2`，线程B计算并写入 `S=1`（丢失更新）",
+      "source": "selfgen_20260817_221621_0015",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:17:46.139512",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:07.508284"
+}

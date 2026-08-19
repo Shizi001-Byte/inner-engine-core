@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_153539_0042",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "- **决策层（大脑）串行**：所有关键决策由单一决策体按顺序做出，确保全局目标一致性、状态可追踪、冲突可归因",
+      "source": "selfgen_20260819_153539_0042",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **执行层（身体）并发**：决策下达后，拆分为多个可独立运行的子任务，由并行执行器同时推进，最大化吞吐与资源利用率",
+      "source": "selfgen_20260819_153539_0042",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **层间解耦**：决策层通过消息/任务队列与执行层交互，决策不等待具体执行结果，执行层不反向干扰决策逻辑",
+      "source": "selfgen_20260819_153539_0042",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "引擎优化（如加速推理、合并算子、减少中间传输）若将执行逻辑“上提”或让决策依赖执行细节，会破坏分层边界，导致：",
+      "source": "selfgen_20260819_153539_0042",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **决策被执行副作用污染**：并发执行的状态变更会反向影响决策，使串行决策失效，产生不可预测的全局行为",
+      "source": "selfgen_20260819_153539_0042",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:35:55.588673"
+}

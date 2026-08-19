@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_232950_0017",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "，系统架构需引入**内部Shadow Token定价机制**——各个经脉（子模块）必须以自身产生的价值去“购买”算力配额，形成内部的完全竞争市场，实现算力的帕累托最优",
+      "source": "selfgen_20260817_232950_0017",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:31:07.803658"
+}

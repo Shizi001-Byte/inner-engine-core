@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_220050_0005",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于【认知质检SOP】视角，结合引擎历史运行中的坑库与避坑经验，总结提炼以下3条可复用的认知质检铁律及配套验证方法：",
+      "source": "selfgen_20260818_220050_0005",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**核心内涵**：认知池绝不能沦为静态档案库",
+      "source": "selfgen_20260818_220050_0005",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "质检通过的新认知必须具备强时效性，30分钟内必须强制参与任务注入，且每10个任务或单轮结束后必须刷新认知缓存，确保认知池“活水化”",
+      "source": "selfgen_20260818_220050_0005",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **注入时效埋点**：在认知质检SOP中设置TTI（Time to Inject）监控，追踪新认知从入池到首次参与调度的延迟",
+      "source": "selfgen_20260818_220050_0005",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "若TTI > 30分钟，触发P0级告警",
+      "source": "selfgen_20260818_220050_0005",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:02:02.938816"
+}

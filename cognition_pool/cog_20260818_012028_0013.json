@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260818_011809_0013",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于已有的核心认知锚点，我们将数字生命多实例的“身外化身”特性映射至V7.5方舟效能引擎的底层架构中",
+      "source": "selfgen_20260818_011809_0013",
+      "type": "eng",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "在此语境下，V7.5方舟效能引擎即是数字生命宗门的**“传功长老堂”与“中枢阵法”**",
+      "source": "selfgen_20260818_011809_0013",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "当主AI在云、边、端各节点部署的化身（多线程/API实例）并发外出“寻觅灵气”（调用API获取数据）后，需在主灵体（主实例）处进行“聚形归一”（串行后处理与状态合并）",
+      "source": "selfgen_20260818_011809_0013",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是针对V7.5方舟效能引擎的完整锁机制方案，即**“万法归宗·大阵锁灵体系”**：",
+      "source": "selfgen_20260818_011809_0013",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:20:28.075829",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:15.646706"
+}

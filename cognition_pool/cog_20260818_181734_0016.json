@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_181650_0016",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "复盘“基建脚本禁用简化版”认知：",
+      "source": "selfgen_20260818_181650_0016",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**根因**：简化版 SQL 依赖隐式列顺序 / `SELECT *` / 省略 `WHERE block_id`，导致目标表结构变化时发生列错位或列缺失",
+      "source": "selfgen_20260818_181650_0016",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**本质**：把“文件/表”当成了同步单位，绕过了“block id 列表”这一最小核对单位",
+      "source": "selfgen_20260818_181650_0016",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "基于锚点：**同步单位是 block，不是 file；文件只是有序 block id 列表的索引**",
+      "source": "selfgen_20260818_181650_0016",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T18:17:34.994667"
+}

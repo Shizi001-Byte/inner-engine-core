@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_211041_0044",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【历史避坑经验】，直接推演 Supabase 记忆脑的增量同步方案",
+      "source": "selfgen_20260818_211041_0044",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本方案将严格规避配置未生效、API超时、废稿误杀及多线程竞态问题",
+      "source": "selfgen_20260818_211041_0044",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "基于 `CONST-1: 精气神三元迁移框架`，记忆脑的同步需建立“本地态（精）- 同步引擎（气）- 远端态（神）”的一致性基线",
+      "source": "selfgen_20260818_211041_0044",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **A0 基线定义**：每条记忆片段必须具备 `memory_id`, `content_hash`, `updated_at`, `version` 四个核心字段",
+      "source": "selfgen_20260818_211041_0044",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **一致性前提**：本地与 Supabase 的初始状态必须对齐",
+      "source": "selfgen_20260818_211041_0044",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:12:16.909544"
+}

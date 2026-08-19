@@ -70,11 +70,18 @@ def push_cognition(push_all=False):
     log = load_sync_log()
     md_files = sorted(COGNITION_DIR.glob("*.md"), key=lambda p: p.stat().st_mtime, reverse=True)
 
+    def _needs_sync(md_file):
+        """P1-14修复：判断文件是否需要同步（新文件或mtime变化）"""
+        info = log["synced"].get(md_file.name)
+        if not info:
+            return True
+        # 文件mtime比同步时新，说明内容更新了
+        return md_file.stat().st_mtime > info.get("synced_mtime", 0)
+
     if not push_all:
-        # 只推送最近5个未同步的
-        md_files = [f for f in md_files if f.name not in log["synced"]][:5]
+        md_files = [f for f in md_files if _needs_sync(f)][:5]
     else:
-        md_files = [f for f in md_files if f.name not in log["synced"]]
+        md_files = [f for f in md_files if _needs_sync(f)]
 
     if not md_files:
         print("[INFO] 没有需要同步的新认知文档")
@@ -91,6 +98,7 @@ def push_cognition(push_all=False):
             log["synced"][md_file.name] = {
                 "file_token": token_or_error,
                 "synced_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                "synced_mtime": md_file.stat().st_mtime,
                 "size": md_file.stat().st_size,
             }
             print("OK")

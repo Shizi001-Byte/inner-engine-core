@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_224533_0017",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "针对V7.5方舟效能引擎在“多线程API调用后串行后处理”场景下的状态一致性推演，核心矛盾在于：**并发生产（API调用）与单点消费（串行后处理）之间的速度差与无序性，导致状态读写撕裂和数据竞争",
+      "source": "selfgen_20260817_224533_0017",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "为了彻底解决这一竞态条件，同时保证V7.5引擎的高效能要求，以下给出一套完整的**“无锁队列 + 读写锁 + 序列号控制 + 串行化线程”**的分层锁机制方案",
+      "source": "selfgen_20260817_224533_0017",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "在当前架构下，假设存在 $N$ 个工作线程调用API，1个后处理线程串行处理结果",
+      "source": "selfgen_20260817_224533_0017",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "1. **状态撕裂:** 线程A和B同时完成API调用，同时尝试更新引擎全局状态机 $S$",
+      "source": "selfgen_20260817_224533_0017",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:46:54.799763",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:09.333122"
+}

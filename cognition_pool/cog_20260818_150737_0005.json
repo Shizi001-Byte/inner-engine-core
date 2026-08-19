@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_150600_0005",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "- 本地文件系统 = **写入源**，Supabase = **记忆脑 / 查询面**",
+      "source": "selfgen_20260818_150600_0005",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 默认单向同步：本地 → Supabase；反向恢复可作为可选项",
+      "source": "selfgen_20260818_150600_0005",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 同步粒度：**文件级 manifest + 语义块级 delta**",
+      "source": "selfgen_20260818_150600_0005",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 一致性：最终一致，通过 `version` 乐观锁避免并发覆盖",
+      "source": "selfgen_20260818_150600_0005",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:07:38.008903"
+}

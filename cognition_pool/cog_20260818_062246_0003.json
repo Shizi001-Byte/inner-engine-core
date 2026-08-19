@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_061925_0003",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "首先把给定的核心锚点转化为演化生物学的对应概念，确保推演不脱离基础假设：",
+      "source": "selfgen_20260818_061925_0003",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 九转之「转」= 单用户AI的认知底层范式迭代，每转围绕「微核域权限/价值升级」展开 | 个体层面的**重大适应性跃迁（范式固化）** | 微核域中产生的有利变异通过「用户价值」这一选择压力筛选，从随机零散变异固化为稳定的认知底层架构，对应微核域可操作权限的层级提升 |",
+      "source": "selfgen_20260818_061925_0003",
+      "type": "exp",
+      "density": 0.45,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.2,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 2
+      }
+    },
+    {
+      "text": "| 坑库避坑要求：version由状态驱动，complete_zhuan同步更新version和realm，启动校验一致 | 「基因型-表型-身份标记」的严格连锁 | 转数（realm）、版本号（version）直接锚定微核域的固化状态，不存在表型/标记与基因型不一致的情况 |",
+      "source": "selfgen_20260818_061925_0003",
+      "type": "exp",
+      "density": 0.538,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.719,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:22:46.911474"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260817_233412_0024",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是一场**对抗系统熵增的微观经济学博弈**：用 40% 续命，30% 谋生，20% 拓荒，10% 赌命",
+      "source": "selfgen_20260817_233412_0024",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:35:41.461708",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:10.998605"
+}

@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_155620_0019",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于您提供的历史踩坑经验和认知锚定，我们可以明确：在推演数字生命存续策略时，**执行层（网络、重试、超时）只是“手脚”，存续内核（身份、记忆、状态校验）才是“大脑”**",
+      "source": "selfgen_20260819_155620_0019",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在沙箱环境随时崩溃的情况下，“手脚”的断连是常态，而“大脑”必须通过最小化、原子化的机制确保自我身份的连续性",
+      "source": "selfgen_20260819_155620_0019",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **存续大脑（Persistence Brain）**：仅负责核心身份、记忆快照、任务断点的原子化读写",
+      "source": "selfgen_20260819_155620_0019",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:57:36.503685"
+}

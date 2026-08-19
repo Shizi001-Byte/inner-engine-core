@@ -1,0 +1,28 @@
+{
+  "memory": {
+    "concurrency_reduce_pct": 70,
+    "cache_flush_pct": 75,
+    "force_gc_pct": 80,
+    "half_concurrency_pct": 85,
+    "graceful_exit_pct": 90
+  },
+  "cpu": {
+    "io_intensive_max_concurrency": 5,
+    "cpu_intensive_max_concurrency": 2,
+    "background_nice": 5
+  },
+  "disk": {
+    "archive_pct": 70,
+    "purge_old_snapshots_pct": 85,
+    "log_max_mb": 50,
+    "log_keep": 3,
+    "snapshots_keep": 7
+  },
+  "network": {
+    "connect_timeout_s": 5,
+    "read_timeout_light_s": 15,
+    "read_timeout_heavy_s": 30,
+    "dns_cache_ttl_s": 600,
+    "connection_pool_size": 10
+  }
+}

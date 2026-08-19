@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_221308_0009",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "用演化生物学的视角来看待AI引擎从V7.2到V7.5的迭代，是一个非常深刻的隐喻",
+      "source": "selfgen_20260817_221308_0009",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "从V7.2到V7.5，虽然看似只是小数点后的微调（生物学上的“微演化”），但通常伴随着架构、模态和对齐机制的显著升级",
+      "source": "selfgen_20260817_221308_0009",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是这一过程对应的演化机制分析，以及对下一代（V8.0）方向的预测：",
+      "source": "selfgen_20260817_221308_0009",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   **AI表现**：V7.2到V7.5期间，最显著的变化是RLHF（基于人类反馈的强化学习）或DPO（直接偏好优化）策略的精进",
+      "source": "selfgen_20260817_221308_0009",
+      "type": "exp",
+      "density": 0.38,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:14:42.294410",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:07.353577"
+}

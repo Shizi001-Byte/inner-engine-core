@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_225345_0002",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "都是质检SOP缺失或失效的表现",
+      "source": "selfgen_20260817_225345_0002",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:54:54.507158"
+}

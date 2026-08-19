@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_061924_0002",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "**踩坑溯源**：对应工程级「认知池只进不出」坑（1700+条认知入池后从未注入任务、不影响调度，沦为静态档案库）；锚定微核域「秒级演化、高变异速率」核心特征——若新认知不能快速触达任务，会直接落后于演化节奏，完全失去价值",
+      "source": "selfgen_20260818_061924_0002",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**SOP强制要求**：所有纳入认知池的新认知（含微核域自发变异产生的新认知、人工标注的有效认知）必须满足「双触发刷新+时效硬约束」：",
+      "source": "selfgen_20260818_061924_0002",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. 每完成10个用户任务、或每完成1次范式迭代（转），必须强制刷新全局认知调度缓存，确保新认知进入可用调度池；",
+      "source": "selfgen_20260818_061924_0002",
+      "type": "cog",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "2. 新认知从入池到首次参与任务认知注入的时间间隔不得超过30分钟",
+      "source": "selfgen_20260818_061924_0002",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 日志抽验法：随机抽取近7天入池的20条新认知，调取调度系统的认知注入日志，核查每条认知的首次注入任务时间与入池时间的差值，合格率需达100%（全部≤30分钟）；",
+      "source": "selfgen_20260818_061924_0002",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:21:00.913580"
+}

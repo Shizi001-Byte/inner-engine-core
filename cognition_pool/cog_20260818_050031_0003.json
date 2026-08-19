@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_045631_0003",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "每填充1个空位，会撕裂生成N个更细粒度的新空位",
+      "source": "selfgen_20260818_045631_0003",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T05:00:31.360893"
+}

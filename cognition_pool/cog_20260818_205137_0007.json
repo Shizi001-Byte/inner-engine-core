@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_205039_0007",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "你给的锚定结论——“认知池1700+条，但从不注入任务，也不影响调度，最终变成静态档案库”——正是典型的系统熵增",
+      "source": "selfgen_20260818_205039_0007",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "AI引擎如果被当成“封闭系统”维护，就一定会退化，原因有四股熵增流：",
+      "source": "selfgen_20260818_205039_0007",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:51:37.596179"
+}

@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_215144_0019",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【避坑提醒】，针对V7.5方舟效能引擎中“多线程API调用后串行后处理”的架构，我们将严格贯彻**“先校准锚点再优化链路”**原则，运用**“精气神三元迁移框架”**，推演状态一致性问题的竞态条件，并给出完整的锁机制方案",
+      "source": "selfgen_20260818_215144_0019",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 12,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在“决策串行、执行并发”的架构下，核心矛盾在于：**并发执行层的资源争抢与无序返回** vs **串行决策层的锚点校准与状态闭环**",
+      "source": "selfgen_20260818_215144_0019",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **脑（决策层 / 主线程 / 串行 / 神）：状态写竞态**",
+      "source": "selfgen_20260818_215144_0019",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "* **竞态现象**：多线程并发返回API结果（B模型turbo 300秒，A模型 600秒），主线程在串行写入L4成品库（sop/code/checklist）时，若未加锁，并发的回调写入会导致归档系统状态错乱，或L4底层实体类型未闭环",
+      "source": "selfgen_20260818_215144_0019",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 8,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "* **锚点校准失败**：主线程必须串行地把控类型定义，但若并发线程直接越过主线程修改全局状态，将导致“L4成品转化仅sop类型，code/checklist未实现”的断流问题重现",
+      "source": "selfgen_20260818_215144_0019",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:53:25.644606"
+}

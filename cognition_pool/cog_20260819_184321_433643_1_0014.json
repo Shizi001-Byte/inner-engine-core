@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_184141_0014",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "- 隐性红线：哪些行为会被限流（如站外链接、过度营销、争议话题）、哪些内容会被打压但规则里没写",
+      "source": "selfgen_20260819_184141_0014",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:43:21.467029"
+}

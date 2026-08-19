@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_211635_0004",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "这是一份针对“基建脚本禁用简化版SQL导致列不匹配”事故的深度复盘与认知纠偏报告，以及防止此类问题再次发生的检查清单",
+      "source": "selfgen_20260817_211635_0004",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "在基建脚本（如数据同步、ETL任务、底层物化视图构建）中，开发人员有时为了“图快”或“省事”，会使用简化版SQL",
+      "source": "selfgen_20260817_211635_0004",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "这种“简化”带来了致命的认知偏差和工程隐患：",
+      "source": "selfgen_20260817_211635_0004",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "1.  **“当前正确”不等于“未来正确”（时间轴偏差）：**",
+      "source": "selfgen_20260817_211635_0004",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:17:49.958990",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:05.955638"
+}

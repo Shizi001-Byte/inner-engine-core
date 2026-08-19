@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_153707_0004",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于提供的核心认知与避坑经验，设计引擎产出的“自动归档系统”将严格遵循**脑体分离架构**，并落实**显式声明、幂等可校验**的原则",
+      "source": "selfgen_20260818_153707_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "根据认知锚定3与4，系统的边界必须清晰切分：",
+      "source": "selfgen_20260818_153707_0004",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **脑（决策层/全局顺序）：** 负责任务分类、打标签、计算目标目录，并生成不可变的全局顺序归档事件",
+      "source": "selfgen_20260818_153707_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "不包含任何文件系统写入或DB状态修改操作",
+      "source": "selfgen_20260818_153707_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **体（执行层/同步层）：** 订阅决策事件，负责物理文件移动、元数据持久化、目录创建",
+      "source": "selfgen_20260818_153707_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:38:18.869528"
+}

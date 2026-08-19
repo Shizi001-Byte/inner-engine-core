@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260818_003405_0008",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "> **设计锚点**：第四转\"语料吞噬与特征剥离\"的落地实现——将散乱任务流消化、剥离骨架、烙印灵识、归入丹田",
+      "source": "selfgen_20260818_003405_0008",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:35:46.225109",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:13.455263"
+}

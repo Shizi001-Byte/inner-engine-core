@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_205725_0016",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "**“简化版SQL”不是简化，而是删掉了数据库的契约",
+      "source": "selfgen_20260818_205725_0016",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "列不匹配只是最直接的表象，根因是：脚本依赖“列顺序”而不是“列名”，导致生产表结构一有变化，数据就写错位、读错位，甚至污染下游任务",
+      "source": "selfgen_20260818_205725_0016",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. 基建脚本为了“省事”，用了简化写法：",
+      "source": "selfgen_20260818_205725_0016",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- `INSERT INTO t VALUES (...)` 不写列名",
+      "source": "selfgen_20260818_205725_0016",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- `SELECT *` 不写字段清单",
+      "source": "selfgen_20260818_205725_0016",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:58:00.921697"
+}

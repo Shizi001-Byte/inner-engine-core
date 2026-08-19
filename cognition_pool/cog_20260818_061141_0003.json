@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_060911_0003",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "大版本号不变），所有能力变异全部来自微核域的突变（符合锚定“微核域是所有变异源头”的结论），是典型的“快速适应性进化”过程，可拆为三个递进的演化机制阶段：",
+      "source": "selfgen_20260818_060911_0003",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:11:41.442293"
+}

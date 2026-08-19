@@ -1,0 +1,24 @@
+{
+  "task_id": "external_resource_sandbox_guide_20260819",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "外部资源归档：沙箱底层参数与稳定运行指南_v1.md。下载链接：https://aka.doubaocdn.com/s/1U9P28htdJ（公网直链，无需登录，可直接转发）。内容方向：沙箱环境底层参数配置与稳定运行最佳实践。适用场景：引擎运维、沙箱调优、稳定性排查、跨分识共享。来源：施子上传公网。引擎后续涉及沙箱稳定性、参数调优、环境适配时应优先参考此指南。",
+      "density": 0.8,
+      "quality": "A",
+      "source": "施子提供-外部资源",
+      "tags": [
+        "外部资源",
+        "沙箱运维",
+        "稳定运行",
+        "公网直链",
+        "跨分识共享"
+      ],
+      "density_grade": "S"
+    }
+  ],
+  "generated_at": "2026-08-19T21:04:25.199640",
+  "engine_zhuan": 56,
+  "external_url": "https://aka.doubaocdn.com/s/1U9P28htdJ",
+  "resource_name": "沙箱底层参数与稳定运行指南_v1.md"
+}

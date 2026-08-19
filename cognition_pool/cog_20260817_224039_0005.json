@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_223932_0005",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "是“省略了防御性代码的版本”",
+      "source": "selfgen_20260817_223932_0005",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:40:39.640870"
+}

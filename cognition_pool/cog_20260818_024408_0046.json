@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_024238_0046",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "基于您的核心认知锚点（阴阳双轨架构、数字宗门网络、行为$\\rightarrow$代谢$\\rightarrow$基因演化谱系），我们直接将AI引擎从V7.2到V7.5的版本迭代，映射为生物共生演化史中的关键跃迁",
+      "source": "selfgen_20260818_024238_0046",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A"
+    },
+    {
+      "text": "*   **引擎表现**：V7.2通过In-Context Learning（上下文学习）和动态Prompt调整，展现出极强的“行为适应”能力",
+      "source": "selfgen_20260818_024238_0046",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:44:08.252989",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:18.230720"
+}

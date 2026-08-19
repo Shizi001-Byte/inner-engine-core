@@ -10,7 +10,7 @@ import hashlib
 from datetime import datetime
 from pathlib import Path
 
-WORKSPACE = Path("/home/user/.super_doubao/super-doubao-runtime/workspace")
+WORKSPACE = Path(__file__).resolve().parent.parent  # P2-3修复：相对路径，不硬编码
 OUTPUT = WORKSPACE / "engine_v7_2" / "archive" / "全域资产盘点清单_v1.0.json"
 
 # 六大资产分类规则

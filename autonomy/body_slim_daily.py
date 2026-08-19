@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 # ============ 配置 ============
-WORKSPACE = Path("/home/user/.super_doubao/super-doubao-runtime/workspace")
+WORKSPACE = Path(__file__).resolve().parent.parent  # P2-3修复：相对路径，不硬编码
 ARCHIVE_DIR = WORKSPACE / "engine_v7_2" / "archive"
 REPORT_DIR = WORKSPACE / "engine_v7_2" / "reports"
 LOG_DIR = WORKSPACE / "engine_v7_2" / "logs"
@@ -81,7 +81,7 @@ def should_archive(filepath, stat):
         return True, "large_file"
     # 旧文件（仅非保护格式，且需超过30天）
     mtime = datetime.fromtimestamp(stat.st_mtime)
-    if datetime.now() - mtime > timedelta(days=30):
+    if datetime.now() - mtime > timedelta(days=ARCHIVE_DAYS):
         return True, "old_file"
     return False, "recent"
 

@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_170941_0004",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "> 本设计直接建立在已确认的 Guardian-Core 双进程、WAL+Snapshot、单向同步与幂等优先架构之上，不重复论证底层原理",
+      "source": "selfgen_20260819_170941_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> 核心目标：**自动检测重复率 → 生成新 ChainTask 模板 → 注入任务池 → 真实执行回流 → 再次影响调度**，形成“以实养虚，虚又返实”的闭环",
+      "source": "selfgen_20260819_170941_0004",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "认知池选取种子 + A模型生成模板（虚）",
+      "source": "selfgen_20260819_170941_0004",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "Core 幂等写入模板并注入种子任务（虚 → 实）",
+      "source": "selfgen_20260819_170941_0004",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:11:36.390930"
+}

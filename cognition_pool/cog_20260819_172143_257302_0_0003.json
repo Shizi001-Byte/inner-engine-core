@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_171800_0003",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "所有推演严格基于给定的**Guardian-Core双进程、WAL+Snapshot、单向同步与幂等优先**核心底盘，不重复论证底层自恢复，仅围绕「增量同步ChainTask链」对应演化逻辑：",
+      "source": "selfgen_20260819_171800_0003",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| WAL+Snapshot、单向同步与幂等优先 | 中心法则+半保留复制+错配修复 | 信息单向流动（本地→认知池 = DNA→RNA→蛋白质），状态可回溯（WAL=突变日志，Snapshot=全基因组备份），多次操作不改变最终状态（幂等=翻译容错） |",
+      "source": "selfgen_20260819_171800_0003",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 增量同步ChainTask链（本地→变化检测→传差异→冲突处理→认知池→指标→策略调优→下一轮同步） | 适应演化通路（环境输入→变异产生→性状筛选→自然选择→种群更新） | 虚实交替的循环链 = 生物「环境感知-表型调整-选择淘汰-演化升级」的核心适应逻辑，是本次迭代的核心演化位点 |",
+      "source": "selfgen_20260819_171800_0003",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 4,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:21:43.293904"
+}

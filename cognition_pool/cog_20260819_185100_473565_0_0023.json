@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_185020_0023",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "**“先校准锚点，再优化链路”**：任何优化动作开始前，先确认关键锚点（任务ID、目标、约束、优先级权重、依赖关系）是否准确；锚点错了，后面所有优化都是空转",
+      "source": "selfgen_20260819_185020_0023",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "项目ID看错导致1小时排查，本质不是“排查链路不够快”，而是“锚点没校准就进入链路”",
+      "source": "selfgen_20260819_185020_0023",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:51:00.508760"
+}

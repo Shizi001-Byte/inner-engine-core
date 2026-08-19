@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_210138_0030",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "> **AI 引擎不是“可能退化”，而是“只要不维护，就必然退化”",
+      "source": "selfgen_20260818_210138_0030",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "一个 AI 系统不是孤立系统，但如果不主动注入负熵，它内部会自然走向混乱：",
+      "source": "selfgen_20260818_210138_0030",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:02:28.103577"
+}

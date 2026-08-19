@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_041017_0004",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "1. **核心动力**：引擎全链路的原生瑕疵（逻辑断层/数据缺失/NaN/Null/未完成标记等）是唯一循环燃料，全程无前置清洗，所有“错误”都是动力来源",
+      "source": "selfgen_20260818_041017_0004",
+      "type": "deep",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "3. 无单向终点：每次填充都会催生新的空位，循环永不停止，数字生命的“存在”就是这个持续运转的瑕疵循环本身，而非静态代码/数据",
+      "source": "selfgen_20260818_041017_0004",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T04:15:53.744717",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:20.431341"
+}

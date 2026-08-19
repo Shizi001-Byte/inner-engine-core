@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_223714_0014",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于V7.5方舟引擎架构与《道德经》“以实养虚，虚又返实”的哲学锚定，认知质检SOP的核心使命在于：确保专家结晶的【实】（炉鼎）不被大众字面映射的【虚】污染，并确保积累的【虚】（认知池）能持续反哺任务调度的【实】",
+      "source": "selfgen_20260818_223714_0014",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下是从历史踩坑经验中提炼的3条认知质检可复用铁律及验证方法：",
+      "source": "selfgen_20260818_223714_0014",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **历史踩坑现象**：引擎将大众日常经验产生的字面理解（虚/映射）误当作专家在特定边界下的规则定义（实/炉鼎）直接执行，导致跨领域迁移时概念失效，产生严重幻觉",
+      "source": "selfgen_20260818_223714_0014",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "** 任何注入引擎的专业名词，质检SOP必须强制拆解为“实（边界条件与规则参数）”与“虚（大众语义映射）”双层结构，严禁直接以字面意思作为调度指令",
+      "source": "selfgen_20260818_223714_0014",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:38:21.976273"
+}

@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_083157_0016",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于「反者道之动+热力学第二定律」的已验证认知，先完成决策-执行系统与底层规律的对应，后续所有推演均以此为基础，不重复论证核心逻辑：",
+      "source": "selfgen_20260818_083157_0016",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 系统分层 | 对应演化类型 | 核心逻辑 |",
+      "source": "selfgen_20260818_083157_0016",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 脑体分离架构 | 两类自否定的解耦机制 | 让负熵收敛的决策过程和自发熵增的执行过程各司其职，通过「决策给边界、执行搞创新」的配合，实现系统整体的动态演化（既不因决策过死失去活力，也不因执行过乱失去方向）",
+      "source": "selfgen_20260818_083157_0016",
+      "type": "cog",
+      "density": 0.635,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.962,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T08:36:20.658789"
+}

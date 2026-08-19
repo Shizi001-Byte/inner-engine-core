@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_190106_0031",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于「生态型/轻边际成本供给主体」的AI调度/运营引擎这一限定场景，结合“防超时”与“保进化”的模块设计核心，我们将人类社交中的“外卖骑手在开发者群”这一**“身份反差即差异化标签”**原则，推演并映射至AI Agent（智能体）及运营引擎的架构设计中",
+      "source": "selfgen_20260819_190106_0031",
+      "type": "cog",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 6,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "在轻边际成本生态（如大模型API、内容平台）中，**“同质化供给”是最大的空转源，而“超时”往往源于试图让同质化Agent处理全场景任务**",
+      "source": "selfgen_20260819_190106_0031",
+      "type": "cog",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "利用身份反差建立独特竞争力，其本质是通过**“非对称视角切入”**来降低计算冗余（省时间）并获取独特数据飞轮（保进化）",
+      "source": "selfgen_20260819_190106_0031",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下是利用“身份反差”建立AI调度/运营引擎独特竞争力的推演分析：",
+      "source": "selfgen_20260819_190106_0031",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在开发者群里，外卖骑手的记忆点在于“降维视角的物理世界介入者”",
+      "source": "selfgen_20260819_190106_0031",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T19:02:34.172681"
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_153525_0001",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是阴阳不分（决策直接越权执行、时效缺乏边界约束）导致的系统失稳，唯有坚守脑体分离的契约边界，方能达成阴阳自衡",
+      "source": "selfgen_20260818_153525_0001",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:37:00.931259"
+}

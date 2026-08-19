@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_185912_0028",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于已有认知锚定，我们将“零成本算力循环”（通过协作奖励计划实现数据-算力交换）置于“服务于轻边际成本供给主体的AI调度/运营引擎”这一特定语境下，结合热力学熵增框架与防超时/防空转的核心诉求，推演其可持续性",
+      "source": "selfgen_20260819_185912_0028",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **封闭系统**：仅依靠平台内“用户贡献数据/算力 -> 平台发放奖励额度 -> 用户消耗额度调用API”自循环的AI引擎生态",
+      "source": "selfgen_20260819_185912_0028",
+      "type": "deep",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "*   **系统目标**：在“零财务成本”表象下，实现**时间成本可控（防超时）**与**系统持续进化（防空转）**",
+      "source": "selfgen_20260819_185912_0028",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T19:00:48.354112"
+}

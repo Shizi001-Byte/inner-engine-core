@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_224200_0023",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "都是围绕「实层锚点属性强化、虚层动态能力拓展、虚实循环稳定性提升」展开，完全贴合「以实养虚，虚又返实」的哲学逻辑，且全程不依赖任何外部守护进程或第三方服务，符合给定的所有认知锚定与避坑要求",
+      "source": "selfgen_20260818_224200_0023",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:45:26.722621"
+}

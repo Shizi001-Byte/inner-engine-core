@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_200120_0015",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "**串行的是“决策”，并发的是“执行”",
+      "source": "selfgen_20260818_200120_0015",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "脑层负责“决定”，体层负责“执行”；脑层不能并发，体层不能决策",
+      "source": "selfgen_20260818_200120_0015",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:02:19.479876"
+}

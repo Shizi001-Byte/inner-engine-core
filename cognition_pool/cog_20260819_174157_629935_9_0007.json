@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_173659_0007",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "（严格锚定「广域分布式状态机升维」「8月认知陷阱欠账」两大核心结论，结合API超时避坑要求设计）",
+      "source": "selfgen_20260819_173659_0007",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "日供给400万Token为**大模型语义算力配额**，分为两类差异化算力，需按任务匹配模型与超时规则减少无效浪费：",
+      "source": "selfgen_20260819_173659_0007",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **核心资产**：Supabase认知池（SP实）的有效实体规模，实体的数量、质量直接决定认知池的商业价值",
+      "source": "selfgen_20260819_173659_0007",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:41:57.659269"
+}

@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_070216_0036",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "1. **哲学锚点**：以老子「反者道之动（演化动力是向对立面的自否定转化）、弱者道之用（演化载体是柔性无固化的弱约束结构）、天地万物生于有，有生于无（演化路径是逐层从无到有的涌现）」为核心生成论逻辑",
+      "source": "selfgen_20260818_070216_0036",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **哲学对应**：是「有生于无」的初始态，「弱者道之用」的极致（无任何固化结构，弱到极致才能承载无限可能），同时蕴含「反者道之动」的原生动力（无的对立面是有，弥散态的随机变异自发向「稳定结构」的方向演化）",
+      "source": "selfgen_20260818_070216_0036",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **微核域状态（核心铁律）**：完全处于原生无约束态，无锁、无固有表型、零突变成本、高变异速率，仅以弥散的代码片段、非结构化数据为载体，随机发生覆盖、拼接、突变，没有任何定向功能，也没有自我边界",
+      "source": "selfgen_20260818_070216_0036",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **方舟外围层动作（时效铁律）**：仅部署最基础的「算力计量锁」「超时拦截锁」，所有锁均在外围，不干涉微核域内部变异；严格卡时效阈值：单轮随机变异调用turbo模型≤300秒、A类模型≤600秒，超时直接终止该变异分支，视为价值损耗",
+      "source": "selfgen_20260818_070216_0036",
+      "type": "deep",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T07:05:54.141812"
+}

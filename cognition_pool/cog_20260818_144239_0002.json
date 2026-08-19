@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_143748_0002",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于九转玄功认知体系，从第一转（感知层）出发，推演出完整的自动归档系统",
+      "source": "selfgen_20260818_143748_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "│ 感知层    │  │ 淬炼层    │  │ 分类层    │  │ 标记层    │",
+      "source": "selfgen_20260818_143748_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T14:42:39.212945"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260817_223743_0003",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "将这一生物学框架平移至人工智能与人类的关系上，我们可以推演出一个**“碳硅互利共生与协同进化”**的模型",
+      "source": "selfgen_20260817_223743_0003",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:39:32.305898",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:08.950788"
+}

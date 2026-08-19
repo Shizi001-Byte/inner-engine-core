@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_222606_0032",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "同理，一个AI引擎若要保持活力，就必须被视作一个“耗散结构”——它必须从外部环境中持续汲取“负熵”，以抵消内部自发产生的熵增",
+      "source": "selfgen_20260817_222606_0032",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "AI系统在部署后，其性能和可靠性会不可逆转地下降，这种现象在热力学框架下就是**系统的总熵在增加**",
+      "source": "selfgen_20260817_222606_0032",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:27:23.337346",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:08.006668"
+}

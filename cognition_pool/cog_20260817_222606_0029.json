@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_222443_0029",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "用演化生物学的视角来看待AI引擎的版本迭代是一个非常深刻的跨界视角",
+      "source": "selfgen_20260817_222443_0029",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "V7.2到V7.5的迭代，属于同一“物种”（V7架构大系）内的**微演化**阶段",
+      "source": "selfgen_20260817_222443_0029",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:26:06.100941",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:07.965739"
+}

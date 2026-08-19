@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260817_224241_0011",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "将AI引擎的版本迭代（从V7.2到V7.5）置于演化生物学的视角下考察，是一个非常深刻的隐喻",
+      "source": "selfgen_20260817_224241_0011",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "如果将V7.2到V7.5视为一个“宏观演化周期”中的连续微小演化（微演化），我们可以这样解构其背后的演化机制，并预测下一代的演化方向",
+      "source": "selfgen_20260817_224241_0011",
+      "type": "exp",
+      "density": 0.38,
+      "density_grade": "B"
+    },
+    {
+      "text": "在这几个版本的迭代中，AI引擎经历的不仅是参数量的增加，更是适应环境的结构性改变",
+      "source": "selfgen_20260817_224241_0011",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:44:00.133301",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:09.198331"
+}

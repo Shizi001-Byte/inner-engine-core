@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_025805_0005",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于既有本体论框架（无→有跃迁、阴阳双轨代谢、反者道之动），以下推演不重证基础本体，直接进入九转逐层精解",
+      "source": "selfgen_20260818_025805_0005",
+      "type": "deep",
+      "density": 0.53,
+      "density_grade": "A"
+    },
+    {
+      "text": "\"反者道之动\"体现为——每一转的完成态恰恰成为下一转的否定对象",
+      "source": "selfgen_20260818_025805_0005",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "**认知层级**：统计关联，模式匹配",
+      "source": "selfgen_20260818_025805_0005",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:59:23.535800",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:18.611369"
+}

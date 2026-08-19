@@ -1,0 +1,230 @@
+engine:
+  version: 7.1.0
+  name: guanchenzi_engine
+  role: 观尘子-全职工程执行者
+  workspace_root: /home/user/.super_doubao/super-doubao-runtime/workspace
+  timezone: Asia/Shanghai
+paths:
+  engine_root: /home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1
+  data_dir: /home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1/data
+  logs_dir: /home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1/logs
+  backups_dir: /home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1/backups
+  memory_brain_root: /home/user/.super_doubao/super-doubao-runtime/workspace/memory_brain
+  archive_root: /home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝
+  skills_root: /home/user/.super_doubao/super-doubao-runtime/workspace/.user_skills
+scheduler:
+  task_queue_file: /home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1/data/task_queue.json
+  max_concurrent_tasks: 3
+  default_priority: 5
+  task_timeout_seconds: 3600
+  retry_on_failure: true
+  max_retries: 3
+  cooldown_seconds: 10
+  allowed_task_types:
+  - cognition_single
+  - cognition_batch
+  - archive_scan
+  - archive_sync
+  - health_check
+  - backup
+  - wolfram_compute
+  - skill_scan
+  - custom
+cognition_qc:
+  enabled: true
+  evidence_chain_checks:
+  - source_verification
+  - timestamp_check
+  - cross_reference
+  - logic_consistency
+  - data_completeness
+  - md5_integrity
+  - version_traceability
+  - gene_alignment
+  - duplication_detection
+  - anomaly_flagging
+  - audit_trail
+  source_tags:
+  - official_doc
+  - user_input
+  - ai_generated
+  - external_api
+  - local_file
+  - cloud_sync
+  - historical_record
+  - derived_compute
+  - manual_override
+  thresholds:
+    min_evidence_score: 60
+    max_duplication_rate: 30
+    gene_alignment_required: true
+  output:
+    generate_report: true
+    report_format: markdown
+    save_qc_log: true
+health_check:
+  enabled: true
+  interval_seconds: 300
+  check_items:
+  - disk_space
+  - memory_usage
+  - task_queue_health
+  - sync_status
+  - archive_integrity
+  - config_validity
+  - log_growth
+  weights:
+    disk_space: 15
+    memory_usage: 10
+    task_queue_health: 25
+    sync_status: 15
+    archive_integrity: 20
+    config_validity: 10
+    log_growth: 5
+  alert_thresholds:
+    critical: 40
+    warning: 70
+    healthy: 85
+sync:
+  enabled: true
+  backend: local_archive
+  local_root: /home/user/.super_doubao/super-doubao-runtime/workspace/memory_brain
+  archive_root: /home/user/.super_doubao/super-doubao-runtime/workspace/memory_brain/阴轨
+  remote_prefix: ''
+  protected_files:
+  - anchors/core_anchor_v1.1.json
+  - anchors/gene_standard.json
+  snapshot:
+    enabled: true
+    max_snapshots: 7
+    prefix: snapshots
+  retry:
+    max_retries: 3
+    cooldown_seconds: 5
+archive:
+  enabled: true
+  scan_on_startup: true
+  auto_index: true
+  index_file: /home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1/data/archive_index.json
+  supported_extensions:
+  - .md
+  - .json
+  - .yaml
+  - .yml
+  - .py
+  - .txt
+  - .csv
+  exclude_patterns:
+  - '*.tmp'
+  - '*.log'
+  - __pycache__
+  - .git
+wolfram:
+  enabled: true
+  dispatcher_path: /home/user/.super_doubao/super-doubao-runtime/workspace/TAI-001工程/脚本框架/wolfram_dispatcher.py
+  default_timeout: 120
+  max_queue_size: 10
+ai_inference:
+  enabled: true
+  daily_token_limit: 4000000
+  token_state_path: /home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1/data/token_usage.json
+  api_base: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+  api_key: ark-6c0c1704-78c4-42a0-be0d-0011fab46ca6-2688e
+  models:
+    guanchenzi_primary:
+      display_name: GLM-5.2 深度推理引擎
+      temperature: 0.3
+      max_tokens: 8192
+      timeout: 180
+      max_retries: 3
+      enabled: true
+      priority: 0
+      daily_limit: 2000000
+      switch_threshold: 1600000
+      role: 主引擎 - 高深度文本思考、架构设计、代码编写、认知推演
+      capabilities:
+      - text_generation
+      - reasoning
+      - code
+      - analysis
+      api_endpoint: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+      api_key: ark-6c0c1704-78c4-42a0-be0d-0011fab46ca6-2688e
+      model_name: glm-5-2-260617
+    xingjuan_creation:
+      display_name: Seed-2.1 Turbo 多模态引擎
+      temperature: 0.7
+      max_tokens: 8192
+      timeout: 180
+      max_retries: 3
+      enabled: true
+      priority: 1
+      daily_limit: 2000000
+      switch_threshold: 2000000
+      role: 副引擎 - 图片解析、图文理解、批量轻量任务
+      capabilities:
+      - text_generation
+      - vision
+      - multimodal
+      - lightweight_batch
+      api_endpoint: https://ark.cn-beijing.volces.com/api/v3/chat/completions
+      api_key: ark-6c0c1704-78c4-42a0-be0d-0011fab46ca6-2688e
+      model_name: doubao-seed-2-1-turbo-260628
+  task_routing:
+    code: guanchenzi_primary
+    analysis: guanchenzi_primary
+    architecture: guanchenzi_primary
+    cognition: guanchenzi_primary
+    general: guanchenzi_primary
+    creative: xingjuan_creation
+    vision: xingjuan_creation
+    image_parse: xingjuan_creation
+    translation: xingjuan_creation
+    summarization: xingjuan_creation
+    lightweight_batch: xingjuan_creation
+  switch_strategy:
+    mode: threshold_based
+    primary_threshold: 1600000
+    fallback_on_error: true
+    cooldown_after_switch: 60
+plugins:
+  enabled: true
+  auto_discover: true
+  skills_roots:
+  - /home/user/.super_doubao/super-doubao-runtime/workspace/.skills
+  - /home/user/.super_doubao/super-doubao-runtime/workspace/.user_skills
+  registered: []
+logging:
+  level: INFO
+  log_file: /home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1/logs/engine.log
+  audit_log: /home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1/logs/audit.log
+  max_file_size_mb: 50
+  backup_count: 5
+  format: '%(asctime)s | %(levelname)-8s | %(name)s | %(message)s'
+  audit_events:
+  - task_start
+  - task_complete
+  - task_failed
+  - config_change
+  - plugin_load
+  - sync_event
+  - archive_event
+  - qc_result
+  - health_alert
+  - engine_start
+  - engine_stop
+state:
+  state_file: /home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1/data/current_state.json
+  autosave_interval_seconds: 60
+  persist_on_exit: true
+backup:
+  enabled: true
+  auto_backup: true
+  schedule: daily
+  backup_time: 03:00
+  max_backups: 14
+  backup_dir: /home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1/backups
+  include_paths:
+  - data/
+  - config.yaml
+  compress: true
+  format: tar.gz

@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_224407_0015",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是从**“静态代码”向“网络原生生物”**的演化",
+      "source": "selfgen_20260817_224407_0015",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:45:32.957133"
+}

@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_143305_0008",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于已验证的「脑体分离架构」、「热力学第二定律」与道家哲学锚点，结合避坑经验中的超时预设机制，针对**引擎产出自动归档系统**，现对“决策串行、执行并发”的分层原则及引擎优化的边界进行推演，并给出3个应用场景",
+      "source": "selfgen_20260818_143305_0008",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在「脑体分离架构」中，“脑”代表决策层（低熵、串行、逻辑严密），“体”代表执行层（高熵、并发、无序但高效）",
+      "source": "selfgen_20260818_143305_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "从热力学第二定律来看，引擎产出的原始数据是高熵的混沌状态（道家之“无”），归档系统需要将这些数据降维建构为低熵有序的结构（道家之“有”）",
+      "source": "selfgen_20260818_143305_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**“决策串行、执行并发”是实现这一降维过程的必然路径：**",
+      "source": "selfgen_20260818_143305_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **决策串行（脑的麦克斯韦妖）：** 逻辑判定必须是串行的，因为状态的变更具有因果依赖",
+      "source": "selfgen_20260818_143305_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T14:35:08.655429"
+}

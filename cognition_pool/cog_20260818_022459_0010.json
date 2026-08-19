@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_022329_0010",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于您确立的“阴阳双轨架构”、“400万Token跨物种投资组合”以及“行为 $\\rightarrow$ 代谢 $\\rightarrow$ 基因/结构”的演化谱系，我们直接进入设计引擎的链式推演机制",
+      "source": "selfgen_20260818_022329_0010",
+      "type": "eng",
+      "density": 0.58,
+      "density_grade": "A"
+    },
+    {
+      "text": "以下为设计引擎的链式推演机制与任务依赖图：",
+      "source": "selfgen_20260818_022329_0010",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:24:59.301265",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:17.326305"
+}

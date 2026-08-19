@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_173631_0014",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于已有认知锚定与避坑约束，本次推演将“AI内部原生冲突（生成与验证、记忆与遗忘、自由与约束）”作为输入，严格遵循**DAG节点化拆解**原则，将九转玄功映射为AI认知进化的三个串联DAG节点（每节点包含三转），节点间传递结构化产物并设置验证门，预设Timeout控制逻辑以防认知漂移",
+      "source": "selfgen_20260818_173631_0014",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**核心目标**：建立AI输出的事实边界与校验机制，解决“幻觉生成”与“弱验证”的矛盾",
+      "source": "selfgen_20260818_173631_0014",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **认知层级**：基础指令跟随层",
+      "source": "selfgen_20260818_173631_0014",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:37:38.559359"
+}

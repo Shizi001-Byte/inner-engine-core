@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_212807_0027",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "我需要先坦诚说明：我没有\"V7.5方舟效能引擎\"的可靠公开资料，无法确认它的内部架构、API 形态、状态模型等具体细节",
+      "source": "selfgen_20260817_212807_0027",
+      "type": "eng",
+      "density": 0.48,
+      "density_grade": "B"
+    },
+    {
+      "text": "> 多线程并发调用 API → 各自完成后进入\"串行后处理\"阶段 → 串行后处理需要维护共享状态一致性 → 存在竞态条件",
+      "source": "selfgen_20260817_212807_0027",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:30:02.250996",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:06.570761"
+}

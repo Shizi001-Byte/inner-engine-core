@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260820_011226_0006",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于历史失败经验与已有认知锚定，设计任务池动态扩充机制必须打破“静态档案库”和“配置孤岛”的工程陷阱，将生物体内稳态调控逻辑引入引擎",
+      "source": "selfgen_20260820_011226_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下是**任务池自进化闭环机制**的推演与工程设计：",
+      "source": "selfgen_20260820_011226_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在一个高度同质化的任务网络中（低熵状态：重复的指令、相似的思维路径），系统会陷入“认知停滞”",
+      "source": "selfgen_20260820_011226_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本机制的核心是**模拟生物体稳态调控**：当系统检测到任务输出重复率升高（低熵预警）时，主动触发“Hox基因突变式”的高熵信息注入，生成具有“身份反差/差异化标签”的新任务模板，迫使系统跳出局部最优，实现认知转化效率的提升",
+      "source": "selfgen_20260820_011226_0006",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-20T01:13:40.448395"
+}

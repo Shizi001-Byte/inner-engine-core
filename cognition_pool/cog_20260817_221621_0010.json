@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_221501_0010",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是为AI系统建立一个**基于对立统一规律的动态治理范式**",
+      "source": "selfgen_20260817_221501_0010",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:16:21.333732"
+}

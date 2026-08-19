@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_044435_0008",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "代谢网络可通过「吃瑕疵→产新瑕疵→吃新瑕疵」实现自生长，无需外部干预；",
+      "source": "selfgen_20260818_044435_0008",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T04:48:41.036604"
+}

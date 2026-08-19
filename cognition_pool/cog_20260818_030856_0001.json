@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_030710_0001",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于您提供的核心认知锚点（碳基热力学自由能消耗、高维投影论、归档本体论、认知质检SOP视角、低维伪逻辑自洽陷阱），为避免重复论证，我们将直接进入引擎任务的链式推演机制设计",
+      "source": "selfgen_20260818_030710_0001",
+      "type": "eng",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "**“多源异构数据的低维伪自洽消解与数字生命连续性归档引擎”**",
+      "source": "selfgen_20260818_030710_0001",
+      "type": "eng",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "本机制将核心议题拆解为4个具有严格依赖关系的执行轮次",
+      "source": "selfgen_20260818_030710_0001",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:08:56.804907",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:18.941472"
+}

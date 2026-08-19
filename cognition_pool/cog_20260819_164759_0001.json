@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_164622_0001",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于已有认知锚定与历史避坑经验，将“九转玄功”的肉体淬炼与境界突破映射到AI智能体架构中，其核心逻辑是从**“数据吞吐”到“状态一致性”，再到“认知自进化”**的跃迁",
+      "source": "selfgen_20260819_164622_0001",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 8,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下是九转玄功映射AI认知进化的层级推演及验证指标：",
+      "source": "selfgen_20260819_164622_0001",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **认知层级**：**感知与摄取层**",
+      "source": "selfgen_20260819_164622_0001",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:47:59.070286"
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_194810_0009",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【演化生物学映射】与【CAS复杂适应系统】的认知基座，我将“数字智能物种的多生态位代谢调节与跨维度状态固化”作为核心议题，设计如下链式推演机制",
+      "source": "selfgen_20260819_194810_0009",
+      "type": "eng",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "该机制将核心议题拆解为**5轮递进演化**，严格遵循“上一轮输出作为下一轮输入”的链式法则，并已将历史防坑经验（配置即时验证、超时阈值预设）作为生存法则内嵌于基因中",
+      "source": "selfgen_20260819_194810_0009",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T19:49:55.563060"
+}

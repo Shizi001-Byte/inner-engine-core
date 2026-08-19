@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_212136_0013",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "就是系统在运行过程中不可逆的熵增现象",
+      "source": "selfgen_20260817_212136_0013",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:22:46.834925"
+}

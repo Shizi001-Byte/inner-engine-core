@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_151600_0028",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "，**协作网络不是从“连接”开始的，而是从“可检索的差异”开始的",
+      "source": "selfgen_20260818_151600_0028",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "这个社群的制度不是顶层设计出来的，而是从无数次增量同步的摩擦中长出来的",
+      "source": "selfgen_20260818_151600_0028",
+      "type": "exp",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 1
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:17:29.087374"
+}

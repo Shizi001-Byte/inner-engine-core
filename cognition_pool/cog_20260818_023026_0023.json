@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260818_022948_0023",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "核心根因：**简化版绕过了与正式版的同构性约束**，把它当作\"等价缩写\"，而非\"需要校验的独立产物\"",
+      "source": "selfgen_20260818_022948_0023",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:30:26.914837",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:17.629421"
+}

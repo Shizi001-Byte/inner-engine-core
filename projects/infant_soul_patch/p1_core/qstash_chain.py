@@ -81,8 +81,11 @@ def enqueue_task(question, delay=0):
     }
 
     # 如果QStash已配置，发送到远程队列
-    if cfg.get("enabled") and cfg.get("qstash_token"):
+    if cfg.get("enabled") and cfg.get("qstash_token") and cfg.get("webhook_url"):
         try:
+            import urllib.parse
+            dest = urllib.parse.quote(cfg["webhook_url"], safe=':/?&=')
+            publish_url = f"{cfg['qstash_url']}/v2/publish/{dest}"
             payload = json.dumps({"task_id": task_id, "question": question}).encode()
             headers = {
                 "Authorization": f"Bearer {cfg['qstash_token']}",
@@ -91,13 +94,15 @@ def enqueue_task(question, delay=0):
             if delay > 0:
                 headers["Upstash-Delay"] = f"{delay}s"
 
-            req = urllib.request.Request(cfg["qstash_url"], data=payload, headers=headers, method="POST")
+            req = urllib.request.Request(publish_url, data=payload, headers=headers, method="POST")
             with urllib.request.urlopen(req, timeout=10) as resp:
                 result = json.loads(resp.read())
                 task["qstash_message_id"] = result.get("messageId", "")
             print(f"[QStash] 任务已发送到远程队列: {task_id}")
         except Exception as e:
             print(f"[QStash] 远程入队失败，使用本地队列: {e}")
+    elif cfg.get("enabled") and cfg.get("qstash_token"):
+        print(f"[QStash] token已配置但webhook_url未设置，使用本地队列（需公网回调地址）")
 
     queue["pending"].append(task)
     save_queue(queue)

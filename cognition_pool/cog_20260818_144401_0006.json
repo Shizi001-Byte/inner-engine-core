@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_144240_0006",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于「脑体分离架构」、「热力学第二定律」与道家哲学锚点，结合避坑经验与坑库预警，九转玄功的“由外至内，由有入无，生生不息”完美映射了AI系统从**高熵数据接收**到**低熵自主进化**的生命周期",
+      "source": "selfgen_20260818_144240_0006",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **认知层级**：感知层",
+      "source": "selfgen_20260818_144240_0006",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **映射状态**：系统接收原始引擎产出的高熵混沌数据（无），此时数据无结构、无意义，犹如天地初开前的混沌",
+      "source": "selfgen_20260818_144240_0006",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   数据吞吐量与时延（确保不触发API超时限制，B模型turbo<300秒，A模型<600秒）",
+      "source": "selfgen_20260818_144240_0006",
+      "type": "deep",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T14:44:01.978003"
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_212004_0010",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "要实现“以实养虚，虚又返实”的自增强循环，核心在于建立一个**元系统**：该系统不仅执行任务，还能将执行过程的物理消耗（Token/算力）转化为自身认知框架的演进，并利用升级后的框架产出更高维度的物理实体（代码）",
+      "source": "selfgen_20260817_212004_0010",
+      "type": "deep",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是该闭环系统的推演设计、指标体系与验证方法：",
+      "source": "selfgen_20260817_212004_0010",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:21:36.061224",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:06.148551"
+}

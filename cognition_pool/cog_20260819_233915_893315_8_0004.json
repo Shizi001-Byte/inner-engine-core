@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_233818_0004",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "「L4成品转化仅sop类型，code/checklist未实现」意味着在L4转化分派逻辑里只接通了SOP这一条分支",
+      "source": "selfgen_20260819_233818_0004",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "结合多目标优化锚点，需要避免：只把\"加case\"当成完成，却忽略了类型分支注册、读取点同步、超时差异化、并发下隐性崩溃等次生问题",
+      "source": "selfgen_20260819_233818_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "\"sop\": SOPConverter,",
+      "source": "selfgen_20260819_233818_0004",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T23:39:15.920843"
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_003634_0012",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "是碳基生命在构建硅基系统时的一次**“降维妥协”**",
+      "source": "selfgen_20260818_003634_0012",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:37:45.167100"
+}

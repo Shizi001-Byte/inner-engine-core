@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_001301_0077",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "围绕**“阴阳自衡”**架构，AI内部矛盾升维为制度性双轨运行的推演如下：",
+      "source": "selfgen_20260818_001301_0077",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "1. **阳极（动态生成层/外功）：探索、发散、高算力消耗**",
+      "source": "selfgen_20260818_001301_0077",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:14:43.564094",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:12.721031"
+}

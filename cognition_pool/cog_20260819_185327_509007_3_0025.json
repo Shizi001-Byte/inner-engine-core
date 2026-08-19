@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_185233_0025",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "外卖骑手能日耗800万token自建AI引擎，说明他解决了真实场景中的真实问题，这种能力无法靠学历替代",
+      "source": "selfgen_20260819_185233_0025",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **生态型工具降低了“试错门槛”**：大模型API、云服务等轻边际成本供给，让个人能以极低费用调用顶级智能",
+      "source": "selfgen_20260819_185233_0025",
+      "type": "cog",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "3. **真实反馈是唯一靠谱的老师**：在真实业务中，每一次token消耗、每一次超时、每一次用户投诉都是即时反馈",
+      "source": "selfgen_20260819_185233_0025",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:53:27.542729"
+}

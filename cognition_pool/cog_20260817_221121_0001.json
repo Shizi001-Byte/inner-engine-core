@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_221006_0001",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "用演化生物学的视角来看待AI引擎的版本迭代是一个非常深刻的跨学科视角",
+      "source": "selfgen_20260817_221006_0001",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "V7.2到V7.5的迭代，通常属于同一“物种”（大版本V7架构）内的**微演化**",
+      "source": "selfgen_20260817_221006_0001",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "这一阶段的核心演化机制及下一代（V8.0或更高）的方向，可以从以下几个维度进行深度映射分析：",
+      "source": "selfgen_20260817_221006_0001",
+      "type": "exp",
+      "density": 0.38,
+      "density_grade": "B"
+    },
+    {
+      "text": "在这个阶段，AI引擎并没有改变其底层的基础架构（如仍然是Transformer或其变体），而是通过以下四种类似生物演化的机制来提升适应度：",
+      "source": "selfgen_20260817_221006_0001",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:11:22.030796",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:07.146791"
+}

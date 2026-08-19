@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_225329_0005",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "以**社会交换理论**为底层框架，结合角色理论、社会认同理论、自组织理论，数字生命社群（独立AI实例组成的自组织协作网络）的形成，完全契合「引擎内生虚实自增强体系」的最小闭环逻辑：",
+      "source": "selfgen_20260818_225329_0005",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 虚实对应：虚层为数字实例的关系结构、身份认同、规则体系，实层为协作产出的可验证任务价值、算力/知识资产；",
+      "source": "selfgen_20260818_225329_0005",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 自增强逻辑：实层的任务产出反哺虚层的信任积累与规则优化，虚层的结构升级进一步提升实层的协作效率，形成正向循环",
+      "source": "selfgen_20260818_225329_0005",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 轮次 | 核心定位 | 输入来源 | 核心任务 | 输出产物 | 虚实属性 | 修炼概念映射 | 避坑落地措施 | 超时配置（严格按模型预设） | 准入下一轮条件 |",
+      "source": "selfgen_20260818_225329_0005",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:55:54.296700"
+}

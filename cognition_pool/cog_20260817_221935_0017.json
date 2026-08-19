@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_221812_0017",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "是构建一个**有状态、结构化、逐层收敛的智能体流水线**",
+      "source": "selfgen_20260817_221812_0017",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:19:35.386365"
+}

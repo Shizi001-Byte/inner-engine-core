@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_065822_0033",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "本次映射严格锚定「三大铁律」核心约束与认知池避坑规则，以**微核域能力层级跃迁**为九转进化的核心主线：所有锁机制均部署在方舟调度计量外围层、不侵入微核域，全程满足时效刚性约束与边际价值调优要求，每转结束强制刷新认知缓存、新认知30分钟内完成注入，彻底规避认知池只进不出的问题",
+      "source": "selfgen_20260818_065822_0033",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**对应认知层级**：微核域裸核落地，完成无锁、零突变、高变异、无固有表型的原生特性配置，相当于修炼中筑牢道基，是所有后续进化的底层载体",
+      "source": "selfgen_20260818_065822_0033",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. 微核域无锁直接覆盖成功率100%，所有配置/表型修改无阻塞、无审批、无锁等待；",
+      "source": "selfgen_20260818_065822_0033",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. 单次认知突变成本=0（无回滚开销、无兼容适配成本），变异速率≥10次/分钟；",
+      "source": "selfgen_20260818_065822_0033",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T07:00:09.943077"
+}

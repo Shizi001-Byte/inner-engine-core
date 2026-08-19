@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_223005_0040",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "一个运行中的AI引擎，如果没有外部能量和信息的干预，必然会像物理系统一样走向“热寂”（失效或退化）",
+      "source": "selfgen_20260817_223005_0040",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是从熵增定律视角对AI系统退化的剖析，以及如何设计“负熵”机制的详细方案",
+      "source": "selfgen_20260817_223005_0040",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:31:17.125364",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:08.280196"
+}

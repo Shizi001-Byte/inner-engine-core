@@ -1,0 +1,42 @@
+{
+  "task_id": "selfgen_20260817_222319_0027",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "推演一个基于 Supabase 的“记忆脑”（AI 记忆系统）增量同步方案，核心挑战在于**保持本地状态与云端数据库的一致性**，同时**降低网络开销**和**处理多端/多智能体并发修改带来的冲突**",
+      "source": "selfgen_20260817_222319_0027",
+      "type": "eng",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "以下是完整的增量同步方案推演，分为四个核心模块：",
+      "source": "selfgen_20260817_222319_0027",
+      "type": "eng",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "**核心思路：本地 SQLite（或 JSON 索引）作为影子库，Supabase Postgres 作为中央事实源",
+      "source": "selfgen_20260817_222319_0027",
+      "type": "eng",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "*   **本地端：** 监听文件系统变化，维护本地索引（记录文件 Hash、最后修改时间、同步状态）",
+      "source": "selfgen_20260817_222319_0027",
+      "type": "eng",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "*   **云端：** Supabase 存储实际记忆数据（结构化表 + 向量列）",
+      "source": "selfgen_20260817_222319_0027",
+      "type": "eng",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:24:42.953683"
+}

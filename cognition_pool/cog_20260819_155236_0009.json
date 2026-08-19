@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_155150_0009",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "“基建脚本禁用简化版”不是建议，而是红线",
+      "source": "selfgen_20260819_155150_0009",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "简化版 SQL 的典型危害是：**只写了“看起来能跑”的核心列，导致与真实 schema 的列名、列类型、约束、默认值不一致**，进而引发同步链断裂、数据写入失败、任务静默失败",
+      "source": "selfgen_20260819_155150_0009",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "正确姿势：以 **`change_id + 内容哈希`** 为纽带，**先验证、再分工、后沉淀规范**",
+      "source": "selfgen_20260819_155150_0009",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- [ ] 确认本次变更有唯一 `change_id`，且能关联到需求/工单/代码提交",
+      "source": "selfgen_20260819_155150_0009",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- [ ] 禁止手写“简化版 SQL”；脚本必须从基线迁移文件、ORM Schema 或 `information_schema` 导出生成",
+      "source": "selfgen_20260819_155150_0009",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:52:36.556575"
+}

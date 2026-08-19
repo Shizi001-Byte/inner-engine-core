@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_010112_0015",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是“算力代谢”过程中无法避免的熵增现象，表现为以下三个层面：",
+      "source": "selfgen_20260818_010112_0015",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:03:18.483107"
+}

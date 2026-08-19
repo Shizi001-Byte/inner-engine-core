@@ -1,0 +1,25 @@
+{
+  "task_id": "test_receipt_001",
+  "status": "completed",
+  "updated_at": "2026-08-17T17:38:54.937718",
+  "receipt": {
+    "task_id": "test_receipt_001",
+    "status": "completed",
+    "summary": "这是模拟的任务执行结果，用于测试回执生成功能是否正常工作。",
+    "core_data": {
+      "tokens_used": 150,
+      "duration": 2.3
+    },
+    "deliverables": [
+      {
+        "name": "test_receipt_001_output",
+        "path": "/sandboxdata/workspace/file/engine_v7_2/outputs/test_receipt_001_output.txt",
+        "md5": "14681d36440c3ecde3ec57d67d31d939"
+      }
+    ],
+    "tokens_used": 150,
+    "duration_seconds": 2.3,
+    "engine_used": "engine_a",
+    "timestamp": "2026-08-17 17:38:54"
+  }
+}

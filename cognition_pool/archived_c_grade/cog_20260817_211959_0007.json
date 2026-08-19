@@ -1,0 +1,28 @@
+{
+  "task_id": "selfgen_20260817_211837_0007",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是一个高度有序的信息处理系统",
+      "source": "selfgen_20260817_211837_0007",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "能存在，是因为薛定谔所言——“生命以负熵为食”，通过从环境中汲取低熵物质/能量，维持自身的有序状态",
+      "source": "selfgen_20260817_211837_0007",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "会退化，是因为它处于一个不断变化的现实世界中，如果不做功，其内部参数与外部世界的鸿沟就会自发扩大",
+      "source": "selfgen_20260817_211837_0007",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:19:59.496530"
+}

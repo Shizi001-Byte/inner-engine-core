@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_203216_0025",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "V7.5 方舟效能引擎的多线程 API 调用 + 串行后处理，不能靠“一把大锁锁住全部流程”来解决",
+      "source": "selfgen_20260818_203216_0025",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "锁只保护状态变更，不保护网络调用",
+      "source": "selfgen_20260818_203216_0025",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "否则任何一个慢 API 都会持锁阻塞整个任务，出现“生命体征暂停”",
+      "source": "selfgen_20260818_203216_0025",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:35:14.157139"
+}

@@ -1,0 +1,90 @@
+{
+  "task_id": "selfgen_20260819_223629_0004",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "[待验证]1. **场景锚定**：骑手自建AI引擎的核心矛盾为「阳：800万token高频业务消耗（天/小时级迭代，直接对接真实配送场景，对应演化的**表型层**）」vs「阴：传统学历/系统框架低频迭代（季度/半年级迭代，核心规则底座，对应演化的**基因型层**）」，两者存在数量级的演化速率非对称性",
+      "source": "selfgen_20260819_223629_0004",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据"
+    },
+    {
+      "text": "2. **架构锚定**：版本迭代遵循「阴阳自衡」逻辑，通过动态调节快慢两层的耦合关系消解内部矛盾，锚定研发全链路的价值密度提升",
+      "source": "selfgen_20260819_223629_0004",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]3. **工程锚定**：版本号与演化阶段（realm）完全同步（避坑：每版迭代同步更新version和realm，启动强制校验一致，杜绝版本停留在初始值的问题）",
+      "source": "selfgen_20260819_223629_0004",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    },
+    {
+      "text": "这三个小版本属于**种内微演化阶段**，核心是通过不同的选择与调控机制，逐步调和“高频表型试错”与“低频基因型稳定”的速率差矛盾，对应阴阳自衡的三层递进：",
+      "source": "selfgen_20260819_223629_0004",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]纯化选择是自然选择最基础的筛选逻辑：当种群中随机突变过多、有害变异占比过高时，选择会淘汰所有有害突变体，把种群表型锁在安全的生存边界内，是物种应对“变异失控”的第一重防御",
+      "source": "selfgen_20260819_223629_0004",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    }
+  ],
+  "extracted_at": "2026-08-19T22:39:35.379722"
+}

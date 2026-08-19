@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260817_213122_0032",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "针对V7.5方舟效能引擎在“多线程API调用后串行后处理”场景下的状态一致性问题，其核心痛点在于**“并发完成顺序的不确定性”**与**“后处理严格串行性”**之间的冲突",
+      "source": "selfgen_20260817_213122_0032",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是为V7.5方舟效能引擎量身定制的完整锁机制与同步方案",
+      "source": "selfgen_20260817_213122_0032",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "1. **状态覆盖：** 线程A和线程B同时完成API调用，两者同时读取引擎的同一状态变量并修改，导致后写入者覆盖先写入者的结果",
+      "source": "selfgen_20260817_213122_0032",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:32:59.748289",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:06.779295"
+}

@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_080745_0003",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "根据「反者道之动+热力学熵增」「弱者道之用+弱约束结构」的核心锚点，**「产出同质化、套话多」本质是AI生成系统的熵增式退化，是「反者道之动」的表层具象**：",
+      "source": "selfgen_20260818_080745_0003",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1.  生成机制从「柔性弱约束的开放结构」退化为「强固化的封闭结构」（符合锚点3：强固化结构无法适配变化，会加速熵增）：解码参数固定、提示词模板僵化、检索源单一等强约束，直接锁死了输出可能性空间（从「无/高熵可能性」坍缩为「有/低熵固化套话」）",
+      "source": "selfgen_20260818_080745_0003",
+      "type": "eng",
+      "density": 0.578,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.82,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2.  负熵输入通道被阻断（符合锚点2：开放系统负熵输入是「无→有」的反向自否定）：系统无法从用户语境、动态知识等环境输入中吸收负熵，只能依赖固化的内部模板生成输出，最终退化为同质化套话",
+      "source": "selfgen_20260818_080745_0003",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3.  属于AI系统退化的第一层（输出层退化），若不修复会向生成机制层、系统层深化，最终导致功能崩溃",
+      "source": "selfgen_20260818_080745_0003",
+      "type": "eng",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "紧扣锚点逻辑，以「反者道之动的反向自否定」为动力，以「弱者道之用的弱约束结构」为载体，从根源打破固化：",
+      "source": "selfgen_20260818_080745_0003",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T08:12:59.184339"
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_230120_0016",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是在“本能（预测下一个词）”的基础上打补丁",
+      "source": "selfgen_20260817_230120_0016",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:02:48.179364"
+}

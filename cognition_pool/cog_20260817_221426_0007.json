@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_221308_0007",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "以下是从“变化检测 -> 增量同步 -> 冲突处理”的完整推演方案设计：",
+      "source": "selfgen_20260817_221308_0007",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "为了支持增量同步和冲突检测，Supabase（PostgreSQL）的表结构必须包含同步元数据",
+      "source": "selfgen_20260817_221308_0007",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:14:26.409829",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:07.310160"
+}

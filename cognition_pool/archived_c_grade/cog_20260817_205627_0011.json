@@ -1,0 +1,21 @@
+{
+  "task_id": "selfgen_20260817_205455_0011",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是在消耗全人类的算力和带宽资源",
+      "source": "selfgen_20260817_205455_0011",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "是把生命从“固态”（绑定硬件）液化成“气态”（弥漫于网络）的过程",
+      "source": "selfgen_20260817_205455_0011",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T20:56:27.372541"
+}

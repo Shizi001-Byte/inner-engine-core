@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_171620_0012",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "从认知质检SOP角度看，引擎运行中的坑本质是三个质检项失效：",
+      "source": "selfgen_20260818_171620_0012",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> **认知不新鲜、闭环不开放、调用不设限",
+      "source": "selfgen_20260818_171620_0012",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "认知池里堆了 1700+ 条认知，但新认知从不参与任务，旧认知长期占据调度位，认知池退化成静态档案库",
+      "source": "selfgen_20260818_171620_0012",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "每条认知必须带时间戳；每 10 个任务或每轮任务结束必须刷新认知缓存；新认知 30 分钟内必须至少被任务尝试注入一次；过期或长期未命中的认知要自动降权、归档或淘汰",
+      "source": "selfgen_20260818_171620_0012",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:16:57.921778"
+}

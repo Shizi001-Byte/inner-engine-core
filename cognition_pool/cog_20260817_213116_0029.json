@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260817_213002_0029",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "为设计引擎产出的资产建立一套自动归档系统，是提升团队效率、保障资产可检索性和规范化的关键",
+      "source": "selfgen_20260817_213002_0029",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是一套完整的设计引擎自动归档系统架构方案：",
+      "source": "selfgen_20260817_213002_0029",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "1.  **接入层**：监听设计引擎的产出事件（如渲染完成、导出完成），获取原始文件及伴随元数据（如任务ID、创作者、设计参数）",
+      "source": "selfgen_20260817_213002_0029",
+      "type": "eng",
+      "density": 0.48,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:31:16.373628",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:06.664461"
+}

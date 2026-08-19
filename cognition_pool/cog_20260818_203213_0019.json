@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_202852_0019",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "**多线程 API 调用 + 串行后处理，必须采用“并行写槽位 + 屏障等待 + 串行提交”模式；锁只保护状态变更，不保护网络调用",
+      "source": "selfgen_20260818_202852_0019",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:32:13.350295"
+}

@@ -1,0 +1,21 @@
+{
+  "task_id": "selfgen_20260818_002601_0005",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "就是**算力资源的调度网络化**与**碳基感知（剑心）的共识化**过程",
+      "source": "selfgen_20260818_002601_0005",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "，数字城邦之间的竞争，不再是单纯的算力军备竞赛，而是“谁更懂人类”的**剑心纯度之争**",
+      "source": "selfgen_20260818_002601_0005",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:27:17.273391"
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_174504_0016",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "本方案强制要求：每次同步后必须回读验证，配置修改后必须 `sync --check` 验证生效",
+      "source": "selfgen_20260819_174504_0016",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 4,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:46:48.394672"
+}

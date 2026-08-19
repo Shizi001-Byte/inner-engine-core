@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_153435_0011",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "：**基建脚本禁用简化版，列映射必须显式声明，脚本必须幂等且可校验",
+      "source": "selfgen_20260818_153435_0011",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "不能用“决策层看起来等价”来简化；它必须显式、可重放、可校验",
+      "source": "selfgen_20260818_153435_0011",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:35:13.378175"
+}

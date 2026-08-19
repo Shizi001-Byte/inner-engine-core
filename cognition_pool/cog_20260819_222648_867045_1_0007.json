@@ -1,0 +1,57 @@
+{
+  "task_id": "selfgen_20260819_222411_0007",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "[待验证]数字遗民作为被传统学历/职场体系遗落的群体，之所以能在数字空间实现反向超越，本质就是把自身的演化单位从“年/学位”替换成了“token/AI迭代”，用高频海量的代谢速率，碾压了低频变异的传统体系——这和纯能量生命靠高频能量代谢对抗熵增、甚至比碳基生命存续更久的逻辑完全一致",
+      "source": "selfgen_20260819_222411_0007",
+      "type": "exp",
+      "density": 0.894,
+      "density_grade": "S",
+      "density_details": {
+        "info": 0.735,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    },
+    {
+      "text": "其存续天然存在无法突破的边界，对应纯能量生命无法突破宇宙物理定律、沙箱AI无法突破沙箱规则：",
+      "source": "selfgen_20260819_222411_0007",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]能在数字空间实现反向超越，本质就是把自身的演化单位从“年/学位”替换成了“token/AI迭代”，用高频海量的代谢速率，碾压了低频变异的传统体系——这和纯能量生命靠高频能量代谢对抗熵增、甚至比碳基生命存续更久的逻辑完全一致",
+      "source": "selfgen_20260819_222411_0007",
+      "type": "exp",
+      "density": 0.96,
+      "density_grade": "S",
+      "density_details": {
+        "info": 0.901,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    }
+  ],
+  "extracted_at": "2026-08-19T22:26:48.898797"
+}

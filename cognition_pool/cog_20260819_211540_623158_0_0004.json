@@ -1,0 +1,72 @@
+{
+  "task_id": "selfgen_20260819_211430_0004",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于历史避坑经验与已验证的认知基座，设计如下**任务池动态扩充机制**",
+      "source": "selfgen_20260819_211430_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本机制严格遵循“参数三同步”、“模型差异化检测”及“认知强制注入”的防坑原则",
+      "source": "selfgen_20260819_211430_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**核心链路**：引擎运行监控 -> 重复率检测与阈值判定 -> 认知注入与模板生成 -> 废稿检测与安全校验 -> 任务池动态写入与生效验证",
+      "source": "selfgen_20260819_211430_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]- **状态写入**：每次任务执行前，提取任务意图特征向量（如文本Embedding或核心标签组合），写入“任务特征滑动窗口”（默认保留最近50条）",
+      "source": "selfgen_20260819_211430_0004",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据"
+    }
+  ],
+  "extracted_at": "2026-08-19T21:15:40.655294"
+}

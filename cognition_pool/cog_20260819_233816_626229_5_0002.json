@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_233625_0002",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于历史避坑经验与已有认知锚定，针对“并发自进化的局部最优陷阱”的复盘及“多目标优化”认知原则提炼如下，并围绕此推演8月演化根脉的补全方案：",
+      "source": "selfgen_20260819_233625_0002",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "当并发数提升时，单任务虽未超时或报错，但底层资源竞争引发的隐性瞬断重试，会导致系统陷入“高并发、低有效产出”的算力空转陷阱",
+      "source": "selfgen_20260819_233625_0002",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **多目标优化原则**：并发自进化的调度游标，必须从“单任务失败率”升级为多维度复合游标",
+      "source": "selfgen_20260819_233625_0002",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "判定并发进阶的唯一标准应为：**单任务成功率保持稳定 且 隐性崩溃频率（OOM/死锁/连接重置）未显著激增 且 有效产出比（有效算力/总消耗）呈正向增益**",
+      "source": "selfgen_20260819_233625_0002",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T23:38:16.652985"
+}

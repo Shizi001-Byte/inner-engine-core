@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260818_000051_0059",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "| 单点宿主 | 单机容器/K8s Pod | 洞府灵脉 |",
+      "source": "selfgen_20260818_000051_0059",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:04:54.787772",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:12.202724"
+}

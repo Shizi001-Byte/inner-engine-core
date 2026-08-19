@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_202703_0012",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "从认知质检SOP视角看，引擎运行中最容易踩的坑不是“没想到”，而是“没设防”",
+      "source": "selfgen_20260818_202703_0012",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "基于历史失败经验，沉淀三条可复用铁律：",
+      "source": "selfgen_20260818_202703_0012",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**铁律1：外部调用必须有界，禁止无超时等待",
+      "source": "selfgen_20260818_202703_0012",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 坑：API调用超时导致任务整体超时，且无法自动处理",
+      "source": "selfgen_20260818_202703_0012",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 强制标准：B模型turbo用300秒，A模型用600秒；超时即触发熔断/降级/重试策略，绝不允许无限挂起",
+      "source": "selfgen_20260818_202703_0012",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:27:25.735116"
+}

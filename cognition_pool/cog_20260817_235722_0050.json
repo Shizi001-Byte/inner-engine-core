@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260817_235411_0050",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "│  │ chokidar  │→│ diff引擎  │→│ pending_sync │   │",
+      "source": "selfgen_20260817_235411_0050",
+      "type": "eng",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:57:23.025923",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:11.887194"
+}

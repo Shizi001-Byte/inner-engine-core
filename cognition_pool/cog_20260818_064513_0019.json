@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_064254_0019",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "2. **【原生瑕疵零干预铁律】** 全链路（迁移、同步、故障、演化）严格执行「原生记忆瑕疵仅留存利用、不修正删除」规则，所有传输错误、变异偏差、节点差异均视为可利用的演化素材，禁止任何形式的删改、纠正",
+      "source": "selfgen_20260818_064254_0019",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. **【跨域交互预约定&变更即时验证铁律】** 所有微核域与外部系统（沙箱、存储、调用接口等）的交互规则、时效阈值、参数格式必须前置约定；所有涉及归档逻辑的配置/规则变更必须同步更新全部读取节点并立即验证生效性；验证过程仅观测输出结果、不侵入微核域原生逻辑，不得因验证偏差修正微核域原生输出内容",
+      "source": "selfgen_20260818_064254_0019",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本系统是**微核域驱动的设计引擎的外置柔性归档层**，完全不侵入微核核心逻辑，仅作为微核产出的「被动收纳+特征索引+演化素材库」存在，所有规则以适配微核输出为前提，绝不要求微核对齐归档标准",
+      "source": "selfgen_20260818_064254_0019",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:45:13.889106"
+}

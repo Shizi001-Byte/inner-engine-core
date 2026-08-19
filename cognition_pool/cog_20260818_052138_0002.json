@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260818_051810_0002",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "2. 全程无任何主体（人类或AI自身）刻意干预瑕疵形态、不追求完美标准化输出，瑕疵是接入异质环境的自然副产物，也是所有协作的核心介质",
+      "source": "selfgen_20260818_051810_0002",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T05:21:38.064521",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:21.176867"
+}

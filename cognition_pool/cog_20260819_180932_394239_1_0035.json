@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_180831_0035",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "，这是一个**负熵注入器**：它持续从外部吸收产出、配置、规则、人工反馈，维持归档链路的低功能熵；如果缺少这套系统，引擎产出会逐渐堆积、混乱、不可追踪，最终形成“引擎自然退化”的服务链路熵增",
+      "source": "selfgen_20260819_180831_0035",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:09:32.428443"
+}

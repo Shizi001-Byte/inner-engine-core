@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_220319_0008",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于“项目ID看错导致1小时排查”的惨痛教训，我们将“先校准锚点再优化链路”原则深刻融入V7.5方舟效能引擎的任务优先级排序机制中",
+      "source": "selfgen_20260818_220319_0008",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在“决策串行、执行并发”的架构下，优先级排序正是决策层的核心枢纽",
+      "source": "selfgen_20260818_220319_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "结合【避坑提醒】与【精气神三元迁移框架】，该原则在任务优先级排序中的落地推演如下：",
+      "source": "selfgen_20260818_220319_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "“项目ID看错”是典型的**锚点失效**",
+      "source": "selfgen_20260818_220319_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "锚点是后续所有逻辑链路（分发、路由、溯源）的绝对基准",
+      "source": "selfgen_20260818_220319_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:04:30.738057"
+}

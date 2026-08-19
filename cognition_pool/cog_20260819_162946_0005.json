@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_162903_0005",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "**“先校准锚点再优化链路”**：任何任务优先级排序，必须先验证四个锚点——**身份锚点、资源锚点、基线锚点、目标锚点**；锚点不准，排序越优，偏差越大，最终导致无效执行或算力浪费",
+      "source": "selfgen_20260819_162903_0005",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "所有任务进入优先级排序前，先过“锚点校验器”，校验失败直接打回，不参与排序：",
+      "source": "selfgen_20260819_162903_0005",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **身份锚点**：`project_id`、`task_id`、`request_id` 三方绑定，确保不会出现“项目ID看错”导致排错任务",
+      "source": "selfgen_20260819_162903_0005",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **模型锚点**：任务使用的模型是 A 还是 B turbo，决定超时预算——B turbo 用 300 秒，A 用 600 秒",
+      "source": "selfgen_20260819_162903_0005",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **资源锚点**：当前稳定 3 路并发是否已满；若某一路正在执行“自进化闭环”（检测重复率→生成新模板→注入任务池→验证生效），该路必须标记为**不可抢占**",
+      "source": "selfgen_20260819_162903_0005",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:29:46.588009"
+}

@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_210410_0032",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于链式推演引擎，对 **“基建脚本禁用简化版”** 做复盘，输出检查清单",
+      "source": "selfgen_20260818_210410_0032",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **R1 现象**：基建脚本中使用了“简化版 SQL”，执行后出现列不匹配",
+      "source": "selfgen_20260818_210410_0032",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **R2 根因**：简化版依赖隐式规则，例如省略列名、依赖目标表列顺序、使用 `SELECT *`、不写 schema 前缀、混用方言函数，导致环境切换后列顺序/类型/数量错位",
+      "source": "selfgen_20260818_210410_0032",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **R3 边界**：基建脚本不是临时查询，不能为了“短”牺牲“确定性”",
+      "source": "selfgen_20260818_210410_0032",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "所有列名、列序、类型、环境引用必须显式声明",
+      "source": "selfgen_20260818_210410_0032",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:04:59.332090"
+}

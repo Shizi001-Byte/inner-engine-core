@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_221957_0020",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "是构建一个**有向无环图（DAG）**，通过状态机驱动上一个节点的输出作为下一个节点的输入，实现认知或计算的逐层深化",
+      "source": "selfgen_20260817_221957_0020",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:21:27.978121"
+}

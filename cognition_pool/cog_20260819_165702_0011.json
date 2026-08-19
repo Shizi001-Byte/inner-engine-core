@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_165212_0011",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "下面给出一个**不依赖外部守护进程**的引擎崩溃自恢复架构：引擎启动时先自举出 **Guardian** 进程，由 Guardian 拉起 **Core** 执行任务；两者互相心跳、互相拉起",
+      "source": "selfgen_20260819_165212_0011",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "状态采用 **WAL + Snapshot 原子持久化**，崩溃后从最近断点恢复",
+      "source": "selfgen_20260819_165212_0011",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "│     ├─ 恢复 state.snapshot + state.wal",
+      "source": "selfgen_20260819_165212_0011",
+      "type": "eng",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:57:02.831556"
+}

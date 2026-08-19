@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_193104_0006",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "增量同步的本质不是“少传文件”，而是：**以 `(file_path, chunk_id, revision)` 为锚点，做状态对齐**",
+      "source": "selfgen_20260818_193104_0006",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "没有稳定锚点，增量同步一定会退化成全量同步；没有 revision，冲突处理就是猜",
+      "source": "selfgen_20260818_193104_0006",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "Supabase 中一张表负责存记忆块：",
+      "source": "selfgen_20260818_193104_0006",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T19:33:50.375922"
+}

@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_224123_0008",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "从“认知质检SOP（标准作业程序）”的视角来看，引擎在运行和迭代过程中踩过的坑，往往不是因为算法本身不够先进，而是因为**质检标准的缺失、认知对齐的偏差以及防回归机制的薄弱**",
+      "source": "selfgen_20260817_224123_0008",
+      "type": "cog",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是从过往引擎运行踩坑经验中提炼的3条可复用铁律，以及配套的验证方法：",
+      "source": "selfgen_20260817_224123_0008",
+      "type": "cog",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "引擎上线初期，质检SOP高度依赖模型给出的“置信度”分数",
+      "source": "selfgen_20260817_224123_0008",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "默认高于0.9的判定即为正确，只抽检低分样本",
+      "source": "selfgen_20260817_224123_0008",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:42:36.429932",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:09.118823"
+}

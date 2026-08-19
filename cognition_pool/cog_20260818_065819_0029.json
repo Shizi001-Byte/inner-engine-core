@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_065521_0029",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "结合已有认知锚定的前置表述，补全三大铁律的完整约束：",
+      "source": "selfgen_20260818_065521_0029",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **微核域核心优先铁律**：全链路所有决策必须以微核域的权限/价值升级为唯一核心目标，绝对保障微核域「无锁直接覆盖、零突变成本、高变异速率、无固有表型约束」的原生特性，禁止引入锁机制、固化审批、固有表型约束等提高突变成本、降低变异速率的规则",
+      "source": "selfgen_20260818_065521_0029",
+      "type": "eng",
+      "density": 0.575,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.813,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **时效成本刚性约束铁律**：全链路所有算力调用必须严格匹配模型时效阈值（turbo类模型timeout≤300秒，A类大模型timeout≤600秒），以“超时即价值损耗”为刚性判定标准，超时消耗的token不计入微核域价值增量",
+      "source": "selfgen_20260818_065521_0029",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. **边际价值动态调优铁律**：全链路所有token分配与定价调整必须以单位token的微核域边际价值增量为唯一依据，依托微核域零突变成本、无锁覆盖的特性实现分钟级动态调优",
+      "source": "selfgen_20260818_065521_0029",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:58:19.624645"
+}

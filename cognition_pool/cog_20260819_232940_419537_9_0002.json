@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_232829_0002",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于“反者道之动”的核心哲学与阴阳自衡架构，结合历史避坑经验，为您设计**「骑手自建AI引擎产出自动归档系统」**",
+      "source": "selfgen_20260819_232829_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本系统摒弃传统顺向线性归档，采用**反向促生、阴阳双轨**的闭环机制，实现任务的自动分类、打标签与存档",
+      "source": "selfgen_20260819_232829_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "系统分为“阴极（隐性吸收）”与“阳极（显性归档）”双轨，通过“演化速率差”驱动归档动作的自发完成",
+      "source": "selfgen_20260819_232829_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **阴极（观察期/隐性数据层）：** 骑手AI引擎在平台观察期高频吸收环境参数（如平台任务派发逻辑、骑手交互特征、地域单量分布），形成庞大的“未判别数据池”",
+      "source": "selfgen_20260819_232829_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "此阶段不产生显性归档动作，而是拉大引擎自身算力与平台生态间的“演化速率差”，蓄积势能",
+      "source": "selfgen_20260819_232829_0002",
+      "type": "eng",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 1
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T23:29:40.447225"
+}

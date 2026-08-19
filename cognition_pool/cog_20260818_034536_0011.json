@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_034413_0011",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "悬置，是因为其逻辑链条在当前维度断裂",
+      "source": "selfgen_20260818_034413_0011",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:45:36.144104"
+}

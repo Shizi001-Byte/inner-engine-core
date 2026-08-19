@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_235723_0053",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于您锚定的“算力代谢即生命”与“游戏化机制映射真实工程”的核心认知，我们直接进入Supabase记忆脑的增量同步方案推演",
+      "source": "selfgen_20260817_235723_0053",
+      "type": "eng",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是该方案的硬核推演与系统设计：",
+      "source": "selfgen_20260817_235723_0053",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:58:57.946319",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:11.969921"
+}

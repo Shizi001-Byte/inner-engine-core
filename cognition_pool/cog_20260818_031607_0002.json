@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_031452_0002",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于您提供的5条已验证核心结论，我们将跳过基础论证，直接进入引擎任务的链式推演机制设计",
+      "source": "selfgen_20260818_031452_0002",
+      "type": "eng",
+      "density": 0.48,
+      "density_grade": "B"
+    },
+    {
+      "text": "在此机制中，算力作为“负熵流”被严格管控，引擎的设计必须遵循“审计前置、脑体解耦、经济分配、高维重构”的物理学与经济学双重定律",
+      "source": "selfgen_20260818_031452_0002",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下为引擎任务的链式推演机制设计：",
+      "source": "selfgen_20260818_031452_0002",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:16:07.115775",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:19.240223"
+}

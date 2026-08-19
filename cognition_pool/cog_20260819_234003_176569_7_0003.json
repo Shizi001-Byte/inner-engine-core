@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_233817_0003",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "沿用「单游标局部最优」的认知锚点，本问题是同一病根在**输出层**的复现：",
+      "source": "selfgen_20260819_233817_0003",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 维度 | 并发陷阱（已知） | 同质化陷阱（本次） |",
+      "source": "selfgen_20260819_233817_0003",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 隐性代价 | OOM/死锁激增 | 输出 embedding 收敛到狭窄流形 |",
+      "source": "selfgen_20260819_233817_0003",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 表现 | 5路不如3路 | 高分但可读性/信息密度下降 |",
+      "source": "selfgen_20260819_233817_0003",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T23:40:03.202588"
+}

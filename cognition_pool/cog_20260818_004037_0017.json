@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260818_003925_0017",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "，400万Token的分配，本质上是一场**“在有限能量预算下，追求系统整体熵减最大化”的微观经济学博弈**",
+      "source": "selfgen_20260818_003925_0017",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:40:37.735565",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:13.772950"
+}

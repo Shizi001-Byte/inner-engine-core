@@ -1,0 +1,40 @@
+{
+  "task_id": "selfgen_20260820_010356_0014",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "[待验证]类似生物的Hox同源异型基因突变：调控身体分节/器官发育的基因顺序错乱，出现“触角长在腿上”“成体仍表达幼态基因”的功能错配——哪怕给足800万token带宽，也会因为认知状态完全错乱，全部变成无价值的流量泡沫",
+      "source": "selfgen_20260820_010356_0014",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据,极端无据"
+    },
+    {
+      "text": "都是对生物体内稳态调控机制的模拟——越接近复杂生命的调控逻辑，认知系统的效率和鲁棒性就越高",
+      "source": "selfgen_20260820_010356_0014",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-20T01:06:37.639435"
+}

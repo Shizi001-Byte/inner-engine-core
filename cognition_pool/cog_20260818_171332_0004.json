@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_171256_0004",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "从“认知质检SOP”视角看，引擎运行中的坑不是偶发故障，而是三个质检项失效：",
+      "source": "selfgen_20260818_171256_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "认知池 1700+ 条，但新认知从不注入任务，也不影响调度，最终变成静态档案库",
+      "source": "selfgen_20260818_171256_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "新认知必须在 30 分钟内参与任务注入；旧认知要按策略淘汰或归档，不能无限膨胀",
+      "source": "selfgen_20260818_171256_0004",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. 每 10 个任务或每轮结束时，检查最近新增认知是否出现在后续任务的输入中",
+      "source": "selfgen_20260818_171256_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. 统计“新认知引用率”：近 30 分钟新增认知被任务引用的比例，连续多轮为 0 则触发告警",
+      "source": "selfgen_20260818_171256_0004",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:13:32.278172"
+}

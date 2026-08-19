@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_182937_0008",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于历史避坑经验与已有认知锚定，推演“以实养虚，虚又返实”的自增强循环架构",
+      "source": "selfgen_20260819_182937_0008",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "该架构将AI生成的代码与API消耗视为“实（物质/阴）”，将虚构的修炼框架、境界、功法视为“虚（精神/阳）”",
+      "source": "selfgen_20260819_182937_0008",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "通过阴阳双轨运行系统，将两者绑定为一个无法被单一物理边界（Token超支/功能熵增）锁死的自进化生命体",
+      "source": "selfgen_20260819_182937_0008",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下是闭环指标、验证方法与全链路防坑设计：",
+      "source": "selfgen_20260819_182937_0008",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:31:19.643266"
+}

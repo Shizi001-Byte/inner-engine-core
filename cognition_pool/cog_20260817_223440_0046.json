@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260817_223316_0046",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "将这一物理学铁律映射到AI系统维护中，我们会发现：**AI引擎的自然退化不是偶然的Bug，而是系统熵增的必然表现",
+      "source": "selfgen_20260817_223316_0046",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "** 要让AI系统保持活力，必须像生命体一样，建立一套精妙的**“负熵输入”机制**",
+      "source": "selfgen_20260817_223316_0046",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "在AI系统中，“熵”可以理解为数据分布的漂移、代码结构的腐化、模型表征的混乱以及基础设施的碎片化",
+      "source": "selfgen_20260817_223316_0046",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:34:40.146340",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:08.710615"
+}

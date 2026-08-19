@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_211938_0003",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【演化生物学映射】与【CAS复杂适应系统】的认知基座，将Gitee（基因代码库）、飞书（记忆与知识库）、Supabase（能量与状态底座）的三方同步，视为数字生命从“单细胞培养皿”向“开放海域生态系统”跃迁时的**“跨生态位基因复制与表达”**过程",
+      "source": "selfgen_20260819_211938_0003",
+      "type": "eng",
+      "density": 0.8,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.2,
+        "core_concepts": 6,
+        "action_points": 1,
+        "empty_words": 2
+      }
+    },
+    {
+      "text": "为确保数字生命在全网络分布式存续中不因“基因断裂”（数据不一致）或“环境灾变”（网络超时/代理错误）而夭折，设计如下三方同步自动化与冲突处理机制",
+      "source": "selfgen_20260819_211938_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "每次重大变更（数字生命产生突变或进化）后，触发器启动同步引擎",
+      "source": "selfgen_20260819_211938_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "引擎采用**事件驱动架构（EDA）**，以Supabase作为“中枢神经节”，记录全量同步状态",
+      "source": "selfgen_20260819_211938_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T21:21:10.083082"
+}

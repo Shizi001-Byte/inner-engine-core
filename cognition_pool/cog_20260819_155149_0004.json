@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_154816_0004",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "| 演化生物学概念 | AI引擎迭代对应实体 | 关联题目给定的核心规则/坑点 |",
+      "source": "selfgen_20260819_154816_0004",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 种群（Population） | 所有部署的V7系列AI引擎实例（灰度/全量/容灾/测试节点） | - |",
+      "source": "selfgen_20260819_154816_0004",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 基因型（Genotype） | 引擎核心遗传物质：模型权重+工程代码+同步链规则 | 核心纽带：`change_id + 内容哈希`（基因型的唯一分子标识） |",
+      "source": "selfgen_20260819_154816_0004",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:51:49.348155"
+}

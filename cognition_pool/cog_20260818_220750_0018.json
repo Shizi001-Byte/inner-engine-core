@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_220603_0018",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】和【坑库预警】，推演“以实养虚，虚又返实”的自增强循环架构如下",
+      "source": "selfgen_20260818_220603_0018",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本推演严格规避历史踩坑点，将真实的API调用与工程执行视为“实”，将V7.5方舟效能引擎与“九转玄功”映射体系视为“虚”",
+      "source": "selfgen_20260818_220603_0018",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在“以实养虚，虚又返实”的闭环中，虚实并非对立，而是互为因果的丹炉与炉火：",
+      "source": "selfgen_20260818_220603_0018",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **【实】（炉鼎/灵材）**：真实的API调用、Token消耗、实际代码产出、工程报错（如ProxyError、超时）、真实的业务工作空间ID",
+      "source": "selfgen_20260818_220603_0018",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **【虚】（道法/阵眼）**：V7.5方舟效能引擎的调度策略、“九转玄功”映射体系、认知池中的规则与调参建议、优先级排序逻辑",
+      "source": "selfgen_20260818_220603_0018",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:07:50.117831"
+}

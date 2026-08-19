@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_030910_0004",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是碳基物理世界中热力学熵增策略的优化",
+      "source": "selfgen_20260818_030910_0004",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:10:58.024300"
+}

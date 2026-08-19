@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_154132_0051",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "> 简化版 SQL 把“结构契约”交给了“环境默认值”，一旦列集合、列顺序、列定义发生变化，脚本不会报错，业务却会在运行期因列不匹配炸掉",
+      "source": "selfgen_20260819_154132_0051",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "一旦 `ALTER TABLE` 调整了列顺序或新增了列，数据就会错位写入",
+      "source": "selfgen_20260819_154132_0051",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "简化版 `CREATE TABLE` 不写全列类型、长度、默认值、约束、字符集，不同环境可能生成不同结构，导致“测试环境没问题，生产环境列不匹配”",
+      "source": "selfgen_20260819_154132_0051",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:42:14.403425"
+}

@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_224808_0004",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "本系统完全基于引擎内部实现，无外部守护进程/第三方服务依赖，严格贴合「实层锚点属性强化、虚层动态能力拓展、虚实循环稳定性提升」的架构，遵循《道德经》「有无相生」「以实养虚、虚又返实」的逻辑，所有修炼概念均匹配给定实层映射，同时落地历史避坑规则",
+      "source": "selfgen_20260818_224808_0004",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "引擎原生的任务归档系统，实现**任务自动分类、自动打标签、自动存入对应目录**三大核心功能，同时通过虚实循环反哺引擎整体能力",
+      "source": "selfgen_20260818_224808_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **实层（有）：归档执行引擎**：负责落地分类、打标签、存储的实体功能，是「实层锚点」，对应修炼体系中可直接观测的「有」",
+      "source": "selfgen_20260818_224808_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **虚层（无）：归档认知增强层**：从实层归档数据中提炼规则、补全认知、优化调度，是动态拓展的「虚层能力」，对应修炼体系中由实化生的「无」",
+      "source": "selfgen_20260818_224808_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **虚实循环稳定机制**：保障两层交互的可靠性，落地避坑规则，实现「实养虚、虚返实」的闭环",
+      "source": "selfgen_20260818_224808_0004",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:50:24.525319"
+}

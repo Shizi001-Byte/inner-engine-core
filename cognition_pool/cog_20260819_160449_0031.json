@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_160239_0031",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "进入任何同步链路前，先做最小成本锚点校验：",
+      "source": "selfgen_20260819_160239_0031",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- Supabase 锚点：`SUPABASE_URL` / Project Ref / Service Role Key 是否真实有效",
+      "source": "selfgen_20260819_160239_0031",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 表结构：`memory_docs`、`memory_chunks`、`memory_sync_state` 是否存在且列名一致",
+      "source": "selfgen_20260819_160239_0031",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 状态文件：`.sync/state.json` 是否可读写",
+      "source": "selfgen_20260819_160239_0031",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:04:49.587020"
+}

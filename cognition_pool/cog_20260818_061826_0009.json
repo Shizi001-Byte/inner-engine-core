@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_061512_0009",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "对应核心可变基因型位点，无锁、直接覆盖、无竞态→突变成本为0、无修复/重组约束，是所有变异的源头），核心特征是**高变异速率、零突变成本、无固有表型约束**——变异可毫秒级产生、全域覆盖，演化速度为秒级，但无固有生存目标，选择压完全来自外部",
+      "source": "selfgen_20260818_061512_0009",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:18:26.582248"
+}

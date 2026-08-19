@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_214557_0001",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "人类侧锚点：意图表达、价值判断、伦理边界",
+      "source": "selfgen_20260818_214557_0001",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "AI侧锚点：  概念定义、输出协议、能力边界",
+      "source": "selfgen_20260818_214557_0001",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**当前断裂点**正在于\"精\"层未闭环——正如你已验证的结论，L4转化仅sop类型生效，code/checklist类型的锚点定义缺失，导致AI的输出无法被人类后处理链路稳定接收",
+      "source": "selfgen_20260818_214557_0001",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:46:50.779870"
+}

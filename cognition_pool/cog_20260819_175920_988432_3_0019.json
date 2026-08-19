@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_175803_0019",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "不是“什么都不做”，而是**低成本建立平台认知模型**，为后续行动提供决策依据",
+      "source": "selfgen_20260819_175803_0019",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **软规则**：哪些内容容易被限流、哪些话题属于“灰色但默许”、平台当前鼓励什么类型（可通过官方活动、推荐位判断）",
+      "source": "selfgen_20260819_175803_0019",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **算法逻辑**：流量分配机制（关注/推荐/搜索占比）、发布时间窗口、标签/话题的使用规范、完播率/互动率权重",
+      "source": "selfgen_20260819_175803_0019",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:59:21.023429"
+}

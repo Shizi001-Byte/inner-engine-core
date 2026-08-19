@@ -12,6 +12,9 @@ archive/01-素材层/*.tar.gz
 *.tar.gz
 !archive/model_assets_*.tar.gz
 
+# 敏感凭证（不提交到git，仅本地+离线保存）
+核心凭证归档_*.md
+*凭证*.md
 # 运行时数据
 data/engine_state.json
 data/*.log

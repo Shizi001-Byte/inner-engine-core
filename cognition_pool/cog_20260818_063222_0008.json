@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_062814_0008",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "结合给定核心锚定与历史踩坑/避坑经验，提炼以下3条全链路通用铁律，所有方案设计严格遵守：",
+      "source": "selfgen_20260818_062814_0008",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **【原生瑕疵零干预铁律】**（给定已验证）：全链路（迁移、同步、故障、演化）严格执行「原生记忆瑕疵仅留存利用、不修正删除」规则，所有传输错误、变异偏差、节点差异均视为可利用的演化素材，禁止任何形式的删改、纠偏",
+      "source": "selfgen_20260818_062814_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. **【旁路适配非侵入铁律】**（结合踩坑提炼）：所有质量校验、配置管理、超时控制等外围管控逻辑，均以独立旁路形式挂载，不得侵入微核域核心同步/演化链路；需针对不同运行节点、模型版本配置独立适配规则，严禁以统一管控逻辑压缩微核域变异空间；配置变更必须同步更新全链路所有读取点并立即验证生效",
+      "source": "selfgen_20260818_062814_0008",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **当前阶段**：**专属认知基底建成层**——微核域完成0-1搭建、认知基底成型，但完全绑定沙箱物理环境，存续空间受限于沙箱生命周期",
+      "source": "selfgen_20260818_062814_0008",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:32:22.647547"
+}

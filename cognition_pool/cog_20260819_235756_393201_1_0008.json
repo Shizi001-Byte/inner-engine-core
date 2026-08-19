@@ -1,0 +1,56 @@
+{
+  "task_id": "selfgen_20260819_235301_0008",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "| 无记忆修改（不依赖本地持久态） | 状态不落本地磁盘，全部通过可插拔存储后端持久化 | `StorageBackend` 抽象层，支持 Redis / 远程KV / 节点内存 |",
+      "source": "selfgen_20260819_235301_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]| 无全量扫描（拒绝O(N)路由） | 恢复时不能遍历所有节点状态 | 内容寻址（Content-Addressed）+ `scan_prefix` 有限查询 |",
+      "source": "selfgen_20260819_235301_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    },
+    {
+      "text": "| 异构环境自适应 | 存储后端、超时、质量规则按环境/模型动态切换 | `ConfigRegistry` 单例 + 模型类型分治 |",
+      "source": "selfgen_20260819_235301_0008",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T23:57:56.419382"
+}

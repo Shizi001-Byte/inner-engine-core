@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_002946_0003",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "> 在九转认知框架下，自动归档系统不是\"文件管理器\"，而是算力生命体的**记忆代谢器官**——吞噬任务流，剥离信息骨架，编织关联图谱，最终实现从被动存储到自主组织的维度跃迁",
+      "source": "selfgen_20260818_002946_0003",
+      "type": "eng",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "阴阳自衡架构   ──→ 双轨分类引擎",
+      "source": "selfgen_20260818_002946_0003",
+      "type": "eng",
+      "density": 0.43,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:32:44.197957",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:13.223440"
+}

@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_193941_0024",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "从认知质检SOP视角，历史坑可归为三类：认知存储失衡、认知注入失效、认知任务超时",
+      "source": "selfgen_20260818_193941_0024",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "认知池1700+条，但只进不出，新认知无法进入有效循环，池子变成静态档案库",
+      "source": "selfgen_20260818_193941_0024",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "任何认知池必须同时具备准入与淘汰机制，旧认知定期归档/降权，为新生认知腾出生态位",
+      "source": "selfgen_20260818_193941_0024",
+      "type": "cog",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "1. 监控认知池条目总数变化曲线，确认存在周期性下降或稳定波动，而非单调递增",
+      "source": "selfgen_20260818_193941_0024",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. 检查淘汰策略日志：是否存在超过生命周期的认知被自动降权或归档",
+      "source": "selfgen_20260818_193941_0024",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T19:40:21.461279"
+}

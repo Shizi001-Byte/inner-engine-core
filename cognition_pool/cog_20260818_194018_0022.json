@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_193940_0022",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "，引擎优化永远只能优化“执行并发”，不能破坏“决策串行”",
+      "source": "selfgen_20260818_193940_0022",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T19:40:18.392575"
+}

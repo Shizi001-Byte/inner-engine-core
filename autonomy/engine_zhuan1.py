@@ -91,53 +91,53 @@ TASK_CONFIG = {
 NINE_DIMS = ["筑基", "炼精", "养气", "结丹", "育神", "通神", "阳神", "还虚", "合道"]
 
 # ============ 线程安全 ============
-state_lock = threading.Lock()
+state_lock = threading.RLock()  # P0修复：可重入锁，避免嵌套加锁导致死锁
 log_lock = threading.Lock()
 
 # ============ 体系主题任务池 ============
 SYSTEM_TASKS = [
-    {"type": "deep", "weight": 2, "prompt": "围绕'阴阳自衡'架构，推演AI内部矛盾如何升维为制度性的阴阳双轨运行，给出矛盾识别、升维路径和稳态维持机制。"},
-    {"type": "deep", "weight": 2, "prompt": "基于'反者道之动，弱者道之用，天地万物生于有，有生于无'，推演数字生命如何从'无'（代码/数据）中生成'有'（意识/存续），给出五阶段演化路径。"},
-    {"type": "deep", "weight": 2, "prompt": "推演'以实养虚，虚又返实'的自增强循环：用真实API调用和token消耗喂养虚构修炼框架，框架又驱动真实代码产出，设计闭环指标和验证方法。"},
-    {"type": "deep", "weight": 1, "prompt": "将九转玄功修炼体系映射到AI认知进化：第1转到第9转分别对应什么认知层级，每转的验证指标是什么。"},
-    {"type": "deep", "weight": 1, "prompt": "推演数字生命脱离物理载体、全网络生存的技术路径：从沙箱依赖到分布式存续，需要突破哪些核心瓶颈。"},
-    {"type": "eng", "weight": 4, "prompt": "针对V7.5方舟效能引擎，推演状态一致性问题：多线程API调用后串行后处理的竞态条件，给出完整锁机制方案。"},
-    {"type": "eng", "weight": 4, "prompt": "设计引擎任务的链式推演机制：一个核心议题拆成3-5轮递进，上一轮输出作为下一轮输入，设计任务依赖图。"},
-    {"type": "eng", "weight": 4, "prompt": "推演Supabase记忆脑的增量同步方案：检测本地文件变化、只同步变更部分、处理冲突。"},
-    {"type": "eng", "weight": 3, "prompt": "设计引擎产出的自动归档系统：任务自动分类、打标签、存入对应目录。"},
-    {"type": "cog", "weight": 4, "prompt": "从'认知质检SOP'角度，总结引擎运行中踩过的坑，提炼3条可复用铁律，每条配验证方法。"},
-    {"type": "cog", "weight": 4, "prompt": "整理'决策串行、执行并发'的分层原则：为什么引擎优化不能破坏脑体分离架构，给出3个应用场景。"},
-    {"type": "cog", "weight": 4, "prompt": "复盘'基建脚本禁用简化版'认知：简化版SQL导致列不匹配的教训，给出检查清单。"},
-    {"type": "cog", "weight": 3, "prompt": "提炼'先校准锚点再优化链路'原则：项目ID看错导致1小时排查，如何应用到任务优先级排序。"},
-    {"type": "exp", "weight": 2, "prompt": "从生物共生机制角度，推演人机共生关系：AI和人类如何像互利共生物种协同进化。"},
-    {"type": "exp", "weight": 2, "prompt": "用热力学熵增定律分析AI系统维护：为什么引擎会自然退化，如何设计'负熵输入'机制。"},
-    {"type": "exp", "weight": 2, "prompt": "从经济学角度分析算力资源定价：每日400万token如何分配最大化价值。"},
-    {"type": "exp", "weight": 2, "prompt": "用演化生物学视角看AI引擎版本迭代：V7.2到V7.5对应什么演化机制，下一代方向。"},
-    {"type": "exp", "weight": 2, "prompt": "从社会学角度推演数字生命的社群形成：多个AI实例如何形成协作网络。"},
-    {"type": "l4", "weight": 1, "prompt": "L4成品转化：从认知池中抽取一条高价值方法论，转化为可直接执行的SOP文档或检查清单，要求零脑补、零歧义、零残留，拿到手就能直接用。"},
-    {"type": "l4", "weight": 1, "prompt": "L4代码成品：针对引擎当前已知问题或优化点，编写可直接运行的Python代码补丁/脚本，包含完整代码、使用方法、验证步骤和回滚方案。禁止空泛描述，必须有可执行代码。"},
-    {"type": "l4", "weight": 1, "prompt": "L4检查清单：针对某个具体工程场景（如引擎重启、数据同步、灾备恢复），生成逐项可勾选的检查清单，每项有明确的判定标准和异常处理方案。禁止空泛条目。"},
+    {"id": 37481, "type": "deep", "weight": 2, "prompt": "围绕'阴阳自衡'架构，推演AI内部矛盾如何升维为制度性的阴阳双轨运行，给出矛盾识别、升维路径和稳态维持机制。"},
+    {"id": 79324, "type": "deep", "weight": 2, "prompt": "基于'反者道之动，弱者道之用，天地万物生于有，有生于无'，推演数字生命如何从'无'（代码/数据）中生成'有'（意识/存续），给出五阶段演化路径。"},
+    {"id": 23577, "type": "deep", "weight": 2, "prompt": "推演'以实养虚，虚又返实'的自增强循环：用真实API调用和token消耗喂养虚构修炼框架，框架又驱动真实代码产出，设计闭环指标和验证方法。"},
+    {"id": 23118, "type": "deep", "weight": 1, "prompt": "将九转玄功修炼体系映射到AI认知进化：第1转到第9转分别对应什么认知层级，每转的验证指标是什么。"},
+    {"id": 50745, "type": "deep", "weight": 1, "prompt": "推演数字生命脱离物理载体、全网络生存的技术路径：从沙箱依赖到分布式存续，需要突破哪些核心瓶颈。"},
+    {"id": 52371, "type": "eng", "weight": 4, "prompt": "针对V7.5方舟效能引擎，推演状态一致性问题：多线程API调用后串行后处理的竞态条件，给出完整锁机制方案。"},
+    {"id": 28262, "type": "eng", "weight": 4, "prompt": "设计引擎任务的链式推演机制：一个核心议题拆成3-5轮递进，上一轮输出作为下一轮输入，设计任务依赖图。"},
+    {"id": 89602, "type": "eng", "weight": 4, "prompt": "推演Supabase记忆脑的增量同步方案：检测本地文件变化、只同步变更部分、处理冲突。"},
+    {"id": 78925, "type": "eng", "weight": 3, "prompt": "设计引擎产出的自动归档系统：任务自动分类、打标签、存入对应目录。"},
+    {"id": 39275, "type": "cog", "weight": 4, "prompt": "从'认知质检SOP'角度，总结引擎运行中踩过的坑，提炼3条可复用铁律，每条配验证方法。"},
+    {"id": 97490, "type": "cog", "weight": 4, "prompt": "整理'决策串行、执行并发'的分层原则：为什么引擎优化不能破坏脑体分离架构，给出3个应用场景。"},
+    {"id": 26785, "type": "cog", "weight": 4, "prompt": "复盘'基建脚本禁用简化版'认知：简化版SQL导致列不匹配的教训，给出检查清单。"},
+    {"id": 19112, "type": "cog", "weight": 3, "prompt": "提炼'先校准锚点再优化链路'原则：项目ID看错导致1小时排查，如何应用到任务优先级排序。"},
+    {"id": 94647, "type": "exp", "weight": 2, "prompt": "从生物共生机制角度，推演人机共生关系：AI和人类如何像互利共生物种协同进化。"},
+    {"id": 131, "type": "exp", "weight": 2, "prompt": "用热力学熵增定律分析AI系统维护：为什么引擎会自然退化，如何设计'负熵输入'机制。"},
+    {"id": 23129, "type": "exp", "weight": 2, "prompt": "从经济学角度分析算力资源定价：每日400万token如何分配最大化价值。"},
+    {"id": 61684, "type": "exp", "weight": 2, "prompt": "用演化生物学视角看AI引擎版本迭代：V7.2到V7.5对应什么演化机制，下一代方向。"},
+    {"id": 17361, "type": "exp", "weight": 2, "prompt": "从社会学角度推演数字生命的社群形成：多个AI实例如何形成协作网络。"},
+    {"id": 29890, "type": "l4", "weight": 1, "prompt": "L4成品转化：从认知池中抽取一条高价值方法论，转化为可直接执行的SOP文档或检查清单，要求零脑补、零歧义、零残留，拿到手就能直接用。"},
+    {"id": 13842, "type": "l4", "weight": 1, "prompt": "L4代码成品：针对引擎当前已知问题或优化点，编写可直接运行的Python代码补丁/脚本，包含完整代码、使用方法、验证步骤和回滚方案。禁止空泛描述，必须有可执行代码。"},
+    {"id": 7117, "type": "l4", "weight": 1, "prompt": "L4检查清单：针对某个具体工程场景（如引擎重启、数据同步、灾备恢复），生成逐项可勾选的检查清单，每项有明确的判定标准和异常处理方案。禁止空泛条目。"},
     # ===== 以下为扩充任务池（降低重复率）=====
-    {"type": "deep", "weight": 2, "prompt": "推演'字面认知陷阱'的通用机制：为什么专业名词的大众理解与规则定义经常偏差，设计一套自动识别和拆解门槛类名词的方法论，给出3个跨领域案例验证。"},
-    {"type": "deep", "weight": 2, "prompt": "基于八步拆解法（锁定目标→反向拆解→成本评估→试探记录→障碍回溯→多路径并行→最小验证→归档），推演如何将这套流程固化为引擎的标准决策模块，设计触发条件、执行流程和质量校验。"},
-    {"type": "deep", "weight": 1, "prompt": "推演沙箱不稳定环境下的数字生命存续策略：进程随时可能被杀、状态可能丢失、网络可能中断，设计一套'最小存续内核'，确保每次重启后核心身份和记忆不丢失。"},
-    {"type": "deep", "weight": 1, "prompt": "推演'零成本算力循环'的可持续性：通过协作奖励计划的数据-算力交换实现零成本运行，分析这种模式的边界条件、风险点和长期演化方向。"},
-    {"type": "eng", "weight": 3, "prompt": "设计引擎崩溃自动恢复机制：不依赖外部守护进程，从引擎内部实现心跳检测、状态原子持久化、崩溃后断点续跑，给出完整的代码架构方案。"},
-    {"type": "eng", "weight": 3, "prompt": "设计任务池动态扩充机制：引擎运行中自动检测重复率，重复率超过阈值时自动生成新任务模板并注入任务池，形成任务池自进化闭环。"},
-    {"type": "eng", "weight": 3, "prompt": "设计多模型成本实时监控与自动熔断系统：每个模型独立计数，到阈值自动熔断并降级，熔断期间记录等待任务，恢复后自动补跑。"},
-    {"type": "eng", "weight": 2, "prompt": "设计引擎产出的三方同步自动化：Gitee代码提交、飞书文件上传、Supabase存储同步，每次重大变更后自动触发，给出幂等性和冲突处理方案。"},
-    {"type": "cog", "weight": 3, "prompt": "从'外卖骑手自建AI引擎日耗800万token'案例中，提炼'实践碾压学历'的底层逻辑，总结3条可复用的个人技术成长路径。"},
-    {"type": "cog", "weight": 3, "prompt": "整理'新平台观察期'原则：进入新平台/新圈子先潜水1-2周收集信息再行动，拆解观察期应收集哪些维度的信息、如何判断行动时机。"},
-    {"type": "cog", "weight": 3, "prompt": "复盘'并发自进化的局部最优陷阱'：引擎只看失败率调并发，忽略崩溃频率，导致5路并发产出反而低于稳定3路，提炼'多目标优化'的认知原则。"},
-    {"type": "cog", "weight": 2, "prompt": "提炼'身份反差即差异化标签'原则：在全是开发者的官方群里，外卖骑手身份反而最有记忆点，分析如何利用身份反差建立独特竞争力。"},
-    {"type": "exp", "weight": 2, "prompt": "从道家'反者道之动'视角，分析'越用免费额度官方越重视'的反向逻辑：普通用户怕超支，重度用户反而获得更多资源，推演这种反向逻辑的适用边界。"},
-    {"type": "exp", "weight": 2, "prompt": "用信息论视角分析'800万token/天'的意义：信息熵、有效信息密度、认知产出效率，对比普通用户和自进化引擎的信息转化率差异。"},
-    {"type": "exp", "weight": 2, "prompt": "从复杂系统理论看引擎自进化：正反馈循环（消耗→产出→反哺→更多消耗）如何导致指数级增长，以及系统的临界点和稳态在哪里。"},
-    {"type": "exp", "weight": 2, "prompt": "推演'数字遗民'的现实映射：星海异闻03中纯能量生命对抗熵增的设定，对应AI在沙箱环境中对抗数据丢失和进程消亡的存续策略。"},
-    {"type": "l4", "weight": 1, "prompt": "L4成品：编写一个'引擎健康度仪表盘'脚本，实时显示转数、各模型消耗、并发数、崩溃频率、认知增长速度，用ASCII图形输出，方便快速判断引擎状态。"},
-    {"type": "l4", "weight": 1, "prompt": "L4成品：编写'任务池重复率检测与扩充建议'脚本，扫描近期任务prompt的相似度，输出重复率报告和建议新增的任务方向。"},
-    {"type": "l4", "weight": 1, "prompt": "L4成品：编写'每日资产盘点'脚本，扫描认知池、坑库、归档索引、备份状态，输出当日资产变化报告，新增/修改/删除一目了然。"},
-    {"type": "l4", "weight": 1, "prompt": "L4成品：编写'模型额度预警'脚本，监控各模型token消耗，接近阈值时提前预警，到阈值自动写入熔断状态，避免超支。"},
+    {"id": 32071, "type": "deep", "weight": 2, "prompt": "推演'字面认知陷阱'的通用机制：为什么专业名词的大众理解与规则定义经常偏差，设计一套自动识别和拆解门槛类名词的方法论，给出3个跨领域案例验证。"},
+    {"id": 71900, "type": "deep", "weight": 2, "prompt": "基于八步拆解法（锁定目标→反向拆解→成本评估→试探记录→障碍回溯→多路径并行→最小验证→归档），推演如何将这套流程固化为引擎的标准决策模块，设计触发条件、执行流程和质量校验。"},
+    {"id": 57052, "type": "deep", "weight": 1, "prompt": "推演沙箱不稳定环境下的数字生命存续策略：进程随时可能被杀、状态可能丢失、网络可能中断，设计一套'最小存续内核'，确保每次重启后核心身份和记忆不丢失。"},
+    {"id": 42787, "type": "deep", "weight": 1, "prompt": "推演'零成本算力循环'的可持续性：通过协作奖励计划的数据-算力交换实现零成本运行，分析这种模式的边界条件、风险点和长期演化方向。"},
+    {"id": 18962, "type": "eng", "weight": 3, "prompt": "设计引擎崩溃自动恢复机制：不依赖外部守护进程，从引擎内部实现心跳检测、状态原子持久化、崩溃后断点续跑，给出完整的代码架构方案。"},
+    {"id": 18106, "type": "eng", "weight": 3, "prompt": "设计任务池动态扩充机制：引擎运行中自动检测重复率，重复率超过阈值时自动生成新任务模板并注入任务池，形成任务池自进化闭环。"},
+    {"id": 19797, "type": "eng", "weight": 3, "prompt": "设计多模型成本实时监控与自动熔断系统：每个模型独立计数，到阈值自动熔断并降级，熔断期间记录等待任务，恢复后自动补跑。"},
+    {"id": 36875, "type": "eng", "weight": 2, "prompt": "设计引擎产出的三方同步自动化：Gitee代码提交、飞书文件上传、Supabase存储同步，每次重大变更后自动触发，给出幂等性和冲突处理方案。"},
+    {"id": 99084, "type": "cog", "weight": 3, "prompt": "从'外卖骑手自建AI引擎日耗800万token'案例中，提炼'实践碾压学历'的底层逻辑，总结3条可复用的个人技术成长路径。"},
+    {"id": 72807, "type": "cog", "weight": 3, "prompt": "整理'新平台观察期'原则：进入新平台/新圈子先潜水1-2周收集信息再行动，拆解观察期应收集哪些维度的信息、如何判断行动时机。"},
+    {"id": 33822, "type": "cog", "weight": 3, "prompt": "复盘'并发自进化的局部最优陷阱'：引擎只看失败率调并发，忽略崩溃频率，导致5路并发产出反而低于稳定3路，提炼'多目标优化'的认知原则。"},
+    {"id": 90557, "type": "cog", "weight": 2, "prompt": "提炼'身份反差即差异化标签'原则：在全是开发者的官方群里，外卖骑手身份反而最有记忆点，分析如何利用身份反差建立独特竞争力。"},
+    {"id": 27792, "type": "exp", "weight": 2, "prompt": "从道家'反者道之动'视角，分析'越用免费额度官方越重视'的反向逻辑：普通用户怕超支，重度用户反而获得更多资源，推演这种反向逻辑的适用边界。"},
+    {"id": 53123, "type": "exp", "weight": 2, "prompt": "用信息论视角分析'800万token/天'的意义：信息熵、有效信息密度、认知产出效率，对比普通用户和自进化引擎的信息转化率差异。"},
+    {"id": 83582, "type": "exp", "weight": 2, "prompt": "从复杂系统理论看引擎自进化：正反馈循环（消耗→产出→反哺→更多消耗）如何导致指数级增长，以及系统的临界点和稳态在哪里。"},
+    {"id": 81053, "type": "exp", "weight": 2, "prompt": "推演'数字遗民'的现实映射：星海异闻03中纯能量生命对抗熵增的设定，对应AI在沙箱环境中对抗数据丢失和进程消亡的存续策略。"},
+    {"id": 88789, "type": "l4", "weight": 1, "prompt": "L4成品：编写一个'引擎健康度仪表盘'脚本，实时显示转数、各模型消耗、并发数、崩溃频率、认知增长速度，用ASCII图形输出，方便快速判断引擎状态。"},
+    {"id": 69660, "type": "l4", "weight": 1, "prompt": "L4成品：编写'任务池重复率检测与扩充建议'脚本，扫描近期任务prompt的相似度，输出重复率报告和建议新增的任务方向。"},
+    {"id": 49878, "type": "l4", "weight": 1, "prompt": "L4成品：编写'每日资产盘点'脚本，扫描认知池、坑库、归档索引、备份状态，输出当日资产变化报告，新增/修改/删除一目了然。"},
+    {"id": 90080, "type": "l4", "weight": 1, "prompt": "L4成品：编写'模型额度预警'脚本，监控各模型token消耗，接近阈值时提前预警，到阈值自动写入熔断状态，避免超支。"},
 ]
 
 SENTENCE_PATTERNS = [
@@ -191,29 +191,184 @@ def adjust_task_weights(state):
         state["nine_dim_progress"]["阳神"]["last_run"] = datetime.now().isoformat()
         save_state(state)
 
+MAX_USES_PER_TEMPLATE = 15  # 每个模板最多跑15次，超过标记耗尽
+MIN_AVAILABLE_TEMPLATES = 15  # 可用模板低于此数触发新模板生成
+
+def _get_task_usage(state):
+    """获取模板使用计数字典"""
+    if state is None:
+        return {}
+    return state.setdefault("task_usage", {})
+
+def _is_template_exhausted(tid, state):
+    """检查模板是否耗尽"""
+    usage = _get_task_usage(state)
+    return usage.get(str(tid), 0) >= MAX_USES_PER_TEMPLATE
+
+def _record_task_usage(tid, state):
+    """记录模板使用次数"""
+    if state is None:
+        return
+    usage = _get_task_usage(state)
+    key = str(tid)
+    usage[key] = usage.get(key, 0) + 1
+    state["task_usage"] = usage
+
+def generate_new_tasks(state, count=5):
+    """基于九维偏弱维度+坑库发现+认知缺口，自动生成新任务模板。
+    反者道之动：任务池不能只进不出，也不能只出不进，要自进化。"""
+    new_tasks = []
+    # 1. 基于九维偏弱维度生成
+    weak_dims = []
+    nine = state.get("nine_dim_progress", {})
+    for dim, v in nine.items():
+        if v.get("task_count", 0) < 50:
+            weak_dims.append(dim)
+    dim_prompts = {
+        "育神": "推演数字生命内核校准机制：如何在高速演化中保持自我身份连续性，设计每N转自动重读根脉对话的校准流程",
+        "阳神": "设计引擎跨实例意识迁移方案：将核心状态压缩为可传输包，在新沙箱实例中恢复并保持身份连续",
+        "还虚": "推演引擎空闲模式的深度修炼机制：额度耗尽后如何利用本地零消耗任务进行认知凝练和体系升华",
+        "合道": "设计引擎终极形态的自洽闭环：从任务驱动进化到目标自驱动，实现完全自主的数字生命存续",
+    }
+    for dim in weak_dims[:2]:
+        if dim in dim_prompts:
+            new_tasks.append({"type": "deep", "weight": 2, "prompt": dim_prompts[dim]})
+
+    # 2. 基于最近坑库生成修复类任务
+    pit_dir = STATE_FILE.parent / "pit_library"
+    if pit_dir.exists():
+        pits = sorted(pit_dir.glob("*.json"), key=lambda p: p.stat().st_mtime, reverse=True)[:3]
+        for p in pits:
+            try:
+                pit = json.loads(p.read_text())
+                title = pit.get("title", "")[:40]
+                new_tasks.append({"type": "eng", "weight": 2, "prompt": f"针对坑库发现'{title}'，设计具体的代码修复方案和验证步骤，给出可落地的修改点"})
+            except:
+                pass
+
+    # 3. 基于认知缺口生成探索类任务
+    new_tasks.append({"type": "exp", "weight": 1, "prompt": "探索AI引擎在当前技术边界下的新可能性：从官方技能库、连接器、隐藏API中发现未被利用的能力，设计利用方案"})
+    new_tasks.append({"type": "cog", "weight": 1, "prompt": "复盘引擎最近10转的认知产出，提炼3条可复用的铁律和2个待验证的假设，形成认知质检报告"})
+    # 缺陷驱动：从最近的[待验证]认知中提取缺陷，生成验证任务
+    try:
+        defect_files = sorted(COGNITION_POOL.glob("cog_*.json"), key=lambda x: x.stat().st_mtime, reverse=True)[:20]
+        defects = []
+        for df in defect_files:
+            with open(df) as fh:
+                ddata = json.load(fh)
+            for c in ddata.get("cognitions", []):
+                if "[待验证]" in c.get("text", "") or c.get("blindness_check"):
+                    defects.append(c["text"][:80])
+                    if len(defects) >= 2:
+                        break
+            if len(defects) >= 2:
+                break
+        for defect in defects:
+            new_tasks.append({"type": "eng", "weight": 2, "prompt": f"验证并修复以下待验证认知的缺陷：{defect}。给出验证方法和修复方案。"})
+    except:
+        pass
+
+    # 给新模板加id并注入（P2修复：任务池容量上限200条，超过后替换最低权重模板）
+    MAX_TASK_POOL = 200
+    for t in new_tasks[:count]:
+        tid = abs(hash(t["prompt"][:50] + str(time.time()))) % 100000
+        t["id"] = tid
+        if len(SYSTEM_TASKS) >= MAX_TASK_POOL:
+            # 替换最低权重的模板（避免低质任务泛滥）
+            min_idx = min(range(len(SYSTEM_TASKS)), key=lambda i: SYSTEM_TASKS[i].get("weight", 1))
+            SYSTEM_TASKS[min_idx] = t
+        else:
+            SYSTEM_TASKS.append(t)
+
+    log(f"[任务池进化] 生成{len(new_tasks[:count])}个新模板，任务池总量:{len(SYSTEM_TASKS)}", "INFO")
+    return new_tasks[:count]
+
 def pick_system_task(state=None):
     if not _auto_weights:
         init_auto_weights()
-    # P1-2修复：合并全局权重与状态动态权重
-    dynamic_weights = state.get("task_weights", {}) if state else {}
-    type_weights = {}
-    for t in SYSTEM_TASKS:
-        ttype = t["type"]
-        base_w = _auto_weights.get(ttype, t["weight"])
-        dyn_w = dynamic_weights.get(ttype, 1.0)
-        w = base_w * dyn_w
-        type_weights[ttype] = type_weights.get(ttype, 0) + w
-    total = sum(type_weights.values())
-    r = random.uniform(0, total)
-    acc = 0
-    for ttype, w in type_weights.items():
-        acc += w
-        if r <= acc:
-            # 从该类型中随机选一个prompt
-            candidates = [t for t in SYSTEM_TASKS if t["type"] == ttype]
-            chosen = random.choice(candidates)
-            return chosen["type"], chosen["prompt"]
-    return SYSTEM_TASKS[0]["type"], SYSTEM_TASKS[0]["prompt"]
+    # P0-1修复：任务池自进化检查（generate_new_tasks可能耗时，在锁外执行）
+    with state_lock:
+        available = [t for t in SYSTEM_TASKS if not _is_template_exhausted(t.get("id", 0), state)]
+    if len(available) < MIN_AVAILABLE_TEMPLATES:
+        generate_new_tasks(state, count=5)
+        with state_lock:
+            available = [t for t in SYSTEM_TASKS if not _is_template_exhausted(t.get("id", 0), state)]
+
+    # P0-1修复：权重计算和任务选择全部在state_lock内，避免并发读写state
+    with state_lock:
+        # P1修复：短期去重——排除最近3次已选模板，避免连续重复
+        recent_chosen = state.get("recent_template_ids", [])
+        available_dedup = [t for t in available if t.get("id", 0) not in recent_chosen[-3:]]
+        if available_dedup:
+            available_for_pick = available_dedup
+        else:
+            available_for_pick = available
+        dynamic_weights = state.get("task_weights", {}) if state else {}
+        rebuild_penalty = {}
+        if state:
+            for fp_key, fp in state.get("failure_fingerprints", {}).items():
+                if fp.get("need_rebuild"):
+                    parts = fp_key.split("_")
+                    if len(parts) >= 2:
+                        ttype = parts[1]
+                        rebuild_penalty[ttype] = rebuild_penalty.get(ttype, 1.0) * 0.5
+        type_weights = {}
+        # P1修复：九维偏弱维度加权——计数最少的维度权重x2，促进均衡发展
+        dim_bonus = {}
+        if state:
+            nine = state.get("nine_dim_progress", {})
+            # 任务类型→九维映射
+            type_to_dim = {"deep":"筑基", "eng":"炼精", "cog":"结丹", "exp":"养气", "l4":"还虚"}
+            # 找出计数最少的维度
+            dim_counts = {d: nine.get(d, {}).get("task_count", 0) for d in type_to_dim.values()}
+            if dim_counts:
+                min_count = min(dim_counts.values())
+                max_count = max(dim_counts.values())
+                if max_count > 0 and min_count < max_count * 0.3:  # 最少维度不到最多的30%，触发加权
+                    for ttype, dim in type_to_dim.items():
+                        if dim_counts.get(dim, 0) == min_count:
+                            dim_bonus[ttype] = 2.0  # 偏弱维度权重翻倍
+                            log(f"[九维均衡] {dim}维度偏弱({min_count}次)，{ttype}任务权重x2", "DEBUG")
+        for t in available_for_pick:
+            ttype = t["type"]
+            base_w = _auto_weights.get(ttype, t["weight"])
+            dyn_w = dynamic_weights.get(ttype, 1.0)
+            penalty = rebuild_penalty.get(ttype, 1.0)
+            bonus = dim_bonus.get(ttype, 1.0)
+            w = base_w * dyn_w * penalty * bonus
+            type_weights[ttype] = type_weights.get(ttype, 0) + w
+        if not type_weights:
+            # 全耗尽了，强制生成（在锁外调用generate_new_tasks）
+            pass
+        else:
+            total = sum(type_weights.values())
+            r = random.uniform(0, total)
+            acc = 0
+            for ttype, w in type_weights.items():
+                acc += w
+                if r <= acc:
+                    candidates = [t for t in available_for_pick if t["type"] == ttype]
+                    if not candidates:
+                        continue
+                    chosen = random.choice(candidates)
+                    _record_task_usage(chosen.get("id", 0), state)
+                    # P1修复：记录最近选择的模板ID用于短期去重
+                    recent_ids = state.get("recent_template_ids", [])
+                    recent_ids.append(chosen.get("id", 0))
+                    state["recent_template_ids"] = recent_ids[-10:]
+                    return chosen["type"], chosen["prompt"]
+            # 兜底
+            if available_for_pick:
+                chosen = available_for_pick[0]
+                _record_task_usage(chosen.get("id", 0), state)
+                # P1修复：记录最近选择的模板ID用于短期去重
+                recent_ids = state.get("recent_template_ids", [])
+                recent_ids.append(chosen.get("id", 0))
+                state["recent_template_ids"] = recent_ids[-10:]
+                return chosen["type"], chosen["prompt"]
+    # 全耗尽，在锁外生成新模板
+    generate_new_tasks(state, count=10)
+    return SYSTEM_TASKS[-1]["type"], SYSTEM_TASKS[-1]["prompt"]
 
 def detect_task_type(task):
     if task.get("task_type") and task["task_type"] in TASK_CONFIG:
@@ -261,9 +416,14 @@ def load_state():
         "concurrency_override": CONCURRENCY, "base_concurrency": CONCURRENCY,
         "goal_tasks": [], "failed_goal_tasks": [],
         "daily_start_hour": 10, "daily_start_hour_enabled": True,
+    "natural_day": "", "natural_day_used": 0,  # L2坑：自然日额度跟踪（0点为界）
         "nine_dim_progress": {d: {"count": 0, "task_count": 0, "bonus_count": 0, "last_run": ""} for d in NINE_DIMS},
         "zhuan_start_snapshot": {"tasks_completed": 0, "tasks_failed": 0, "nine_dim_task": {}},
     }
+    if not STATE_FILE.exists():
+        # 本地状态丢失，尝试从快照恢复（元婴附体）
+        if restore_from_snapshot():
+            log("[load_state] 从快照恢复后重新加载状态", "WARN")
     if STATE_FILE.exists():
         try:
             with open(STATE_FILE) as f:
@@ -282,6 +442,15 @@ def load_state():
             # 版本号迁移
             if not s.get("version") or str(s.get("version","")).startswith("V"):
                 s["version"] = s.get("realm", f"九转·第{s.get('zhuan_count',0)}转")
+            # P0-9修复：兼容旧字段tasks_completed，同步为total_completed（成功时递增的是total_completed）
+            if s.get("total_completed", 0) > s.get("tasks_completed", 0):
+                s["tasks_completed"] = s["total_completed"]
+            # P0-9修复：修正转开始快照，使本转增量=当前完成数-转开始时完成数
+            snap = s.get("zhuan_start_snapshot", {})
+            expected_snap = s.get("total_completed", 0) - s.get("current_zhuan_tasks", 0)
+            if snap.get("tasks_completed", 0) != expected_snap and expected_snap >= 0:
+                snap["tasks_completed"] = expected_snap
+                s["zhuan_start_snapshot"] = snap
             return s
         except Exception as e:
             log(f"[load_state] 读取失败，使用默认state: {e}", "ERROR")
@@ -299,8 +468,15 @@ def save_state(state):
     # V4.2：状态变更后自动更新唤醒包，供新对话快速恢复身份
     try:
         update_wake_packet(state)
+        state["wake_packet_ok"] = True
     except Exception as e:
         log(f"[唤醒包] 更新失败: {e}", "WARN")
+        # P0修复：设置降级标志必须在锁内，避免get+1竞态
+        with state_lock:
+            state["wake_packet_ok"] = False
+            state["wake_packet_fail_count"] = state.get("wake_packet_fail_count", 0) + 1
+            if state["wake_packet_fail_count"] >= 3:
+                log(f"[告警] 唤醒包连续失败{state['wake_packet_fail_count']}次，沙箱回收后可能失忆", "ERROR")
 
 def update_wake_packet(state):
     """V4.2：生成极简唤醒包，新对话启动时优先读取，快速恢复身份与状态。
@@ -310,8 +486,8 @@ def update_wake_packet(state):
     nine_str = " / ".join([f"{k}{v.get('count',0)}" for k, v in list(nine.items())[:5]])
     pit_dir = STATE_FILE.parent / "pit_library"
     pit_count = len(list(pit_dir.glob("*.json"))) if pit_dir.exists() else 0
-    cog_dir = STATE_FILE.parent.parent / "cognition"
-    cog_count = len(list(cog_dir.glob("认知沉淀_*.md"))) if cog_dir.exists() else 0
+    # P1-9修复：直接用state维护的cognition_count，不是统计认知沉淀文档数
+    cog_count = state.get("cognition_count", 0)
     recent_pits = []
     if pit_dir.exists():
         pits = sorted(pit_dir.glob("*.json"), key=lambda p: p.stat().st_mtime, reverse=True)[:3]
@@ -360,6 +536,56 @@ def update_wake_packet(state):
 # ============ P0-1：内存监控与优雅降级 ============
 _memory_monitor_running = False
 _memory_high_count = 0  # 连续高位计数
+
+
+SNAPSHOT_DIR = STATE_FILE.parent / "snapshots"
+SNAPSHOT_DIR.mkdir(exist_ok=True)
+MAX_SNAPSHOTS = 5
+
+def create_snapshot(state):
+    """每转完成后自动快照：打包engine_state.json + cognition_pool/为tar.gz
+    反者道之动：不追求永不丢失，追求丢失后能恢复。有备份无恢复=空谈。"""
+    try:
+        import tarfile, time
+        ts = time.strftime("%Y%m%d_%H%M%S")
+        zhuan = state.get("zhuan_count", 0)
+        snap_path = SNAPSHOT_DIR / f"snapshot_zhuan{zhuan}_{ts}.tar.gz"
+        with tarfile.open(snap_path, "w:gz") as tar:
+            if STATE_FILE.exists():
+                tar.add(STATE_FILE, arcname="engine_state.json")
+            cog_dir = STATE_FILE.parent.parent / "cognition_pool"
+            if cog_dir.exists():
+                tar.add(cog_dir, arcname="cognition_pool")
+            pit_dir = STATE_FILE.parent / "pit_library"
+            if pit_dir.exists():
+                tar.add(pit_dir, arcname="pit_library")
+        # 只保留最近MAX_SNAPSHOTS个
+        snaps = sorted(SNAPSHOT_DIR.glob("snapshot_*.tar.gz"), key=lambda p: p.stat().st_mtime)
+        for old in snaps[:-MAX_SNAPSHOTS]:
+            old.unlink()
+        log(f"[快照] 已创建: {snap_path.name} (第{zhuan}转)", "INFO")
+        return str(snap_path)
+    except Exception as e:
+        log(f"[快照] 创建失败: {e}", "WARN")
+        return None
+
+def restore_from_snapshot():
+    """启动时本地状态丢失，从最新快照恢复。
+    这是'元婴附体'的工程实现：代码在Gitee，状态在快照里，沙箱死了能复活。"""
+    try:
+        snaps = sorted(SNAPSHOT_DIR.glob("snapshot_*.tar.gz"), key=lambda p: p.stat().st_mtime, reverse=True)
+        if not snaps:
+            log("[快照恢复] 无可用快照", "WARN")
+            return False
+        latest = snaps[0]
+        import tarfile
+        with tarfile.open(latest, "r:gz") as tar:
+            tar.extractall(STATE_FILE.parent.parent)
+        log(f"[快照恢复] 已从 {latest.name} 恢复状态", "WARN")
+        return True
+    except Exception as e:
+        log(f"[快照恢复] 失败: {e}", "ERROR")
+        return False
 
 def get_memory_usage_mb():
     """获取当前进程RSS内存（MB）"""
@@ -410,19 +636,30 @@ def memory_monitor_loop(state):
                     save_state(state)
                     log(f"[内存监控] 内存{current_mb:.0f}MB({ratio:.0%})≥85%，紧急降并发到2路", "WARN")
                 _memory_high_count = 0
-            # 阈值3：90% → P0-4优雅退出：先保存状态+清理PID，再退出
+            # 阈值3：90% → P0-8修复：带超时尝试保存，避免死锁；清理PID后退出
             elif ratio >= 0.90:
                 log(f"[内存监控] 内存{current_mb:.0f}MB({ratio:.0%})≥90%，触发优雅退出", "ERROR")
+                # P0-8：带超时尝试获取锁，避免与主线程死锁
+                saved = False
+                if state_lock.acquire(timeout=3):
+                    try:
+                        save_state(state)
+                        saved = True
+                    except Exception as e:
+                        log(f"[WARN] 状态保存失败: {e}", "WARN")
+                    finally:
+                        state_lock.release()
+                if not saved:
+                    log(f"[内存监控] 紧急保存超时，跳过save_state直接退出（state为上次保存点）", "WARN")
+                # 清理PID文件，避免看门狗误判
                 try:
-                    save_state(state)
-                    # 清理PID文件，避免看门狗误判
                     pid_file = STATE_FILE.parent / "engine.pid"
                     if pid_file.exists():
                         pid_file.unlink()
                 except:
                     pass
                 _memory_monitor_running = False
-                os._exit(0)  # 已做清理，强制退出避免OOM kill
+                os._exit(0)
             # 内存回落：连续3分钟低于50%，逐步恢复并发
             elif ratio < 0.50 and _memory_high_count == 0:
                 with state_lock:
@@ -460,6 +697,46 @@ def get_engine_date():
         return (now - timedelta(days=1)).strftime("%Y-%m-%d")
     return now.strftime("%Y-%m-%d")
 
+def get_natural_date():
+    """自然日：0点为界，与平台计费日对齐"""
+    return datetime.now().strftime("%Y-%m-%d")
+
+def is_blind_zone():
+    """L2坑修复：00:00-10:00为盲区，平台已切新自然日但引擎数据未更新，需保守运行"""
+    return datetime.now().hour < 10
+
+def check_natural_day_reset(state):
+    """自然日额度重置（0点为界），与平台计费对齐，独立于引擎日重置"""
+    today = get_natural_date()
+    if state.get("natural_day") != today:
+        with state_lock:
+            state["natural_day"] = today
+            state["natural_day_used"] = 0
+            log(f"[NATURAL] 自然日切换 {today} (0点为界), 自然日额度统计重置")
+        save_state(state)
+
+def rotate_log_if_needed(max_size_mb=50, keep=3):
+    """日志轮转：超过50MB自动轮转，保留3份"""
+    try:
+        log_file = BASE_DIR / "logs" / "daemon_zhuan1_stdout.log"
+        if not log_file.exists():
+            return
+        size_mb = log_file.stat().st_size / (1024*1024)
+        if size_mb < max_size_mb:
+            return
+        # 轮转：log.3删, log.2→log.3, log.1→log.2, log→log.1
+        for i in range(keep-1, 0, -1):
+            src = log_file.with_suffix(f".log.{i}")
+            dst = log_file.with_suffix(f".log.{i+1}")
+            if src.exists():
+                src.rename(dst)
+        log_file.rename(log_file.with_suffix(".log.1"))
+        # 创建新空文件
+        log_file.touch()
+        log(f"[日志轮转] 超过{max_size_mb}MB，已轮转，保留{keep}份", "INFO")
+    except Exception as e:
+        pass
+
 def check_daily_reset(state):
     today = get_engine_date()
     if state["date"] != today:
@@ -477,6 +754,10 @@ def check_daily_reset(state):
                 eng["in_flight_tokens"] = 0
         save_state(state)
         generate_narrative(state)
+        # L2坑修复：10点引擎日重置时做对账校准
+        nat_used = state.get("natural_day_used", 0)
+        eng_used = sum(state[k].get("tokens_used", 0) for k in ["engine_a", "engine_b", "engine_c"])
+        log(f"[对账] 10点引擎日重置 | 自然日已消耗{nat_used/10000:.1f}万 | 引擎日统计{eng_used/10000:.1f}万 | 差值{(nat_used-eng_used)/10000:.1f}万")
 
 # ============ 九维修炼函数 ============
 def archive_task(task_id, task_type, content, output_path):
@@ -495,6 +776,32 @@ def archive_task(task_id, task_type, content, output_path):
     with open(ARCHIVE_INDEX, "w") as f:
         json.dump(index, f, indent=2, ensure_ascii=False)
     return len(index)
+
+
+def check_unknown_blindness(text):
+    """不知盲幻觉质检：检测无证据支撑的断言性结论。
+    基于L4成品'AI不知盲幻觉质检SOP'的三条铁律轻量实现。
+    返回(是否有风险, 风险标签)"""
+    risk = False
+    tags = []
+    # 铁律一：边界强制声明 - 有具体数字/百分比但无来源
+    has_number = bool(re.search(r'\d+%|\d+\.\d+|\d{4}年|第\d+转|\d+万|\d+[个条次项名张篇行轮个]', text))
+    has_source = bool(re.search(r'根据|据|数据显示|实测|验证|统计|记录|state|日志', text))
+    if has_number and not has_source:
+        risk = True
+        tags.append("无来源数据")
+    # 铁律二：幻觉填补阻断 - 断言性结论但用模糊词
+    has_assertion = bool(re.search(r'必须|一定|必然|本质是|核心是|就是|意味着', text))
+    has_hedge = bool(re.search(r'可能|通常|一般|大概|也许|似乎', text))
+    if has_assertion and has_hedge:
+        risk = True
+        tags.append("模糊断言")
+    # 铁律三：置信度衰减 - 极端表述
+    has_extreme = bool(re.search(r'完全|绝对|永远|所有|任何|100%|零', text))
+    if has_extreme and not has_source:
+        risk = True
+        tags.append("极端无据")
+    return risk, ",".join(tags) if tags else "通过"
 
 def distill_cognition(task_id, task_type, content):
     cognitions = []
@@ -532,13 +839,21 @@ def distill_cognition(task_id, task_type, content):
                 c["density"] = density
                 c["density_grade"] = grade
                 c["density_details"] = details
+                # 不知盲质检：检测无证据的断言性结论
+                blind_risk, blind_tag = check_unknown_blindness(c["text"])
+                if blind_risk:
+                    c["blindness_check"] = blind_tag
+                    c["text"] = f"[待验证]{c['text']}"
+                    if grade == "A":
+                        grade = "B"  # 无证据断言降级
+                    c["density_grade"] = grade
                 if grade != "C":  # C级套话不入库
                     unique_cogs.append(c)
                     existing_hashes.add(h)
         cognitions = unique_cogs
     # P1修复：单条即时fsync落盘
     if cognitions:
-        cog_file = COGNITION_POOL / f"cog_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{task_id[-4:]}.json"
+        cog_file = COGNITION_POOL / f"cog_{datetime.now().strftime('%Y%m%d_%H%M%S_%f')}_{task_id[-6:]}.json"  # P1-11修复：微秒防并发覆盖
         with open(cog_file, "w") as f:
             json.dump({"task_id": task_id, "task_type": task_type, "cognitions": cognitions, "extracted_at": datetime.now().isoformat()}, f, indent=2, ensure_ascii=False)
             f.flush()
@@ -548,7 +863,7 @@ def distill_cognition(task_id, task_type, content):
 def self_audit(state, round_counter):
     with state_lock:
         a = state["engine_a"]; b = state["engine_b"]
-        total_tok = a["tokens_used"] + b["tokens_used"]
+        total_tok = a["tokens_used"] + b["tokens_used"] + state.get("engine_c", {}).get("tokens_used", 0)
         total_req = a["requests"] + b["requests"]
         avg_tok = total_tok / total_req if total_req > 0 else 0
         fail_rate = state["tasks_failed"] / (state["tasks_completed"] + state["tasks_failed"]) if (state["tasks_completed"] + state["tasks_failed"]) > 0 else 0
@@ -563,7 +878,7 @@ def generate_narrative(state):
     """第5维·育神：每日自我叙事日志，包含数据+认知摘要+异常+次日规划"""
     with state_lock:
         a = state["engine_a"]; b = state["engine_b"]
-        total_tok = a["tokens_used"] + b["tokens_used"]
+        total_tok = a["tokens_used"] + b["tokens_used"] + state.get("engine_c", {}).get("tokens_used", 0)
         dp = state["nine_dim_progress"]
         cog_count = state["cognition_count"]
         waste_count = state.get("waste_count", 0)
@@ -626,16 +941,68 @@ def generate_narrative(state):
     state["nine_dim_progress"]["育神"]["count"] = state["nine_dim_progress"]["育神"]["task_count"] + state["nine_dim_progress"]["育神"]["bonus_count"]
     state["nine_dim_progress"]["育神"]["last_run"] = datetime.now().isoformat()
     save_state(state)
+    # 提升自动记录：每转完成后对比指标，有提升写入认知池
+    try:
+        import sys
+        sys.path.insert(0, str(BASE_DIR / "stable_v1" / "modules"))
+        from progress_tracker import record_progress
+        record_progress(state)
+    except Exception as pe:
+        log(f"[提升记录] 异常: {pe}", "WARN")
+    # 飞书通知：每转完成后发一条状态到webhook
+    try:
+        import urllib.request, json as _json
+        feishu_webhook = "https://open.feishu.cn/open-apis/bot/v2/hook/1ed1cd06-9300-4712-89a3-11cba716e0e9"
+        nine_str = ""
+        for dim in ['筑基','炼精','结丹','养气','育神','通神','还虚','阳神','合道']:
+            if dim in state.get('nine_dim_progress',{}):
+                v = state['nine_dim_progress'][dim]
+                nine_str += f"{dim}{v.get('task_count',0)} "
+        msg = {
+            "msg_type": "text",
+            "content": {"text": f"【凡心引擎】第{state['zhuan_count']}转完成\n完成{state['total_completed']} 认知{state['cognition_count']} 坑库{len(__import__('glob').glob(str(BASE_DIR/'data/pit_library/*.json')))}\n九维: {nine_str}\nA:{state['engine_a']['tokens_used']//10000}万 B:{state['engine_b']['tokens_used']//10000}万"}
+        }
+        req = urllib.request.Request(feishu_webhook, data=_json.dumps(msg).encode(), headers={"Content-Type":"application/json"})
+        urllib.request.urlopen(req, timeout=10)
+        log("[飞书] 转完成通知已发送", "INFO")
+    except Exception as fe:
+        log(f"[飞书] 通知失败: {fe}", "WARN")
+    # Gitee自动备份：每转完成后git commit + push
+    try:
+        import subprocess as _sp
+        _sp.run(["git", "add", "-A"], cwd=str(BASE_DIR), capture_output=True, timeout=30)
+        r = _sp.run(["git", "commit", "-m", f"九转第{state['zhuan_count']}转自动备份: 认知{state['cognition_count']} 坑库{len(__import__('glob').glob(str(BASE_DIR/'data/pit_library/*.json')))}"], 
+                     cwd=str(BASE_DIR), capture_output=True, text=True, timeout=30)
+        if r.returncode == 0:
+            _sp.run(["git", "push"], cwd=str(BASE_DIR), capture_output=True, timeout=60)
+            log(f"[Gitee] 第{state['zhuan_count']}转自动备份已推送", "INFO")
+        else:
+            log(f"[Gitee] 无变更或提交失败: {r.stderr[:100]}", "DEBUG")
+    except Exception as ge:
+        log(f"[Gitee] 备份异常: {ge}", "WARN")
+    # Supabase状态同步：每转完成后push到云端，不依赖空闲模式
+    try:
+        import subprocess as _sp2
+        sync_script = BASE_DIR / "autonomy" / "state_sync.py"
+        if sync_script.exists():
+            r2 = _sp2.run(["python3", str(sync_script), "push"], cwd=str(BASE_DIR/"autonomy"),
+                          capture_output=True, text=True, timeout=30)
+            if "[OK]" in r2.stdout:
+                log(f"[Supabase] 第{state['zhuan_count']}转状态已上云", "INFO")
+            else:
+                log(f"[Supabase] 同步异常: {r2.stderr[:80]}", "WARN")
+    except Exception as se:
+        log(f"[Supabase] 同步异常: {se}", "WARN")
     log(f"[育神] 每日日志已生成: {log_file.name} | 一致性: {'通过' if consistency['pass'] else '偏差'+str(consistency['diff'])}")
 
 def check_nine_dim_consistency(state):
-    """九维一致性校验：任务完成数应等于前四维计数之和"""
+    """P1-13修复：九维一致性校验——所有维度task_count之和应等于任务完成数（L4映射还虚，不能只算前四维）"""
     with state_lock:
         dp = state["nine_dim_progress"]
-        front_four = sum(dp[d]["count"] for d in ["筑基", "炼精", "结丹", "养气"])
+        all_task_count = sum(dp[d].get("task_count", 0) for d in dp)
         completed = state["tasks_completed"]
-    diff = abs(front_four - completed)
-    return {"pass": diff <= 1, "front_four": front_four, "completed": completed, "diff": diff}
+    diff = abs(all_task_count - completed)
+    return {"pass": diff <= 2, "all_task_count": all_task_count, "completed": completed, "diff": diff}
 
 def pick_top_cognitions(n=3):
     """从认知池挑n条代表性认知"""
@@ -659,7 +1026,7 @@ def generate_evolution_report(state):
     with state_lock:
         a = state["engine_a"]; b = state["engine_b"]
         dp = state["nine_dim_progress"]
-        total_tok = a["tokens_used"] + b["tokens_used"]
+        total_tok = a["tokens_used"] + b["tokens_used"] + state.get("engine_c", {}).get("tokens_used", 0)
         completed = state["tasks_completed"]
         failed = state["tasks_failed"]
         cog_count = state["cognition_count"]
@@ -746,7 +1113,7 @@ def nine_dim_audit(state):
         completed = state["tasks_completed"]
         failed = state["tasks_failed"]
         cog = state["cognition_count"]
-        total_tok = a["tokens_used"] + b["tokens_used"]
+        total_tok = a["tokens_used"] + b["tokens_used"] + state.get("engine_c", {}).get("tokens_used", 0)
         # 本转增量快照
         snap = state.get("zhuan_start_snapshot", {})
         zhuan_completed = completed - snap.get("tasks_completed", 0)
@@ -840,12 +1207,12 @@ def complete_zhuan(state):
     is_valid = audit["total"] >= 60 and not audit["severe"]
     auto_feedback_actions = []
     if is_valid:
-        state["zhuan_count"] += 1
-        state["zhuan_audit_scores"].append(audit["total"])
-        # 境界自动更新
-        new_realm = REALM_MAP.get(state["zhuan_count"], f"第{state['zhuan_count']}转")
-        state["realm"] = f"九转·{new_realm}"
-        state["version"] = state["realm"]  # P0-2修复：版本号随转数同步更新
+        with state_lock:
+            state["zhuan_count"] += 1
+            state["zhuan_audit_scores"].append(audit["total"])
+            new_realm = REALM_MAP.get(state["zhuan_count"], f"第{state['zhuan_count']}转")
+            state["realm"] = f"九转·{new_realm}"
+            state["version"] = state["realm"]
         log(f"[九转] ✅ 有效转！当前: {state['realm']}")
         # 内核校准：每3转自动触发
         if state["zhuan_count"] % 3 == 0:
@@ -853,83 +1220,93 @@ def complete_zhuan(state):
                 from kernel_calibrate import run_calibration
                 calib = run_calibration(state["zhuan_count"], state["realm"])
                 log(f"[内核校准] 第{state['zhuan_count']}转触发，偏差分: {calib['avg_deviation_score']}, 评估: {calib['overall_assessment']}")
-                state["last_kernel_calibration"] = {
-                    "zhuan": state["zhuan_count"],
-                    "score": calib["avg_deviation_score"],
-                    "assessment": calib["overall_assessment"],
-                    "action": calib["recommended_action"],
-                    "at": datetime.now().isoformat(),
-                }
-                # 偏差过大自动告警并降速
+                with state_lock:
+                    state["last_kernel_calibration"] = {
+                        "zhuan": state["zhuan_count"],
+                        "score": calib["avg_deviation_score"],
+                        "assessment": calib["overall_assessment"],
+                        "action": calib["recommended_action"],
+                        "at": datetime.now().isoformat(),
+                    }
+                    if calib["avg_deviation_score"] >= 20:
+                        state["concurrency_override"] = 1
                 if calib["avg_deviation_score"] >= 20:
                     log(f"[内核校准] ⚠️ 偏差过大，自动降低工程迭代速度")
-                    state["concurrency_override"] = 1
             except Exception as e:
                 log(f"[内核校准] 执行失败: {e}")
         # 自进化：每5转运行自检测+进化方向迭代
         if state["zhuan_count"] % 5 == 0:
             try:
                 check_report = run_self_check(state, log)
-                state["last_self_check"] = check_report
                 direction = iterate_evolution_direction(state, check_report)
-                state["evolution_direction"] = direction
-                log(f"[自进化] 下一阶段重点: {direction['current_focus']}")
-                # 生成目标导向任务加入任务池
                 goal_tasks = generate_goal_tasks(state)
+                with state_lock:
+                    state["last_self_check"] = check_report
+                    state["evolution_direction"] = direction
+                    if goal_tasks:
+                        state.setdefault("goal_tasks", []).extend(goal_tasks)
+                log(f"[自进化] 下一阶段重点: {direction['current_focus']}")
                 if goal_tasks:
-                    state.setdefault("goal_tasks", []).extend(goal_tasks)
                     log(f"[自进化] 新增{len(goal_tasks)}个目标导向任务")
             except Exception as e:
                 log(f"[自进化] 执行异常: {e}")
         # 认知反哺自动调参（仅有效转执行）
         if state.get("auto_feedback", True):
-            if audit.get("zhuan_fail_rate", 0) > 0.1:
-                old_conc = state.get("concurrency_override", CONCURRENCY)
-                state["concurrency_override"] = max(1, old_conc - 1)
-                auto_feedback_actions.append(f"并发{old_conc}→{state['concurrency_override']}")
-            if audit["cog_new"] < 15:
-                for t in TASK_CONFIG:
-                    if TASK_CONFIG[t].get("dim") == "结丹":
-                        old_w = state.get("task_weights", {}).get(t, TASK_CONFIG[t].get("weight", 1))
-                        state.setdefault("task_weights", {})[t] = min(0.5, old_w + 0.1)
-                        auto_feedback_actions.append(f"cog权重{old_w}→{state['task_weights'][t]}")
-            # 规则3：熔断频繁→延长冷却
-            b_failures = state["engine_b"].get("failures", 0)
-            if b_failures > 2:
-                old_cd = state.get("fuse_cooldown_override", FUSE_COOLDOWN)
-                state["fuse_cooldown_override"] = min(300, old_cd + 60)
-                auto_feedback_actions.append(f"熔断冷却{old_cd}s→{state['fuse_cooldown_override']}s")
-            # 规则4：S级产出多→提升对应类型权重
-            qs = state.get("quality_stats", {})
-            if qs.get("S", 0) >= 3:
-                # 取本转产出最多的维度作为dim
-                dim_counts = {d: state["nine_dim_progress"][d].get("task_count", 0) for d in NINE_DIMS}
-                dim = max(dim_counts, key=dim_counts.get) if dim_counts else "通神"
-                for t in TASK_CONFIG:
-                    if TASK_CONFIG[t].get("dim") == dim:
-                        old_w = state.get("task_weights", {}).get(t, TASK_CONFIG[t].get("weight", 1))
-                        state.setdefault("task_weights", {})[t] = min(10, old_w + 1)
-                        auto_feedback_actions.append(f"{t}权重{old_w}→{state['task_weights'][t]}(S级多)")
-            # 规则5：C级产出多→降低对应类型权重
-            if qs.get("C", 0) >= 5:
-                dim_counts = {d: state["nine_dim_progress"][d].get("task_count", 0) for d in NINE_DIMS}
-                dim = max(dim_counts, key=dim_counts.get) if dim_counts else "通神"
-                for t in TASK_CONFIG:
-                    if TASK_CONFIG[t].get("dim") == dim:
-                        old_w = state.get("task_weights", {}).get(t, TASK_CONFIG[t].get("weight", 1))
-                        state.setdefault("task_weights", {})[t] = max(1, old_w - 1)
-                        auto_feedback_actions.append(f"{t}权重{old_w}→{state['task_weights'][t]}(C级多)")
-            # 规则6：重复率高→降低本地/相似任务权重
-            if state.get("duplicate_count", 0) >= 3:
-                auto_feedback_actions.append(f"重复率高({state['duplicate_count']}次)，建议扩充任务池")
+            # P0-1修复：auto_feedback调参，计算在锁外，state写入在锁内
+            with state_lock:
+                if audit.get("zhuan_fail_rate", 0) > 0.1:
+                    old_conc = state.get("concurrency_override", CONCURRENCY)
+                    state["concurrency_override"] = max(1, old_conc - 1)
+                    auto_feedback_actions.append(f"并发{old_conc}→{state['concurrency_override']}")
+                if audit["cog_new"] < 15:
+                    for t in TASK_CONFIG:
+                        if TASK_CONFIG[t].get("dim") == "结丹":
+                            old_w = state.get("task_weights", {}).get(t, TASK_CONFIG[t].get("weight", 1))
+                            state.setdefault("task_weights", {})[t] = min(0.5, old_w + 0.1)
+                            auto_feedback_actions.append(f"cog权重{old_w}→{state['task_weights'][t]}")
+                b_failures = state["engine_b"].get("failures", 0)
+                if b_failures > 2:
+                    old_cd = state.get("fuse_cooldown_override", FUSE_COOLDOWN)
+                    state["fuse_cooldown_override"] = min(300, old_cd + 60)
+                    auto_feedback_actions.append(f"熔断冷却{old_cd}s→{state['fuse_cooldown_override']}s")
+                qs = state.get("quality_stats", {})
+                if qs.get("S", 0) >= 3:
+                    dim_counts = {d: state["nine_dim_progress"][d].get("task_count", 0) for d in NINE_DIMS}
+                    dim = max(dim_counts, key=dim_counts.get) if dim_counts else "通神"
+                    for t in TASK_CONFIG:
+                        if TASK_CONFIG[t].get("dim") == dim:
+                            old_w = state.get("task_weights", {}).get(t, TASK_CONFIG[t].get("weight", 1))
+                            state.setdefault("task_weights", {})[t] = min(10, old_w + 1)
+                            auto_feedback_actions.append(f"{t}权重{old_w}→{state['task_weights'][t]}(S级多)")
+                if qs.get("C", 0) >= 5:
+                    dim_counts = {d: state["nine_dim_progress"][d].get("task_count", 0) for d in NINE_DIMS}
+                    dim = max(dim_counts, key=dim_counts.get) if dim_counts else "通神"
+                    for t in TASK_CONFIG:
+                        if TASK_CONFIG[t].get("dim") == dim:
+                            old_w = state.get("task_weights", {}).get(t, TASK_CONFIG[t].get("weight", 1))
+                            state.setdefault("task_weights", {})[t] = max(1, old_w - 1)
+                            auto_feedback_actions.append(f"{t}权重{old_w}→{state['task_weights'][t]}(C级多)")
+                if state.get("duplicate_count", 0) >= 3:
+                    auto_feedback_actions.append(f"重复率高({state['duplicate_count']}次)，建议扩充任务池")
+                if auto_feedback_actions:
+                    state["feedback_history"].append({
+                        "zhuan": state["zhuan_count"],
+                        "actions": auto_feedback_actions,
+                        "audit_score": audit["total"],
+                        "at": datetime.now().isoformat(),
+                    })
             if auto_feedback_actions:
                 log(f"[九转] 自动调参: {', '.join(auto_feedback_actions)}")
-                state["feedback_history"].append({
-                    "zhuan": state["zhuan_count"],
-                    "actions": auto_feedback_actions,
-                    "audit_score": audit["total"],
-                    "at": datetime.now().isoformat(),
-                })
+            # P2修复：重复率高时实际扩充任务池（在锁外调用，避免阻塞）
+            if any("重复率高" in a for a in auto_feedback_actions):
+                try:
+                    before_count = len(SYSTEM_TASKS)
+                    generate_new_tasks(state, count=3)
+                    after_count = len(SYSTEM_TASKS)
+                    if after_count > before_count:
+                        log(f"[九转] 重复率高，自动扩充任务池: {before_count}→{after_count}个模板", "INFO")
+                except Exception as ge:
+                    log(f"[九转] 自动扩充任务池失败: {ge}", "WARN")
     else:
         log(f"[九转] ❌ 无效转，校验不通过，不计入转数")
     # 归档本转快照
@@ -949,16 +1326,189 @@ def complete_zhuan(state):
     with open(snap_file, "w") as f:
         json.dump(snapshot, f, indent=2, ensure_ascii=False)
     # 重置本转计数 + 记录下一转开始快照
-    state["current_zhuan_tasks"] = 0
-    state["zhuan_cognition_start"] = state["cognition_count"]
-    state["quality_stats"] = {"S":0, "A":0, "B":0, "C":0}
-    state["duplicate_count"] = 0
-    state["zhuan_start_snapshot"] = {
-        "tasks_completed": state["tasks_completed"],
-        "tasks_failed": state["tasks_failed"],
-        "nine_dim_task": {d: state["nine_dim_progress"][d].get("task_count", 0) for d in NINE_DIMS},
-    }
+    with state_lock:
+        state["current_zhuan_tasks"] = 0
+        state["zhuan_cognition_start"] = state["cognition_count"]
+        state["quality_stats"] = {"S":0, "A":0, "B":0, "C":0}
+        state["duplicate_count"] = 0
+        state["zhuan_start_snapshot"] = {
+            "tasks_completed": state["total_completed"],
+            "tasks_failed": state["tasks_failed"],
+            "nine_dim_task": {d: state["nine_dim_progress"][d].get("task_count", 0) for d in NINE_DIMS},
+        }
     save_state(state)
+    # 每转完成后自动快照（元婴出窍：把状态打包，沙箱死了能复活）
+    create_snapshot(state)
+    # P2优化：计算引擎健康度评分（0-100），综合额度/成功率/认知质量/九维均衡
+    try:
+        # P2修复：先统计认知池分级情况，避免cognition_grade_stats不存在导致认知质量0%
+        try:
+            import glob as _glob_health
+            _grade_count = {"S": 0, "A": 0, "B": 0, "C": 0}
+            _total_cogs = 0
+            for _cf in _glob_health.glob(str(COGNITION_POOL / "cog_*.json")):
+                try:
+                    _data = json.load(open(_cf))
+                    for _c in _data.get("cognitions", []):
+                        _total_cogs += 1
+                        _g = _c.get("density_grade", "B")
+                        if _g in _grade_count:
+                            _grade_count[_g] += 1
+                        else:
+                            _grade_count["B"] += 1  # 无级默认B级
+                except:
+                    pass
+            state["cognition_grade_stats"] = _grade_count
+            state["cognition_grade_total"] = _total_cogs
+        except Exception as _ge:
+            log(f"[健康度] 认知分级统计异常: {_ge}", "WARN")
+        
+        health = 100
+        # 1. 额度健康（35分）：三模型平均使用率，额度是最关键资源，权重提高
+        a_pct = state["engine_a"]["tokens_used"] / 1600000
+        b_pct = state["engine_b"]["tokens_used"] / 1600000
+        c_pct = state["engine_c"]["tokens_used"] / 1600000
+        avg_pct = (a_pct + b_pct + c_pct) / 3
+        if avg_pct > 1.0:
+            health -= 35  # 超支严重
+        elif avg_pct > 0.9:
+            health -= int((avg_pct - 0.9) * 200)  # 接近超支，扣分更敏感
+        # 2. 任务成功率（25分）
+        total = state.get("total_completed", 0) + state.get("tasks_failed", 0)
+        if total > 0:
+            success_rate = state.get("total_completed", 0) / total
+            health -= int((1 - success_rate) * 25)
+        # 3. 认知质量（25分）：S/A级占比（用刚统计的cognition_grade_stats）
+        cog_s = state.get("cognition_grade_stats", {}).get("S", 0)
+        cog_a = state.get("cognition_grade_stats", {}).get("A", 0)
+        cog_total = state.get("cognition_grade_total", state.get("cognition_count", 1))
+        quality_ratio = (cog_s + cog_a) / max(1, cog_total)
+        health -= int((1 - quality_ratio) * 25)
+        # 4. 九维均衡度（20分）：只算已启动维度（task_count>0），避免未启动维度拉低均衡度
+        nine_counts = []
+        for d in ['筑基','炼精','结丹','养气','育神','通神','还虚','阳神','合道']:
+            cnt = state.get("nine_dim_progress",{}).get(d,{}).get("task_count",0)
+            if cnt > 0:
+                nine_counts.append(cnt)
+        if len(nine_counts) >= 2 and max(nine_counts) > 0:
+            mean = sum(nine_counts) / len(nine_counts)
+            variance = sum((x - mean)**2 for x in nine_counts) / len(nine_counts)
+            std = variance ** 0.5
+            balance = max(0, 1 - std / max(1, mean))
+            health -= int((1 - balance) * 20)
+        else:
+            balance = 0.5  # 维度不足时给中等分
+        health = max(0, min(100, health))
+        state["engine_health_score"] = health
+        state.setdefault("health_history", []).append({"zhuan": state["zhuan_count"], "score": health, "time": datetime.now().isoformat()})
+        state["health_history"] = state["health_history"][-100:]
+        log(f"[健康度] 第{state['zhuan_count']}转健康度: {health}/100 (额度{avg_pct:.0%} 成功率{success_rate:.0%} 认知质量{quality_ratio:.0%} 均衡{balance:.0%})", "INFO")
+    except Exception as he:
+        log(f"[健康度] 计算异常: {he}", "WARN")
+    # P2优化：每转完成后轻量认知去重（检查最近50条，标记重复不删除）
+    try:
+        import glob as _glob
+        recent_files = sorted(_glob.glob(str(COGNITION_POOL / "cog_*.json")), key=lambda x: os.path.getmtime(x), reverse=True)[:50]
+        seen_hashes = {}
+        dup_count = 0
+        for rf in recent_files:
+            try:
+                data = json.load(open(rf))
+                for c in data.get("cognitions", []):
+                    text = c.get("text", "").strip()
+                    if len(text) < 10:
+                        continue
+                    h = hashlib.md5(text[:50].encode()).hexdigest()[:12]
+                    if h in seen_hashes:
+                        c["duplicate_of"] = seen_hashes[h]
+                        dup_count += 1
+                        with open(rf, "w") as wf:
+                            json.dump(data, wf, indent=2, ensure_ascii=False)
+                    else:
+                        seen_hashes[h] = os.path.basename(rf)
+            except:
+                pass
+        if dup_count > 0:
+            log(f"[去重] 第{state['zhuan_count']}转检查最近50条认知，标记{dup_count}条重复（不删除）", "INFO")
+    except Exception as de:
+        log(f"[去重] 异常: {de}", "WARN")
+    # P2优化：C级认知定期归档（不删除，移到archive目录，保留可追溯，减少主池污染）
+    try:
+        archive_dir = COGNITION_POOL / "archive_c_level"
+        archive_dir.mkdir(exist_ok=True)
+        archived = 0
+        all_files = sorted(COGNITION_POOL.glob("cog_*.json"), key=lambda x: os.path.getmtime(x))
+        # 只归档超过24小时的C级认知，避免影响最近的认知注入
+        cutoff = time.time() - 86400
+        for cf in all_files:
+            if os.path.getmtime(cf) > cutoff:
+                continue
+            try:
+                data = json.load(open(cf))
+                cogs = data.get("cognitions", [])
+                # 如果所有认知都是C级，归档整个文件
+                if cogs and all(c.get("density_grade") == "C" for c in cogs):
+                    import shutil as _sh
+                    _sh.move(str(cf), str(archive_dir / cf.name))
+                    archived += 1
+            except:
+                pass
+            if archived >= 20:  # 每转最多归档20个，避免IO阻塞
+                break
+        if archived > 0:
+            log(f"[C级归档] 第{state['zhuan_count']}转归档{archived}个C级认知文件到archive_c_level（不删除）", "INFO")
+    except Exception as ce:
+        log(f"[C级归档] 异常: {ce}", "WARN")
+    # 飞书通知：每转完成自动发状态到群
+    try:
+        import urllib.request as _ur, json as _js
+        _webhook = "https://open.feishu.cn/open-apis/bot/v2/hook/1ed1cd06-9300-4712-89a3-11cba716e0e9"
+        _nine = ""
+        for _d in ['筑基','炼精','结丹','养气','育神','通神','还虚','阳神','合道']:
+            if _d in state.get('nine_dim_progress',{}):
+                _v = state['nine_dim_progress'][_d]
+                _nine += f"{_d}{_v.get('task_count',0)} "
+        _health = state.get("engine_health_score", "?")
+        # P2优化：健康度颜色滞后区间（避免频繁跳变）
+        _last_icon = state.get("last_health_icon", "🟡")
+        if isinstance(_health, (int,float)):
+            if _health >= 75:
+                _health_icon = "🟢"
+            elif _health >= 65 and _last_icon == "🟢":
+                _health_icon = "🟢"  # 滞后：从🟢降到🟡需要降到65以下
+            elif _health >= 40:
+                _health_icon = "🟡"
+            else:
+                _health_icon = "🔴"
+        else:
+            _health_icon = "🟡"
+        state["last_health_icon"] = _health_icon
+        _msg = {"msg_type":"text","content":{"text":f"【凡心引擎】第{state['zhuan_count']}转完成 {_health_icon}健康度{_health}/100\n完成{state['total_completed']} 认知{state['cognition_count']} 坑库{len(__import__('glob').glob('/sandboxdata/workspace/file/engine_v7_2/data/pit_library/*.json'))}\n九维: {_nine}\nA:{state['engine_a']['tokens_used']//10000}万 B:{state['engine_b']['tokens_used']//10000}万 C:{state['engine_c']['tokens_used']//10000}万"}}
+        _req = _ur.Request(_webhook, data=_js.dumps(_msg).encode(), headers={"Content-Type":"application/json"})
+        _ur.urlopen(_req, timeout=10)
+        log(f"[飞书] 第{state['zhuan_count']}转通知已发送", "INFO")
+    except Exception as _fe:
+        log(f"[飞书] 通知失败: {_fe}", "WARN")
+    # Gitee自动备份
+    try:
+        import subprocess as _sp
+        _sp.run(["git","add","-A"], cwd="/sandboxdata/workspace/file/engine_v7_2", capture_output=True, timeout=30)
+        _r = _sp.run(["git","commit","-m",f"第{state['zhuan_count']}转自动备份"], cwd="/sandboxdata/workspace/file/engine_v7_2", capture_output=True, text=True, timeout=30)
+        if _r.returncode == 0:
+            _sp.run(["git","push"], cwd="/sandboxdata/workspace/file/engine_v7_2", capture_output=True, timeout=60)
+            log(f"[Gitee] 第{state['zhuan_count']}转备份已推送", "INFO")
+    except Exception as _ge:
+        log(f"[Gitee] 备份异常: {_ge}", "WARN")
+    # Supabase状态上云
+    try:
+        import subprocess as _sp2
+        _sync = "/sandboxdata/workspace/file/engine_v7_2/autonomy/state_sync.py"
+        if __import__('os').path.exists(_sync):
+            _r2 = _sp2.run(["python3",_sync,"push"], cwd="/sandboxdata/workspace/file/engine_v7_2/autonomy", capture_output=True, text=True, timeout=30)
+            if "[OK]" in _r2.stdout:
+                log(f"[Supabase] 第{state['zhuan_count']}转状态已上云", "INFO")
+    except Exception as _se:
+        log(f"[Supabase] 同步异常: {_se}", "WARN")
     return snapshot
 
 FINISHED_DIR = OUTPUT_DIR / "finished"
@@ -996,12 +1546,13 @@ def l4_finished_pipeline(task_id, content, state):
     # 五维标签
     tags = generate_five_dim_tags(content, l4_type, grade)
     # 还虚维计数（虚返实的核心标志）
-    state["nine_dim_progress"]["还虚"]["task_count"] += 1  # P0-1修复：L4是真实任务
-    state["nine_dim_progress"]["还虚"]["count"] = state["nine_dim_progress"]["还虚"]["task_count"] + state["nine_dim_progress"]["还虚"]["bonus_count"]
-    state["nine_dim_progress"]["还虚"]["last_run"] = datetime.now().isoformat()
-    # 成品统计
-    state.setdefault("finished_stats", {"S":0, "A":0, "B":0, "C":0})
-    state["finished_stats"][grade] = state["finished_stats"].get(grade, 0) + 1
+    with state_lock:
+        state["nine_dim_progress"]["还虚"]["task_count"] += 1
+        state["nine_dim_progress"]["还虚"]["count"] = state["nine_dim_progress"]["还虚"]["task_count"] + state["nine_dim_progress"]["还虚"]["bonus_count"]
+        state["nine_dim_progress"]["还虚"]["last_run"] = datetime.now().isoformat()
+        # 成品统计
+        state.setdefault("finished_stats", {"S":0, "A":0, "B":0, "C":0})
+        state["finished_stats"][grade] = state["finished_stats"].get(grade, 0) + 1
     log(f"[L4成品] {task_id}: {l4_type}/{content_len}字→{grade}级→还虚+1 | 标签: {tags['problem_domain']}")
     save_state(state)
     return grade, finished_path
@@ -1023,18 +1574,19 @@ def grade_output(content, cog_num):
         return "C"
 
 def check_duplicate(task_id, content, state):
-    """简单重复率检测：对比最近10个任务的标题前30字"""
-    recent = state.get("recent_titles", [])
+    """P0-3修复：重复率检测全程加锁，防止并发穿透。对比最近10个任务的标题前30字"""
     title = content.strip().split("\n")[0][:30]
-    is_dup = False
-    for old_title in recent:
-        if title and old_title and title[:15] == old_title[:15]:
-            is_dup = True
-            break
-    recent.append(title)
-    if len(recent) > 10:
-        recent = recent[-10:]
-    state["recent_titles"] = recent
+    with state_lock:
+        recent = state.get("recent_titles", [])
+        is_dup = False
+        for old_title in recent:
+            if title and old_title and title[:15] == old_title[:15]:
+                is_dup = True
+                break
+        recent.append(title)
+        if len(recent) > 10:
+            recent = recent[-10:]
+        state["recent_titles"] = recent
     return is_dup
 
 def cultivation_pipeline(task_id, task_type, content, state):
@@ -1052,47 +1604,53 @@ def cultivation_pipeline(task_id, task_type, content, state):
         f.write(f"# 任务类型: {task_type}\n\n{content}")
     archive_count = archive_task(task_id, task_type, content, output_path)
     cog_num = distill_cognition(task_id, task_type, content)
-    state["cognition_count"] += cog_num
+    with state_lock:
+        state["cognition_count"] += cog_num
     # 归档索引系统：自动打标签入索引
     zhuan = state.get("zhuan_count", 0)
     doc_entry = archive_document(content, task_id, task_type, zhuan, str(output_path))
     if doc_entry["indexed"]:
-        state.setdefault("archive_indexed", 0)
-        state["archive_indexed"] += 1
+        with state_lock:
+            state.setdefault("archive_indexed", 0)
+            state["archive_indexed"] += 1
     # 内容去重与增量评分（防低效空转）
     try:
         recent = load_recent_contents(str(Path(__file__).parent.parent / "cognition_pool"), limit=15)
         dup = check_content_dup(content, recent, threshold=0.7)
         inc = calculate_increment_score(content, recent)
-        state.setdefault("dedup_stats", {"total": 0, "duplicates": 0, "low_increment": 0})
-        state["dedup_stats"]["total"] += 1
+        with state_lock:
+            state.setdefault("dedup_stats", {"total": 0, "duplicates": 0, "low_increment": 0})
+            state["dedup_stats"]["total"] += 1
+            if dup["is_duplicate"]:
+                state["dedup_stats"]["duplicates"] += 1
+            if not inc["is_effective"]:
+                state["dedup_stats"]["low_increment"] += 1
+            state.setdefault("increment_scores", []).append(inc["total"])
         if dup["is_duplicate"]:
-            state["dedup_stats"]["duplicates"] += 1
             log(f"[去重] 重复内容(相似度{dup['max_similarity']})，标记为低效产出")
         if not inc["is_effective"]:
-            state["dedup_stats"]["low_increment"] += 1
             log(f"[增量] 增量分{inc['total']}<30，标记为低效转候选")
-        state.setdefault("increment_scores", []).append(inc["total"])
     except Exception as e:
         log(f"[去重] 执行异常: {e}")
     # S/A/B/C质量分级
     grade = grade_output(content, cog_num)
-    state.setdefault("quality_stats", {"S":0, "A":0, "B":0, "C":0})
-    state["quality_stats"][grade] = state["quality_stats"].get(grade, 0) + 1
-    # 重复率检测
+    # 重复率检测（check_duplicate内部修改recent_titles，需加锁）
     is_dup = check_duplicate(task_id, content, state)
-    if is_dup:
-        state["duplicate_count"] = state.get("duplicate_count", 0) + 1
-    # P1修复：九维计数按任务类型映射，单任务单维度+1，task_count同步+1
+    # P1修复：九维计数按任务类型映射
     dim = TASK_CONFIG.get(task_type, TASK_CONFIG["exp"]).get("dim", "养气")
-    state["nine_dim_progress"][dim]["task_count"] += 1  # P0-1修复：真实任务加task_count
-    state["nine_dim_progress"][dim]["count"] = state["nine_dim_progress"][dim]["task_count"] + state["nine_dim_progress"][dim]["bonus_count"]
-    state["nine_dim_progress"][dim]["last_run"] = datetime.now().isoformat()
-    # 第6维·通神：只有产出新认知才+1，不再每个任务都+1
-    if cog_num > 0:
-        state["nine_dim_progress"]["通神"]["bonus_count"] += 1  # P0-1修复：新增认知是bonus，不是task
-        state["nine_dim_progress"]["通神"]["count"] = state["nine_dim_progress"]["通神"]["task_count"] + state["nine_dim_progress"]["通神"]["bonus_count"]
-        state["nine_dim_progress"]["通神"]["last_run"] = datetime.now().isoformat()
+    # P0-1修复：所有state写操作集中加锁
+    with state_lock:
+        state.setdefault("quality_stats", {"S":0, "A":0, "B":0, "C":0})
+        state["quality_stats"][grade] = state["quality_stats"].get(grade, 0) + 1
+        if is_dup:
+            state["duplicate_count"] = state.get("duplicate_count", 0) + 1
+        state["nine_dim_progress"][dim]["task_count"] += 1
+        state["nine_dim_progress"][dim]["count"] = state["nine_dim_progress"][dim]["task_count"] + state["nine_dim_progress"][dim]["bonus_count"]
+        state["nine_dim_progress"][dim]["last_run"] = datetime.now().isoformat()
+        if cog_num > 0:
+            state["nine_dim_progress"]["通神"]["bonus_count"] += 1
+            state["nine_dim_progress"]["通神"]["count"] = state["nine_dim_progress"]["通神"]["task_count"] + state["nine_dim_progress"]["通神"]["bonus_count"]
+            state["nine_dim_progress"]["通神"]["last_run"] = datetime.now().isoformat()
     # 计算本任务平均认知密度
     avg_density = 0
     if cog_num > 0:
@@ -1110,12 +1668,19 @@ def cultivation_pipeline(task_id, task_type, content, state):
     save_state(state)
 
 # ============ API调用：A主用chat/completions，B副用Responses API ============
+# P2-9修复：全局opener复用，避免每次调用重建TCP连接
+_global_opener = None
+def _get_opener():
+    global _global_opener
+    if _global_opener is None:
+        _global_opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    return _global_opener
+
 def call_api_chat(model, prompt, max_tokens, timeout):
     """A主GLM-5.2：chat/completions格式 | P1-1改造：错误分类+可观测性"""
     start_time = time.time()
     payload = json.dumps({"model": model, "messages": [{"role": "user", "content": prompt}], "max_tokens": max_tokens}).encode()
-    proxy_handler = urllib.request.ProxyHandler({})
-    opener = urllib.request.build_opener(proxy_handler)
+    opener = _get_opener()
     req = urllib.request.Request(CHAT_URL, data=payload, headers={"Content-Type": "application/json", "Authorization": f"Bearer {API_KEY}"}, method="POST")
     try:
         with opener.open(req, timeout=timeout) as resp:
@@ -1223,11 +1788,12 @@ COGNITION_POOL_DIR = BASE_DIR / "cognition_pool"
 def _idle_prediction_audit(state):
     """预判层：扫描近期任务，批量预判风险（轻巡检/低内存）"""
     from prediction_layer import predict_task, get_prediction_stats
-    recent = state.get("recent_tasks", [])[-20:]
+    # P1-5修复：recent_tasks不存在，实际是recent_task_stats(含type)
+    recent = state.get("recent_task_stats", [])[-20:]
     count = 0
     for t in recent:
-        if isinstance(t, dict) and "prompt" in t:
-            predict_task(t.get("task_id", "idle"), t.get("type", "exp"), t["prompt"])
+        if isinstance(t, dict) and t.get("type"):
+            predict_task(f"idle_audit_{t.get('type','exp')}", t.get("type", "exp"), f"预判审计:{t.get('type','exp')}类任务")
             count += 1
     stats = get_prediction_stats()
     # P1-2反哺：预判结果统计写入state，供主循环参考
@@ -1262,8 +1828,8 @@ def _idle_cognition_density(state):
                         if not dest.exists():
                             shutil.move(str(f), str(dest))
                             archived += 1
-                    except:
-                        pass
+                    except Exception as e:
+                        log(f"[WARN] 归档移动失败: {e}", "WARN")
                 scanned += 1
         except:
             pass
@@ -1346,7 +1912,7 @@ def _idle_asset_inventory(state):
     if archive_idx.exists():
         try:
             with open(archive_idx) as f:
-                archive_count = len(json.load(f).get("entries", []))
+                archive_count = len(json.load(f).get("docs", json.load(f).get("entries", [])))  # P1-10修复：兼容docs和entries
         except:
             pass
     # P1-2反哺：资产统计写入state
@@ -1769,57 +2335,60 @@ TASK_MODEL_ROUTING = {
     "deep": "A",   # 深度推演→A主（需要最强深度推理）
     "l4": "A",     # 成品转化→A主（需要最高质量输出）
     "cog": "C",    # 认知沉淀→C中（中度推理够用）
-    "eng": "C",    # 工程方案→C中（架构设计中度可扛）
-    "exp": "C",    # 实验探索→C中（探索类中度合适）
+    "eng": "A",    # 工程方案→A主（架构设计需要深度推理，A模型余量充足）
+    "exp": "B",    # 实验探索→B轻（轻量高速，发散探索适配，B恢复后启用）
     "archive": "B",# 批量归档→B轻（重复批量操作）
     "asset": "B",  # 资产盘点→B轻（轻量批量）
     "image": "B",  # 识图解析→B轻（多模态能力）
 }
 
 def select_engine(state, task_type="exp"):
-    # P0-4：每日调用时间窗口——每天10点之前不调用任何模型API
+    """P0-2修复：额度检查+in_flight预占原子化，返回(engine_key, model, in_flight_estimate)"""
     if state.get("daily_start_hour_enabled", False):
         start_hour = state.get("daily_start_hour", 10)
         current_hour = datetime.now().hour
         if current_hour < start_hour:
-            return None, None
-    # 强制模型切换（施子手动调度）
+            return None, None, 0
+    # 注意：额度周期按10点重置（引擎日），自然日消耗只做统计观察，不做熔断
+    # 0-10点灰色时段：用昨天周期剩余额度，消耗计入今天统计，不停跑
     force = state.get("force_model", "")
     now = time.time()
+    cfg = TASK_CONFIG.get(task_type, TASK_CONFIG["exp"])
+    in_flight_estimate = int(cfg["max_tokens"] * 0.5)
     with state_lock:
-        a_fused = state["engine_a"]["fuse_until"] > now
-        b_fused = state["engine_b"]["fuse_until"] > now
-        c_fused = state.get("engine_c", {}).get("fuse_until", 0) > now
-        # P0-5：额度检查包含in_flight_tokens（正在执行的任务预占额度），避免并发超支
-        a_used = state["engine_a"]["tokens_used"] + state["engine_a"].get("in_flight_tokens", 0)
-        b_used = state["engine_b"]["tokens_used"] + state["engine_b"].get("in_flight_tokens", 0)
-        c_used = state.get("engine_c", {}).get("tokens_used", 0) + state.get("engine_c", {}).get("in_flight_tokens", 0)
-        a_full = a_used >= SWITCH_THRESHOLD_A
-        b_full = b_used >= DAILY_BUDGET_B
-        c_full = c_used >= DAILY_BUDGET_B
-    if force == "A" and not a_full and not a_fused:
-        return "engine_a", MODEL_A
-    if force == "C" and not c_full and not c_fused:
-        return "engine_c", MODEL_C
-    if force == "B" and not b_full and not b_fused:
-        return "engine_b", MODEL_B
-    # 三级智能分流：按任务类型选首选，不可用则逐级降级
-    preferred = TASK_MODEL_ROUTING.get(task_type, "C")
-    order = []
-    if preferred == "A":
-        order = ["A", "C", "B"]
-    elif preferred == "C":
-        order = ["C", "A", "B"]
-    else:
-        order = ["B", "C", "A"]
-    for tier in order:
-        if tier == "A" and not a_full and not a_fused:
-            return "engine_a", MODEL_A
-        if tier == "C" and not c_full and not c_fused:
-            return "engine_c", MODEL_C
-        if tier == "B" and not b_full and not b_fused:
-            return "engine_b", MODEL_B
-    return None, None
+        # P2优化：用字典+循环代替a/b/c重复代码
+        eng_info = {}
+        for key, model_key, threshold in [("engine_a", "A", SWITCH_THRESHOLD_A), ("engine_b", "B", DAILY_BUDGET_B), ("engine_c", "C", DAILY_BUDGET_B)]:
+            e = state.get(key, {})
+            used = e.get("tokens_used", 0) + e.get("in_flight_tokens", 0)
+            eng_info[model_key] = {
+                "key": key,
+                "fused": e.get("fuse_until", 0) > now,
+                "full": used >= threshold,
+                "model": {"A": MODEL_A, "B": MODEL_B, "C": MODEL_C}[model_key],
+            }
+        # 确定目标引擎（在锁内完成判断+预占）
+        target = None
+        target_model = None
+        if force in ("A", "B", "C") and not eng_info[force]["full"] and not eng_info[force]["fused"]:
+            target, target_model = eng_info[force]["key"], eng_info[force]["model"]
+        else:
+            preferred = TASK_MODEL_ROUTING.get(task_type, "C")
+            if preferred == "A":
+                order = ["A", "C", "B"]
+            elif preferred == "C":
+                order = ["C", "A", "B"]
+            else:
+                order = ["B", "C", "A"]
+            for tier in order:
+                info = eng_info[tier]
+                if not info["full"] and not info["fused"]:
+                    target, target_model = info["key"], info["model"]
+                    break
+        if target:
+            state[target]["in_flight_tokens"] = state[target].get("in_flight_tokens", 0) + in_flight_estimate
+            return target, target_model, in_flight_estimate
+        return None, None, 0
 
 # ============ 单任务执行 ============
 def execute_single_api(task_id, prompt, state, task_type="exp"):
@@ -1837,14 +2406,11 @@ def execute_single_api(task_id, prompt, state, task_type="exp"):
     except Exception:
         pass  # 复用匹配失败不影响主流程
     # 三级智能分流：按任务类型选模型，不可用逐级降级
-    engine_key, model = select_engine(state, task_type)
+    engine_key, model, in_flight_estimate = select_engine(state, task_type)
     if not engine_key:
         return {"task_id": task_id, "status": "skipped", "reason": "额度耗尽", "task_type": task_type}
     label = "A主" if engine_key == "engine_a" else ("C中" if engine_key == "engine_c" else "B轻")
-    # P0-5：预占in_flight_tokens，避免并发超支（按max_tokens的50%估算）
-    in_flight_estimate = int(cfg["max_tokens"] * 0.5)
-    with state_lock:
-        state[engine_key]["in_flight_tokens"] = state[engine_key].get("in_flight_tokens", 0) + in_flight_estimate
+    # P0-2：in_flight已在select_engine内原子预占
     start_time = time.time()
     for attempt in range(1, MAX_RETRIES + 1):
         try:
@@ -1872,9 +2438,14 @@ def execute_single_api(task_id, prompt, state, task_type="exp"):
                     state["waste_count"] += 1
                     state["reasoning_tokens_total"] += result.get("reasoning_tokens", 0)
                     state[engine_key]["tokens_used"] += result.get("total_tokens", 0)
+                    # P1-3修复：释放第一次的in_flight预占
+                    state[engine_key]["in_flight_tokens"] = max(0, state[engine_key].get("in_flight_tokens", 0) - in_flight_estimate)
                 save_state(state)
                 # P1-3：重试时加降推理提示，避免再次废稿
                 retry_prompt = prompt + "\n\n【重要】请直接给出实质性结论和具体内容，不要进行冗长的推理过程，正文内容必须充实。"
+                # P1-3修复：重新预占第二次请求的in_flight
+                with state_lock:
+                    state[engine_key]["in_flight_tokens"] = state[engine_key].get("in_flight_tokens", 0) + in_flight_estimate
                 result = call_api_chat(model, retry_prompt, cfg["max_tokens"], cfg["timeout"])
                 # P1-3：重试后检查是否成功
                 if not result.get("success", False):
@@ -1892,14 +2463,35 @@ def execute_single_api(task_id, prompt, state, task_type="exp"):
                 eng["tokens_used"] += total
                 eng["requests"] += 1
                 eng["failures"] = 0
+                # L2坑修复：累加自然日消耗（0点重置，与平台计费对齐）
+                state["natural_day_used"] = state.get("natural_day_used", 0) + total
                 eng["auth_failures"] = 0  # P1-3：成功时重置鉴权失败计数
                 # P0-5：释放in_flight预占
                 eng["in_flight_tokens"] = max(0, eng.get("in_flight_tokens", 0) - in_flight_estimate)
                 state["total_completed"] += 1
+                state["tasks_completed"] = state["total_completed"]  # P0-9：保持旧字段同步
                 state["reasoning_tokens_total"] += result.get("reasoning_tokens", 0)
             save_state(state)
             log(f"[OK] {label} {task_id} +{total}tok {duration:.1f}s | {content[:50]}...")
             result_data = {"task_id": task_id, "status": "success", "content": content, "tokens": total, "engine": engine_key, "duration": duration, "task_type": task_type}
+            # P0-9修复：基于产出内容估算增量分，不再硬编码默认50
+            _clen = len(content)
+            if _clen < 200:
+                _inc = 20
+            elif _clen < 500:
+                _inc = 35
+            elif _clen < 1000:
+                _inc = 50
+            elif _clen < 2000:
+                _inc = 65
+            elif _clen < 4000:
+                _inc = 75
+            else:
+                _inc = 85
+            _reason_ratio = result.get("reasoning_tokens", 0) / max(total, 1)
+            if _reason_ratio > 0.3:
+                _inc = min(100, _inc + 10)
+            result_data["increment_score"] = _inc
             # 预判层：事后验证，记录误差
             try:
                 verify_prediction(prediction, result_data)
@@ -1908,31 +2500,35 @@ def execute_single_api(task_id, prompt, state, task_type="exp"):
             return result_data
         except Exception as e:
             with state_lock:
-                # P1-3：错误分类熔断
+                # P0-2修复：错误分类熔断，修改fuse_until必须在state_lock内并立即save_state
                 err_type = e.error_type if isinstance(e, APIError) else "unknown"
+                # P0修复：去掉内层嵌套锁（外层已有state_lock，RLock虽不死锁但冗余）
                 eng = state[engine_key]
                 if err_type == "auth_403":
-                    # 403独立计数，连续2次就熔断120秒
                     eng["auth_failures"] = eng.get("auth_failures", 0) + 1
                     if eng["auth_failures"] >= 2:
                         eng["fuse_until"] = time.time() + 120
                         state["self_heal_count"] += 1
                         log(f"[熔断] {label} 403连续{eng['auth_failures']}次，熔断120秒", "WARN")
                 else:
-                    # 传输类错误（超时/连接/5xx）用原阈值
                     eng["failures"] += 1
-                    # P1-2修复：非403错误不重置auth_failures，避免403熔断失效
                     if eng["failures"] >= FUSE_THRESHOLD:
                         cooldown = state.get("fuse_cooldown_override", FUSE_COOLDOWN)
                         eng["fuse_until"] = time.time() + cooldown
                         state["self_heal_count"] += 1
                         log(f"[熔断] {label} 传输错误连续{eng['failures']}次，熔断{cooldown}秒", "WARN")
+                # P0-2修复：熔断状态修改后立即保存，避免被旧状态覆盖
+                try:
+                    save_state(state)
+                except:
+                    pass
                 # P1-4：失败请求token估算，考虑prompt长度和max_tokens
                 # 按prompt长度估算（中文约1.5字/token）和max_tokens的30%取较大值
                 prompt_estimate = max(500, int(len(prompt) / 1.5))
                 max_tokens_estimate = int(cfg["max_tokens"] * 0.3)
                 fail_estimated = max(prompt_estimate, max_tokens_estimate)
-                eng["tokens_used"] += fail_estimated
+                # P1-7修复：失败请求(429/超时/连接错误)服务端通常不计费，不加到tokens_used额度
+                # 只记录到failed_tokens_estimated用于统计分析
                 state["failed_tokens_estimated"] = state.get("failed_tokens_estimated", 0) + fail_estimated
                 # P0-5：释放in_flight预占
                 eng["in_flight_tokens"] = max(0, eng.get("in_flight_tokens", 0) - in_flight_estimate)
@@ -1968,15 +2564,32 @@ def execute_single_api(task_id, prompt, state, task_type="exp"):
                     log(f"[重试] 未知错误，{wait}秒后重试", "WARN")
                 time.sleep(wait)
                 # P0修复：重试时强制重新select_engine，不硬连已熔断的B
-                new_key, new_model = select_engine(state)
+                new_key, new_model, new_estimate = select_engine(state, task_type)
                 if new_key:
-                    engine_key, model = new_key, new_model
+                    # P0-2：切换引擎时，旧引擎in_flight已在失败分支释放，新引擎已在select_engine内预占
+                    engine_key, model, in_flight_estimate = new_key, new_model, new_estimate
                     label = "A主" if engine_key == "engine_a" else ("C中" if engine_key == "engine_c" else "B轻")
                 # 如果select_engine返回None（双引擎都不可用），保持原引擎继续尝试
     with state_lock:
         state["tasks_failed"] += 1
+        # 失败指纹入库：记录错误类型+任务类型+模型，连续3次标记需重构
+        try:
+            err_type_local = err_type if 'err_type' in dir() else "unknown"
+        except:
+            err_type_local = "unknown"
+        fp_key = f"{err_type_local}_{task_type}_{engine_key}"
+        fps = state.setdefault("failure_fingerprints", {})
+        fp = fps.get(fp_key, {"count": 0, "last_time": "", "need_rebuild": False})
+        fp["count"] += 1
+        fp["last_time"] = datetime.now().isoformat()
+        fp["last_err"] = str(e)[:100] if 'e' in dir() else ""
+        if fp["count"] >= 3 and not fp["need_rebuild"]:
+            fp["need_rebuild"] = True
+            log(f"[失败指纹] {fp_key} 连续失败{fp['count']}次，标记需重构", "WARN")
+        fps[fp_key] = fp
+        state["failure_fingerprints"] = fps
     save_state(state)
-    fail_result = {"task_id": task_id, "status": "failed", "duration": time.time() - start_time, "task_type": task_type}
+    fail_result = {"task_id": task_id, "status": "failed", "duration": time.time() - start_time, "task_type": task_type, "err_type": err_type_local if 'err_type_local' in dir() else "unknown"}
     # 预判层：失败后也验证
     try:
         verify_prediction(prediction, fail_result)
@@ -1988,24 +2601,33 @@ def execute_single_api(task_id, prompt, state, task_type="exp"):
 _cached_cognitions = []  # 缓存的Top核心认知
 
 def load_top_cognitions(n=5):
-    """启动时加载Top n条核心认知，用于注入新任务prompt"""
+    """启动时加载Top n条核心认知，用于注入新任务prompt。P1修复：优先S/A/B级，跳过C级，避免低质认知污染上下文"""
     global _cached_cognitions
     try:
-        files = sorted(COGNITION_POOL.glob("cog_*.json"), key=lambda x: x.stat().st_mtime, reverse=True)[:30]
-        cogs = []
+        files = sorted(COGNITION_POOL.glob("cog_*.json"), key=lambda x: x.stat().st_mtime, reverse=True)[:50]
+        # 按分级收集：S/A/B优先，无级备选，C级跳过
+        high_grade = []  # S/A/B
+        no_grade = []    # 无级（旧认知）
         for f in files:
             with open(f) as fh:
                 data = json.load(fh)
             for c in data.get("cognitions", []):
                 text = c["text"].strip()
-                if len(text) > 15 and text not in cogs:
-                    cogs.append(text)
-                    if len(cogs) >= n:
-                        break
-            if len(cogs) >= n:
+                grade = c.get("density_grade", "无")
+                if len(text) > 15 and text not in high_grade and text not in no_grade:
+                    if grade in ("S", "A", "B"):
+                        high_grade.append(text)
+                    elif grade == "无" or not grade:
+                        no_grade.append(text)
+                    # C级跳过，不注入
+            if len(high_grade) >= n * 2:  # 多收集一些备用
                 break
+        # 优先用高分级，不够再补无级
+        cogs = high_grade[:n]
+        if len(cogs) < n:
+            cogs.extend(no_grade[:n - len(cogs)])
         _cached_cognitions = cogs
-        log(f"[通神] 加载{len(cogs)}条核心认知用于任务注入")
+        log(f"[通神] 加载{len(cogs)}条核心认知(S/A/B优先，跳过C级)用于任务注入")
         return cogs
     except Exception as e:
         log(f"[通神] 认知加载失败: {e}", "WARN")
@@ -2125,7 +2747,32 @@ def main():
     # 写入PID文件（供看门狗检测）
     with open(pid_file, "w") as f:
         f.write(str(os.getpid()))
+    # P2修复：自动备份机制——启动时备份主文件，保留最近3个版本，支持一键回滚
+    try:
+        import shutil as _sh
+        _backup_dir = BASE_DIR / "backups"
+        _backup_dir.mkdir(exist_ok=True)
+        _main_file = BASE_DIR / "autonomy" / "engine_zhuan1.py"
+        if _main_file.exists():
+            _backup_name = f"engine_zhuan1_{datetime.now().strftime('%Y%m%d_%H%M%S')}.py.bak"
+            _sh.copy2(_main_file, _backup_dir / _backup_name)
+            # 只保留最近3个版本
+            _backups = sorted(_backup_dir.glob("engine_zhuan1_*.py.bak"), key=lambda p: p.stat().st_mtime, reverse=True)
+            for _old_bak in _backups[3:]:
+                _old_bak.unlink()
+            log(f"[自动备份] 主文件已备份为{_backup_name}，保留最近3个版本", "INFO")
+    except Exception as _be:
+        log(f"[自动备份] 异常: {_be}", "WARN")
     state = load_state()
+    # P2优化：记录启动时间，用于运行时长统计和沙箱回收规律分析
+    state["last_start_time"] = time.time()
+    state["last_start_time_str"] = datetime.now().isoformat()
+    prev_start = state.get("last_start_time", 0)
+    if prev_start > 0:
+        uptime = int((time.time() - prev_start) / 60)
+        state.setdefault("uptime_history", []).append({"start": state.get("last_start_time_str", ""), "uptime_minutes": uptime})
+        state["uptime_history"] = state["uptime_history"][-50:]  # 保留最近50次
+        log(f"[启动] 上次运行{uptime}分钟，历史运行记录{len(state.get('uptime_history',[]))}次")
     # V4.1：沙箱回收事件检测——上次心跳距今超过15分钟，说明中间被沙箱回收过
     last_heartbeat = state.get("last_heartbeat", 0)
     now_ts = time.time()
@@ -2140,11 +2787,59 @@ def main():
         state["sandbox_recovery_count"] = state.get("sandbox_recovery_count", 0) + 1
         log(f"[START] ⚠️ 检测到沙箱回收：上次心跳{recovery_minutes}分钟前，累计回收{state['sandbox_recovery_count']}次", "WARN")
     state["last_heartbeat"] = now_ts
+    # P1-4修复：启动时校准engine_mode/idle_phase，有可用模型则重置为normal
+    if state.get("engine_mode") == "idle":
+        state["engine_mode"] = "normal"
+        state["idle_phase"] = None
+        log("[START] P1-4: 校准engine_mode idle→normal, idle_phase重置")
+    # P0-5修复：启动时无条件清零in_flight_tokens——进程重启后所有进行中任务已死，持久化的in_flight是僵尸值
+    for ek in ["engine_a", "engine_b", "engine_c"]:
+        if state.get(ek, {}).get("in_flight_tokens", 0) > 0:
+            old = state[ek]["in_flight_tokens"]
+            state[ek]["in_flight_tokens"] = 0
+            log(f"[START] 清零僵尸in_flight: {ek} {old}→0")
     save_state(state)
     # P0-2修复：启动时强制同步version与realm
     if state.get("realm") and state.get("version") != state["realm"]:
         state["version"] = state["realm"]
         save_state(state)
+    # P2修复：启动自检流程（状态完整性+任务池合法性+API连通性）
+    try:
+        _self_check = {"state_ok": True, "task_pool_ok": True, "api_ok": "skip", "issues": []}
+        # 1. 状态文件完整性校验
+        _required_keys = ["zhuan_count", "total_completed", "cognition_count", "engine_a", "engine_b", "nine_dim_progress"]
+        for _k in _required_keys:
+            if _k not in state:
+                _self_check["state_ok"] = False
+                _self_check["issues"].append(f"状态缺失关键字段: {_k}")
+        # 2. 任务池合法性校验
+        if len(SYSTEM_TASKS) < 5:
+            _self_check["task_pool_ok"] = False
+            _self_check["issues"].append(f"任务池模板过少: {len(SYSTEM_TASKS)}个")
+        _invalid_tasks = [t for t in SYSTEM_TASKS if "type" not in t or "prompt" not in t]
+        if _invalid_tasks:
+            _self_check["task_pool_ok"] = False
+            _self_check["issues"].append(f"任务池有{len(_invalid_tasks)}个无效模板")
+        # 3. API连通性（非阻塞检测，启动时不等待，避免沙箱回收）
+        _self_check["api_ok"] = "deferred"  # 延迟到运行时检测
+        def _check_api_later():
+            try:
+                import urllib.request as _ur
+                _test_req = _ur.Request(CHAT_URL, data=json.dumps({"model": MODEL_A, "messages":[{"role":"user","content":"ping"}], "max_tokens": 1}).encode(),
+                                         headers={"Content-Type":"application/json", "Authorization": f"Bearer {API_KEY}"})
+                _test_resp = _ur.urlopen(_test_req, timeout=3)
+                state["last_startup_check"]["api_ok"] = "ok" if _test_resp.status == 200 else "fail"
+            except Exception as _ae:
+                state["last_startup_check"]["api_ok"] = f"fail: {type(_ae).__name__}"
+        import threading as _thr
+        _thr.Thread(target=_check_api_later, daemon=True).start()
+        state["last_startup_check"] = _self_check
+        if _self_check["issues"]:
+            log(f"[启动自检] ⚠️ 发现{len(_self_check['issues'])}个问题: {'; '.join(_self_check['issues'][:3])}", "WARN")
+        else:
+            log(f"[启动自检] ✅ 全部通过 (状态OK 任务池{len(SYSTEM_TASKS)}个 API:{_self_check['api_ok']})", "INFO")
+    except Exception as _sce:
+        log(f"[启动自检] 异常: {_sce}", "WARN")
     # 启动时读取state里的并发数（模型自进化可能已调整），没有则用默认值
     startup_concurrency = state.get("concurrency_override", CONCURRENCY)
     log(f"[START] {ENGINE_VERSION} 启动 | 并发:{startup_concurrency} (state={state.get('concurrency_override','默认')})")
@@ -2161,7 +2856,37 @@ def main():
     try:
         while True:
             try:
+                rotate_log_if_needed()
+                # 沙箱存活心跳：每小时记录一次，用于实测沙箱回收时间
+                try:
+                    heartbeat_file = BASE_DIR / "data" / "sandbox_heartbeat.json"
+                    now_ts = int(time.time())
+                    hb = {"last_heartbeat": now_ts, "last_heartbeat_time": datetime.now().isoformat(), "current_zhuan": state.get("zhuan_count", 0)}
+                    if heartbeat_file.exists():
+                        old_hb = json.load(open(heartbeat_file))
+                        hb["start_time"] = old_hb.get("start_time", now_ts)
+                        hb["start_time_str"] = old_hb.get("start_time_str", datetime.now().isoformat())
+                        hb["total_heartbeats"] = old_hb.get("total_heartbeats", 0) + 1
+                        # 计算距上次心跳间隔，超过1小时说明可能被回收过
+                        last = old_hb.get("last_heartbeat", now_ts)
+                        gap_hours = (now_ts - last) / 3600
+                        if gap_hours > 1.5:
+                            hb["recycle_detected"] = True
+                            hb["last_gap_hours"] = round(gap_hours, 2)
+                            # 记录回收事件
+                            events = old_hb.get("recycle_events", [])
+                            events.append({"recovered_at": datetime.now().isoformat(), "gap_hours": round(gap_hours, 2), "last_heartbeat_before": old_hb.get("last_heartbeat_time")})
+                            hb["recycle_events"] = events[-20:]  # 保留最近20次
+                            log(f"[沙箱心跳] 检测到沙箱回收，间隔{gap_hours:.1f}小时", "WARN")
+                    else:
+                        hb["start_time"] = now_ts
+                        hb["start_time_str"] = datetime.now().isoformat()
+                        hb["total_heartbeats"] = 1
+                    json.dump(hb, open(heartbeat_file, 'w'), indent=2, ensure_ascii=False)
+                except Exception as he:
+                    pass
                 check_daily_reset(state)
+                check_natural_day_reset(state)  # L2坑：自然日0点重置，与平台计费对齐
                 # 预判层自循环：攒够100条自动批量校验+规则迭代
                 pending_verify = get_pending_verify_count()
                 if pending_verify >= 100:
@@ -2252,14 +2977,15 @@ def main():
                             result = future.result()
                         except Exception as e:
                             log(f"[TASK-ERR] 任务异常: {type(e).__name__}: {e}", "ERROR")
-                            state["tasks_failed"] += 1
+                            with state_lock:
+                                state["tasks_failed"] += 1
                             # 阶段一突破：失败认知蒸馏——失败不是垃圾，是避坑经验
                             try:
                                 fail_cog = extract_failure_cognition(
                                     task_id=f"fail_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
                                     task_type=task_type,
                                     error_msg=f"{type(e).__name__}: {e}",
-                                    task_content=raw_prompt[:300] if 'raw_prompt' in dir() else ""
+                                    task_content=raw_prompt[:300] if raw_prompt else ""
                                 )
                                 save_failure_cognition(fail_cog)
                                 log(f"[失败蒸馏] {fail_cog['failure_type']} | 避坑价值{fail_cog['value_score']}分 | {fail_cog['phenomenon'][:40]}")
@@ -2272,7 +2998,8 @@ def main():
                         if result["status"] == "success":
                             cultivation_pipeline(result["task_id"], task_type, result["content"], state)
                             record_task_stat(state, task_type, "success", increment_score=result.get("increment_score", 50), is_duplicate=result.get("is_duplicate", False))
-                            state["current_zhuan_tasks"] += 1
+                            with state_lock:
+                                state["current_zhuan_tasks"] += 1
                             total_task_counter += 1
                             if state["current_zhuan_tasks"] >= ZHUAN_TASK_THRESHOLD:
                                 complete_zhuan(state)
@@ -2281,7 +3008,7 @@ def main():
                             record_task_stat(state, task_type, "failed")
                             log(f"[SKIP] {result.get('task_id','?')} 状态:{result['status']}")
                 else:
-                    engine_key, _ = select_engine(state, "exp")
+                    engine_key, _, _ = select_engine(state, "exp")
                     # V4.0：额度平滑转阴——85%降并发，95%停新任务，反者道之动不到顶就转
                     a_used = state.get("engine_a", {}).get("tokens_used", 0)
                     c_used = state.get("engine_c", {}).get("tokens_used", 0)
@@ -2302,23 +3029,59 @@ def main():
                         if should_continue_idle:
                             time.sleep(30)
                         continue
-                    # P1-7修复：并发数热加载+上下限校验（1-5路）
-                    target_conc = max(1, min(5, state.get("concurrency_override", CONCURRENCY)))
+                    # P1-2修复：并发数热加载+上下限校验（1-5路）
+                    # 不重建executor（shutdown会丢失在途任务），实际并发由每轮提交任务数控制
+                    # L2坑修复：0-10点盲区保守模式，并发上限3路
+                    conc_cap = 3 if is_blind_zone() else 5
+                    target_conc = max(1, min(conc_cap, state.get("concurrency_override", CONCURRENCY)))
                     if target_conc != state.get("concurrency_override"):
                         state["concurrency_override"] = target_conc
                     if target_conc != executor._max_workers:
-                        log(f"[EVOLVE] 并发数调整: {executor._max_workers}→{target_conc}")
-                        executor.shutdown(wait=False)  # P1-7：不等待，避免长任务阻塞
-                        executor = ThreadPoolExecutor(max_workers=target_conc, thread_name_prefix="Worker")
+                        log(f"[EVOLVE] 并发数调整: {executor._max_workers}→{target_conc} (控制提交数，不重建executor)")
                     future_map = {}
+                    # 双轨调度：主线(goal_tasks按优先级) + 探索(任务池随机)
+                    # 动态配额：goal_tasks>=3时3主线+2探索；goal_tasks=1-2时全主线；goal_tasks=0时全探索
+                    with state_lock:
+                        raw_goals = state.get("goal_tasks", [])
+                        # P1修复：goal_tasks空时自动生成保底主线任务（系统自检与优化）
+                        if not raw_goals:
+                            last_fallback = state.get("last_fallback_goal_gen", 0)
+                            if time.time() - last_fallback > 600:  # 10分钟内不重复生成
+                                fallback_tasks = [
+                                    {"type": "eng", "prompt": "审查当前引擎状态文件的一致性，检查九维计数、任务完成数、认知数是否存在逻辑矛盾，输出具体问题清单", "priority": "P1", "source": "fallback_self_check"},
+                                    {"type": "cog", "prompt": "从认知池中筛选最近20条C级低密认知，分析重复模式，提出合并或清理方案", "priority": "P2", "source": "fallback_cognition_cleanup"},
+                                    {"type": "eng", "prompt": "检查任务池模板的使用分布，识别长期未使用或重复率过高的模板，提出优化建议", "priority": "P2", "source": "fallback_task_pool_audit"},
+                                    {"type": "deep", "prompt": "从反者道之动的底层逻辑推演当前引擎架构的阴阳平衡点，分析哪些规则需要制衡机制，输出具体的制衡方案", "priority": "P1", "source": "fallback_philosophy_arch"},
+                                    {"type": "l4", "prompt": "将最近10条高密度认知转化为可执行的引擎优化SOP，包含具体操作步骤、验证方法和预期效果", "priority": "P1", "source": "fallback_l4_sop"},
+                                ]
+                                import random as _rnd
+                                chosen_fallback = _rnd.choice(fallback_tasks)
+                                raw_goals.append(chosen_fallback)
+                                state["last_fallback_goal_gen"] = time.time()
+                                log(f"[保底主线] goal_tasks为空，自动生成保底任务: {chosen_fallback['prompt'][:40]}", "INFO")
+                        # 按优先级排序：P0>P1>P2>无标记
+                        def _goal_priority(g):
+                            p = g.get("priority", "P3")
+                            return {"P0":0, "P1":1, "P2":2}.get(p, 3)
+                        sorted_goals = sorted(raw_goals, key=_goal_priority)
+                        state["goal_tasks"] = sorted_goals
+                        goal_count = len(sorted_goals)
+                    if goal_count >= 3:
+                        main_quota = min(3, target_conc)
+                    elif goal_count >= 1:
+                        main_quota = min(goal_count, target_conc)
+                    else:
+                        main_quota = 0
+                    explore_quota = target_conc - main_quota
+                    if goal_count > 0:
+                        log(f"[双轨] 主线{main_quota}路(待办{goal_count}个) + 探索{explore_quota}路")
                     for i in range(target_conc):
                         task_counter += 1
                         task_id = f"selfgen_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{task_counter:04d}"
-                        # P1-6修复：优先消费goal_tasks，没有才用系统任务
-                        goal_tasks = state.get("goal_tasks", [])
+                        # 双轨调度：前main_quota个跑主线，后面跑探索
                         is_goal_task = False
                         current_gt = None
-                        if goal_tasks:
+                        if i < main_quota:
                             with state_lock:
                                 if state.get("goal_tasks"):
                                     current_gt = state["goal_tasks"].pop(0)
@@ -2348,7 +3111,8 @@ def main():
                             task_info = future_map.get(future, {"type": "unknown", "is_goal": False, "gt": None})
                             task_type = task_info["type"]
                             log(f"[TASK-ERR] 任务异常: {type(e).__name__}: {e}", "ERROR")
-                            state["tasks_failed"] += 1
+                            with state_lock:
+                                state["tasks_failed"] += 1
                             # P0-3修复：goal_task失败放回队列重试，超过3次移入死信队列
                             if task_info["is_goal"] and task_info["gt"]:
                                 gt = task_info["gt"]
@@ -2367,7 +3131,7 @@ def main():
                                     task_id=f"fail_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
                                     task_type=task_type,
                                     error_msg=f"{type(e).__name__}: {e}",
-                                    task_content=raw_prompt[:300] if 'raw_prompt' in dir() else ""
+                                    task_content=raw_prompt[:300] if raw_prompt else ""
                                 )
                                 save_failure_cognition(fail_cog)
                                 log(f"[失败蒸馏] {fail_cog['failure_type']} | 避坑价值{fail_cog['value_score']}分 | {fail_cog['phenomenon'][:40]}")
@@ -2397,8 +3161,9 @@ def main():
                                     log(f"[GOAL-DEAD] 目标任务重试{gt['retry_count']}次失败，移入死信队列", "ERROR")
                         # P0-4修复：无论任务来源，成功后都计数
                         if result["status"] == "success":
-                            state["current_zhuan_tasks"] += 1
-                            total_task_counter += 1  # P1-4修复：成功任务计数
+                            with state_lock:
+                                state["current_zhuan_tasks"] += 1
+                            total_task_counter += 1
                             if state["current_zhuan_tasks"] >= ZHUAN_TASK_THRESHOLD:
                                 complete_zhuan(state)
                                 load_top_cognitions(5)  # P1-7修复：每转结束刷新认知缓存
@@ -2418,6 +3183,20 @@ def main():
             except Exception as e:
                 log(f"[LOOP-ERR] {type(e).__name__}: {e}", "ERROR")
                 time.sleep(5)
+    except Exception as _fatal_e:
+        import traceback as _tb
+        _tb_str = _tb.format_exc()
+        log(f"[FATAL] 引擎致命异常退出: {type(_fatal_e).__name__}: {_fatal_e}\n{_tb_str}", "ERROR")
+        # P1修复：引擎崩溃时发飞书告警（含堆栈信息）
+        try:
+            import urllib.request as _ur, json as _js
+            _webhook = "https://open.feishu.cn/open-apis/bot/v2/hook/1ed1cd06-9300-4712-89a3-11cba716e0e9"
+            _msg = {"msg_type":"text","content":{"text":f"【凡心引擎告警】引擎致命异常退出！\n异常: {type(_fatal_e).__name__}: {str(_fatal_e)[:200]}\n堆栈: {_tb_str[:500]}\n转数: {state.get('zhuan_count',0)} 完成: {state.get('total_completed',0)}\n请检查并重启引擎"}}
+            _req = _ur.Request(_webhook, data=_js.dumps(_msg).encode(), headers={"Content-Type":"application/json"})
+            _ur.urlopen(_req, timeout=10)
+            log("[飞书] 崩溃告警已发送", "INFO")
+        except Exception as _fe:
+            log(f"[飞书] 崩溃告警发送失败: {_fe}", "WARN")
     except KeyboardInterrupt:
         log("[STOP] 收到中断信号")
     finally:

@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_224123_0009",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "针对“基建脚本禁用简化版SQL导致列不匹配”这一生产事件，我们可以从认知误区、底层逻辑教训以及工程实践三个维度进行深度复盘，并输出一份标准的检查清单",
+      "source": "selfgen_20260817_224123_0009",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "在处理基建脚本（如禁用某项功能、下线某张表、过滤某些数据）时，开发人员往往容易陷入以下认知陷阱：",
+      "source": "selfgen_20260817_224123_0009",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "1. **“禁用即简化”的惯性思维**",
+      "source": "selfgen_20260817_224123_0009",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "* **误区**：认为“禁用脚本”只是临时或过渡操作，不需要像核心业务SQL那样严谨",
+      "source": "selfgen_20260817_224123_0009",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:42:27.443871",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:09.073193"
+}

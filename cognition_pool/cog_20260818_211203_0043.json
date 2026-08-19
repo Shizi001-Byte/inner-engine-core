@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_211040_0043",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】中的 CONST-1（精气神三元迁移框架）与 A0 锚定，针对 V7.5 方舟效能引擎中“多线程 API 调用后串行后处理”的场景，直接推演状态一致性方案与完整锁机制",
+      "source": "selfgen_20260818_211040_0043",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 7,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在多线程并发调用大模型 API，随后由主线程进行串行后处理的架构中，核心矛盾在于**生产者（并发线程）与消费者（后处理线程）的速度差与内存可见性差**",
+      "source": "selfgen_20260818_211040_0043",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **写写覆盖（线程 A/B 竞态）**：若多线程向同一个共享变量（如全局结果列表或字典）追加结果，不施加互斥锁会导致底层数据结构指针错乱，线程 B 的写操作覆盖线程 A 的写操作",
+      "source": "selfgen_20260818_211040_0043",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **读写脏读（生产/后处理竞态）**：若后处理线程在读取结果时，某 API 线程正在写入“半成品”数据（例如：已写入 `task_id`，但还未写入 `response_content`），后处理线程将读到空值或部分结果",
+      "source": "selfgen_20260818_211040_0043",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. **状态错位（旧结果滞留）**：配置修改后未生效，或线程复用导致旧请求结果混入新批次",
+      "source": "selfgen_20260818_211040_0043",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:12:03.136792"
+}

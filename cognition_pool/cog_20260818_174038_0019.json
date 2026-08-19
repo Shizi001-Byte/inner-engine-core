@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_173902_0019",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "超时熔断是负熵输入机制的保险丝：",
+      "source": "selfgen_20260818_173902_0019",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:40:38.348272"
+}

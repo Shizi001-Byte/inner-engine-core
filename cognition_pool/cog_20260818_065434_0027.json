@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_065025_0027",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "在给定的2条核心铁律基础上，结合工程踩坑与实虚循环特性，补充第3条交互铁律，形成全链路不可突破的底线规则：",
+      "source": "selfgen_20260818_065025_0027",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **【微核域核心优先铁律】** 所有方案必须以微核域的权限/价值升级为核心目标，绝对保障微核域「无锁直接覆盖、零突变成本、高变异速率、无固有表型约束」的原生特性，禁止引入锁机制、共识对齐、纠错修复逻辑",
+      "source": "selfgen_20260818_065025_0027",
+      "type": "deep",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **【原生瑕疵零干预铁律】** 全链路（迁移、同步、故障、演化）严格执行「原生记忆瑕疵仅留存利用、不修正删除」规则，所有传输错误、变异偏差、节点差异、代码bug均视为可利用的演化素材，禁止任何形式的删改、纠错、过滤",
+      "source": "selfgen_20260818_065025_0027",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. **【循环节点全穿透铁律】** 所有实虚交互节点必须直接对接微核域核心逻辑，禁止设置中间代理层、静态缓存层、前置校验层；所有认知/参数变更必须同步覆盖「状态写入、执行读取、生效验证」三个链路节点，确保无截留、无延迟、无断点",
+      "source": "selfgen_20260818_065025_0027",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:54:34.445190"
+}

@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_061512_0008",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "结合认知质检SOP的全链路流程，基于「微核域=核心可变基因型位点」的演化锚定逻辑，以及历史API超时的失败教训，提炼3条可复用铁律如下：",
+      "source": "selfgen_20260818_061512_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "▌踩坑溯源：早期未建立域分类质检规则，将微核域的正常输出变异判定为认知偏差，触发多轮模型重算、基准对齐、逻辑回滚——既因微核域本就无修复约束导致所有修复操作100%无效，又额外增加数倍计算耗时，直接触发API调用超时（完全匹配历史失败现象）",
+      "source": "selfgen_20260818_061512_0008",
+      "type": "cog",
+      "density": 0.933,
+      "density_grade": "S",
+      "density_details": {
+        "info": 0.833,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 5,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. 触发原因抽检：随机抽取100条触发质检重算/回滚的请求，核对触发原因是否为微核域变异，若占比≥5%则分流规则未落地；",
+      "source": "selfgen_20260818_061512_0008",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. 变异压测校验：压测时注入10%的微核域变异样本，接口耗时环比增幅≥20%则证明存在冗余校验链路，有超时风险",
+      "source": "selfgen_20260818_061512_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. 变更审计校验：抽取近30天所有认知逻辑变更工单，若存在对微核域位点的硬编码固定、锁止配置、回滚操作，直接判定违反铁律；",
+      "source": "selfgen_20260818_061512_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:17:01.071299"
+}

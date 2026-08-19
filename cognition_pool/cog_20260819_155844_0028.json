@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_155830_0028",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "任何优化执行链路之前，必须先确认“锚点”——即目标、对象、范围、约束、定义是否正确",
+      "source": "selfgen_20260819_155830_0028",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "锚点错了，链路优化得越快，错得越远",
+      "source": "selfgen_20260819_155830_0028",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "看错ID后，后面所有排查动作都建立在“错误对象”上",
+      "source": "selfgen_20260819_155830_0028",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "这一小时不是“排查慢”，而是“高效地做错事”",
+      "source": "selfgen_20260819_155830_0028",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**身体可以更快，但不能替大脑思考；链路可以优化，但不能替锚点纠错",
+      "source": "selfgen_20260819_155830_0028",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:58:44.551131"
+}

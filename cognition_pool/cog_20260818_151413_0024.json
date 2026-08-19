@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_151308_0024",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "：**决策必须串行，执行可以并发",
+      "source": "selfgen_20260818_151308_0024",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "：**变更泵的入口必须串行，泵的出口可以并发",
+      "source": "selfgen_20260818_151308_0024",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "：**自愈网可以并发扫描，但修复决策必须串行",
+      "source": "selfgen_20260818_151308_0024",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "：**工具调用可以并发，但“是否调用、何时调用”必须由脑串行决定",
+      "source": "selfgen_20260818_151308_0024",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:14:13.985298"
+}

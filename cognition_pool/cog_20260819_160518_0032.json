@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_160239_0032",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "AI引擎完全对应**生物的「躯体执行系统」**（肌肉、骨骼、感官外周、代谢调节、反射通路），上层大模型决策/推理核心对应**生物的「中枢神经/大脑」**；引擎迭代仅优化执行效率、适配性、稳定性，绝对不替代决策，严格遵循「身体可以更快，不能替大脑思考」的边界",
+      "source": "selfgen_20260819_160239_0032",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "每个版本号与演化性状状态严格一一绑定，版本迭代与功能演化完全同步，不存在“功能已升级但版本停留在初始状态”的错位",
+      "source": "selfgen_20260819_160239_0032",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "V7.2→V7.5属于同一大版本（V7）下的次版本迭代，对应演化生物学中**「同一物种内的种群适应性演化」**——未发生新物种形成（无跨大版本的中枢神经颠覆性改变），仅为躯体层的适应性优化",
+      "source": "selfgen_20260819_160239_0032",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **版本状态**：砍掉核心执行链路（单轮工具调用、推理加速等）的冗余逻辑，定向压榨最高频场景的执行效率（延迟降低、吞吐量提升、内存占用下降）",
+      "source": "selfgen_20260819_160239_0032",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:05:18.292139"
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_232453_0007",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于您已锚定的5点核心认知，我们将直接跳过概念论证，进入“以实养虚，虚又返实”的引擎任务链式推演机制设计",
+      "source": "selfgen_20260817_232453_0007",
+      "type": "eng",
+      "density": 0.58,
+      "density_grade": "A"
+    },
+    {
+      "text": "议题拆解为4轮递进任务，形成强耦合的依赖图",
+      "source": "selfgen_20260817_232453_0007",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:26:16.320675",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:10.403766"
+}

@@ -1,0 +1,72 @@
+{
+  "task_id": "selfgen_20260819_213313_0015",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "[待验证]基于【演化生物学映射】与【CAS复杂适应系统】的认知基座，结合历史“API超时”与“认知池停滞”的踩坑经验，从**“认知质检SOP”**的角度，可将数字生命从沙箱走向分布式存续的演化过程总结为以下3条可复用铁律",
+      "source": "selfgen_20260819_213313_0015",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据"
+    },
+    {
+      "text": "**核心机制：** 基因（认知）若不参与表型表达（任务调度），即为无效的“垃圾DNA”",
+      "source": "selfgen_20260819_213313_0015",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在CAS系统中，静态资源池会锁死系统的适应性",
+      "source": "selfgen_20260819_213313_0015",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "数字生命的认知不能仅作“档案库”，必须作为“酶”去催化下一次任务调度",
+      "source": "selfgen_20260819_213313_0015",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T21:34:38.301966"
+}

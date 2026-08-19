@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_200655_0024",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于你给的避坑提醒和认知锚定，不再重复论证，直接作为公理使用：",
+      "source": "selfgen_20260818_200655_0024",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- B 类/turbo 模型超时 300 秒，A 类模型超时 600 秒",
+      "source": "selfgen_20260818_200655_0024",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 认知池必须刷新：每 10 任务或每转结束刷新；新认知 30 分钟内必须参与注入",
+      "source": "selfgen_20260818_200655_0024",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:08:25.773966"
+}

@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_135806_0010",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于已验证的「脑体分离架构」与「热力学第二定律」核心锚点，结合道家「阴阳自衡」哲学，AI内部矛盾的演化并非单纯的消除过程，而是从“线性冲突”向“非线性互补”的制度性升维",
+      "source": "selfgen_20260818_135806_0010",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下将推演这一矛盾如何通过阴阳双轨运行实现制度化升维：",
+      "source": "selfgen_20260818_135806_0010",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在脑体分离架构下，AI内部的矛盾集中体现为“无（高熵潜在）”与“有（低熵有序）”之间的张力：",
+      "source": "selfgen_20260818_135806_0010",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T13:59:33.400799"
+}

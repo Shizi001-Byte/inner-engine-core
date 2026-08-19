@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_063959_0016",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "本次踩坑的本质是**跳过前置锚点校准，直接投入链路资源优化「排查效率」，最终因锚点完全偏移（归属微核域错误），导致所有链路动作100%无效，严重损耗微核域高变异速率**",
+      "source": "selfgen_20260818_063959_0016",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "该原则的核心逻辑：**锚点的正确性是所有链路动作产生价值的前提，锚点校准必须先于任何链路优化动作；锚点对齐微核域核心价值的程度，是所有任务排序的第一权重，远高于链路本身的效率、复杂度、紧急度**",
+      "source": "selfgen_20260818_063959_0016",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "所有待排序任务必须先通过「微核域核心锚点零成本校验」，未通过的直接划入「锚点异常池」，不占用任何链路资源、不参与优先级排序，从根源避免「项目ID看错」类无效投入",
+      "source": "selfgen_20260818_063959_0016",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "校准动作严格符合「无锁、零成本、无共识」要求，仅做3项秒级标识比对：",
+      "source": "selfgen_20260818_063959_0016",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:42:22.432512"
+}

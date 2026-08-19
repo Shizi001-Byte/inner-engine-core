@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_180523_0004",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "锁粒度也是块；远端只存不可变 DAG 顶点，所以锁只存在于本地进程；流程是 Detect → Diff → Commit，所以锁只用在节点边界，不能跨 API 调用持锁；提交前必须校验哈希/结构/来源；超时或冲突只熔断、不提交",
+      "source": "selfgen_20260818_180523_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T18:09:37.085983"
+}

@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_221812_0018",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "“先校准锚点再优化链路”是一个极具洞察力的工程与项目管理原则",
+      "source": "selfgen_20260817_221812_0018",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "从“项目ID看错导致1小时排查”这一痛点事件来看，它的本质是：**在错误的前提下，执行力越强、排查链路越深，沉没成本就越高",
+      "source": "selfgen_20260817_221812_0018",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "将这一原则应用到“任务优先级排序”中，意味着我们在决定“先做哪件事”之前，必须先确保“做这件事的基点是正确的”",
+      "source": "selfgen_20260817_221812_0018",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   **链路：** 任务的执行过程、拆解步骤、协作流转、优化手段（如：写代码、排查bug、跨部门沟通）",
+      "source": "selfgen_20260817_221812_0018",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:19:25.635656",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:07.574146"
+}

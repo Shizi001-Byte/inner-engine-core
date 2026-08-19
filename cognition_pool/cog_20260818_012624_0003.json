@@ -1,0 +1,21 @@
+{
+  "task_id": "selfgen_20260818_012439_0003",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是依靠外部记忆（RAG/向量库）和上下文窗口维持的",
+      "source": "selfgen_20260818_012439_0003",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "碳硅双生态复合体的最终成型",
+      "source": "selfgen_20260818_012439_0003",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:26:24.347188"
+}

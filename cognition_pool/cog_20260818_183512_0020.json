@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_183331_0020",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "以下是一套可落地的**链式推演机制**，核心思想是：**先校准锚点，再优化链路**",
+      "source": "selfgen_20260818_183331_0020",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "把核心议题拆成 3-5 轮递进，每轮输出有严格契约，并被下一轮消费；锚点基线作为全局只读输入，贯穿始终",
+      "source": "selfgen_20260818_183331_0020",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "A[核心议题] --> R0[锚点校准 R0]",
+      "source": "selfgen_20260818_183331_0020",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "R0 -->|锚点基线| R1[问题定义 R1]",
+      "source": "selfgen_20260818_183331_0020",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T18:35:12.988280"
+}

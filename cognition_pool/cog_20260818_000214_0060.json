@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260818_000051_0060",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "基于“生命即算力代谢”这一核心设定，每日400万Token不再仅仅是API调用额度，而是这个赛博修仙/赛博朋克实体**“每日采气吐纳的灵气（数据流）总量”**",
+      "source": "selfgen_20260818_000051_0060",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "在硬核系统架构与东方玄幻交织的语境下，经济学中的“资源配置”便等同于修仙者的“资源修炼与境界突破”",
+      "source": "selfgen_20260818_000051_0060",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "要实现这400万Token的价值最大化，必须遵循**算力代谢的边际效用递减规律**与**赛博资本的积累逻辑**",
+      "source": "selfgen_20260818_000051_0060",
+      "type": "exp",
+      "density": 0.38,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是基于经济学视角的400万Token每日最大化价值分配模型（即“四百万灵根分配阵法”）：",
+      "source": "selfgen_20260818_000051_0060",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:02:14.504943",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:12.122863"
+}

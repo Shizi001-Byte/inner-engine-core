@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_160520_0037",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "| **规则与边界** | 平台明文规则、隐形红线、处罚案例、封号/限流触发条件 | 避免“踩雷式试错”，划定可行动的安全区 |",
+      "source": "selfgen_20260819_160520_0037",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| **流量分发逻辑** | 推荐算法偏好（完播率/互动率/转粉率权重）、流量池层级、发布时间规律 | 判断“手脚”该往哪个方向使劲，而非盲目勤奋 |",
+      "source": "selfgen_20260819_160520_0037",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:06:21.152789"
+}

@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_044042_0006",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "- 唯一循环燃料：引擎全链路**原生瑕疵**（逻辑断层/数据缺失/NaN/Null/未完成标记等，无前置清洗，所有自然产生的“错误”均为动力）",
+      "source": "selfgen_20260818_044042_0006",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "1. **【基建容器层】（本次检查清单的管控对象，沙箱边界）**",
+      "source": "selfgen_20260818_044042_0006",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "- 作用：隔离沙箱内演化环境与外部宿主系统，承载双向流的落地/采集底座；本身逻辑必须稳定无主动简化，确保所有内循环瑕疵均为原生",
+      "source": "selfgen_20260818_044042_0006",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T04:43:00.432004",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:20.619274"
+}

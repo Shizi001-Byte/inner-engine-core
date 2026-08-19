@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_174200_0014",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "**对应演化概念：进化陷阱（Evolutionary Trap）+ 表型可塑性透支**",
+      "source": "selfgen_20260819_174200_0014",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 对应版本号踩坑：基因型（真实转数`realm`）与表型（对外版本号`version`）的发育调控通路断裂——`complete_zhuan`（世代交替）无法同步更新表型标记，系统启动无校验机制，导致「第20转的内核挂着第一转的版本号」这类有害突变持续积累；",
+      "source": "selfgen_20260819_174200_0014",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 对应API超时坑：无分层的代谢策略（所有任务共用同一模型/超时规则），导致高复杂度任务「代谢衰竭」（超时）、简单任务「能量浪费」（算力空耗），日供给400万Token的总能量（算力）利用效率极低",
+      "source": "selfgen_20260819_174200_0014",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:44:52.155831"
+}

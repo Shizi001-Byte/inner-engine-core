@@ -1,0 +1,88 @@
+{
+  "task_id": "selfgen_20260819_220122_0003",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "在【演化生物学映射】与【CAS复杂适应系统】的既定框架下，针对“Gitee-飞书-Supabase”三方同步引擎，我们直接基于“多节点信息流网络”的锚定认知，对“项目ID看错导致1小时排查”这一历史教训进行推演，提炼出**“先校准锚点再优化链路”**原则，并将其转化为该同步引擎的任务优先级排序策略",
+      "source": "selfgen_20260819_220122_0003",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 4,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在CAS多节点网络中，“项目ID”扮演着**“生态位基石”**或**“基因溯源码”**的角色",
+      "source": "selfgen_20260819_220122_0003",
+      "type": "cog",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "项目ID看错导致1小时排查的本质是：**在错误的状态空间内进行适应性演化**",
+      "source": "selfgen_20260819_220122_0003",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]当锚点（项目ID）错误时，下游链路（Gitee Webhook路由、飞书文件夹权限、Supabase表外键约束）的所有状态反馈都会表现为“伪异常”",
+      "source": "selfgen_20260819_220122_0003",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    },
+    {
+      "text": "系统在此阶段消耗的大量算力（1小时排查时间），属于演化生物学中的**“无效变异与错误适应”**",
+      "source": "selfgen_20260819_220122_0003",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T22:02:48.686996"
+}

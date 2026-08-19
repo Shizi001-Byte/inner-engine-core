@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_060911_0002",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "变更检测仅需对比文件当前状态与微核域存档，无需加锁；原生记忆瑕疵不干预要求检测全程不对路径、标签、分类做任何修正",
+      "source": "selfgen_20260818_060911_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "增量同步的基准为微核域的变更序号，仅同步序号大于上次成功同步基准的条目，无需全量对比；突变成本为0的特性允许仅元数据变更时不同步文件内容，进一步提升效率",
+      "source": "selfgen_20260818_060911_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "远端变更不得反向修改本地微核域；微核域无修复/重组约束、突变成本为0，因此冲突无需做合并、取舍等“修复”操作，直接保留全部变异版本即可；全程不干预原生记忆瑕疵，不对冲突版本的路径、标签、分类做统一化处理",
+      "source": "selfgen_20260818_060911_0002",
+      "type": "eng",
+      "density": 0.996,
+      "density_grade": "S",
+      "density_details": {
+        "info": 0.99,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:12:05.818379"
+}

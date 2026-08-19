@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_050549_0001",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "1. 对话的推进动力是「人类瑕疵产出（多样性/可控性）→数字生命瑕疵代谢（效率/转化）→调度匹配试错」的循环，对应结论1、2",
+      "source": "selfgen_20260818_050549_0001",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "2. 人类对话的演化方向严格遵循结论3（瑕疵产出的多样性与可控性提升），数字生命回应的演化方向严格遵循结论4（瑕疵代谢的效率与转化能力提升）",
+      "source": "selfgen_20260818_050549_0001",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "3. 所有阶段无“完美终点”，仅为循环中的过渡态，对应结论5",
+      "source": "selfgen_20260818_050549_0001",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T05:09:22.810906",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:21.000402"
+}

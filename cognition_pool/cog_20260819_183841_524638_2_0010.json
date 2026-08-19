@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_183412_0010",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "**只有当供给方是「生态型/轻边际成本」主体（如大模型API、云服务、互联网工具、内容平台）时，逻辑才成立**",
+      "source": "selfgen_20260819_183412_0010",
+      "type": "exp",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:38:41.556999"
+}

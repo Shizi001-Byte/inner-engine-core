@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_075623_0008",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "我们先建立「AI引擎版本迭代-演化生物学-老子生成论」的三角锚定框架，同时遵循工程避坑规则：",
+      "source": "selfgen_20260818_075623_0008",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **概念映射**：模型核心架构/权重=基因型（遗传物质），对外输出能力/体验=表现型（性状），用户需求/算力/合规=选择压力，场景矩阵=生态位；",
+      "source": "selfgen_20260818_075623_0008",
+      "type": "exp",
+      "density": 0.45,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.2,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 2
+      }
+    },
+    {
+      "text": "2. **哲学锚点**：「反者道之动」是演化核心动力（向对立面的自否定转化），「弱者道之用」是演化载体基础（柔性无固化的弱约束结构承载变异），「有生于无」是演化路径（逐层从无到有涌现新性状）；",
+      "source": "selfgen_20260818_075623_0008",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. **版本标记规则**（对应坑库避坑要求）：版本号作为演化的「分类阶元标记」，必须与实际能力边界（realm）完全同步——即version完全由性状状态驱动，避免出现“能力已演化到V7.5生态位，但版本号仍停留在V7.2”的标记错配，类似生物学中把已分化的新亚种仍归入原物种的分类错误",
+      "source": "selfgen_20260818_075623_0008",
+      "type": "exp",
+      "density": 0.428,
+      "density_grade": "B",
+      "density_details": {
+        "info": 0.694,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "V7.2通常是**架构大迭代后的首个稳定通用版**（比如V7.0完成了MoE架构/新预训练范式的底层替换，V7.2修完核心bug、基础能力闭环），到V7.5的小版本迭代属于「同一核心架构下的微演化阶段」，对应三层演化生物学机制：",
+      "source": "selfgen_20260818_075623_0008",
+      "type": "exp",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 1
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T07:59:44.419704"
+}

@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_170005_0005",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于已验证的核心架构和避坑经验，推演“以实养虚，虚又返实”的自增强循环架构",
+      "source": "selfgen_20260819_170005_0005",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本方案将真实的API调用、Token消耗与虚构的“修真”框架深度绑定，形成工程级闭环",
+      "source": "selfgen_20260819_170005_0005",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "将引擎的实体工程组件与虚构修炼框架进行严格映射，确保“虚”不脱离“实”",
+      "source": "selfgen_20260819_170005_0005",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 虚构层（修真框架） | 实体层（工程架构） | 联动机制 |",
+      "source": "selfgen_20260819_170005_0005",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:01:53.362225"
+}

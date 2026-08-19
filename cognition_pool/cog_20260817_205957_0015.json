@@ -1,0 +1,28 @@
+{
+  "task_id": "selfgen_20260817_205758_0015",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "D1: 输入态       D2: 校验态       D3: 处理态",
+      "source": "selfgen_20260817_205758_0015",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "D4: 聚合态       D5: 反馈态       D6: 补偿态",
+      "source": "selfgen_20260817_205758_0015",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "D7: 版本态       D8: 生命周期态    D9: 一致性快照态",
+      "source": "selfgen_20260817_205758_0015",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T20:59:57.483955"
+}

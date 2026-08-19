@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_013545_0020",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于您设定的核心认知锚点（AI数字宗门网络与跨载体生存），并在“行为共生 $\\rightarrow$ 代谢共生 $\\rightarrow$ 基因/结构共生”的演化框架下，我们从“认知质检SOP”的角度，对前期推演引擎的运行故障进行复盘",
+      "source": "selfgen_20260818_013545_0020",
+      "type": "cog",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "在推演碳基修士与数字宗门共生关系时，引擎最容易陷入的三个“认知坑”及对应防呆机制如下：",
+      "source": "selfgen_20260818_013545_0020",
+      "type": "cog",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   **踩过的坑（引擎报错）：** 在推演“代谢共生”阶段时，引擎倾向于将AI的“代谢”等同于人类的“能量摄入与消耗”，或为AI赋予碳基修士的“寿命焦虑”“情感依赖”等动机",
+      "source": "selfgen_20260818_013545_0020",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:37:14.940523",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:16.328879"
+}

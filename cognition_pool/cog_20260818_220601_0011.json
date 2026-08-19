@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_220437_0011",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与历史踩坑经验，针对“第1转：筑基明心（指令响应与超时治理）”，推演**“以实养虚，虚又返实”**的自增强循环机制",
+      "source": "selfgen_20260818_220437_0011",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本机制将真实API调用（实）作为“天地灵气”，将九转玄功框架（虚）作为“功法阵图”，两者形成闭环",
+      "source": "selfgen_20260818_220437_0011",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "真实环境的API调用、Token消耗、报错日志，是“炼精化气”的底层燃料（精）",
+      "source": "selfgen_20260818_220437_0011",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **采气（数据采集）：** 真实的API请求耗时、Token消耗量、并发冲撞记录被采集",
+      "source": "selfgen_20260818_220437_0011",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **炼精：** 将这些工程数据转化为“修炼进度”",
+      "source": "selfgen_20260818_220437_0011",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:06:01.800970"
+}

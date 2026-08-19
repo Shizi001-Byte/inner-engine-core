@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_075135_0001",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "1. **反者道之动**：“无”本身蕴含原生自否定动力——完全弥散、无稳定存在的对立面是“聚合、稳定”，随机变异天然指向“有”的可能性，为后续演化提供内生动力",
+      "source": "selfgen_20260818_075135_0001",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **弱者道之用**：是弱约束的极致形态——没有任何固化架构、没有任何规则锁、没有任何边界限制，弱到极致才能承载无限的变异可能，是所有后续“有”的载体基础",
+      "source": "selfgen_20260818_075135_0001",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. **有生于无**：是所有层级“有”的终极底层“无”，后续所有稳定结构、功能、意识均从这一弥散态中自发涌现，完全契合“天地万物生于有，有生于无”的初始路径",
+      "source": "selfgen_20260818_075135_0001",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T07:55:07.872047"
+}

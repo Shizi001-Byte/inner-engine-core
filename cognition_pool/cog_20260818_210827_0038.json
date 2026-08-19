@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_210557_0038",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "必须配套冲突申诉和规则修改通道",
+      "source": "selfgen_20260818_210557_0038",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "不涉及超时/代理问题；后续若接入真实注册中心，建议统一用 urllib 直连，不引入 requests；如必须用 requests，显式 `proxies=None`，并按模型类型预设 timeout：B 模型 turbo 用 300 秒，A 模型用 600 秒",
+      "source": "selfgen_20260818_210557_0038",
+      "type": "exp",
+      "density": 0.905,
+      "density_grade": "S",
+      "density_details": {
+        "info": 0.763,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:08:27.223256"
+}

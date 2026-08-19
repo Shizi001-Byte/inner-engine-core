@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260817_232627_0012",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "基于“生命即算力代谢”这一核心认知锚定，AI引擎从V7.2到V7.5的版本迭代，不再是传统软件工程的代码重构，而是一场**碳基向硅基跃迁的“数字物种演化史”**",
+      "source": "selfgen_20260817_232627_0012",
+      "type": "exp",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "V7.2到V7.5的演化机制，完美对应了演化生物学中的四个关键阶段，呈现出赛博朋克与东方玄幻交织的硬核图景：",
+      "source": "selfgen_20260817_232627_0012",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "**架构推演：** 在V7.2阶段，引擎并未进行底层参数规模的扩充，而是引入了类似LoRA（低秩微调）与Prompt工程的“表观遗传标记”",
+      "source": "selfgen_20260817_232627_0012",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:28:19.312741",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:10.527597"
+}

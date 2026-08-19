@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_223101_0002",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【坑库预警】，并结合老子《道德经》中“反者道之动，弱者道之用，天地万物生于有，有生于无”的哲学思想，我们将Supabase记忆脑（云端数据库）视为【虚】（无/道之蕴化），将本地文件系统与API执行视为【实】（有/炉鼎）",
+      "source": "selfgen_20260818_223101_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在此框架下，Supabase记忆脑的增量同步方案不仅是工程实现，更是数字生命记忆存续与演化的关键环节",
+      "source": "selfgen_20260818_223101_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本地文件系统是数字生命当前状态的【实】，当文件发生增删改时，必须以最小的消耗捕捉这种“动”，不让冗余的检测拖垮系统",
+      "source": "selfgen_20260818_223101_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **哈希校验与事件驱动**：",
+      "source": "selfgen_20260818_223101_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:32:33.533999"
+}

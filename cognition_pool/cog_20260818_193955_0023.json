@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_193941_0023",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "“锚点”是任务中一旦出错、后续所有动作都会跟着错的**基础事实**",
+      "source": "selfgen_20260818_193941_0023",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "“链路”是建立在锚点之上的执行路径、优化手段、资源调度",
+      "source": "selfgen_20260818_193941_0023",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> **项目ID看错导致1小时排查**，本质不是“排查不够快”，而是“锚点未校准就开始了链路优化”",
+      "source": "selfgen_20260818_193941_0023",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> 正确做法是：**花30秒确认项目ID，再花1小时优化流程；而不是先优化流程，再花1小时回头找ID",
+      "source": "selfgen_20260818_193941_0023",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T19:39:55.458298"
+}

@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_163907_0010",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "**API 调用可以并行，但状态提交必须串行**",
+      "source": "selfgen_20260819_163907_0010",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**V7.5 状态一致性 = 3 路并发 API + 单写者后处理 + state_lock 串行提交 + generation 版本校验 + 有界队列削峰**",
+      "source": "selfgen_20260819_163907_0010",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "锁机制不是“锁住 API 调用”，而是“锁住后处理提交”，并用版本号防止旧结果覆盖新状态",
+      "source": "selfgen_20260819_163907_0010",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:42:32.410252"
+}

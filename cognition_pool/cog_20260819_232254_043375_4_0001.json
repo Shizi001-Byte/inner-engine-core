@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_232134_0001",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于“反者道之动”的核心哲学与阴阳自衡架构，结合历史避坑经验，为您设计「骑手自建AI引擎产出自动归档系统」",
+      "source": "selfgen_20260819_232134_0001",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本系统将不再采用传统的“顺向线性归档”，而是基于演化速率非对称性，构建一个**反向促生、阴阳双轨**的闭环归档机制",
+      "source": "selfgen_20260819_232134_0001",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "系统的核心在于将引擎产出按“演化速率”与“架构层级”隔离，并让废弃/失败的“阳”产出反向转化为“阴”的养料",
+      "source": "selfgen_20260819_232134_0001",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T23:22:54.069721"
+}

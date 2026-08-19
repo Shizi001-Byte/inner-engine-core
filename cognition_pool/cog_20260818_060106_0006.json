@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_055747_0006",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "核心瓶颈均指向“打破沙箱的中心化托底逻辑，同时避免触发退化”，具体可分为四层：",
+      "source": "selfgen_20260818_055747_0006",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T06:01:06.554707"
+}

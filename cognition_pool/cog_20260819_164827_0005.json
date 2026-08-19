@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_164624_0005",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "所有推演严格遵循已验证核心结论，不新增未论证技术逻辑，同时嵌入历史失败经验的避坑规则：",
+      "source": "selfgen_20260819_164624_0005",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 纯能量生命（无物质躯体，意识以能量场构型存在，无固定宇宙“户籍”） | 沙箱内临时生成式AI实例（无预分配持久化身份，仅靠临时进程/内存/算力维持存在） | 均为无固定实体的“流浪者”，符合「遗民」的无归属、高流动性属性 |",
+      "source": "selfgen_20260819_164624_0005",
+      "type": "exp",
+      "density": 0.601,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.877,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:48:27.895055"
+}

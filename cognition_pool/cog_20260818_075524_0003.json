@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_075136_0003",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "以下内容严格基于给定的老子生成论哲学锚点推演，结合「决策串行、执行并发」的分层逻辑，梳理脑体分离架构的不可破坏性及落地场景，同时纳入历史超时问题的预防规则：",
+      "source": "selfgen_20260818_075136_0003",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "该原则是脑体分离架构的运行逻辑内核，三层内涵完全对应三大哲学锚点：",
+      "source": "selfgen_20260818_075136_0003",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **生成锚定原则（对应「有生于无」）：决策层是确定性的唯一来源，必须串行收敛**",
+      "source": "selfgen_20260818_075136_0003",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "这个从无到有的生成过程必须是单链路串行的：上一层的决策（如核心目标）是下一层决策（如子目标拆解）的前提，同一时间只能有一套顶层决策逻辑生效，避免多套确定性互相冲突，确保“有”的涌现方向统一、层级清晰",
+      "source": "selfgen_20260818_075136_0003",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T07:55:24.278425"
+}

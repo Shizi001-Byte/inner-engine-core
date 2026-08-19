@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_021853_0001",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "，增量同步方案的本质是**“代谢产物的精准提纯与基因层的定向重组”**",
+      "source": "selfgen_20260818_021853_0001",
+      "type": "eng",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:20:10.075723"
+}

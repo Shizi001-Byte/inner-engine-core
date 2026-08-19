@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_220400_0005",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "本分析严格基于给定的认知框架与场景边界：",
+      "source": "selfgen_20260819_220400_0005",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **价值锚定**：以「研发全链路综合经济价值最大化」为目标，拆解为三类可量化价值：",
+      "source": "selfgen_20260819_220400_0005",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **防御价值**：避免同步故障、数据不一致导致的直接/间接损失（保底型，故障损失具有刚性，边际效用衰减极慢）",
+      "source": "selfgen_20260819_220400_0005",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **效率价值**：提升三方同步与研发协同效率、节约人力成本（核心型，遵循边际效用递减规律）",
+      "source": "selfgen_20260819_220400_0005",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **增长价值**：基于三方同步数据的智能洞察、规则演化、模型迭代带来的长期增量价值（探索型，边际效用先增后减，存在CAS正反馈涌现效应）",
+      "source": "selfgen_20260819_220400_0005",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T22:07:47.904197"
+}

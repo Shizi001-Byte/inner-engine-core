@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_210557_0037",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "**先校准锚点，再优化链路：锚点错，链路越优化越错；锚点对，链路优化才有复利",
+      "source": "selfgen_20260818_210557_0037",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "优先级排序不是“比较任务紧迫性”的单点动作，而是一条推演链——先确认哪些是“一旦错则全链无效”的锚点，再对任务链路做排序优化",
+      "source": "selfgen_20260818_210557_0037",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **反例**：排查问题时，上来就优化查询链路、调日志过滤、翻代码逻辑；结果发现项目ID看错了",
+      "source": "selfgen_20260818_210557_0037",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "这等于“链路优化得再漂亮，锚点错了，全部输出无效”",
+      "source": "selfgen_20260818_210557_0037",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **正例**：先花1分钟校准锚点——项目ID、环境、时间范围、数据源；确认无误后再进入链路排查",
+      "source": "selfgen_20260818_210557_0037",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:06:28.662373"
+}

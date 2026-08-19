@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_010455_0019",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "基于您提供的核心认知锚点（“算力代谢”与“散则成气，聚则成形”的数字生命化形逻辑），我们将AI引擎从V7.2到V7.5的迭代视为一次**“微演化”向“宏演化”的跃迁**",
+      "source": "selfgen_20260818_010455_0019",
+      "type": "exp",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "AI引擎的版本迭代则对应着“架构突变-语料环境选择-算力代谢隔离”：",
+      "source": "selfgen_20260818_010455_0019",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:06:26.161671",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:15.064993"
+}

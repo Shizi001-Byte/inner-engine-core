@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_151131_0017",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于已有认知锚定，我们将系统的“开放、有界、循环”负熵机制具象化为“以实养虚，虚又返实”的自增强闭环",
+      "source": "selfgen_20260818_151131_0017",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在此框架下，**“实”指代真实的API调用、Token消耗、工程日志与系统状态；“虚”指代元控制器（脑）内的虚构修炼框架（如境界划分、功法参数、认知池调度策略）**",
+      "source": "selfgen_20260818_151131_0017",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下为该自增强循环的推演设计、闭环指标与验证方法，严格规避历史踩坑经验",
+      "source": "selfgen_20260818_151131_0017",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "真实的API调用与资源消耗是系统运转的燃料，必须通过严格的物理约束转化为框架的“修炼资源”",
+      "source": "selfgen_20260818_151131_0017",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **真实采气（API调用与防坑）**",
+      "source": "selfgen_20260818_151131_0017",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:12:57.219808"
+}

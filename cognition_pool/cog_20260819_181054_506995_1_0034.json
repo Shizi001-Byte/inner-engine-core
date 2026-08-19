@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_180831_0034",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "是在给引擎这个开放耗散系统持续输入“负熵”，防止各目标侧因人工维护缺失而自然退化",
+      "source": "selfgen_20260819_180831_0034",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:10:54.543667"
+}

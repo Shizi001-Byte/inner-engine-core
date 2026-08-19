@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_214856_0009",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【避坑提醒】，在推演Supabase记忆脑的增量同步方案时，我们严格贯彻**“先校准锚点再优化链路”**原则，运用**精气神三元迁移框架**进行推演",
+      "source": "selfgen_20260818_214856_0009",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 8,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "当前同步链路断流的本质在于：“精”（底层实体/锚点）的文件状态与类型定义未闭环，导致“气”（增量同步链路）在多线程并发检测与主线程串行写入时发生冲突或资源错配",
+      "source": "selfgen_20260818_214856_0009",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 8,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "为避免“在错误的锚点上优化链路”，推演方案如下：",
+      "source": "selfgen_20260818_214856_0009",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在推演增量同步前，必须先校准本地与Supabase双端的锚点字段，确保枚举完整性与读取点一致性（防范避坑提醒1：配置修改未生效）",
+      "source": "selfgen_20260818_214856_0009",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **类型枚举闭环**：`file_type` 锚点必须覆盖 `sop`、`code`、`checklist`，确保L4成品转化链路不再仅限sop类型",
+      "source": "selfgen_20260818_214856_0009",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:50:02.600086"
+}

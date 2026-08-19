@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_224839_0011",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是将“自下而上的试错驱动（阳/B模型turbo/300秒）”与“顶层架构的稳态跃迁（阴/A模型/600秒）”在制度上隔离，在工程上设置匹配演化速率的超时底线",
+      "source": "selfgen_20260819_224839_0011",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T22:49:53.661230"
+}

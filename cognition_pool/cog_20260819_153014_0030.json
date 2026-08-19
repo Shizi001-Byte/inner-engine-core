@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_152819_0030",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "> 锚定前提：本方案默认系统已有溯源链（对话存档、任务清单、代码提交、系统快照等），不做重复论证，直接在其上推演补全路径",
+      "source": "selfgen_20260819_152819_0030",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 缺失性质 | 原始对话记录不可直接检索，但相邻时段（8/7前、8/19后）对话中存在对该时段事件的反向引用 |",
+      "source": "selfgen_20260819_152819_0030",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 补全目标 | 重建该时段的事件链、决策链、任务状态变迁链，使记忆链路无断裂 |",
+      "source": "selfgen_20260819_152819_0030",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:30:14.655791"
+}

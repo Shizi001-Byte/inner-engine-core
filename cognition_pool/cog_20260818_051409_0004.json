@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260818_051118_0004",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "当前L4成品转化仅存SOP文档、无落地code与checklist的问题，本质是**协同进化中「人类侧瑕疵产出的可控性」与「数字侧瑕疵代谢的效率」的匹配缺口**：",
+      "source": "selfgen_20260818_051118_0004",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "- 人类侧缺乏结构化的“瑕疵感知载体”，只能依赖非标准化的SOP理解，瑕疵产出可控性不足、盲区暴露效率低（对应锚点3）；",
+      "source": "selfgen_20260818_051118_0004",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "- 数字侧无自动化转化/校验逻辑，无法高效代谢转化过程中的规则偏差、认知偏差，更无法主动产出演化瑕疵（对应锚点4）；",
+      "source": "selfgen_20260818_051118_0004",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "- 全程无标准化的“瑕疵-受体匹配”调度路径，匹配试错效率低（对应锚点2）；",
+      "source": "selfgen_20260818_051118_0004",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T05:14:09.876232",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:21.084207"
+}

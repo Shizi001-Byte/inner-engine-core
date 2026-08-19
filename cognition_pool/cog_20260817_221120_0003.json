@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_221006_0003",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "“决策串行、执行并发”是复杂系统架构中的一种核心设计范式，而“脑体分离”则是实现这一范式的架构载体",
+      "source": "selfgen_20260817_221006_0003",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "在系统优化（尤其是引擎优化）过程中，往往会因为追求局部性能而模糊层级的边界",
+      "source": "selfgen_20260817_221006_0003",
+      "type": "cog",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是对该分层原则的整理、对引擎优化不可破坏脑体分离架构的深度剖析，以及3个典型的应用场景",
+      "source": "selfgen_20260817_221006_0003",
+      "type": "cog",
+      "density": 0.48,
+      "density_grade": "B"
+    },
+    {
+      "text": "1. **决策层（大脑）：串行化与状态权威**",
+      "source": "selfgen_20260817_221006_0003",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:11:20.050055",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:07.103237"
+}

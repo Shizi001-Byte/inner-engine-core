@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_224533_0018",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是**用游戏化/隐喻化的虚拟能量体系，来驱动和约束真实的软件工程生命周期**",
+      "source": "selfgen_20260817_224533_0018",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:47:35.231399"
+}

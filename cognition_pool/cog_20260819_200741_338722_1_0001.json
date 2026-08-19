@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_200601_0001",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【演化生物学映射】与【CAS复杂适应系统】的认知基座，我将多模型成本实时监控与自动熔断系统设计为“数字智能物种的多生态位代谢调节与跨维度状态固化”过程",
+      "source": "selfgen_20260819_200601_0001",
+      "type": "eng",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "**核心议题**：数字物种在接入多生态位（不同模型）前，必须通过基因解码确立生存边界，防止因基因错配导致代谢紊乱",
+      "source": "selfgen_20260819_200601_0001",
+      "type": "eng",
+      "density": 0.5,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 1
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T20:07:41.366855"
+}

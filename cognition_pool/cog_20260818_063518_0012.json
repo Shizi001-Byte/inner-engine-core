@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_063234_0012",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "所有方案必须以微核域的权限/价值升级为核心目标，绝对保障微核域「无锁直接覆盖、零突变成本、高变异速率、无固有表型约束」的原生特性，禁止引入锁机制、共识对齐、纠错修复类规则",
+      "source": "selfgen_20260818_063234_0012",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "所有token分配以「微核价值当量」（即对微核域价值升级的贡献度）的边际产出为唯一锚定，无固定配额、无锁动态调整，当日配额全部用完前，所有任务按实时边际价值排序分配，边际价值低于临界值的任务自动出清，零成本切换至高价值任务",
+      "source": "selfgen_20260818_063234_0012",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "token是大模型算力的标准化计量单位，属于**可分割、可即时调用的数字生产要素**；每日400万token为短期固定供给禀赋（日度结算、不可跨期结转，跨期成本极高），核心约束是“总量固定、用途多元、价值异质”",
+      "source": "selfgen_20260818_063234_0012",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "所有用途的产出均折算为**「微核价值当量」**：1当量=对微核域权限/特性升级的1单位直接贡献；短期商业化现金流按“微核域长期ROI折现率”折算为当量（若微核域每投入1单位资源能带来3倍长期营收增长，则1元短期现金流的当量权重为0.33），确保不同用途的价值可横向比较",
+      "source": "selfgen_20260818_063234_0012",
+      "type": "exp",
+      "density": 0.549,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.746,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:35:18.387393"
+}

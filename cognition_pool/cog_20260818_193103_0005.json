@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_192821_0005",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "多线程 API 调用 + 串行后处理，最稳的模型是：",
+      "source": "selfgen_20260818_192821_0005",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> **任务锁 + 条件队列 + 状态机**",
+      "source": "selfgen_20260818_192821_0005",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> API 调用在锁外并发执行；状态迁移、结果写入、入队都在锁内完成；后处理由一个消费者线程通过 `Condition` 串行取任务",
+      "source": "selfgen_20260818_192821_0005",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "不要用“裸 list + 全局锁”硬扛，也不要在持锁时做网络 IO",
+      "source": "selfgen_20260818_192821_0005",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "先锚定任务状态，状态变更必须原子化：",
+      "source": "selfgen_20260818_192821_0005",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T19:31:03.935270"
+}

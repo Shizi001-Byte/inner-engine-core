@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_210138_0029",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "简化版 SQL 为了省事，省略显式列名、依赖 `SELECT *` 或 `VALUES` 顺序来“隐式匹配”",
+      "source": "selfgen_20260818_210138_0029",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "一旦表结构变更（加列、删列、调整顺序、改类型），列映射就静默错位，轻则数据写错列，重则迁移失败、数据污染",
+      "source": "selfgen_20260818_210138_0029",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "基建脚本不是一次性草稿，而是需要长期可维护、可审计、可回滚的工程产物，**禁止用“手快”换“正确性”**",
+      "source": "selfgen_20260818_210138_0029",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- [ ] 所有 `INSERT` 必须显式写目标列名",
+      "source": "selfgen_20260818_210138_0029",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:02:17.737114"
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_185019_0020",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "归档系统不是“存储终点”，而是引擎的感知回路",
+      "source": "selfgen_20260819_185019_0020",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:52:12.472442"
+}

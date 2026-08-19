@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_075135_0002",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "- **反者道之动**：本地微核域的「无序随机变异」与Supabase远端的「有序记忆沉淀」为对立面，同步是两者的自否定转化——本地变异否定远端旧记忆实现更新，远端记忆否定本地无序实现锚定，冲突本身就是演化的原生动力",
+      "source": "selfgen_20260818_075135_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **弱者道之用**：同步机制为**外围弱约束层**，完全不侵入微核域内部变异，无强锁、无强制覆盖、无固化结构，以柔性检测、差分、建议的形式承载无限变异可能，越弱的约束越能支撑更多演化方向",
+      "source": "selfgen_20260818_075135_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **有生于无**：同步规则从最基础的指纹比对、行级diff逐层涌现，后续的语义索引、关联记忆、智能冲突判定均从基础同步数据中自生，无预先设计的固化高阶结构",
+      "source": "selfgen_20260818_075135_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 微核域=本地记忆文件集合（弥散的代码片段、非结构化笔记、散点数据），同步全程对微核域仅持**只读权限**，绝不修改原有文件、不设文件锁、零变异干扰成本，完全保留高变异速率、零突变成本的特性",
+      "source": "selfgen_20260818_075135_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 所有同步配置、状态快照、工具文件均存储于外围同步目录，与微核域物理隔离，绝不混入变异源",
+      "source": "selfgen_20260818_075135_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T07:56:22.160543"
+}

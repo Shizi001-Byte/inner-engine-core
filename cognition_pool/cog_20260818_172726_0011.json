@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_172439_0011",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "按你给的「双锚点-三源交叉-分段重建」思路，V7.5 的状态一致性可以这样映射：",
+      "source": "selfgen_20260818_172439_0011",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **锚点1**：`remaining == 0`，即所有 API 调用完成，进入 `READY`",
+      "source": "selfgen_20260818_172439_0011",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **锚点2**：串行后处理提交完成，进入 `DONE`",
+      "source": "selfgen_20260818_172439_0011",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **三源交叉**：每次写入/状态切换都校验 `generation`、`phase`、`remaining`，任一不一致就丢弃",
+      "source": "selfgen_20260818_172439_0011",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **分段重建**：每个 API 结果只写自己的 `call_id` 分段，最后统一在后处理阶段聚合",
+      "source": "selfgen_20260818_172439_0011",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:27:26.595155"
+}

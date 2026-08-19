@@ -1,0 +1,42 @@
+{
+  "task_id": "selfgen_20260817_235227_0046",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "INSERT INTO t_dao_node (node_id, node_name) VALUES (?, ?);",
+      "source": "selfgen_20260817_235227_0046",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "INSERT INTO t_dao_node",
+      "source": "selfgen_20260817_235227_0046",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "(node_id, node_name, realm_type, qi_field, meridian_status,",
+      "source": "selfgen_20260817_235227_0046",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "tribulation_threshold, soul_bind_flag, created_ts, updated_ts)",
+      "source": "selfgen_20260817_235227_0046",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);",
+      "source": "selfgen_20260817_235227_0046",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:53:19.923600"
+}

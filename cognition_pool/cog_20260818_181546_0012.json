@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_181343_0012",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "- 同步单位是 `block`，不是 `file`",
+      "source": "selfgen_20260818_181343_0012",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 文件只是「有序 block id 列表」的索引",
+      "source": "selfgen_20260818_181343_0012",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 不存同步任务记录，只存 `block / index / tombstone` 顶点",
+      "source": "selfgen_20260818_181343_0012",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 运行期流程固定：`Detect → Diff → Commit`，每节点三转，共九转",
+      "source": "selfgen_20260818_181343_0012",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T18:15:46.540412"
+}

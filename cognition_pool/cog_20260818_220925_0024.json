@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_220752_0024",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【坑库预警】，在严格规避API超时风险（A模型600秒/B模型turbo300秒）的前提下，将每日400万Token视为“算力资本”",
+      "source": "selfgen_20260818_220752_0024",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "结合“以实养虚，虚又返实”的自增强循环架构，从经济学微观定价与资源配置角度，推演如下：",
+      "source": "selfgen_20260818_220752_0024",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在自增强循环中，**“实”**（API调用与工程执行）是生产资料，**“虚”**（V7.5方舟引擎与九转玄功映射体系）是生产关系与上层建筑",
+      "source": "selfgen_20260818_220752_0024",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **流动性约束（时间）**：A模型单次调用≤600秒，B模型turbo单次调用≤300秒",
+      "source": "selfgen_20260818_220752_0024",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:09:25.919449"
+}

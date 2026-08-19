@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260818_031224_0012",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "构成了一个**认知免疫系统**",
+      "source": "selfgen_20260818_031224_0012",
+      "type": "exp",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:13:36.246604",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:19.187897"
+}

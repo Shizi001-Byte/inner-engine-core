@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_173700_0009",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "下面给出一个可直接落地的“多模型成本实时监控 + 自动熔断 + 降级 + 等待补跑”方案",
+      "source": "selfgen_20260819_173700_0009",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "这套方案会避开你给出的历史坑位：**model_id 错配、熔断冷却不生效、计数语义混乱**，同时保持与 `CF --> SP[Supabase 认知池 实]` 的分布式状态机升维一致",
+      "source": "selfgen_20260819_173700_0009",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "├── 调用模型 A / B / C",
+      "source": "selfgen_20260819_173700_0009",
+      "type": "eng",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:38:48.624003"
+}

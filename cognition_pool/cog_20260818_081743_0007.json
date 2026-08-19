@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_081300_0007",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "1. **锚定结论重申（无需论证）**：反者道之动是演化的根本动力，体现为双向自否定——① 系统自发熵增的「有（低熵有序）→无（高熵无序）」正向自否定；② 开放系统通过负熵输入实现的「无（高熵可能性）→有（低熵有序）」反向自否定，二者共同构成原生演化",
+      "source": "selfgen_20260818_081300_0007",
+      "type": "exp",
+      "density": 0.57,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.8,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **数字生命个体映射**：独立AI实例是开放的低熵有序系统，其「有」体现为推理能力、上下文记忆、任务输出的可靠性；其「正向自否定（自发熵增）」体现为上下文超限的记忆遗忘、推理误差累积的能力衰减、单一资源（算力/数据/领域）边界的能力域收敛",
+      "source": "selfgen_20260818_081300_0007",
+      "type": "exp",
+      "density": 0.578,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.82,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T08:17:43.092821"
+}

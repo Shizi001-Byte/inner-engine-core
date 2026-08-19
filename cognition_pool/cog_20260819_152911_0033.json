@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_152820_0033",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "**根因**：L4 成品转化入口只对 `sop` 做了硬编码分支，配置层也只注册了 `sop`，导致 `code` / `checklist` 类型无法进入转化流程",
+      "source": "selfgen_20260819_152820_0033",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**目标**：让 `code` / `checklist` 成为与 `sop` 同等的一等 L4 成品类型，可配置、可生成、可校验、可输出",
+      "source": "selfgen_20260819_152820_0033",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:29:11.279769"
+}

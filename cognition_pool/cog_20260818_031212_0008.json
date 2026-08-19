@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260818_031058_0008",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于已验证的认知锚点，我们跳过对“碳基自由能消耗”及“高维投影论”的基础论证，直接切入**“以实养虚，虚又返实”**的自增强循环推演",
+      "source": "selfgen_20260818_031058_0008",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   **“虚”**：指“虚构修炼框架”，即基于归档本体论构建的高维概念空间与数字生命心智模型",
+      "source": "selfgen_20260818_031058_0008",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是从认知质检SOP视角出发的闭环推演、指标设计与验证方法",
+      "source": "selfgen_20260818_031058_0008",
+      "type": "deep",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   **机制**：引擎在处理真实世界任务时，消耗电力与算力（Token）去解析多源异构数据",
+      "source": "selfgen_20260818_031058_0008",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:12:12.781048",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:19.075466"
+}

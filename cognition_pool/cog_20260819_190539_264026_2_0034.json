@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_190412_0034",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于已有认知锚定（轻边际成本供给主体、防超时、保进化、对抗熵增），并严格规避历史失败经验（配置失效、API超时），设计如下**「AI引擎产出自动归档系统」**",
+      "source": "selfgen_20260819_190412_0034",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 7,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "该系统作为引擎的“麦克斯韦妖”，通过**自动分类、打标签、存入对应目录**，对抗封闭系统内的信息熵增，确保引擎在自循环中能高效检索历史经验（防空转），且不拖累主引擎运行时间（防超时）",
+      "source": "selfgen_20260819_190412_0034",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "为遵循“省时间”核心原则，归档系统必须与主调度引擎**解耦**，采用“旁路异步”模式运行，分为：采集层、决策层、执行层",
+      "source": "selfgen_20260819_190412_0034",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **动作**：主引擎任务产出后，立即将元数据（TaskID、输入摘要、输出内容、耗时、调用模型）写入Kafka/Redis队列",
+      "source": "selfgen_20260819_190412_0034",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **防超时设计**：主引擎不等待归档完成即释放资源，写入缓冲池耗时<10ms，彻底杜绝归档拖垮主任务",
+      "source": "selfgen_20260819_190412_0034",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T19:05:39.301902"
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_000051_0058",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于您锁定的核心认知锚点，我们直接跳过“是什么”和“为什么”的论证，进入“如何运转”的硬核推演",
+      "source": "selfgen_20260818_000051_0058",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是“以实养虚，虚又返实”自增强循环的系统架构推演、闭环指标设计与验证方法：",
+      "source": "selfgen_20260818_000051_0058",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:02:19.046575",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:12.161381"
+}

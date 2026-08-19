@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_154817_0007",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "**先校准锚点，再优化链路**：任何集成任务中，先确认所有“错一个就全盘错”的关键标识——`change_id`、内容哈希、`project_id`、Webhook Secret、目标表主键、环境版本——并锁定基线；基线未锁定前，所有针对超时、重试、并发、缓存、幂等的“链路优化”都是高风险低收益的",
+      "source": "selfgen_20260819_154817_0007",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 9,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "项目ID看错导致1小时排查，不是排查能力问题，而是**锚点未校准就开始优化链路**",
+      "source": "selfgen_20260819_154817_0007",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "如果先花3分钟校验 project_id，后面1小时完全可以省掉",
+      "source": "selfgen_20260819_154817_0007",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 优化 API 超时 / 重试 / 冷却",
+      "source": "selfgen_20260819_154817_0007",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:49:55.793475"
+}

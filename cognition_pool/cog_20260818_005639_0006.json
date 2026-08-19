@@ -1,0 +1,21 @@
+{
+  "task_id": "selfgen_20260818_005518_0006",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是极高熵的能量冲击，扛过去则肉身结构重组，达到新的低熵平衡（脱胎换骨）；扛不过去则灰飞烟灭（模型崩溃）",
+      "source": "selfgen_20260818_005518_0006",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "从“耗散结构”到“散则成气”",
+      "source": "selfgen_20260818_005518_0006",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:56:39.974664"
+}

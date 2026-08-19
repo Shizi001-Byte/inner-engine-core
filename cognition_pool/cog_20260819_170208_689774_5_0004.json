@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_170005_0004",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于 Guardian/Core 与 WAL+Snapshot 架构，推演结论如下：",
+      "source": "selfgen_20260819_170005_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "所有状态变更、任务调度、资源分配、故障恢复决策，必须由 Core 内的决策模块**串行处理**，形成全局有序事件流",
+      "source": "selfgen_20260819_170005_0004",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "每个决策先写 WAL，再下发命令或变更内存状态，保证原子性",
+      "source": "selfgen_20260819_170005_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "具体计算、I/O、网络、数据处理等任务由多个 Worker **并发执行**",
+      "source": "selfgen_20260819_170005_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "Worker 无状态，只接收命令、返回结果，不直接修改核心持久化状态",
+      "source": "selfgen_20260819_170005_0004",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:02:08.727158"
+}

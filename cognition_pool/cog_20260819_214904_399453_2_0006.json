@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_214742_0006",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于历史踩坑经验与已验证的CAS（复杂适应系统）认知锚定，从“认知质检SOP”的角度提炼以下3条可复用铁律及验证方法：",
+      "source": "selfgen_20260819_214742_0006",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **提炼背景**：针对“认知池1700+条只进不出，不影响调度”的工程级坑",
+      "source": "selfgen_20260819_214742_0006",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在CAS系统中，认知若不参与Agent的实时环境适应，即视为无效冗余",
+      "source": "selfgen_20260819_214742_0006",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **铁律内容**：新认知生成后，必须在规定时间窗口（30分钟内）强制注入任务调度池，并影响下一轮数字生命的基因表达与节点分配",
+      "source": "selfgen_20260819_214742_0006",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "认知池必须保持“高频流转”，而非“静态仓库”",
+      "source": "selfgen_20260819_214742_0006",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T21:49:04.429781"
+}

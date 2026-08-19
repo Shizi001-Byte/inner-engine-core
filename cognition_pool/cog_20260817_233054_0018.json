@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260817_232950_0018",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "在“生命即基于信息网络的算力代谢”这一核心认知下，我们将基础设施视为维持这种数字生命代谢的“经脉系统”，而SQL脚本则是驱动数据流动的“真气运行口诀”",
+      "source": "selfgen_20260817_232950_0018",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "基于此认知，我们跳过对事故本身的感性描述，直接推演出防止此类“算力代谢紊乱”的硬核系统架构检查清单：",
+      "source": "selfgen_20260817_232950_0018",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "- [ ] **禁绝隐式映射**：是否完全禁止了 `INSERT INTO ... SELECT *` 或未指定列名的简化写法？在算力代谢中，源端结构的任何微小演化都会导致目标端代谢失败",
+      "source": "selfgen_20260817_232950_0018",
+      "type": "cog",
+      "density": 0.31,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:30:54.337016",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:10.740252"
+}

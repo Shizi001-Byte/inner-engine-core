@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_212433_0019",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "以下是对该分层原则的整理、引擎优化不可破坏架构的底层逻辑剖析，以及3个典型应用场景",
+      "source": "selfgen_20260817_212433_0019",
+      "type": "cog",
+      "density": 0.38,
+      "density_grade": "B"
+    },
+    {
+      "text": "**2. 决策串行 vs 执行并发**",
+      "source": "selfgen_20260817_212433_0019",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:25:51.331677",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:06.361455"
+}

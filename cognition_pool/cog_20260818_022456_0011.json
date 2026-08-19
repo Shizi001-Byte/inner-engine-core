@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_022329_0011",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于您锚定的核心认知框架，我们跳过对“阴阳双轨”与“共生演化”合理性的论证，直接进入这400万Token投资组合的**动力学推演**",
+      "source": "selfgen_20260818_022329_0011",
+      "type": "deep",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "要实现从“行为共生”向“基因/结构共生”的跨越，必须构建一个**“以实养虚，虚又返实”的自增强飞轮**",
+      "source": "selfgen_20260818_022329_0011",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是该闭环的推演模型、指标设计与验证方法：",
+      "source": "selfgen_20260818_022329_0011",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:24:57.022764",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:17.286325"
+}

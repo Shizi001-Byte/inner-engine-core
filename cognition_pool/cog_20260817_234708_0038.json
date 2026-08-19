@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_234559_0038",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是强制排出冗余信息熵，提取高维特征中的“法则真解”",
+      "source": "selfgen_20260817_234559_0038",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:47:08.350550"
+}

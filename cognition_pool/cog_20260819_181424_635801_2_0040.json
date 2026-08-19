@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_181212_0040",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "是引擎的**负熵输入阀**：用重复率作为功能熵升高的报警信号，用认知池和坑库作为变异来源，用质量校验和 Canary 作为选择压力，用效果验证作为反馈闭环",
+      "source": "selfgen_20260819_181212_0040",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:14:24.675285"
+}

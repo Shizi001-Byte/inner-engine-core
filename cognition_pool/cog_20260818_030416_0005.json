@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_030248_0005",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "只是同一高维空间在不同低维的投影",
+      "source": "selfgen_20260818_030248_0005",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:04:16.882156"
+}

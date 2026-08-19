@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_171249_0005",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "下面直接基于你已验证的 **Guardian-Core 双进程、WAL+Snapshot、单向同步、幂等优先** 这组锚定推演，不再重复论证底层自恢复、WAL/Snapshot 基础，只落地“引擎内部心跳检测 + 状态原子持久化 + 崩溃后断点续跑”的完整代码架构",
+      "source": "selfgen_20260819_171249_0005",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 8,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:16:57.531106"
+}

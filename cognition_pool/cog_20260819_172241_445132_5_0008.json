@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_172145_0008",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "简化版 SQL 的典型错误不是“SQL 语法错”，而是**用“本次需要的列”代替“完整 schema”**，导致表结构与同步模型发生漂移",
+      "source": "selfgen_20260819_172145_0008",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在增量同步链上，这会直接破坏“本地文件（实）→ Supabase 认知池（实）”这一段：",
+      "source": "selfgen_20260819_172145_0008",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 同步代码写入完整对象时，报 `column \"xxx\" does not exist`；",
+      "source": "selfgen_20260819_172145_0008",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 如果写入端用了 `SELECT *` 或动态映射，缺列可能被静默忽略，造成“认知池只进不出”；",
+      "source": "selfgen_20260819_172145_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:22:41.477712"
+}

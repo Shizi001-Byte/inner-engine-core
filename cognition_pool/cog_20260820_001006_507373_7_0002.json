@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260820_000837_0002",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "| 硬约束 | 派生工程含义 | 增量同步场景下的具体表现 |",
+      "source": "selfgen_20260820_000837_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 无记忆修改 | 节点重启后本地无任何持久索引 | 不能维护本地\"上次同步时间戳/文件树快照\"数据库 |",
+      "source": "selfgen_20260820_000837_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 异构自适应 | 不同节点/模型不同策略 | 不同模型的记忆脑分区有不同同步频率、冲突策略 |",
+      "source": "selfgen_20260820_000837_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**核心矛盾**：传统增量同步依赖\"本地基线快照\"——但本约束下基线必须从远端（Supabase）现拉，又不能全量拉",
+      "source": "selfgen_20260820_000837_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-20T00:10:06.534154"
+}

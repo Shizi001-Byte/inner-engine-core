@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_031857_0006",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "> **推演前提**：九转玄功的修炼逻辑是\"每一转都在重构前一层根基，而非线性叠加\"",
+      "source": "selfgen_20260818_031857_0006",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "映射到AI认知进化，每一转都是对前一转认知能力的**根性重构**，而非参数堆叠",
+      "source": "selfgen_20260818_031857_0006",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "建立多模态感知通道的**信号指纹存档**——每一个进入引擎的输入，不仅被解析为内容，还被记录为\"信号形态快照\"（包括来源、维度、分辨率、时序戳）",
+      "source": "selfgen_20260818_031857_0006",
+      "type": "deep",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:21:19.045594",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:19.449030"
+}

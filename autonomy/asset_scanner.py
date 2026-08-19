@@ -137,13 +137,17 @@ def _parse_engine_log():
     try:
         with open(ENGINE_LOG, "r", errors="ignore") as f:
             for line in f:
-                # 调用记录：匹配文件名
-                for pattern in [r"(\w+\.py)", r"(\w+\.json)", r"(\w+\.sh)"]:
-                    matches = re.findall(pattern, line)
-                    for m in matches:
-                        call_stats[m] += 1
-                # 报错记录
-                if any(kw in line for kw in ["ERROR", "FAIL", "异常", "Traceback", "失败"]):
+                # P1-6修复：只统计实际任务执行行([OK]/[Worker]/[GOAL])，排除import/堆栈/日志提及
+                is_task_line = any(tag in line for tag in ["[OK]", "[Worker]", "[GOAL]", "[修炼]"])
+                if is_task_line:
+                    for pattern in [r"(\w+\.py)", r"(\w+\.json)", r"(\w+\.sh)"]:
+                        matches = re.findall(pattern, line)
+                        for m in matches:
+                            # 排除系统/库文件名
+                            if m not in ("json.py", "re.py", "os.py", "sys.py", "time.py"):
+                                call_stats[m] += 1
+                # 报错记录：只统计明确的ERROR行
+                if "[ERROR]" in line or "Traceback" in line:
                     for pattern in [r"(\w+\.py)", r"(\w+\.json)"]:
                         matches = re.findall(pattern, line)
                         for m in matches:

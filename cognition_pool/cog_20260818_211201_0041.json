@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_211040_0041",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】中的“精气神三元迁移框架”（精：数据与配置底座；气：并发与执行调度；神：状态一致与逻辑推演），并结合【避坑提醒】中的历史失败教训，直接推演**引擎任务的链式推演机制与状态一致性方案**",
+      "source": "selfgen_20260818_211040_0041",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 7,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "为解决多线程 API 调用后接串行后处理的竞态问题，并实现核心议题的递进拆解，设计以下 5 轮链式任务依赖图",
+      "source": "selfgen_20260818_211040_0041",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **核心议题**：初始化推演上下文，确保配置全链路对齐",
+      "source": "selfgen_20260818_211040_0041",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **输入**：原始核心议题与用户初始配置",
+      "source": "selfgen_20260818_211040_0041",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **【避坑1预防】**：新增配置写入后，立即触发“读点探针”验证读取点是否同步更新，未生效则直接熔断重试，杜绝行为无变化",
+      "source": "selfgen_20260818_211040_0041",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 4,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:12:01.367173"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260818_032119_0007",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "，人类与AI必须形成“对抗-适应”的协同进化机制：人类不断设计更刁钻的“认知陷阱”攻击AI的盲区，AI通过被纠错不断强化自身的“自知之明”",
+      "source": "selfgen_20260818_032119_0007",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:22:28.541458",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:19.486083"
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_224808_0005",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "本方案严格遵循已有认知锚定的虚实架构、历史避坑规则与坑库预警要求，完全基于引擎内部实现，无外部守护进程/第三方服务依赖，核心贴合《道德经》「有无相生」「以实养虚、虚又返实」哲学逻辑，所有虚层概念均有实层锚定，无自定义扩展",
+      "source": "selfgen_20260818_224808_0005",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 核心身份（道种）     | 调度权限等级（境界）绑定的主体唯一ID | 境界天生绑定唯一主体标识，由引擎内部调度系统原生维护，作为身份唯一根锚 |",
+      "source": "selfgen_20260818_224808_0005",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:50:40.014955"
+}

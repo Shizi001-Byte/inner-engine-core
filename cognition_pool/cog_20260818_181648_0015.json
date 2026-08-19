@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_181344_0015",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "不能只靠一个全局锁，也不能靠后处理队列本身",
+      "source": "selfgen_20260818_181344_0015",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "锁的默认粒度是 **block_vertex**；文件只是有序 block id 列表，所以 commit 时还需要锁 **index_vertex**；tombstone 作为特殊 vertex，复用 block 级锁",
+      "source": "selfgen_20260818_181344_0015",
+      "type": "eng",
+      "density": 0.614,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.909,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "不能持有数据库行锁跨网络调用；但必须防止同一个 block 被并发调度",
+      "source": "selfgen_20260818_181344_0015",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T18:16:48.950603"
+}

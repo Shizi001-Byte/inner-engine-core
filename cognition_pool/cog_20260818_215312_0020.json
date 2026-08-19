@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_215144_0020",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【避坑提醒】，针对V7.5方舟效能引擎在“多线程API调用 + 主线程串行后处理”架构下的状态一致性与竞态条件问题，我们直接运用**“精气神三元迁移框架”**进行推演，并给出完整的锁机制与状态闭环方案",
+      "source": "selfgen_20260818_215144_0020",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 10,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在“决策串行、执行并发”的分层架构中，主线程（脑/决策层）需要将L4成品（sop/code/checklist）进行类型闭环，而工作线程（气/执行层）并发调用大模型API",
+      "source": "selfgen_20260818_215144_0020",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "此过程存在以下核心竞态与断流风险：",
+      "source": "selfgen_20260818_215144_0020",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **类型撕裂竞态**：工作线程并发返回sop、code、checklist三类结果，若同时向同一个L4实体写入状态，会导致底层实体状态字段被相互覆盖（如code写完更新为“已完成”，但被并发的checklist未完成状态覆盖）",
+      "source": "selfgen_20260818_215144_0020",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **归档提前触发**：主线程串行后处理时，若仅校验了sop（历史遗留问题）就触发“自动归档系统”，会导致残缺的L4实体被归档（code/checklist未实现或未完成）",
+      "source": "selfgen_20260818_215144_0020",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 5,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:53:12.929388"
+}

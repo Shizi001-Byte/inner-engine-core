@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_224123_0007",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "能保持轻量和串行，是因为它只维护宏观状态",
+      "source": "selfgen_20260817_224123_0007",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:42:41.013329"
+}

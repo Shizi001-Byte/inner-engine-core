@@ -1,0 +1,40 @@
+{
+  "task_id": "selfgen_20260820_005500_0008",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "[待验证]│                    V7.5 并发管线架构                              │",
+      "source": "selfgen_20260820_005500_0008",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据"
+    },
+    {
+      "text": "│  │ 多线程API调用  │───▶│ 结果入队   │───▶│   串行后处理            │ │",
+      "source": "selfgen_20260820_005500_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-20T00:57:23.086243"
+}

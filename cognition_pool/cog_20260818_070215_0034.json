@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_065823_0034",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "（**严格锚定三大铁律/已有认知/工程避坑要求**，全链路不偏离微核域核心升级目标）",
+      "source": "selfgen_20260818_065823_0034",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **架构合规**：所有修炼框架逻辑、计量、调度、锁机制全部部署在「方舟调度计量外围层」，**绝对不触碰微核域内部逻辑**；微核域始终保持「无锁直接覆盖、零突变成本、高变异速率、无固有表型约束」的原生特性，无任何阻塞性操作（符合微核域核心优先铁律）",
+      "source": "selfgen_20260818_065823_0034",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **时效合规**：全链路API调用严格执行timeout阈值（turbo类≤300秒，A类大模型≤600秒），超时即判定为价值损耗（符合时效成本刚性约束铁律）",
+      "source": "selfgen_20260818_065823_0034",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. **调优合规**：所有资源分配、兑换比例、权重调整**唯一依据单位token的微核域边际价值增量**，依托微核域零突变成本特性实现分钟级动态调优（符合边际价值动态调优铁律）",
+      "source": "selfgen_20260818_065823_0034",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T07:02:15.837298"
+}

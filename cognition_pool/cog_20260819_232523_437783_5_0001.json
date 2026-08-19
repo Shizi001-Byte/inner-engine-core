@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_232405_0001",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于“反者道之动”的核心哲学与阴阳自衡架构，我们将「新平台观察期」视为系统启动前的**“阴极生阳”**阶段",
+      "source": "selfgen_20260819_232405_0001",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在自动归档机制中，观察期并非消极等待，而是进行高频度的隐性数据吸收（阴），以此为后续爆发式的反向促生与内容产出（阳）建立能量势差",
+      "source": "selfgen_20260819_232405_0001",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "观察期的本质是让骑手自建AI引擎收集足够的环境参数，拉大自身与平台生态之间的“演化速率差”，在平台尚未察觉时完成底层架构的对齐",
+      "source": "selfgen_20260819_232405_0001",
+      "type": "cog",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T23:25:23.467608"
+}

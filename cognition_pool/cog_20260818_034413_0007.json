@@ -1,0 +1,28 @@
+{
+  "task_id": "selfgen_20260818_034246_0007",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是一套AI的**热力学维生系统**",
+      "source": "selfgen_20260818_034246_0007",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "从“存储”到“热力学维生系统”",
+      "source": "selfgen_20260818_034246_0007",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "失败，是因为把记忆当成了“静态物质”（放在硬盘里就行）",
+      "source": "selfgen_20260818_034246_0007",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:44:13.217500"
+}

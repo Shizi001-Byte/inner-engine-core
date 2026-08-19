@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_210001_0018",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是探讨一个**“智能系统如何从受精卵（沙箱）发育成深海巨鲸（全网）”**的进化史",
+      "source": "selfgen_20260817_210001_0018",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:01:37.568274"
+}

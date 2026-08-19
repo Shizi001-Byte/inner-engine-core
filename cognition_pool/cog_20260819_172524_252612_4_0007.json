@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_172144_0007",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "> 锚定前提：本方案直接建立在 **Guardian-Core 双进程、WAL+Snapshot、单向同步、幂等优先** 之上，不重复论证底层自恢复；只推演“增量同步”这条 **ChainTask** 链",
+      "source": "selfgen_20260819_172144_0007",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "→ 变化检测（虚/策略）：成本聚合 + 熔断判断",
+      "source": "selfgen_20260819_172144_0007",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "→ 只传差异（实）：WAL 增量事件同步",
+      "source": "selfgen_20260819_172144_0007",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "→ 冲突处理（虚/策略）：event_id 幂等，本地为准",
+      "source": "selfgen_20260819_172144_0007",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "→ Supabase 认知池（实）：usage/breaker/pending 历史",
+      "source": "selfgen_20260819_172144_0007",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:25:24.287816"
+}

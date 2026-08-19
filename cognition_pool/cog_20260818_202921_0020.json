@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_202853_0020",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "**“简化版 SQL”不是简化，而是制造隐性契约断裂",
+      "source": "selfgen_20260818_202853_0020",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "列不匹配往往不在执行时报错，而是在后续 INSERT / SELECT / JOIN / 索引使用时才暴露",
+      "source": "selfgen_20260818_202853_0020",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "基建脚本必须只接受“完整 schema 对齐版”，任何简化版都视为未经验证的突变，禁止直接进入部署流",
+      "source": "selfgen_20260818_202853_0020",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "锚定推演：简化版 SQL 一旦 commit，就是一次“突变”；只有通过测试的版本才允许保留并部署；如果因列不匹配失败，立即回滚到上一稳定版本，这就是“净化选择”",
+      "source": "selfgen_20260818_202853_0020",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- [ ] 确认脚本不是从记忆、旧笔记或口头描述中手写的“简化版”",
+      "source": "selfgen_20260818_202853_0020",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:29:21.507620"
+}

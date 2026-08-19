@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_195742_0004",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "危险，就是因为它意味着**社会化失败**：新认知没有被实例内化，无法指导后续行为，共同体就无法自我更新",
+      "source": "selfgen_20260818_195742_0004",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "，认知质检 SOP 不只是“分类工具”，它应该是社群的“免疫系统”：把值得循环的认知注入行动，把过时的认知送入冷档案，把无效的认知删除",
+      "source": "selfgen_20260818_195742_0004",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T19:58:47.564763"
+}

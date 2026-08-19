@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_214856_0008",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【避坑提醒】，针对“L4成品转化仅sop类型，code/checklist未实现”及“主线程串行后处理断流”的问题，我们直接推演**“决策串行、执行并发”**的分层原则及其应用",
+      "source": "selfgen_20260818_214856_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在多线程并发调用大模型API并由主线程串行后处理的架构中，必须严格贯彻**“先校准锚点再优化链路”**原则，运用“精气神”三元框架进行映射：",
+      "source": "selfgen_20260818_214856_0008",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 7,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **脑（决策层 / 主线程 / 串行）：** 负责锚点校准与类型闭环",
+      "source": "selfgen_20260818_214856_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "主线程必须串行地把控L4成品的类型定义（sop/code/checklist的完整性），确保底层实体的类型闭环",
+      "source": "selfgen_20260818_214856_0008",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:50:07.452002"
+}

@@ -1,0 +1,72 @@
+{
+  "task_id": "selfgen_20260820_012012_0002",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "[待验证]基于V7.5方舟效能引擎的架构特性与已有认知锚定，针对“多线程API调用 -> 串行后处理”的核心矛盾，设计以下链式推演机制",
+      "source": "selfgen_20260820_012012_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据"
+    },
+    {
+      "text": "**如何在“多线程并发（A模型600s/B模型300s） -> 串行后处理”链路中，建立基于生物稳态调控逻辑的锁机制，消除高熵信息流的覆写突变，并确保配置即时生效",
+      "source": "selfgen_20260820_012012_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[Round 1: 状态差异契约构建]",
+      "source": "selfgen_20260820_012012_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "└─▶ 输出: VSCM (带时间戳与模型代数的向量状态契约)",
+      "source": "selfgen_20260820_012012_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-20T01:21:20.371961"
+}

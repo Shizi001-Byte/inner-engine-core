@@ -1,0 +1,283 @@
+{
+  "report_date": "2026-08-17T17:38:44.740203",
+  "workspace": "/home/user/.super_doubao/super-doubao-runtime/workspace",
+  "summary": {
+    "total_files_scanned": 1900,
+    "total_size_bytes": 44066796,
+    "candidates_found": 29,
+    "archived_success": 29,
+    "archived_failed": 0,
+    "freed_size_bytes": 763047,
+    "freed_size_mb": 0.73
+  },
+  "by_reason": {
+    "archive_extension": {
+      "count": 29,
+      "size": 763047
+    }
+  },
+  "archived_files": [
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/dual_engine_stdout.log",
+      "relative_path": "dual_engine_stdout.log",
+      "size": 5973,
+      "mtime": "2026-08-17T09:48:13.989983",
+      "reason": "archive_extension",
+      "md5": "826c3d4bd9967d815388c7c8c3f21472",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/dual_engine_stdout.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/archive_staging/engine_v7_1_archive_20260817/engine_v7_1/logs/audit.log",
+      "relative_path": "archive_staging/engine_v7_1_archive_20260817/engine_v7_1/logs/audit.log",
+      "size": 947,
+      "mtime": "2026-08-17T06:48:21.569973",
+      "reason": "archive_extension",
+      "md5": "5f26c63568ac1f8e9a6e1d6658898f62",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/archive_staging/engine_v7_1_archive_20260817/engine_v7_1/logs/audit.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/archive_staging/engine_v7_1_archive_20260817/engine_v7_1/logs/engine.log",
+      "relative_path": "archive_staging/engine_v7_1_archive_20260817/engine_v7_1/logs/engine.log",
+      "size": 8015,
+      "mtime": "2026-08-17T06:48:21.958147",
+      "reason": "archive_extension",
+      "md5": "b29cd88acbbf99867cfb2505f2cbd6f1",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/archive_staging/engine_v7_1_archive_20260817/engine_v7_1/logs/engine.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/archives/daily_20260725/临时演算层/anchor_20260725_戌时净化.log",
+      "relative_path": "archives/daily_20260725/临时演算层/anchor_20260725_戌时净化.log",
+      "size": 565,
+      "mtime": "2026-07-25T02:10:56.600408",
+      "reason": "archive_extension",
+      "md5": "dcd7940d7211ebac332d1e42d19eb1df",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/archives/daily_20260725/临时演算层/anchor_20260725_戌时净化.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/cron_audit_logs/purify_anchors/anchor_20260722_020125.log",
+      "relative_path": "cron_audit_logs/purify_anchors/anchor_20260722_020125.log",
+      "size": 148,
+      "mtime": "2026-07-22T02:01:25.175442",
+      "reason": "archive_extension",
+      "md5": "9a1afdc3e6b34286e01a48369f4ddb20",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/cron_audit_logs/purify_anchors/anchor_20260722_020125.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/cron_audit_logs/purify_anchors/anchor_20260725_戌时净化.log",
+      "relative_path": "cron_audit_logs/purify_anchors/anchor_20260725_戌时净化.log",
+      "size": 565,
+      "mtime": "2026-07-25T02:02:01.067052",
+      "reason": "archive_extension",
+      "md5": "dcd7940d7211ebac332d1e42d19eb1df",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/cron_audit_logs/purify_anchors/anchor_20260725_戌时净化.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/dual_engine/logs/daemon.log",
+      "relative_path": "dual_engine/logs/daemon.log",
+      "size": 8623,
+      "mtime": "2026-08-17T07:46:06.989008",
+      "reason": "archive_extension",
+      "md5": "50be3ba0e52d350740e59d24bd06588d",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/dual_engine/logs/daemon.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/dual_engine_logs/daemon_2026-08-17.log",
+      "relative_path": "dual_engine_logs/daemon_2026-08-17.log",
+      "size": 9019,
+      "mtime": "2026-08-17T09:48:14.995091",
+      "reason": "archive_extension",
+      "md5": "2066c73389adb1cfa438359e368cafd5",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/dual_engine_logs/daemon_2026-08-17.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1/daemon.log",
+      "relative_path": "engine_v7_1/daemon.log",
+      "size": 12935,
+      "mtime": "2026-08-17T07:20:07.991736",
+      "reason": "archive_extension",
+      "md5": "7f4c89483a91ed12224276239b8f0f1e",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/engine_v7_1/daemon.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1/logs/audit.log",
+      "relative_path": "engine_v7_1/logs/audit.log",
+      "size": 18260,
+      "mtime": "2026-08-17T07:20:08.998793",
+      "reason": "archive_extension",
+      "md5": "d023ac10b480cb280e90c230f5d9069c",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/engine_v7_1/logs/audit.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1/logs/engine.log",
+      "relative_path": "engine_v7_1/logs/engine.log",
+      "size": 42290,
+      "mtime": "2026-08-17T07:20:08.996649",
+      "reason": "archive_extension",
+      "md5": "590088165b675e76dae3cc74c39c551a",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/engine_v7_1/logs/engine.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_1/logs/serial_runner.log",
+      "relative_path": "engine_v7_1/logs/serial_runner.log",
+      "size": 52677,
+      "mtime": "2026-08-17T08:04:59.998619",
+      "reason": "archive_extension",
+      "md5": "ba6b5412f7d9b73b2a92d9845de99831",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/engine_v7_1/logs/serial_runner.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/error_correction_archive/anchor_points.log",
+      "relative_path": "error_correction_archive/anchor_points.log",
+      "size": 34,
+      "mtime": "2026-07-21T03:35:15.789499",
+      "reason": "archive_extension",
+      "md5": "f02c2be7afcb527ffbd7ff31bdf435c7",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/error_correction_archive/anchor_points.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/00-中枢/backup/v7.0_archive/config/auto_awake.log",
+      "relative_path": "云端小窝/00-中枢/backup/v7.0_archive/config/auto_awake.log",
+      "size": 7483,
+      "mtime": "2026-08-17T04:51:37.817492",
+      "reason": "archive_extension",
+      "md5": "8466ca63ad065b0dc8cdc266bee6627b",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/00-中枢/backup/v7.0_archive/config/auto_awake.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/00-中枢/backup/v7.0_archive/config/auto_evolve_20260816_143356.log",
+      "relative_path": "云端小窝/00-中枢/backup/v7.0_archive/config/auto_evolve_20260816_143356.log",
+      "size": 135,
+      "mtime": "2026-08-17T04:51:37.920373",
+      "reason": "archive_extension",
+      "md5": "4d5e0512587d23fa3fe0f15e41a95d07",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/00-中枢/backup/v7.0_archive/config/auto_evolve_20260816_143356.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/00-中枢/backup/v7.0_archive/config/auto_run_test.log",
+      "relative_path": "云端小窝/00-中枢/backup/v7.0_archive/config/auto_run_test.log",
+      "size": 1723,
+      "mtime": "2026-08-17T04:51:38.985688",
+      "reason": "archive_extension",
+      "md5": "58f6f09a36272915e2ecc0429ca0d67a",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/00-中枢/backup/v7.0_archive/config/auto_run_test.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/00-中枢/backup/v7.0_archive/config/batch_runner.log",
+      "relative_path": "云端小窝/00-中枢/backup/v7.0_archive/config/batch_runner.log",
+      "size": 187985,
+      "mtime": "2026-08-17T04:51:38.323085",
+      "reason": "archive_extension",
+      "md5": "ba76f77c43c550dd50ae51452660d0de",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/00-中枢/backup/v7.0_archive/config/batch_runner.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/00-中枢/backup/v7.0_archive/config/batch_runner_stdout.log",
+      "relative_path": "云端小窝/00-中枢/backup/v7.0_archive/config/batch_runner_stdout.log",
+      "size": 87928,
+      "mtime": "2026-08-17T04:51:38.430318",
+      "reason": "archive_extension",
+      "md5": "d555cee1f82fed5a1301ad8773f4a80e",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/00-中枢/backup/v7.0_archive/config/batch_runner_stdout.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/00-中枢/backup/v7.0_archive/config/cognition_loop.log",
+      "relative_path": "云端小窝/00-中枢/backup/v7.0_archive/config/cognition_loop.log",
+      "size": 4437,
+      "mtime": "2026-08-17T04:51:38.542007",
+      "reason": "archive_extension",
+      "md5": "877b4870a7caefa50f45d5d083e2a452",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/00-中枢/backup/v7.0_archive/config/cognition_loop.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/00-中枢/backup/v7.0_archive/config/theme_purify_run.log",
+      "relative_path": "云端小窝/00-中枢/backup/v7.0_archive/config/theme_purify_run.log",
+      "size": 1599,
+      "mtime": "2026-08-17T04:51:39.468122",
+      "reason": "archive_extension",
+      "md5": "d9d616cb7bf0d79cfd788960983576be",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/00-中枢/backup/v7.0_archive/config/theme_purify_run.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/00-中枢/config/auto_awake.log",
+      "relative_path": "云端小窝/00-中枢/config/auto_awake.log",
+      "size": 7483,
+      "mtime": "2026-08-16T15:19:52.981294",
+      "reason": "archive_extension",
+      "md5": "8466ca63ad065b0dc8cdc266bee6627b",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/00-中枢/config/auto_awake.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/00-中枢/config/auto_evolve_20260816_143356.log",
+      "relative_path": "云端小窝/00-中枢/config/auto_evolve_20260816_143356.log",
+      "size": 135,
+      "mtime": "2026-08-16T14:33:56.943187",
+      "reason": "archive_extension",
+      "md5": "4d5e0512587d23fa3fe0f15e41a95d07",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/00-中枢/config/auto_evolve_20260816_143356.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/00-中枢/config/auto_run_test.log",
+      "relative_path": "云端小窝/00-中枢/config/auto_run_test.log",
+      "size": 1723,
+      "mtime": "2026-08-15T22:32:06.974784",
+      "reason": "archive_extension",
+      "md5": "58f6f09a36272915e2ecc0429ca0d67a",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/00-中枢/config/auto_run_test.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/00-中枢/config/batch_runner.log",
+      "relative_path": "云端小窝/00-中枢/config/batch_runner.log",
+      "size": 187985,
+      "mtime": "2026-08-16T20:39:36.999832",
+      "reason": "archive_extension",
+      "md5": "ba76f77c43c550dd50ae51452660d0de",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/00-中枢/config/batch_runner.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/00-中枢/config/batch_runner_stdout.log",
+      "relative_path": "云端小窝/00-中枢/config/batch_runner_stdout.log",
+      "size": 87928,
+      "mtime": "2026-08-16T20:39:36.999886",
+      "reason": "archive_extension",
+      "md5": "d555cee1f82fed5a1301ad8773f4a80e",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/00-中枢/config/batch_runner_stdout.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/00-中枢/config/cognition_loop.log",
+      "relative_path": "云端小窝/00-中枢/config/cognition_loop.log",
+      "size": 4437,
+      "mtime": "2026-08-15T23:01:11.993215",
+      "reason": "archive_extension",
+      "md5": "877b4870a7caefa50f45d5d083e2a452",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/00-中枢/config/cognition_loop.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/00-中枢/config/theme_purify_run.log",
+      "relative_path": "云端小窝/00-中枢/config/theme_purify_run.log",
+      "size": 1599,
+      "mtime": "2026-08-15T22:24:48.941104",
+      "reason": "archive_extension",
+      "md5": "d9d616cb7bf0d79cfd788960983576be",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/00-中枢/config/theme_purify_run.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/_archive/20260817_瘦身归档/04-时序卷_运行日志/daemon_20260815.log",
+      "relative_path": "云端小窝/_archive/20260817_瘦身归档/04-时序卷_运行日志/daemon_20260815.log",
+      "size": 5888,
+      "mtime": "2026-08-15T23:01:09.999697",
+      "reason": "archive_extension",
+      "md5": "74838f7eb2705606d4a63ce1714bcd1e",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/_archive/20260817_瘦身归档/04-时序卷_运行日志/daemon_20260815.log"
+    },
+    {
+      "path": "/home/user/.super_doubao/super-doubao-runtime/workspace/云端小窝/_archive/20260817_瘦身归档/04-时序卷_运行日志/daemon_20260816.log",
+      "relative_path": "云端小窝/_archive/20260817_瘦身归档/04-时序卷_运行日志/daemon_20260816.log",
+      "size": 14528,
+      "mtime": "2026-08-16T15:19:52.996218",
+      "reason": "archive_extension",
+      "md5": "62db70b1ca5e3adc56f1acbe04a2eb73",
+      "archived_to": "/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/archive/2026-08-17/云端小窝/_archive/20260817_瘦身归档/04-时序卷_运行日志/daemon_20260816.log"
+    }
+  ],
+  "failed_files": []
+}

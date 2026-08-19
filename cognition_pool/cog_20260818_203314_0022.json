@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_203215_0022",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "**决策串行、执行并发**是“脑体分离”架构的运行规则：",
+      "source": "selfgen_20260818_203215_0022",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **决策层（脑）**：串行、有状态、确定性顺序",
+      "source": "selfgen_20260818_203215_0022",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "所有状态变更、仲裁、任务派发都必须经过唯一的决策循环，保证“状态链”的连续性",
+      "source": "selfgen_20260818_203215_0022",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "决策一旦并发，就会出现状态覆盖、顺序错乱、无法回放",
+      "source": "selfgen_20260818_203215_0022",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **执行层（体）**：并发、无状态、可失败",
+      "source": "selfgen_20260818_203215_0022",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:33:14.567883"
+}

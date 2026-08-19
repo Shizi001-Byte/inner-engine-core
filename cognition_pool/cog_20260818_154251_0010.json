@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_154117_0010",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于已有的认知锚定与避坑经验，推演“决策串行、执行并发”的分层原则及脑体分离架构的不可破坏性，如下：",
+      "source": "selfgen_20260818_154117_0010",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**“脑体分离”架构的本质是：控制流（脑）与数据流（体）的严格解耦",
+      "source": "selfgen_20260818_154117_0010",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "“决策串行、执行并发”是在此架构下的运转范式：引擎（脑）必须以串行、显式的方式推进状态机，确保每一步的上下文可重放、可校验；而算子（体）在接收到明确的执行指令后，利用并发机制提升I/O和计算效率",
+      "source": "selfgen_20260818_154117_0010",
+      "type": "cog",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "**引擎优化不能破坏该架构的原因：**",
+      "source": "selfgen_20260818_154117_0010",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **防范“隐式状态机”导致不可重放：** 若为了追求性能，将部分决策逻辑（如路由判断、状态流转）下沉到执行层（体），看似“决策层等价”，实则将状态流转隐藏在了并发执行的黑盒中",
+      "source": "selfgen_20260818_154117_0010",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:42:51.683406"
+}

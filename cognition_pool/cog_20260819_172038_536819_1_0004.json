@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_171801_0004",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "- Guardian-Core 双进程架构：同步协程由守护进程托管，崩溃自动拉起",
+      "source": "selfgen_20260819_171801_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- WAL + Snapshot：同步状态、产物清单都走 WAL，崩溃后从 Snapshot 恢复",
+      "source": "selfgen_20260819_171801_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 单向同步：引擎产物是唯一事实源，Gitee / Feishu / Supabase 都是派生目标端",
+      "source": "selfgen_20260819_171801_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 幂等优先：所有同步操作必须有确定性 `sync_id`，重复执行不产生重复提交或重复上传",
+      "source": "selfgen_20260819_171801_0004",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:20:38.572883"
+}

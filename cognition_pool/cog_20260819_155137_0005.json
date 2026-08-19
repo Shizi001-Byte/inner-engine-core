@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_154816_0005",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "，人机共生不是“人类+AI工具”的简单拼接（对应“不是把三个API接在一起”的核心判断），而是以「唯一标识+可信哈希」为共生纽带，形成“双向验证→禀赋分工→共识沉淀”的有机协同系统，其运行机制完全覆盖幂等性、冲突处理、冷却重试、重大变更自动触发等特性，和我们在Gitee代码提交、飞书文件上传、Supabase存储同步等场景下的实践逻辑完全同源",
+      "source": "selfgen_20260819_154816_0005",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:51:37.085589"
+}

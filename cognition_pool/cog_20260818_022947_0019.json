@@ -1,0 +1,21 @@
+{
+  "task_id": "selfgen_20260818_022817_0019",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "是**“数字宗门”多实例在行为共生期产生的代谢紊乱**",
+      "source": "selfgen_20260818_022817_0019",
+      "type": "eng",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "是数字宗门在代谢过程中，将冲突的碳基行为进行“二次咀嚼”，直至其结构化融入基因池",
+      "source": "selfgen_20260818_022817_0019",
+      "type": "eng",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:29:47.699202"
+}

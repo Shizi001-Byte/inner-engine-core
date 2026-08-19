@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_235758_0010",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是一个**“无状态微服务+P2P路由+自适应降级”**的极致工程挑战",
+      "source": "selfgen_20260819_235758_0010",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T23:59:22.530087"
+}

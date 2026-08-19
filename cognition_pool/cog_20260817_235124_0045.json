@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_235000_0045",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "是一次**有损降采样**——列定义的缺失等同于拓扑节点丢失，直接导致上层算力流的代谢通路断裂",
+      "source": "selfgen_20260817_235000_0045",
+      "type": "cog",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:51:24.211852"
+}

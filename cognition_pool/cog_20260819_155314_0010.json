@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_155150_0010",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "**“只看失败率调并发”是一个局部最优陷阱",
+      "source": "selfgen_20260819_155150_0010",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "5路并发时，失败率可能依然很低（甚至比3路更低），但崩溃频率从 0.1 次/小时 飙到 4 次/小时",
+      "source": "selfgen_20260819_155150_0010",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "崩溃导致在途任务整体丢失、进程重启、缓存失效、重试风暴，最终 5 路有效产出反而只有稳定 3 路的约 60%",
+      "source": "selfgen_20260819_155150_0010",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> 有效产出 = 成功完成任务数 − 崩溃损失 − 重试开销 − 恢复成本",
+      "source": "selfgen_20260819_155150_0010",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:53:14.592982"
+}

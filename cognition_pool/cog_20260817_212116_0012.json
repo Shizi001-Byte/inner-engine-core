@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260817_212004_0012",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "用演化生物学的视角来看待AI引擎从V7.2到V7.5的版本迭代，是一个非常深刻的隐喻",
+      "source": "selfgen_20260817_212004_0012",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "我们可以将V7.2到V7.5的迭代过程映射为特定的演化机制，并据此推演下一代（V8.0或V9.0）的演化方向",
+      "source": "selfgen_20260817_212004_0012",
+      "type": "exp",
+      "density": 0.38,
+      "density_grade": "B"
+    },
+    {
+      "text": "假设V7.2是一个具备基础多模态能力但稍显孤立的模型，V7.5则是一个具备长文本处理、强Agent（智能体）能力和工具调用的成熟模型",
+      "source": "selfgen_20260817_212004_0012",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:21:16.251335",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:06.082977"
+}

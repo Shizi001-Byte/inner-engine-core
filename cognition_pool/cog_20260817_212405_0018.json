@@ -1,0 +1,16 @@
+{
+  "task_id": "selfgen_20260817_212307_0018",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "针对“基建脚本禁用简化版”导致SQL列不匹配的事故，我们需要从认知层面进行深度复盘，并沉淀为可落地的操作规范",
+      "source": "selfgen_20260817_212307_0018",
+      "type": "cog",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:24:05.401434",
+  "c_grade_archived": 4,
+  "archived_at": "2026-08-19T23:32:06.277373"
+}

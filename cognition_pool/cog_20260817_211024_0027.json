@@ -1,0 +1,28 @@
+{
+  "task_id": "selfgen_20260817_210911_0027",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "设计引擎产出的自动归档系统，核心目标是实现**“任务结束即归档，数据可检索，文件有条理”**",
+      "source": "selfgen_20260817_210911_0027",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "这需要一套结合了事件驱动、规则引擎、元数据管理和文件系统操作的综合机制",
+      "source": "selfgen_20260817_210911_0027",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是该自动归档系统的完整设计方案：",
+      "source": "selfgen_20260817_210911_0027",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:10:25.019005"
+}

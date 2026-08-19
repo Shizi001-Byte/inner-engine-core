@@ -80,17 +80,26 @@ DEFAULT_RULES = {
 
 # 运行时规则（从文件加载，支持迭代）
 _rules = None
+_rules_mtime = 0  # P2-6修复：规则文件mtime热刷新
 
 
 def load_rules():
-    """加载规则配置，不存在则用默认值初始化"""
-    global _rules
+    """加载规则配置；P2-6：文件变更自动热刷新"""
+    global _rules, _rules_mtime
+    if _rules is not None:
+        # P2-6：检查文件是否被外部修改
+        try:
+            if RULES_CONFIG.exists() and RULES_CONFIG.stat().st_mtime != _rules_mtime:
+                _rules = None
+        except Exception:
+            pass
     if _rules is not None:
         return _rules
     if RULES_CONFIG.exists():
         try:
             with open(RULES_CONFIG) as f:
                 _rules = json.load(f)
+            _rules_mtime = RULES_CONFIG.stat().st_mtime
             return _rules
         except Exception:
             pass
@@ -236,7 +245,7 @@ def _calc_duplicate_risk(task_type, state=None):
     if state:
         recent = state.get("recent_task_stats", [])
         if recent:
-            same_type_count = sum(1 for r in recent if r.get("task_type") == task_type)
+            same_type_count = sum(1 for r in recent if (r.get("task_type") or r.get("type")) == task_type)
 
     if same_type_count >= thresholds["high"]:
         level = "high"

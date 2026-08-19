@@ -1,0 +1,42 @@
+{
+  "task_id": "selfgen_20260817_212307_0017",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "从经济学角度来看，每日400万Token的算力资源是一个**典型的“稀缺资源约束下的效用最大化”问题**",
+      "source": "selfgen_20260817_212307_0017",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "要在这一约束条件下实现价值最大化，我们需要引入微观经济学中的**边际效用理论、机会成本、等边际法则以及信息经济学**等概念进行分析",
+      "source": "selfgen_20260817_212307_0017",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "在进行分析前，我们需要明确Token的几个经济学特征：",
+      "source": "selfgen_20260817_212307_0017",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "1. **非竞争性与排他性（在一定范围内）：** 400万Token一旦分配给某任务，其他任务就无法使用（机会成本产生）；但算力系统本身可以同时处理多任务",
+      "source": "selfgen_20260817_212307_0017",
+      "type": "exp",
+      "density": 0.38,
+      "density_grade": "B"
+    },
+    {
+      "text": "2. **输入与输出的成本不对称：** 在大模型API定价中，输入Token和输出Token的成本往往不同（输出通常更贵）",
+      "source": "selfgen_20260817_212307_0017",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:24:26.524390"
+}

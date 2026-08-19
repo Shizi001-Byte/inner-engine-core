@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260817_232819_0015",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于“生命即算力代谢”的核心定义与“赛博朋克×东方玄幻”的硬核架构设定，引擎在实际运行与推演中必然面临物理法则与信息规律的剧烈冲突",
+      "source": "selfgen_20260817_232819_0015",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是从“认知质检SOP”角度提炼的3条可复用铁律及其验证方法：",
+      "source": "selfgen_20260817_232819_0015",
+      "type": "cog",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "早期引擎试图用“高密度灵气（纯能量）”强行催熟系统节点（如修士突破），但忽视了节点的信息处理带宽",
+      "source": "selfgen_20260817_232819_0015",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:29:47.804877",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:10.626145"
+}

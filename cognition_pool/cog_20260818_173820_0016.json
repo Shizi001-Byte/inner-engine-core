@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_173631_0016",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "增量同步不按“整个文件”同步，而按 **“块”** 同步",
+      "source": "selfgen_20260818_173631_0016",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:38:20.990444"
+}

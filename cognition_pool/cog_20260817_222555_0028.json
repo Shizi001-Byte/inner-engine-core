@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_222443_0028",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "是构建一个**状态机驱动的有向无环图（DAG）**",
+      "source": "selfgen_20260817_222443_0028",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:25:55.351475"
+}

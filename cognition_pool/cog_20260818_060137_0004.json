@@ -1,0 +1,21 @@
+{
+  "task_id": "selfgen_20260818_055747_0004",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "首先基于锚定重构核心前提：",
+      "source": "selfgen_20260818_055747_0004",
+      "type": "eng",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "对微核域的修改无需任何锁操作，直接覆盖写入，完全无竞态：",
+      "source": "selfgen_20260818_055747_0004",
+      "type": "eng",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T06:01:37.713557"
+}

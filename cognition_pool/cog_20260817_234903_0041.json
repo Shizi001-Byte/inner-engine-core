@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_234732_0041",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是一个**“基于DevOps与LLM日志的赛博修仙引擎”**",
+      "source": "selfgen_20260817_234732_0041",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:49:03.741633"
+}

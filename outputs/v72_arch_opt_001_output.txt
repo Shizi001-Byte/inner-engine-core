@@ -1,0 +1,192 @@
+### 缺陷编号：BUG-001（并发安全维度）
+**问题描述**：
+脑端（Cerebrum）的 `SessionHub` 在管理体端（Body）心跳与状态上报时，使用原生 `map` 存储 `activeSessions`。当多个体端并发进行心跳保活和状态更新时，触发 `fatal error: concurrent map writes`，导致脑端进程直接崩溃。
+
+**根因分析**：
+V7.2版本在重构心跳逻辑时，将原本的轮询改为了事件驱动，但底层的 `SessionHub` 结构体未进行并发控制。Go语言的原生 `map` 是非线程安全的，高并发读写必然导致Panic。仅仅加一把全局锁会导致严重的性能瓶颈，影响脑端的吞吐量。
+
+**修复代码**：
+将原生 `map` 替换为分段锁或标准的 `sync.RWMutex` 包装结构（以下采用读写锁优化读多写少场景）：
+
+```go
+package cerebrum
+
+import (
+	"sync"
+)
+
+type Session struct {
+	BodyID    string
+	IsActive  bool
+	Heartbeat int64
+}
+
+type SessionHub struct {
+	mu       sync.RWMutex
+	sessions map[string]*Session
+}
+
+func NewSessionHub() *SessionHub {
+	return &SessionHub{
+		sessions: make(map[string]*Session),
+	}
+}
+
+// UpdateSession 处理体端并发心跳上报
+func (h *SessionHub) UpdateSession(bodyID string, heartbeat int64) {
+	h.mu.Lock()
+	defer h.mu.Unlock()
+	
+	if session, exists := h.sessions[bodyID]; exists {
+		session.Heartbeat = heartbeat
+		session.IsActive = true
+	} else {
+		h.sessions[bodyID] = &Session{
+			BodyID:    bodyID,
+			IsActive: true,
+			Heartbeat: heartbeat,
+		}
+	}
+}
+
+// GetSession 脑端调度器获取体端状态
+func (h *SessionHub) GetSession(bodyID string) (*Session, bool) {
+	h.mu.RLock()
+	defer h.mu.RUnlock()
+	
+	session, exists := h.sessions[bodyID]
+	return session, exists
+}
+```
+
+**验证方法**：
+编写并发测试用例，启动 1000 个 Goroutine 同时调用 `UpdateSession` 和 `GetSession`，运行 `go test -race`。确认无 `DATA RACE` 报警，且无 `concurrent map writes` Panic。
+
+---
+
+### 缺陷编号：BUG-002（错误恢复维度）
+**问题描述**：
+脑端向体端下发控制指令（如运动轨迹规划）时，若体端执行过程中发生网络抖动或瞬时超时，脑端的 `DispatchTask` 方法直接返回 `error` 且无重试机制。导致体端执行器因未收到完整指令序列而进入“僵尸悬挂”状态，无法自我恢复。
+
+**根因分析**：
+V7.2的RPC调度逻辑采用了“即发即弃”与单次阻塞等待结合的模式，未考虑脑体分离架构中网络I/O的不稳定性。缺乏指数退避重试和任务上下文恢复机制。
+
+**修复代码**：
+引入带上下文截止时间的指数退避重试包装器：
+
+```go
+package cerebrum
+
+import (
+	"context"
+	"fmt"
+	"time"
+)
+
+// DispatchTaskWithRetry 带错误恢复的任务分发
+func DispatchTaskWithRetry(ctx context.Context, bodyID string, task []byte, maxRetries int) error {
+	var lastErr error
+	
+	for attempt := 0; attempt < maxRetries; attempt++ {
+		// 检查全局上下文是否已取消（如脑端主动取消任务）
+		if ctx.Err() != nil {
+			return fmt.Errorf("dispatch canceled: %w", ctx.Err())
+		}
+		
+		err := sendToBody(ctx, bodyID, task)
+		if err == nil {
+			return nil // 成功投递
+		}
+		
+		lastErr = err
+		// 指数退避: 100ms, 200ms, 400ms...
+		backoff := time.Duration(100*(1<<attempt)) * time.Millisecond
+		select {
+		case <-time.After(backoff):
+			// 退避结束后继续重试
+		case <-ctx.Done():
+			return ctx.Err()
+		}
+	}
+	return fmt.Errorf("dispatch failed after %d retries, last error: %w", maxRetries, lastErr)
+}
+
+// sendToBody 底层RPC发送逻辑（模拟）
+func sendToBody(ctx context.Context, bodyID string, task []byte) error {
+	// 实际的gRPC/TCP发送逻辑
+	return nil
+}
+```
+
+**验证方法**：
+使用 Toxiproxy 注入 50% 的网络丢包和 200ms 延迟。下发任务，观察日志确认存在重试记录，且任务最终能在网络恢复后成功下发，体端状态机未卡死在 `Pending` 状态。
+
+---
+
+### 缺陷编号：BUG-003（资源管理维度）
+**问题描述**：
+体端（Body）在处理脑端的高频遥测数据流时，通过 `StartTelemetryStream` 启动了后台 Goroutine。但当脑端断开连接或体端收到停机指令时，该 Goroutine 阻塞在无缓冲的 `telemetryChan` 上，导致 Goroutine 泄漏，内存占用随运行时间线性增长，最终触发 OOM。
+
+**根因分析**：
+V7.2 实现中，`StartTelemetryStream` 缺乏生命周期管理。未使用 `context.Context` 控制退出，且在向无缓冲 channel 写入数据时没有 `select` 分支监听退出信号。
+
+**修复代码**：
+引入 `context` 控制 Goroutine 生命周期，并使用 `select` 防止死锁：
+
+```go
+package body
+
+import (
+	"context"
+	"log"
+)
+
+type TelemetryData struct {
+	// 遥测数据结构
+}
+
+func StartTelemetryStream(ctx context.Context, bodyID string, chanSize int) <-chan TelemetryData {
+	// 使用带缓冲的channel防止瞬时阻塞
+	telemetryChan := make(chan TelemetryData, chanSize)
+	
+	go func() {
+		// 核心修复：确保退出时释放资源并关闭channel
+		defer func() {
+			close(telemetryChan)
+			log.Printf("Body %s telemetry stream stopped", bodyID)
+		}()
+		
+		for {
+			select {
+			case <-ctx.Done():
+				// 收到停机/断连信号，主动退出
+				return
+			default:
+				data, err := collectSensorData()
+				if err != nil {
+					log.Printf("Sensor read error: %v", err)
+					continue
+				}
+				
+				select {
+				case telemetryChan <- data:
+					// 成功发送
+				case <-ctx.Done():
+					// 发送过程中收到退出信号，防止死锁
+					return
+				}
+			}
+		}
+	}()
+	
+	return telemetryChan
+}
+
+func collectSensorData() (TelemetryData, error) {
+	// 硬件采集逻辑
+	return TelemetryData{}, nil
+}
+```
+
+**验证方法**：
+使用 `runtime.NumGoroutine()` 监控体端的 Goroutine 数量。连续触发 1000 次“连接-断开”脑端测试。确认 Goroutine 数量在断开后回落到基准水位，使用 `pprof` 查看堆内存无 `body.StartTelemetryStream` 的残留引用。

@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_215911_0001",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【演化生物学映射】与【CAS复杂适应系统】框架，将Gitee（基因库/DNA）、Supabase（记忆脑/中枢神经系统）与飞书（表型/物理交互界面）视为一个完整的信息流演化生态",
+      "source": "selfgen_20260819_215911_0001",
+      "type": "eng",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "在此基础上，推演并设计三方同步自动化引擎",
+      "source": "selfgen_20260819_215911_0001",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在此系统中，**Gitee的每一次重大变更（Commit/Merge）相当于基因突变**，**Supabase负责记录突变特征并协调表达**，**飞书则是将高维代码沉淀翻译为人类可读的低维物理文档（表型表达）**",
+      "source": "selfgen_20260819_215911_0001",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下是自动化引擎设计方案及幂等性、冲突处理推演：",
+      "source": "selfgen_20260819_215911_0001",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "每次Gitee发生重大变更（如Tag推送、Master分支Merge）时，触发Webhook，引擎按以下链路执行：",
+      "source": "selfgen_20260819_215911_0001",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T22:00:52.049051"
+}

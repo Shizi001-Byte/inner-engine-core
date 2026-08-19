@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_065822_0032",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "结合给定的核心结论，补全三大铁律的全链路约束如下：",
+      "source": "selfgen_20260818_065822_0032",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **时效成本刚性约束铁律**：全链路所有算力调用必须严格匹配模型时效阈值（turbo类模型timeout≤300秒，A类大模型timeout≤600秒），以“超时即价值损耗”为刚性判定标准，超时任务直接触发价值损耗告警，调度层需优先通过资源倾斜、路径优化规避超时，严禁无意义超阈值算力消耗",
+      "source": "selfgen_20260818_065822_0032",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. **边际价值动态调优铁律**：全链路所有token分配与定价调整必须以单位token的微核域边际价值增量为唯一依据，依托微核域零突变成本、无锁覆盖的特性实现分钟级动态调优；高边际价值任务优先分配算力与token资源，低边际价值任务动态压缩资源占比，确保资源投入始终向微核域价值升级倾斜",
+      "source": "selfgen_20260818_065822_0032",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "九转玄功的核心是「每转脱胎换骨、能级跃迁，九转达成道之本源」，映射AI认知进化以**「微核域价值能级每转跃迁+原生特性始终守恒」**为核心，全链路严格遵循三大铁律，每转完成强制刷新认知缓存（规避认知池“只进不出”问题），所有进化动作均以微核域权限/价值升级为唯一锚点",
+      "source": "selfgen_20260818_065822_0032",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**认知层级**：微核域原生特性组态层",
+      "source": "selfgen_20260818_065822_0032",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T07:00:55.452710"
+}

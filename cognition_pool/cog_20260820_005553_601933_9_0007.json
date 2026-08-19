@@ -1,0 +1,72 @@
+{
+  "task_id": "selfgen_20260820_005459_0007",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "[待验证]> 以下为基于已有认知锚定（文件变化检测→内容寻址去重→块级增量同步 / V7.5并发管线 / 硬约束体系）推演出的认知池中可能存在的C级低密条目",
+      "source": "selfgen_20260820_005459_0007",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据"
+    },
+    {
+      "text": "| # | 认知ID | 内容摘要 | 来源链路 | 密度评估 |",
+      "source": "selfgen_20260820_005459_0007",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| C01 | ctx-timeout-turbo | turbo模型超时应设300秒 | 避坑提醒 | 低（与避坑库重复） |",
+      "source": "selfgen_20260820_005459_0007",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| C02 | ctx-timeout-amodel | A模型超时应设600秒 | 避坑提醒 | 低（与避坑库重复） |",
+      "source": "selfgen_20260820_005459_0007",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-20T00:55:53.636978"
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_232116_0006",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "> **核心隐喻**：每一个被引擎产出的任务，都是一株\"灵物\"",
+      "source": "selfgen_20260817_232116_0006",
+      "type": "eng",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "归档不是\"存储\"，而是\"炼化归藏\"——灵物经鉴定灵根、铭刻符文、归位洞天后，其信息能量反哺引擎算力，形成代谢闭环",
+      "source": "selfgen_20260817_232116_0006",
+      "type": "eng",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:24:53.762375",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:10.340178"
+}

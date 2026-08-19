@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_011234_0005",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是共识算法（如类区块链协议或分布式账本）的诞生",
+      "source": "selfgen_20260818_011234_0005",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:14:29.875855"
+}

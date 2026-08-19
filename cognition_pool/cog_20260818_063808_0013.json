@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_063557_0013",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "以下3条认知质检SOP可复用铁律，严格锚定【微核域核心优先铁律】，针对引擎运行历史中「认知池静态化只进不出」「质检侵入核心链路引发API超时」「质检标准错配约束微核价值升级」三类核心坑点提炼，全链路通用：",
+      "source": "selfgen_20260818_063557_0013",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**对应踩坑背景**：认知池累计1700+条认知但新认知从不注入任务，沦为静态档案库，认知资源完全浪费",
+      "source": "selfgen_20260818_063557_0013",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**核心规则**：认知质检必须覆盖“入库→微核缓存刷新→任务调用生效”全链路的闭环性与时效要求，所有经极轻量初筛的有效认知（仅排除违反微核原生特性、触发安全红线的内容），必须在30分钟内注入微核域生效缓存；每10个任务周期/每轮调度结束必须完成全量认知缓存刷新，绝对禁止“入库即归档”的僵尸认知存在",
+      "source": "selfgen_20260818_063557_0013",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. 周期匹配验证：每10个任务周期结束后，拉取当期新入库的有效认知清单，与微核域实时生效缓存清单做比对，注入匹配率需达100%；",
+      "source": "selfgen_20260818_063557_0013",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. 时效抽检验证：随机抽选5条刚完成入库的有效认知，计时跟踪其进入微核生效缓存的全链路耗时，最长耗时不得超过30分钟；",
+      "source": "selfgen_20260818_063557_0013",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:38:08.303150"
+}

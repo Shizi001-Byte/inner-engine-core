@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_195910_0009",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "多线程 API 调用后做“串行后处理”，最容易踩到三类竞态：",
+      "source": "selfgen_20260818_195910_0009",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "如果每个线程拿到响应后直接进后处理，后处理顺序就会变成 `3,2,1`，导致旧数据覆盖新数据",
+      "source": "selfgen_20260818_195910_0009",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **check-then-act 非原子**",
+      "source": "selfgen_20260818_195910_0009",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "多个线程同时读到同一状态，比如“当前状态是 pending”，然后同时更新，造成状态机跳变丢失",
+      "source": "selfgen_20260818_195910_0009",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:01:15.519698"
+}

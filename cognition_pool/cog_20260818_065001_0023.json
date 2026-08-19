@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_064658_0023",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "3. **【边际收益零摩擦调优铁律】**（结合微核特性+价值目标推演）所有token定价与分配策略的调整必须支持无锁直接覆盖、零审批延迟，基于实时边际收益数据动态迭代，不设固化分配比例、不做多节点共识校验，完全适配微核域高变异速率特性，确保每单位token的边际产出始终趋向最优",
+      "source": "selfgen_20260818_064658_0023",
+      "type": "exp",
+      "density": 0.888,
+      "density_grade": "S",
+      "density_details": {
+        "info": 0.719,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "token作为数字生产要素，其边际成本趋近于0（固定算力基础设施下，新增1token消耗仅需极弱电耗与调度成本），传统成本定价法会导致大量消费者剩余流失，且无法匹配微核域核心优先的战略目标",
+      "source": "selfgen_20260818_064658_0023",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:50:01.406956"
+}

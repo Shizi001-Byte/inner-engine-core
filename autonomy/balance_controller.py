@@ -107,6 +107,10 @@ def update_density_stats(state, task_type, grade):
     type_stats["total"] += 1
     # 只保留最近20条统计
     if type_stats["total"] > 20:
+        # P2-5修复：只减大于0的等级，total减实际减少量，保持sum==total
+        actual_dec = 0
         for k in ["S", "A", "B", "C"]:
-            type_stats[k] = max(0, type_stats[k] - 1)
-        type_stats["total"] -= 1
+            if type_stats[k] > 0:
+                type_stats[k] -= 1
+                actual_dec += 1
+        type_stats["total"] -= actual_dec

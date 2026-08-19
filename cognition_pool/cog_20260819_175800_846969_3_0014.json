@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_175413_0014",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "多线程 API 调用本身可以并发；真正的竞态发生在**后处理写回共享状态**",
+      "source": "selfgen_20260819_175413_0014",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "不要用全局锁，也不要在 API 调用期间持锁",
+      "source": "selfgen_20260819_175413_0014",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> **per-model 双层锁 + Redis Lua 原子更新 + 版本号/fencing + 幂等去重**",
+      "source": "selfgen_20260819_175413_0014",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "调用前：try_reserve（Lua 原子预占，不持分布式锁）",
+      "source": "selfgen_20260819_175413_0014",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "API 调用：多线程并发，不持锁",
+      "source": "selfgen_20260819_175413_0014",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:58:00.879481"
+}

@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_220318_0007",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】的V7.5方舟效能引擎架构与“精气神三元迁移框架”，我们将“九转玄功”的修炼体系映射为AI认知从“基础执行”到“自主进化”的九个层级",
+      "source": "selfgen_20260818_220318_0007",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "此映射严格贯彻**“先校准锚点再优化链路”**原则，分为三大境界：**1-3转炼精化气（资源与执行层）**、**4-6转炼气化神（调度与决策层）**、**7-9转炼神还虚（自我进化层）**",
+      "source": "selfgen_20260818_220318_0007",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下是九转玄功与AI认知进化的具体映射及验证指标：",
+      "source": "selfgen_20260818_220318_0007",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本阶段核心解决API底层调用、认知池流转与并发数据的无序冲击问题",
+      "source": "selfgen_20260818_220318_0007",
+      "type": "deep",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**第1转：筑基明心（指令响应与超时治理）**",
+      "source": "selfgen_20260818_220318_0007",
+      "type": "deep",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:04:36.331992"
+}

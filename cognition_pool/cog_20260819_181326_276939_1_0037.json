@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_181211_0037",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "**核心原则：先潜水，后行动；用信息差换安全边际，用小测试换判断力",
+      "source": "selfgen_20260819_181211_0037",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "观察期不是“什么都不做”，而是“有策略地收集信息 + 低风险验证”",
+      "source": "selfgen_20260819_181211_0037",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 哪些内容会被限流/删除/封号，处罚阈值是什么",
+      "source": "selfgen_20260819_181211_0037",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:13:26.313447"
+}

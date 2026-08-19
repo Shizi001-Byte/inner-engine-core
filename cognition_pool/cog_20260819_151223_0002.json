@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_151027_0002",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "身份反差 = 最廉价的“逆向触发”杠杆",
+      "source": "selfgen_20260819_151027_0002",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:12:23.777391"
+}

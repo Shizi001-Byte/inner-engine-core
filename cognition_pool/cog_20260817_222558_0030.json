@@ -1,0 +1,42 @@
+{
+  "task_id": "selfgen_20260817_222443_0030",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于“认知质检SOP”的视角，AI引擎在运行中出现的故障往往不是单纯的代码Bug，而是“认知边界失控”或“逻辑链路污染”",
+      "source": "selfgen_20260817_222443_0030",
+      "type": "cog",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是从多次引擎运行踩坑中提炼的3条可复用铁律，以及配套的标准化验证方法：",
+      "source": "selfgen_20260817_222443_0030",
+      "type": "cog",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "引擎在处理用户Prompt时，常常会将用户假设的条件、甚至是用户给出的错误前提，当作“既定事实”纳入自身的知识库进行推理",
+      "source": "selfgen_20260817_222443_0030",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "例如用户问“既然林黛玉倒拔垂杨柳，那她为什么没上梁山？”，引擎顺着用户设定的“伪事实”继续编造，导致输出严重的逻辑幻觉",
+      "source": "selfgen_20260817_222443_0030",
+      "type": "cog",
+      "density": 0.41,
+      "density_grade": "B"
+    },
+    {
+      "text": "在引擎的认知链路中，必须建立“信源分级隔离机制”",
+      "source": "selfgen_20260817_222443_0030",
+      "type": "cog",
+      "density": 0.51,
+      "density_grade": "A"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:25:58.230322"
+}

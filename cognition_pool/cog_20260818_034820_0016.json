@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260818_034701_0016",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "基于已确认的“高维探针”与“隐性关联悬置态”机制，我们将这每日400万token的算力资源视为一种**“高维认知资本”**",
+      "source": "selfgen_20260818_034701_0016",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "在“认知防截断与高维记忆沉淀引擎”的框架下，传统的“输入-输出-存储”线性模型被彻底淘汰",
+      "source": "selfgen_20260818_034701_0016",
+      "type": "exp",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "400万token的预算约束要求我们放弃对低维显性对话的过度补贴，将算力向高维记忆的提取、悬置态的维持与防截断压缩倾斜",
+      "source": "selfgen_20260818_034701_0016",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是基于经济学视角的400万token分配与价值最大化模型：",
+      "source": "selfgen_20260818_034701_0016",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:48:20.538961",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:20.114712"
+}

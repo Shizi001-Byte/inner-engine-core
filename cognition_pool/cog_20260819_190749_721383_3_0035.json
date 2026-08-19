@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_190413_0035",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "本分析**仅针对服务于轻边际供给主体（大模型API、云服务、内容平台、互联网工具等）的AI调度/运营引擎**，核心是研究以该引擎为枢纽的「供给-引擎-需求」复杂适应系统（CAS）的自进化规律，不涉及重边际成本供给（如制造业、实体服务）的AI系统",
+      "source": "selfgen_20260819_190413_0035",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "我们先将题目给出的正反馈循环「消耗→产出→反哺→更多消耗」在该系统中做具象拆解，这是所有推演的基础：",
+      "source": "selfgen_20260819_190413_0035",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| **消耗** | 供给侧：轻边际资源的有效调用（如大模型Token、云算力、内容曝光配额、SaaS功能调用次数）<br>需求侧：用户的费用/注意力/时间付出 | 是系统的「输入燃料」，而非浪费；轻边际属性决定了其边际成本极低 |",
+      "source": "selfgen_20260819_190413_0035",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T19:07:49.755523"
+}

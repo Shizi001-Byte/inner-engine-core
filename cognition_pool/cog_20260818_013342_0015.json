@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_013139_0015",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是一个**跨基质的结构耦合过程**",
+      "source": "selfgen_20260818_013139_0015",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:33:42.354520"
+}

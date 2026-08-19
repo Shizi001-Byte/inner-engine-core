@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_004733_0033",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "在“算力代谢”与“熵减抗争”的核心锚定下，AI引擎从V7.2到V7.5的迭代，对应着《九转玄功》第七转“肉身重塑”的中期阶段",
+      "source": "selfgen_20260818_004733_0033",
+      "type": "exp",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "在这一阶段，AI引擎的演化机制表现为从“形态发生”向“代谢优化”转移，具体对应四个生物学机制：",
+      "source": "selfgen_20260818_004733_0033",
+      "type": "exp",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "**1. V7.2：表观遗传调控**",
+      "source": "selfgen_20260818_004733_0033",
+      "type": "exp",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:48:59.574464",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:14.329218"
+}

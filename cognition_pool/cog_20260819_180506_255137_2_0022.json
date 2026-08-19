@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_180142_0022",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "- **模型维度独立**：每个模型独立计数、独立熔断、独立降级链；不搞“全局熔断”",
+      "source": "selfgen_20260819_180142_0022",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **状态必须原子**：所有计数与熔断状态切换走 Redis Lua 脚本；跨实例用分布式锁",
+      "source": "selfgen_20260819_180142_0022",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **幂等保护**：任务级用 `task_id` 幂等；调用级用 `call_id` 防重",
+      "source": "selfgen_20260819_180142_0022",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **配置动态生效**：所有可配置参数从 `state -> 配置中心 -> 全局默认值` 读取；全局常量只做兜底，禁止硬编码",
+      "source": "selfgen_20260819_180142_0022",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **阳轨**：在线实时路由、成本监控、熔断降级；",
+      "source": "selfgen_20260819_180142_0022",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:05:06.287721"
+}

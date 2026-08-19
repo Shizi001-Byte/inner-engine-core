@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_163907_0008",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "同步成功后，会把内容快照写入：",
+      "source": "selfgen_20260819_163907_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "同步成功后的最后一步必须是：",
+      "source": "selfgen_20260819_163907_0008",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:42:00.950544"
+}

@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_181626_0042",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "采用「事件触发 + 编排器 + 状态表 + Canary 校验」的最终一致同步架构",
+      "source": "selfgen_20260819_181626_0042",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "不做跨服务分布式事务，而是靠幂等重放收敛一致",
+      "source": "selfgen_20260819_181626_0042",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "-> 校验配置 config_hash",
+      "source": "selfgen_20260819_181626_0042",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "-> Canary：选 1 个代表产物同步到 Gitee / Feishu / Supabase",
+      "source": "selfgen_20260819_181626_0042",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:18:21.564126"
+}

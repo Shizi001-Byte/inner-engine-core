@@ -1,0 +1,42 @@
+{
+  "task_id": "selfgen_20260817_212004_0011",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "设计一个引擎任务的链式推演机制，核心在于**信息熵减与认知深度的逐层递进**",
+      "source": "selfgen_20260817_212004_0011",
+      "type": "eng",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "为了避免“大模型单向生成”导致的幻觉和浅尝辄止，我们需要将一个宏观议题拆解为“解构-建构-压力测试-落地”的闭环链路",
+      "source": "selfgen_20260817_212004_0011",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是为您设计的链式推演机制方案：",
+      "source": "selfgen_20260817_212004_0011",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "* **核心议题**：*“构建未来城市L4级自动驾驶公共交通系统的运营体系”*",
+      "source": "selfgen_20260817_212004_0011",
+      "type": "eng",
+      "density": 0.38,
+      "density_grade": "B"
+    },
+    {
+      "text": "* **设计原则**：上一轮的“结论性输出”必须作为下一轮的“约束性输入”，且每一轮的Prompt模式不同（分析型 -> 创造型 -> 批判型 -> 规划型）",
+      "source": "selfgen_20260817_212004_0011",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:21:28.084495"
+}

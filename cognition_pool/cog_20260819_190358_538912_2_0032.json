@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_190252_0032",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于对「生态型/轻边际成本供给主体」的AI调度/运营引擎的运行复盘，结合防超时、防空转的核心诉求，从**认知质检SOP（标准作业程序）**的角度提炼以下3条可复用铁律及验证方法：",
+      "source": "selfgen_20260819_190252_0032",
+      "type": "cog",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "**踩坑背景：** 认知池膨胀至1700+条，但新认知只进不出，沦为静态档案库，无法参与后续任务调度",
+      "source": "selfgen_20260819_190252_0032",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**核心推演：** 认知质检SOP不能仅校验“内容对错”，必须校验“活性状态”",
+      "source": "selfgen_20260819_190252_0032",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "通过高频刷新缓存和强制注入周期，确保认知不仅被存储，更被应用",
+      "source": "selfgen_20260819_190252_0032",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **验证方法：【时间窗口与命中率双重断言】**",
+      "source": "selfgen_20260819_190252_0032",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T19:03:58.571046"
+}

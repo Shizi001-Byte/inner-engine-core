@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_220751_0021",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与【坑库预警】，针对“基建脚本禁用简化版”导致SQL列不匹配的教训，现进行“以实养虚，虚又返实”的自增强循环推演，并输出标准化检查清单",
+      "source": "selfgen_20260818_220751_0021",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **以实养虚（经验沉淀）：**",
+      "source": "selfgen_20260818_220751_0021",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "* **实（工程执行）：** 执行基建脚本时，为了图快禁用了“简化版SQL”逻辑（如使用 `SELECT *` 或省略字段映射），导致上下游表结构列顺序错位、数据类型不匹配，引发任务大面积报错甚至API调用超时",
+      "source": "selfgen_20260818_220751_0021",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "* **虚（引擎更新）：** V7.5方舟效能引擎捕获该异常，将其提炼为“结构对齐强依赖”认知节点，进入九转玄功映射体系的“基建类任务”分支，标记为高危特征",
+      "source": "selfgen_20260818_220751_0021",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. **虚又返实（认知指导执行）：**",
+      "source": "selfgen_20260818_220751_0021",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:08:59.773188"
+}

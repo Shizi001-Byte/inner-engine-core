@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_025035_0011",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "不可被引擎优化破坏，是因为**引擎优化的本质是“提升阳面的代谢速率与并发上限”**",
+      "source": "selfgen_20260818_025035_0011",
+      "type": "cog",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:51:47.239333"
+}

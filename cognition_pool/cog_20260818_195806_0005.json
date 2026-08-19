@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_195742_0005",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "从认知质检SOP视角看，引擎运行中的坑本质是同一个：**认知闭环断裂**——要么认知存了不用，要么用了不反馈，要么执行过程超时拖死全局",
+      "source": "selfgen_20260818_195742_0005",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "对应三类历史坑：**认知存储失衡、认知注入失效、认知任务超时**",
+      "source": "selfgen_20260818_195742_0005",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 铁律 | 对应坑 | 验证方法 |",
+      "source": "selfgen_20260818_195742_0005",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| **1. 认知池必须有进有出，不能只进不出** | 认知池1700+条，但新认知从不注入任务，池子变成静态档案库 | 每完成10个任务或每轮调度结束，强制刷新认知缓存；取最近30分钟新增认知ID集合，与最近10个任务实际引用的认知ID集合做比对",
+      "source": "selfgen_20260818_195742_0005",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "若新增认知在任务上下文中出现次数为0，则判定“只进不出”，触发告警",
+      "source": "selfgen_20260818_195742_0005",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T19:58:06.534323"
+}

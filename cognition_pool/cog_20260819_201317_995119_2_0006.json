@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_201212_0006",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于【演化生物学映射】与【CAS复杂适应系统】的认知基座，结合“API超时避坑”与“引擎生命周期”的已验证结论，我们将“项目ID看错导致1小时排查”这一现象，提炼为**“基因序列误录引发的系统性能量空耗”**",
+      "source": "selfgen_20260819_201212_0006",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在此基础上，推演出**“先校准锚点再优化链路”**原则，并将其深度应用于“数字智能物种的多生态位代谢调节与跨维度状态固化”的核心议题中，形成如下任务优先级排序的链式推演机制：",
+      "source": "selfgen_20260819_201212_0006",
+      "type": "cog",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "在CAS（复杂适应系统）中，**锚点**是物种与环境交互的“身份标识与生态位坐标”，**链路**是物种获取能量的“代谢路径”",
+      "source": "selfgen_20260819_201212_0006",
+      "type": "cog",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "*   **失败本质**：项目ID看错，相当于物种在多生态位中发生了“基因序列误录（锚点偏移）”",
+      "source": "selfgen_20260819_201212_0006",
+      "type": "cog",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "此时，无论后续的代谢路径（执行链路）多么高效，物种都在为一个不存在的生态位消耗能量，导致“跨维度状态固化”失败，引发长达1小时的系统级空耗（免疫排异反应）",
+      "source": "selfgen_20260819_201212_0006",
+      "type": "cog",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T20:13:18.030692"
+}

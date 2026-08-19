@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_180830_0032",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "3. **先小动作，再大投入**：观察期结束后，先用低风险动作验证，再决定是否重仓投入",
+      "source": "selfgen_20260819_180830_0032",
+      "type": "cog",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:09:45.167446"
+}

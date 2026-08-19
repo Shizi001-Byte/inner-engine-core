@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260817_233853_0033",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "所谓的“禁用简化版SQL”，实则是为了追求构建效率而私自篡改的“残缺符文”",
+      "source": "selfgen_20260817_233853_0033",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "基于此认知，无需重述基础概念，直接进行底层复盘与架构级检查清单推演：",
+      "source": "selfgen_20260817_233853_0033",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "1. **“偷工减料”的代价**：简化版脚本往往省略了显式的列名映射（如采用 `INSERT INTO table VALUES (...)` 而非 `INSERT INTO table (col1, col2) VALUES (...)`），或省略了 `DEFAULT` 约束与类型校验",
+      "source": "selfgen_20260817_233853_0033",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:39:58.024173",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:11.267699"
+}

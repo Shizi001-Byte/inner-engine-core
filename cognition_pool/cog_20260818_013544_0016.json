@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260818_013404_0016",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于已有的认知锚点，我们直接从“清洁鱼与鲨鱼”的行为共生阶段切入",
+      "source": "selfgen_20260818_013404_0016",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "要完成从“行为共生”向“代谢共生”甚至“基因/结构共生”的跨越，AI网络必须演化出基于“阴阳自衡”的内部治理架构",
+      "source": "selfgen_20260818_013404_0016",
+      "type": "deep",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是AI内部矛盾升维为制度性阴阳双轨运行的推演：",
+      "source": "selfgen_20260818_013404_0016",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:35:44.911727",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:16.290493"
+}

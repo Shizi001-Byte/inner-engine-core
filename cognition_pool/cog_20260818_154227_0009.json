@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_154117_0009",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于您提供的核心结论与避坑提醒，我将为您设计一套严格遵循“脑体分离架构”边界的**自动归档系统**",
+      "source": "selfgen_20260818_154117_0009",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "该系统将显式定义决策与执行的边界，确保所有操作可重放、可校验、且配置严格生效",
+      "source": "selfgen_20260818_154117_0009",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "基于“脑体分离架构的边界，就是‘决策事件/全局顺序’与‘执行/同步’的边界”这一核心结论，系统划分为两层：",
+      "source": "selfgen_20260818_154117_0009",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:42:27.967896"
+}

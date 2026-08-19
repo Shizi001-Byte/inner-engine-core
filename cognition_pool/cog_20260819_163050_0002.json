@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_162902_0002",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "Canary 验证（Verifier）",
+      "source": "selfgen_20260819_162902_0002",
+      "type": "eng",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "整个闭环必须作为引擎底层的标准决策模块运行，不能是外挂脚本；所有自进化动作都占用已有的 3 路并发 slot，**不新增并发路数**",
+      "source": "selfgen_20260819_162902_0002",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "触发器负责回答“要不要做自进化”",
+      "source": "selfgen_20260819_162902_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "检测频率：每完成 10 个任务，或每轮任务队列清空时，触发一次重复率检测",
+      "source": "selfgen_20260819_162902_0002",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:30:50.347713"
+}

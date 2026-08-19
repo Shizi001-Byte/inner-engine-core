@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_033952_0003",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "需要建立以下三大稳态机制：",
+      "source": "selfgen_20260818_033952_0003",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:41:12.489917"
+}

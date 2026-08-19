@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_030910_0005",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "，必须将真实API的冲突数据（如A接口与B接口的互斥输出）进行**高维折叠**",
+      "source": "selfgen_20260818_030910_0005",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:10:47.002551"
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260817_232116_0005",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "> **构建\"以实养虚，虚又返实\"的修真引擎——将代码库工程指标映射为修炼体系，使开发者行为与角色成长构成自增强闭环**",
+      "source": "selfgen_20260817_232116_0005",
+      "type": "eng",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "│           核 心 议 题：修真引擎闭环              │",
+      "source": "selfgen_20260817_232116_0005",
+      "type": "eng",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:23:39.099825",
+  "c_grade_archived": 3,
+  "archived_at": "2026-08-19T23:32:10.290940"
+}

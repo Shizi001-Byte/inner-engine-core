@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_200331_0018",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于你给的避坑提醒和认知锚定，直接推演一套可落地的“自动归档系统”设计",
+      "source": "selfgen_20260818_200331_0018",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "核心是：**并发只做 API 调用，后处理必须单消费者；状态变更必须原子化；同步必须带版本仲裁**",
+      "source": "selfgen_20260818_200331_0018",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "并发调用分类/打标 API（A/B 模型，不同 timeout）",
+      "source": "selfgen_20260818_200331_0018",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "只写 classification_results 结果表，不直接改任务状态",
+      "source": "selfgen_20260818_200331_0018",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T20:06:53.211948"
+}

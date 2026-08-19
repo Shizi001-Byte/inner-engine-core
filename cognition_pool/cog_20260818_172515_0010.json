@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_172439_0010",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "“禁用简化版”不能只当一条知识存着，必须变成基建脚本的**硬性检查项**",
+      "source": "selfgen_20260818_172439_0010",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:25:15.705183"
+}

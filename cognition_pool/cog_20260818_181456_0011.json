@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_181343_0011",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于“同步单位是 block，不是 file；文件只是有序 block id 列表的索引”这一锚点，以下不重复论证，直接把历史坑位转成认知质检 SOP 的三条门禁",
+      "source": "selfgen_20260818_181343_0011",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 6,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 落地：同步、差异分析、回滚判定，一律以 block id 列表为最小核对单位",
+      "source": "selfgen_20260818_181343_0011",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "文件只是索引，文件存在、大小、mtime 甚至文件整体 hash，都不能替代 block 级校验",
+      "source": "selfgen_20260818_181343_0011",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. 构造“同 file 名、同大小、同 mtime，但 block id 顺序不同”的样本，跑 SOP，必须判为不同步",
+      "source": "selfgen_20260818_181343_0011",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. 修改一个 block 的内容/ID，运行同步，断言传输日志只出现该 block，而不是整个 file 全量重传",
+      "source": "selfgen_20260818_181343_0011",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T18:14:56.711408"
+}

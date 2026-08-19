@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_222319_0025",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "“决策串行、执行并发”是复杂系统设计中的一种核心分层架构原则，其本质是**“脑体分离”**",
+      "source": "selfgen_20260817_222319_0025",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "为了保证全局状态的一致性，决策必须**串行**，避免并发带来的竞态条件、死锁和状态撕裂",
+      "source": "selfgen_20260817_222319_0025",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "- **体（执行层/引擎层）：** 负责“做”，处理具体的计算、IO、网络请求",
+      "source": "selfgen_20260817_222319_0025",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "为了追求极致的性能和吞吐量，执行必须**并发**",
+      "source": "selfgen_20260817_222319_0025",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:24:34.882499",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:07.853330"
+}

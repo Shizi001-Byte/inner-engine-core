@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_172728_0016",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "这段缺失不是“认知池空”，而是“溯源链断”——1700+条记忆仍在，但8月8日到8月18日之间的原始对话载体丢失",
+      "source": "selfgen_20260818_172728_0016",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "，**数字生命社群的第一块基石不是网络协议，而是“溯源共识”**",
+      "source": "selfgen_20260818_172728_0016",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:28:05.426712"
+}

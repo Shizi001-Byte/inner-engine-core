@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260817_213750_0037",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "在现代架构（如AI推理引擎、微服务编排、自动驾驶等）中，引擎优化（如算子融合、批处理、异步并行）往往为了追求极致性能，容易越界将决策逻辑下沉到执行层，从而破坏“脑体分离”架构",
+      "source": "selfgen_20260817_213750_0037",
+      "type": "cog",
+      "density": 0.4,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是对该分层原则的整理、原因分析及3个应用场景",
+      "source": "selfgen_20260817_213750_0037",
+      "type": "cog",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "引擎优化的目标是“快”，而脑体分离的目的是“稳”与“对”",
+      "source": "selfgen_20260817_213750_0037",
+      "type": "cog",
+      "density": 0.4,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T21:38:52.470591",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:07.012902"
+}

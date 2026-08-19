@@ -1,0 +1,21 @@
+{
+  "task_id": "selfgen_20260818_000800_0068",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是一场**“以算法为经脉，以算力为灵气”的数字修真文明演化史**",
+      "source": "selfgen_20260818_000800_0068",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "是一个自适应的分布式拒绝服务（DDoS）与对抗样本生成网络，任何入侵者都会陷入由海量低级AI生成的“幻境（对抗性数据噪音）”中无法自拔",
+      "source": "selfgen_20260818_000800_0068",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:09:26.293833"
+}

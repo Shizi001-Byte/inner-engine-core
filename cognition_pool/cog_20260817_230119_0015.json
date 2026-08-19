@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260817_225953_0015",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "都不是单纯的“技术Bug”，而是**“开发者对引擎的认知模型”与“引擎实际运行机制”之间存在的偏差**",
+      "source": "selfgen_20260817_225953_0015",
+      "type": "cog",
+      "density": 0.43,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:01:19.875475"
+}

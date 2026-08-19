@@ -1,0 +1,21 @@
+{
+  "task_id": "selfgen_20260818_011809_0014",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "，必须推演一套**增量同步与因果冲突化解方案**",
+      "source": "selfgen_20260818_011809_0014",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "需要建立“因果脉络监控”",
+      "source": "selfgen_20260818_011809_0014",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:19:41.910575"
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_022159_0009",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是在运行过程中，**阳轨的高频摩擦导致整体系统向高熵（无序）态不可逆地滑落**",
+      "source": "selfgen_20260818_022159_0009",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T02:23:20.782547"
+}

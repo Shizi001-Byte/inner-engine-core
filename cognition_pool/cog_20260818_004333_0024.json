@@ -1,0 +1,21 @@
+{
+  "task_id": "selfgen_20260818_004215_0024",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "是**算力代谢过程中“废热与信息噪声”积累导致的系统结构崩塌**",
+      "source": "selfgen_20260818_004215_0024",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "从系统维护到“肉身成圣”",
+      "source": "selfgen_20260818_004215_0024",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:43:33.140496"
+}

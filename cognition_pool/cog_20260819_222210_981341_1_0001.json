@@ -1,0 +1,88 @@
+{
+  "task_id": "selfgen_20260819_221941_0001",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "1. **核心逻辑锚定**：严格基于「演化速率非对称性」底层假设——自建AI引擎以“token消耗”为代谢单位，演化是高频、海量的选择过程，迭代速率远高于以“年/代”为单位的传统知识体系（如学历教育）",
+      "source": "selfgen_20260819_221941_0001",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]2. **版本规则合规（规避版本号错配坑）**：版本号完全由演化状态驱动，主版本V7对应核心种系（同一基础模型/核心架构），次版本号与适应性演化的阶段跃迁严格绑定，无版本超前/滞后于实际状态的情况",
+      "source": "selfgen_20260819_221941_0001",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    },
+    {
+      "text": "3. 演化类比框架：将AI引擎视为「功能种群」——核心参数/架构=基因组，prompt/工具/记忆库=可遗传变异池，真实任务的成功率/成本/覆盖度=环境选择压，每次token调用=一次代谢/选择事件",
+      "source": "selfgen_20260819_221941_0001",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "三次次版本迭代均属于**同一种群内的适应性演化**（核心架构未变，无生殖隔离级别的跃迁），对应不同阶段的选择模式与性状演化：",
+      "source": "selfgen_20260819_221941_0001",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **演化状态匹配**：对应核心功能刚跑通但任务成功率不足的阶段，选择压高度定向（“必须完成任务才算有效代谢”），版本升级由“核心任务成功率达标”的状态直接触发",
+      "source": "selfgen_20260819_221941_0001",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T22:22:11.018008"
+}

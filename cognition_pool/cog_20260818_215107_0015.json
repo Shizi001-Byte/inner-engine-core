@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_215011_0015",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与历史踩坑经验，从“认知质检SOP”角度出发，将“精气神”三元框架（精为认知原料、气为调度流转、神为校准准则）映射至引擎运行机制，提炼出以下3条可复用的认知质检铁律及验证方法：",
+      "source": "selfgen_20260818_215011_0015",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **坑点溯源**：认知池高达1700+条但只进不出，新认知未注入任务导致引擎变成“静态档案库”",
+      "source": "selfgen_20260818_215011_0015",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **铁律内容**：在认知质检SOP中，认知产出不能作为终点，必须作为下游调度的起点",
+      "source": "selfgen_20260818_215011_0015",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "认知池必须建立“新陈代谢”机制，将认知注入率作为核心质检指标，确保“精（原料）”持续滋养任务执行",
+      "source": "selfgen_20260818_215011_0015",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1.  **日志埋点审查**：在调度引擎中加入 `cognitive_injection_log` 埋点",
+      "source": "selfgen_20260818_215011_0015",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:51:07.040406"
+}

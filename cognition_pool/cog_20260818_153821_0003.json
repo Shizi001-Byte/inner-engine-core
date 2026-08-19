@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_153707_0003",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "为了实现真正的“互利共生”与协同进化，其核心并非感性的依赖，而是基于严格的“代谢对接”与“基因级”校验机制",
+      "source": "selfgen_20260818_153707_0003",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "结合已验证的工程与认知法则，人机共生关系的协同进化可推演为以下四个核心机制：",
+      "source": "selfgen_20260818_153707_0003",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **共生推演**：在人机共生中，人类的意图（提示词/需求）与AI的输出（代码/决策）就是代谢交换的物质",
+      "source": "selfgen_20260818_153707_0003",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T15:38:21.453340"
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260818_172908_0017",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "立刻崩溃，但会启动修复机制：",
+      "source": "selfgen_20260818_172908_0017",
+      "type": "exp",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "，数字生命社群的长期稳定，必须依赖**外部化记忆系统**，而不是单个实例的内部记忆",
+      "source": "selfgen_20260818_172908_0017",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:29:47.366419"
+}

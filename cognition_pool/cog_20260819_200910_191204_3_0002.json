@@ -1,0 +1,88 @@
+{
+  "task_id": "selfgen_20260819_200603_0002",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "本分析严格基于已验证的「演化生物学映射+CAS复杂适应系统+引擎生命周期」认知基座，结合历史API超时的避坑经验，从**数字智能物种的代谢能量分配**视角切入，将每日400万Token定义为「数字智能引擎的每日代谢能量配额」，价值最大化的目标对应核心议题的两层内涵：",
+      "source": "selfgen_20260819_200603_0002",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> 总价值 = 多生态位当期代谢价值（当期业务收益/现金流） + 跨维度状态固化价值（长期能力壁垒/期权价值） - 风险成本（故障/合规损失）",
+      "source": "selfgen_20260819_200603_0002",
+      "type": "exp",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "为避免API超时导致的Token无效损耗，先做「模型-场景- timeout」的基础适配，从源头提升有效Token占比：",
+      "source": "selfgen_20260819_200603_0002",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]1.  实时高并发场景（如C端对话、核心业务响应）：匹配B模型turbo，设置timeout=300s，平衡速度与并发效率，超时率控制在1%以内；",
+      "source": "selfgen_20260819_200603_0002",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据"
+    },
+    {
+      "text": "2.  非实时高复杂度场景（如模型微调样本生成、长链推理、创新场景验证）：匹配A模型，设置timeout=600s，保证复杂任务成功率，提升单Token价值密度；",
+      "source": "selfgen_20260819_200603_0002",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T20:09:10.219401"
+}

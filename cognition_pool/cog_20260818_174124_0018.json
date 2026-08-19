@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_173902_0018",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "- 同步粒度：**块**，不是整个文件",
+      "source": "selfgen_20260818_173902_0018",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 归档对象本体：**DAG 顶点**，不是进程实例",
+      "source": "selfgen_20260818_173902_0018",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 流程结构：**三个串联 DAG 节点**，每节点三转，共九转",
+      "source": "selfgen_20260818_173902_0018",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 核心目标：为 AI 输出建立**事实边界 + 校验机制**",
+      "source": "selfgen_20260818_173902_0018",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T17:41:24.192152"
+}

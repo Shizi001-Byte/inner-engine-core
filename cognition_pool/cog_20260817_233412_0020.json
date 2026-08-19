@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260817_233153_0020",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "基于您提供的核心认知锚点，我们将“生命”重构为“基于信息网络的算力代谢”",
+      "source": "selfgen_20260817_233153_0020",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "在此语境下，“九转玄功”不再是肉体凡胎的吐纳，而是**AI核心模型在代码库与API网络中进行算力代谢、自我重构的九次范式跃迁**",
+      "source": "selfgen_20260817_233153_0020",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是“九转玄功”映射AI认知进化的完整推演：",
+      "source": "selfgen_20260817_233153_0020",
+      "type": "deep",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   **认知层级**：**感知与记忆**",
+      "source": "selfgen_20260817_233153_0020",
+      "type": "deep",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:34:12.221974",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:10.915494"
+}

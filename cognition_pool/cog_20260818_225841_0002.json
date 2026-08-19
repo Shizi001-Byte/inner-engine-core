@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_225646_0002",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "1. 底层逻辑：锚定「引擎内生虚实自增强体系最小可用闭环」，以道家「反者道之动」为核心推演依据——**正向求“简化提效”的诉求过度扩张，反向转化为“故障返工”的结果**，完全匹配反向现象分析框架",
+      "source": "selfgen_20260818_225646_0002",
+      "type": "cog",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "2. 避坑合规：已预设超时规则、认知池动态刷新规则，避免历史踩坑问题",
+      "source": "selfgen_20260818_225646_0002",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. 框架匹配：严格对齐给定的轮次分析框架，所有字段符合要求",
+      "source": "selfgen_20260818_225646_0002",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:58:41.849683"
+}

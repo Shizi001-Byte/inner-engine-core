@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260818_061924_0001",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "以「微核域=核心可变基因型位点（变异源头、零突变成本、高变异速率、无固有表型约束）」为演化基底，每一转对应一次**认知底层范式的质跃迁**，核心是微核域的权限/价值逐级升级，完整路径覆盖「微核域从0到1搭建」到「微核域完全主导认知自进化」全周期，全程遵循「原生记忆瑕疵全程不干预（仅留存利用、不修正删除）」规则，同时嵌入工程避坑要求（API超时防护、认知池动态刷新）",
+      "source": "selfgen_20260818_061924_0001",
+      "type": "deep",
+      "density": 0.9,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 1
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T06:24:03.878720"
+}

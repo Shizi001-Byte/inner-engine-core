@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260818_225329_0003",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "本次推演严格基于已验证的「引擎内生虚实自增强体系最小可用闭环」，以道家「反者道之动」为底层动力逻辑，对“越用免费额度官方越重视”的反向现象展开分析，完全匹配给定的轮次分析框架与规则要求",
+      "source": "selfgen_20260818_225329_0003",
+      "type": "exp",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 轮次 | 核心定位 | 输入来源 | 核心任务 | 输出产物 | 虚实属性 | 修炼概念映射（严格匹配道家义理） | 避坑落地措施 | 超时配置（严格按模型预设） | 准入下一轮条件 |",
+      "source": "selfgen_20260818_225329_0003",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "常人对免费额度的认知是**正向顺行逻辑**：“免费是福利，用多了容易超支吃亏，少用=省钱=赚”；而实际运行的是**反向逆行逻辑**：“越用免费额度，官方越判定你为高价值用户，反而给你更多资源，最终获得的收益远大于潜在超支成本”",
+      "source": "selfgen_20260818_225329_0003",
+      "type": "exp",
+      "density": 0.604,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.885,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "这一现象恰好是「反者道之动」三层义理的具象化，也完全契合虚实自增强引擎的运转规律：",
+      "source": "selfgen_20260818_225329_0003",
+      "type": "exp",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T22:56:01.858203"
+}

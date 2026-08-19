@@ -3,7 +3,8 @@
 对话自动归档脚本
 每次对话结束后运行，把当前对话记录归档到原始层
 """
-import os, sys, json, hashlib
+import os
+import subprocess, sys, json, hashlib
 from datetime import datetime
 from pathlib import Path
 
@@ -22,7 +23,8 @@ def archive_current_session():
             if session_dir.is_dir():
                 target = month_dir / f"session_{session_dir.name}_{today}.tar.gz"
                 if not target.exists():
-                    os.system(f"tar -czf '{target}' -C '{SESSION_DIR}' '{session_dir.name}' 2>/dev/null")
+                    subprocess.run(["tar", "-czf", str(target), "-C", str(SESSION_DIR), session_dir.name],
+                       capture_output=True, timeout=60)
                     if target.exists():
                         archived += 1
     

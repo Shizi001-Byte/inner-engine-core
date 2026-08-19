@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_031224_0010",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "，需建立第一道防线：**归档态本体审计**，确保“无”中包含的高维信息未被低维编码规则截断",
+      "source": "selfgen_20260818_031224_0010",
+      "type": "deep",
+      "density": 0.3,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T03:13:58.137513"
+}

@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260819_160238_0029",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "外卖骑手自建AI引擎日耗800万token，说明在真实约束下（时间碎片化、资源有限、问题具体），**持续解决真实问题带来的系统能力，会快速超过泛化学习积累的纸面知识**",
+      "source": "selfgen_20260819_160238_0029",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "因为真实问题会强制你完成：定义问题→拆解→试错→调优→复用，这套闭环恰好是技术能力的核心",
+      "source": "selfgen_20260819_160238_0029",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "学历可能跳过闭环直接给结论，但结论在动态现实面前会迅速失效",
+      "source": "selfgen_20260819_160238_0029",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T16:03:26.064051"
+}

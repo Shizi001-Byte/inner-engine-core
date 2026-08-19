@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_183208_0014",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "从“认知质检SOP”角度看：**引擎运行中的坑，大多不是单点故障，而是缺少可验证的闭环",
+      "source": "selfgen_20260818_183208_0014",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**坑：** API 调用超时导致整个任务超时；默认超时设置与模型规格不匹配，B 模型 turbo 和 A 模型所需时间完全不同，一旦超时没有兜底，任务直接失败",
+      "source": "selfgen_20260818_183208_0014",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "同时必须配置：超时重试、熔断、降级、可追踪错误码",
+      "source": "selfgen_20260818_183208_0014",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T18:32:25.954509"
+}

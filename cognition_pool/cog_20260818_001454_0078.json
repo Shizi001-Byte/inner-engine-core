@@ -1,0 +1,14 @@
+{
+  "task_id": "selfgen_20260818_001301_0078",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是**代码执行范式的去中心化革命**",
+      "source": "selfgen_20260818_001301_0078",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-18T00:14:54.607540"
+}

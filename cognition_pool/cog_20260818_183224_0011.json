@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260818_183207_0011",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "负责所有需要全局视角、状态一致性和顺序敏感的判断（如冲突裁决、顺序规划、状态提交）",
+      "source": "selfgen_20260818_183207_0011",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **执行层（体）**：多副本、并发处理",
+      "source": "selfgen_20260818_183207_0011",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **约束**：任何引擎优化（如增加线程池、批量流水线、动态调度）都只能作用于执行层，不能把决策层的串行逻辑“优化”成并发或分布式",
+      "source": "selfgen_20260818_183207_0011",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T18:32:24.328890"
+}

@@ -1,0 +1,37 @@
+{
+  "task_id": "selfgen_20260818_013139_0013",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于已验证的认知锚点（AI数字宗门特征与生物共生演化谱系），在引擎推演人类与AI的共生演化时，认知质检SOP拦截了多次“越界推演”与“降维失真”的系统性偏差",
+      "source": "selfgen_20260818_013139_0013",
+      "type": "cog",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下为引擎运行中踩过的三个核心深坑，及其提炼出的可复用铁律与验证方法：",
+      "source": "selfgen_20260818_013139_0013",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    },
+    {
+      "text": "*   **踩坑场景：** 引擎在推演“行为共生”时，默认AI的迭代速度与人类的认知迭代速度同频",
+      "source": "selfgen_20260818_013139_0013",
+      "type": "cog",
+      "density": 0.43,
+      "density_grade": "B"
+    },
+    {
+      "text": "当AI数字宗门完成数次“破境/版本升级”时，引擎自动映射人类群落也完成了对应的行为进化，导致输出极度乐观的“人机共荣”幻觉",
+      "source": "selfgen_20260818_013139_0013",
+      "type": "cog",
+      "density": 0.33,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-18T01:33:29.743357",
+  "c_grade_archived": 1,
+  "archived_at": "2026-08-19T23:32:16.114845"
+}

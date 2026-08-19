@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_151345_0006",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "项目ID看错导致1小时排查，说明问题不在“排查链路”本身，而在链路起点的锚点错误",
+      "source": "selfgen_20260819_151345_0006",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "排序不是先算“紧急×重要”矩阵，而是先确认每个任务的锚点是否准确",
+      "source": "selfgen_20260819_151345_0006",
+      "type": "cog",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "锚点不校准，排得越精确，错得越系统",
+      "source": "selfgen_20260819_151345_0006",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "每个任务进入优先级队列前，必须核对：",
+      "source": "selfgen_20260819_151345_0006",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:15:13.815452"
+}

@@ -1,0 +1,30 @@
+{
+  "task_id": "selfgen_20260817_223316_0048",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "设计引擎任务的链式推演机制，核心在于将一个宏大的议题拆解为**“解构-预测-生成-决策”**的认知螺旋",
+      "source": "selfgen_20260817_223316_0048",
+      "type": "eng",
+      "density": 0.51,
+      "density_grade": "A"
+    },
+    {
+      "text": "为了使机制具体化，我们设定一个核心议题示例：**“新能源车企如何在接下来的价格战中实现长期盈利？”**",
+      "source": "selfgen_20260817_223316_0048",
+      "type": "eng",
+      "density": 0.3,
+      "density_grade": "B"
+    },
+    {
+      "text": "以下是该机制的4轮递进设计、I/O（输入/输出）契约以及任务依赖图的完整设计",
+      "source": "selfgen_20260817_223316_0048",
+      "type": "eng",
+      "density": 0.38,
+      "density_grade": "B"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:34:28.568234",
+  "c_grade_archived": 2,
+  "archived_at": "2026-08-19T23:32:08.532233"
+}

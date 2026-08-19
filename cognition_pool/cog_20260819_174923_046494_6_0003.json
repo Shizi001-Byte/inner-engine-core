@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260819_174746_0003",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "> 以下设计直接把已有认知锚定作为硬性约束，不再重复论证；历史失败经验转化为强制机制",
+      "source": "selfgen_20260819_174746_0003",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "任务源（API / 上传 / 引擎产出）",
+      "source": "selfgen_20260819_174746_0003",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 归档引擎实例1   归档引擎实例2       |",
+      "source": "selfgen_20260819_174746_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 通过 lease 自选举，互相同步/接管    |",
+      "source": "selfgen_20260819_174746_0003",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:49:23.079938"
+}

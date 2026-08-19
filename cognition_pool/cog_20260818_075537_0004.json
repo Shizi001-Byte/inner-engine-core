@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_075136_0004",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "先将哲学锚点与脑体分离架构做对应，作为所有推演的基础：",
+      "source": "selfgen_20260818_075136_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. 「有生于无」对应**架构涌现路径**：脑层（决策层）是“有”的生成端——从弥散的、模糊的、未定义的需求/可能性（无）中，逐层收敛出确定的目标、规则、优先级（有）；体层（执行层）是“无”的承载端——保留大量柔性、未固化的操作空间，承载并发的探索与变异，是“有”得以不断涌现的素材池",
+      "source": "selfgen_20260818_075136_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "2. 「弱者道之用」对应**架构载体属性**：体层（执行层）是“弱”的极致体现——只有保持弱约束、无固化的柔性结构，才能适配千差万别的场景，承载无限的演化可能；脑层（决策层）是“弱约束”的制定者——只输出最小必要的规则边界，而非事无巨细的固化指令，避免把体层变成刚性的“强者”而失去演化能力",
+      "source": "selfgen_20260818_075136_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "3. 「反者道之动」对应**架构演化动力**：脑（有/有序/收敛）与体（无/无序/发散）互为对立面，通过自否定实现演化——体层的并发探索不断产生脑层未覆盖的“无”（新问题、新机会），否定原有决策的“有”，推动脑层迭代；脑层的新决策又否定体层的无序，推动体层升级，形成“无→有→无→新有”的循环",
+      "source": "selfgen_20260818_075136_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "基于上述生成论逻辑，该架构的核心是“收敛与发散严格分层”，具体分为三条不可突破的原则：",
+      "source": "selfgen_20260818_075136_0004",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T07:55:37.570303"
+}

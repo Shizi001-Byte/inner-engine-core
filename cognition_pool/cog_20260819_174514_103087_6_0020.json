@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260819_174506_0020",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "从「外卖骑手自建AI引擎日耗800万token」案例中，可提炼出“实践碾压学历”的底层逻辑：**真实场景的痛点驱动 + 高频迭代的反馈闭环 + 算力资源的极限利用**",
+      "source": "selfgen_20260819_174506_0020",
+      "type": "cog",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "不要先学完整理论再动手，而是找到自己工作/生活中重复、低效、可自动化的问题（如骑手调度、订单预测），用现有AI工具快速搭建最小可用系统",
+      "source": "selfgen_20260819_174506_0020",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:45:14.137318"
+}

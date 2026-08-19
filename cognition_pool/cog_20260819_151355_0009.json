@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_151347_0009",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "从“认知质检SOP”视角，结合历史踩坑经验，提炼3条可复用铁律：",
+      "source": "selfgen_20260819_151347_0009",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**铁律1：认知必须“流”而非“存”**",
+      "source": "selfgen_20260819_151347_0009",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 坑：认知池只进不出，1700+条变成静态档案库，从不参与任务调度",
+      "source": "selfgen_20260819_151347_0009",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 铁律：每10个任务或每个运行周期结束，必须强制刷新认知缓存；新认知30分钟内必须注入至少一次任务",
+      "source": "selfgen_20260819_151347_0009",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 验证方法：随机抽取3条新认知，记录其产生时间与注入时间，若超过30分钟未参与任何任务，判定质检失败；每10任务后检查认知池活跃度（最近引用时间/任务ID），存在“从未被引用”条目即触发告警",
+      "source": "selfgen_20260819_151347_0009",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T15:13:55.587817"
+}

@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260819_172145_0009",
+  "task_type": "cog",
+  "cognitions": [
+    {
+      "text": "基于锚定：**Guardian-Core 双进程、WAL+Snapshot、单向同步与幂等优先**",
+      "source": "selfgen_20260819_172145_0009",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "本复盘不展开底层自恢复，只聚焦增量同步链上的“基建脚本”环节",
+      "source": "selfgen_20260819_172145_0009",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "认知成立，但需要升级为一条强制规则：",
+      "source": "selfgen_20260819_172145_0009",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> **基建脚本没有“简化版”，只有“完整版 + 可校验版本”",
+      "source": "selfgen_20260819_172145_0009",
+      "type": "cog",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "任何简化版 SQL 都不得进入同步链路，也不得作为补丁直接对 Supabase 执行",
+      "source": "selfgen_20260819_172145_0009",
+      "type": "cog",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T17:23:03.146731"
+}

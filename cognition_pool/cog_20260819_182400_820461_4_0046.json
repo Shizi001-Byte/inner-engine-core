@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260819_182214_0046",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "每次同步后必须**回读验证**：",
+      "source": "selfgen_20260819_182214_0046",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-19T18:24:00.857894"
+}

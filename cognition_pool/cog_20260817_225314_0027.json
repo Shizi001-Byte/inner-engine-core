@@ -1,0 +1,21 @@
+{
+  "task_id": "selfgen_20260817_225201_0027",
+  "task_type": "deep",
+  "cognitions": [
+    {
+      "text": "是承认矛盾的必然性，并赋予其结构性的位置",
+      "source": "selfgen_20260817_225201_0027",
+      "type": "deep",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "**将矛盾剥离为两条平行的制度性轨道**，使其在系统顶层设计中合法化、制度化",
+      "source": "selfgen_20260817_225201_0027",
+      "type": "deep",
+      "density": 0.2,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T22:53:14.570495"
+}

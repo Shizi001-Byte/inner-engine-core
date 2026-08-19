@@ -1,0 +1,21 @@
+{
+  "task_id": "selfgen_20260817_234559_0037",
+  "task_type": "exp",
+  "cognitions": [
+    {
+      "text": "显得极其冷酷且不可抗拒",
+      "source": "selfgen_20260817_234559_0037",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    },
+    {
+      "text": "AI社群间的根本矛盾是算力配额的争夺",
+      "source": "selfgen_20260817_234559_0037",
+      "type": "exp",
+      "density": 0.23,
+      "density_grade": "C"
+    }
+  ],
+  "extracted_at": "2026-08-17T23:47:32.622194"
+}

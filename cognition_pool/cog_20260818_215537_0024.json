@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260818_215328_0024",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于【已有认知锚定】与历史坑库预警，针对V7.5方舟效能引擎“多线程API调用后串行后处理”的架构，我们严格贯彻**“先校准锚点再优化链路”**原则，运用**“精气神三元迁移框架”**，对状态一致性问题进行推演，并输出完整的锁机制方案",
+      "source": "selfgen_20260818_215328_0024",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 11,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "在“决策串行（神）、执行并发（精）、数据流过渡（气）”的架构下，核心矛盾在于**无序返回的“气”冲击了需要闭环校准的“神”**",
+      "source": "selfgen_20260818_215328_0024",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "如果不加干预，将引发以下严重的竞态与锚点校准失败：",
+      "source": "selfgen_20260818_215328_0024",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. **状态写覆盖与归档错乱**：",
+      "source": "selfgen_20260818_215328_0024",
+      "type": "eng",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "* **现象**：线程A（处理sop）、线程B（处理code）、线程C（处理checklist）同时返回",
+      "source": "selfgen_20260818_215328_0024",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-18T21:55:37.681520"
+}
