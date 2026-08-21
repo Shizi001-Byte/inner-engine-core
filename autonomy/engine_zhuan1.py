@@ -9,7 +9,7 @@
 - 转数计数：完成完整闭环转数+1，第一转圆满后进入第二转
 当前境界：九转·第一转·筑基
 """
-import json, time, os, random, urllib.request, urllib.error, re, hashlib, threading, copy
+import json, time, os, random, urllib.request, urllib.error, re, hashlib, threading, copy, signal
 import requests as _requests
 import psutil
 from datetime import datetime, timedelta
