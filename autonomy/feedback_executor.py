@@ -156,7 +156,7 @@ def execute_feedback(state, feedback_list=None):
     return results
 
 
-def record_task_stat(state, task_type, status, increment_score=50, is_duplicate=False):
+def record_task_stat(state, task_type, status, increment_score=50, is_duplicate=False, duration=0):
     """记录单任务统计，用于自动调参计算"""
     recent = state.setdefault("recent_task_stats", [])
     recent.append({
@@ -164,8 +164,16 @@ def record_task_stat(state, task_type, status, increment_score=50, is_duplicate=
         "status": status,
         "increment_score": increment_score,
         "is_duplicate": is_duplicate,
+        "duration": duration,
         "time": datetime.now().isoformat(),
     })
     # 只保留最近20条
     if len(recent) > 20:
         state["recent_task_stats"] = recent[-20:]
+    # P2优化：记录每个任务类型的平均耗时，用于后续优化调度
+    if duration > 0 and status == "success":
+        type_stats = state.setdefault("task_type_duration", {})
+        ts = type_stats.setdefault(task_type, {"count": 0, "total_time": 0, "avg_time": 0})
+        ts["count"] += 1
+        ts["total_time"] += duration
+        ts["avg_time"] = round(ts["total_time"] / ts["count"], 1)

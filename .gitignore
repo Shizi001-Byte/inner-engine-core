@@ -18,6 +18,11 @@ archive/01-素材层/*.tar.gz
 # 运行时数据
 data/engine_state.json
 data/*.log
+data/*.pid
 logs/
 __pycache__/
 *.pyc
+*.bak
+*.tmp
+*.lock
+idle_mode_*.py
