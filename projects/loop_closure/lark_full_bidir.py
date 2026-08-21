@@ -1,3 +1,4 @@
+import os
 #!/usr/bin/env python3
 """
 lark_full_bidir.py — 飞书双向指令全落地（模块1.2）
@@ -21,7 +22,7 @@ import requests
 # ============ 配置 ============
 ENGINE_DIR = Path(__file__).parent.parent.parent
 SUPABASE_URL = "https://gltscytpqnuuzhczljyq.supabase.co"
-SUPABASE_KEY = "sb_secret_Cpcpl-d8aA82ALo16hU8lg_3Smd8Xuu"
+SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")  # P0修复：不从代码硬编码，防止泄露到git
 LARK_CONFIG_FILE = ENGINE_DIR / "projects" / "infant_soul" / "data" / "lark_push_config.json"
 
 POLL_INTERVAL = 10  # 轮询间隔秒数

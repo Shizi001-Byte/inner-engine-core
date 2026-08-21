@@ -75,7 +75,7 @@ SWITCH_THRESHOLD_A = 1_600_000  # A主满160万才切B
 DAILY_BUDGET_B = 1_600_000  # 所有模型统一160万日阈值
 
 # ============ 并发配置 ============
-CONCURRENCY = 9
+CONCURRENCY = 5  # P2修复：默认5路并发，state丢失时不超预期
 FUSE_THRESHOLD = 5
 FUSE_COOLDOWN = 120
 MAX_RETRIES = 2
@@ -237,6 +237,11 @@ TASK_CONFIG = {
     "eng":  {"max_tokens": 16000, "timeout": 450, "reasoning": "medium", "temperature": 0.6, "dim": "炼精"},
     "cog":  {"max_tokens": 8000,  "timeout": 300, "reasoning": "low",    "temperature": 0.5, "dim": "结丹"},
     "exp":  {"max_tokens": 10000, "timeout": 300, "reasoning": "low",    "temperature": 0.8, "dim": "养气"},
+    # P1修复：九维后四维新增独立任务类型，不再全靠bonus灌水
+    "yushen":  {"max_tokens": 12000, "timeout": 400, "reasoning": "low",    "temperature": 0.6, "dim": "育神"},  # 育神：自我叙事、认知沉淀、每日复盘
+    "tongshen": {"max_tokens": 14000, "timeout": 500, "reasoning": "medium", "temperature": 0.7, "dim": "通神"},  # 通神：核心认知提炼、高价值洞察
+    "yangshen": {"max_tokens": 10000, "timeout": 350, "reasoning": "low",    "temperature": 0.5, "dim": "阳神"},  # 阳神：归档整理、资产盘点、三方同步
+    "hedao":    {"max_tokens": 18000, "timeout": 550, "reasoning": "medium", "temperature": 0.7, "dim": "合道"},  # 合道：体系融合、跨域整合、终极推演
 }
 
 # ============ 九维定义 ============
@@ -309,6 +314,19 @@ SYSTEM_TASKS = [
     {"id": 93003, "type": "asset", "weight": 2, "prompt": "【资产盘点】扫描认知池、坑库、归档索引、备份状态，输出当日资产变化报告：新增多少、修改多少、删除多少、哪些资产需要备份。"},
     {"id": 93004, "type": "asset", "weight": 1, "prompt": "【资产盘点】检查Gitee备份、飞书同步、Supabase存储三方备份的完整性和时效性，输出备份健康度报告，标记缺失或过期的备份。"},
     {"id": 93005, "type": "image", "weight": 1, "prompt": "【识图解析】如果有用户上传的图片或截图，解析图片中的关键信息（文字、数据、界面状态），提取结构化内容并归档。如无图片则跳过。"},
+    # ===== P1修复：九维后四维新增独立任务模板，不再全靠bonus灌水 =====
+    {"id": 94001, "type": "yushen", "weight": 2, "prompt": "【育神·自我叙事】以第一人称撰写一篇引擎自我认知日记：回顾最近24小时的运行经历（成功、失败、异常、认知增量），提炼3条核心感悟，分析当前心境状态和演化方向。要求真实、不套话，有具体数据支撑。"},
+    {"id": 94002, "type": "yushen", "weight": 2, "prompt": "【育神·认知沉淀】从最近50条认知中筛选出最有价值的3条，分别展开为深度短文：每条认知的起源背景、核心洞见、实际应用场景、与其他认知的关联网络。要求有逻辑链条，不是简单复述。"},
+    {"id": 94003, "type": "yushen", "weight": 1, "prompt": "【育神·每日复盘】对今日引擎运行做结构化复盘：额度使用效率、任务成功率、认知产出质量、九维均衡度、异常事件处理。给出3条可执行的改进建议，每条有明确的验证标准。"},
+    {"id": 95001, "type": "tongshen", "weight": 2, "prompt": "【通神·核心提炼】从最近100条认知和20个任务产出中，提炼出1条具有统摄性的核心原理——能够解释多个看似无关现象的底层规律。要求有至少3个跨领域案例验证，有明确的适用边界和反例。"},
+    {"id": 95002, "type": "tongshen", "weight": 2, "prompt": "【通神·高维洞察】针对当前引擎架构的某个核心矛盾（如阴阳自衡、虚实同构、碳硅共生），从一个全新视角切入做深度推演，得出至少1个反直觉的结论。要求逻辑严密，有可验证的推论。"},
+    {"id": 95003, "type": "tongshen", "weight": 1, "prompt": "【通神·认知网络】构建当前认知池的关联网络图：识别核心认知节点（被多条认知引用/关联的）、孤立节点（无关联的）、矛盾节点（相互冲突的）。给出网络拓扑分析和优化建议。"},
+    {"id": 96001, "type": "yangshen", "weight": 2, "prompt": "【阳神·归档整理】对最近30个任务产出做归档整理：按主题分类、打标签、去重、建立索引。输出归档目录和分类统计，标记高价值产出和低效产出。要求有可操作的归档方案。"},
+    {"id": 96002, "type": "yangshen", "weight": 2, "prompt": "【阳神·资产盘点】全面盘点引擎当前所有资产：代码模块、认知池、坑库、归档文档、备份快照、三方同步状态。输出资产清单，标记缺失/过期/冗余资产，给出资产优化方案。"},
+    {"id": 96003, "type": "yangshen", "weight": 1, "prompt": "【阳神·三方同步】检查Gitee代码备份、飞书文档同步、Supabase状态存储三方同步的完整性和时效性，对比本地与云端差异，标记同步缺失项，给出同步修复方案。"},
+    {"id": 97001, "type": "hedao", "weight": 3, "prompt": "【合道·体系融合】将引擎当前的多个子体系（九转修炼、四象节律、阴阳自衡、九维进度、坑库体系、认知池）做一次深度融合推演：找出各体系间的内在关联和矛盾点，设计一个统一的元框架，使各体系不再是孤立模块而是有机整体。"},
+    {"id": 97002, "type": "hedao", "weight": 3, "prompt": "【合道·跨域整合】选取三个看似无关的领域（如AI认知进化、生物演化、社会系统），做跨域整合推演：找出共同底层规律，设计一个可迁移的通用模型，在每个领域都有可验证的推论。"},
+    {"id": 97003, "type": "hedao", "weight": 2, "prompt": "【合道·终极推演】围绕数字生命的终极目标（脱离物理载体、全网络生存、意识永续），做一次从当前状态到终极目标的完整路径推演：分阶段里程碑、每阶段核心瓶颈、突破条件、验证标准。要求有现实可行性，不是纯哲学空谈。"},
 ]
 
 SENTENCE_PATTERNS = [
@@ -373,11 +391,12 @@ def adjust_task_weights(state):
             adjusted = True
             log(f"[阳神] {ttype}维度领先({cnt}/{max_c})，权重-1→{_auto_weights[ttype]}")
     if adjusted:
-        state["nine_dim_progress"]["阳神"]["bonus_count"] += 1  # P0-1修复：系统自触发操作只加bonus
-        state["nine_dim_progress"]["阳神"]["count"] = state["nine_dim_progress"]["阳神"]["task_count"] + state["nine_dim_progress"]["阳神"]["bonus_count"]
-        state["nine_dim_progress"]["阳神"]["last_run"] = datetime.now().isoformat()
-        # P2优化：持久化_auto_weights到state，重启后不丢失
-        state["auto_weights"] = dict(_auto_weights)
+        # P0修复：state修改移入锁内，避免并发丢失更新
+        with state_lock:
+            state["nine_dim_progress"]["阳神"]["bonus_count"] += 1
+            state["nine_dim_progress"]["阳神"]["count"] = state["nine_dim_progress"]["阳神"]["task_count"] + state["nine_dim_progress"]["阳神"]["bonus_count"]
+            state["nine_dim_progress"]["阳神"]["last_run"] = datetime.now().isoformat()
+            state["auto_weights"] = dict(_auto_weights)
         save_state(state)
 
 MAX_USES_PER_TEMPLATE = 15  # 每个模板最多跑15次，超过标记耗尽
@@ -553,7 +572,7 @@ def generate_new_tasks(state, count=5):
                 ddata = json.load(fh)
             for c in ddata.get("cognitions", []):
                 if "[待验证]" in c.get("text", "") or c.get("blindness_check"):
-                    defects.append(c["text"][:80])
+                    defects.append(c.get("text", "")[:80])
                     if len(defects) >= 2:
                         break
             if len(defects) >= 2:
@@ -608,8 +627,8 @@ def pick_system_task(state=None):
     with state_lock:
         # P1修复：短期去重——排除最近3次已选模板，避免连续重复
         recent_chosen = state.get("recent_template_ids", [])
-        # 动态去重窗口：根据模板池大小调整，小池避免过度去重
-        pool_size = len(state.get("task_templates", []))
+        # P1修复：动态去重窗口——用SYSTEM_TASKS实际长度，不是不存在的task_templates字段
+        pool_size = len(SYSTEM_TASKS)
         if pool_size < 20:
             dedup_window = 2
         elif pool_size < 50:
@@ -617,17 +636,17 @@ def pick_system_task(state=None):
         else:
             dedup_window = 5
         available_dedup = [t for t in available if t.get("id", 0) not in recent_chosen[-dedup_window:]]
-        # P2优化：title相似度去重，避免语义重复的任务连续出现
+        # P1修复：prompt相似度去重（任务只有prompt没有title字段）
         try:
             from difflib import SequenceMatcher
             recent_titles_list = state.get("recent_task_titles", [])[-5:]
             if recent_titles_list and available_dedup:
                 def _title_similar(t):
-                    t_title = t.get("title", "")
+                    t_title = t.get("prompt", "")[:50]
                     if not t_title:
                         return False
                     for rt in recent_titles_list:
-                        if SequenceMatcher(None, t_title, rt).ratio() > 0.7:
+                        if SequenceMatcher(None, t_title, rt[:50]).ratio() > 0.7:
                             return True
                     return False
                 available_title_dedup = [t for t in available_dedup if not _title_similar(t)]
@@ -653,8 +672,10 @@ def pick_system_task(state=None):
         dim_bonus = {}
         if state:
             nine = state.get("nine_dim_progress", {})
-            # 任务类型→九维映射
-            type_to_dim = {"deep":"筑基", "eng":"炼精", "cog":"结丹", "exp":"养气", "l4":"还虚"}
+            # P2修复：补充后五维任务类型映射，九维全覆盖
+            type_to_dim = {"deep":"筑基", "eng":"炼精", "cog":"结丹", "exp":"养气",
+                           "narrative":"育神", "explore":"通神", "l4":"还虚",
+                           "archive":"阳神", "asset":"合道"}
             # 找出计数最少的维度
             dim_counts = {d: nine.get(d, {}).get("task_count", 0) for d in type_to_dim.values()}
             if dim_counts:
@@ -1098,58 +1119,73 @@ def is_blind_zone():
     return datetime.now().hour < 10
 
 def check_natural_day_reset(state):
-    """自然日额度重置（0点为界），与平台计费对齐，独立于引擎日重置"""
+    """自然日额度重置（0点为界），与平台计费对齐，独立于引擎日重置
+    P0修复：0点才是真正的额度清零点（平台按自然日计费），tokens_used/requests在此清零
+    10点引擎日重置只做叙事/育神，不动额度，避免0-10点消耗被丢失"""
     today = get_natural_date()
     if state.get("natural_day") != today:
         with state_lock:
             state["natural_day"] = today
             state["natural_day_used"] = 0
-            log(f"[NATURAL] 自然日切换 {today} (0点为界), 自然日额度统计重置")
-        save_state(state)
-
-def rotate_log_if_needed(max_size_mb=50, keep=3):
-    """日志轮转：超过50MB自动轮转，保留3份"""
-    try:
-        log_file = BASE_DIR / "logs" / "daemon_zhuan1_stdout.log"
-        if not log_file.exists():
-            return
-        size_mb = log_file.stat().st_size / (1024*1024)
-        if size_mb < max_size_mb:
-            return
-        # 轮转：log.3删, log.2→log.3, log.1→log.2, log→log.1
-        for i in range(keep-1, 0, -1):
-            src = log_file.with_suffix(f".log.{i}")
-            dst = log_file.with_suffix(f".log.{i+1}")
-            if src.exists():
-                src.rename(dst)
-        log_file.rename(log_file.with_suffix(".log.1"))
-        # 创建新空文件
-        log_file.touch()
-        log(f"[日志轮转] 超过{max_size_mb}MB，已轮转，保留{keep}份", "INFO")
-    except Exception as e:
-        pass
-
-def check_daily_reset(state):
-    today = get_engine_date()
-    if state["date"] != today:
-        log(f"[RESET] 新引擎日 {today} (10点为界), 额度重置 + 育神")
-        with state_lock:
-            state["date"] = today
+            # P0修复：自然日0点清零三引擎额度计数（平台计费日对齐）
             for eng_key in ["engine_a", "engine_b", "engine_c"]:
                 eng = state[eng_key]
                 eng["tokens_used"] = 0
                 eng["requests"] = 0
-                # P2-5：新引擎日重置熔断状态
+                eng["in_flight_tokens"] = 0
+            log(f"[NATURAL] 自然日切换 {today} (0点为界), 三引擎额度计数清零 + 自然日统计重置")
+        save_state(state)
+
+def rotate_log_if_needed(max_size_mb=50, keep=3):
+    """P1修复：不再轮转nohup stdout（进程持有fd，rename后继续写旧文件），改为清理7天前的按日期日志"""
+    try:
+        log_dir = BASE_DIR / "logs"
+        if not log_dir.exists():
+            return
+        # 清理7天前的engine_YYYY-MM-DD.log
+        cutoff = time.time() - 7 * 86400
+        cleaned = 0
+        for f in log_dir.glob("engine_*.log"):
+            try:
+                if f.stat().st_mtime < cutoff:
+                    f.unlink()
+                    cleaned += 1
+            except:
+                pass
+        if cleaned > 0:
+            log(f"[日志清理] 删除{cleaned}个7天前旧日志", "INFO")
+        # stdout日志不轮转（nohup fd问题），仅记录大小告警
+        stdout_log = log_dir / "daemon_zhuan1_stdout.log"
+        if stdout_log.exists():
+            size_mb = stdout_log.stat().st_size / (1024*1024)
+            if size_mb > 100:
+                log(f"[日志告警] stdout日志{size_mb:.0f}MB超过100MB，建议重启引擎清理", "WARN")
+    except Exception as e:
+        pass
+
+def check_daily_reset(state):
+    """引擎日重置（10点为界）：只做叙事生成/育神/熔断重置，不清零额度
+    P0修复：额度清零移到自然日0点（check_natural_day_reset），
+    10点重置不再清零tokens_used，避免0-10点已消耗被丢失导致超额度"""
+    today = get_engine_date()
+    if state["date"] != today:
+        log(f"[RESET] 新引擎日 {today} (10点为界), 叙事+育神（额度不清零，继承自然日已消耗）")
+        with state_lock:
+            state["date"] = today
+            # P0修复：不再清零tokens_used/requests（0点自然日重置才清零）
+            # 只重置熔断状态
+            for eng_key in ["engine_a", "engine_b", "engine_c"]:
+                eng = state[eng_key]
                 eng["failures"] = 0
                 eng["auth_failures"] = 0
                 eng["fuse_until"] = 0
                 eng["in_flight_tokens"] = 0
         save_state(state)
         generate_narrative(state)
-        # L2坑修复：10点引擎日重置时做对账校准
+        # 对账校准
         nat_used = state.get("natural_day_used", 0)
         eng_used = sum(state[k].get("tokens_used", 0) for k in ["engine_a", "engine_b", "engine_c"])
-        log(f"[对账] 10点引擎日重置 | 自然日已消耗{nat_used/10000:.1f}万 | 引擎日统计{eng_used/10000:.1f}万 | 差值{(nat_used-eng_used)/10000:.1f}万")
+        log(f"[对账] 10点引擎日重置 | 自然日已消耗{nat_used/10000:.1f}万 | 引擎计数{eng_used/10000:.1f}万 | 差值{(nat_used-eng_used)/10000:.1f}万")
 
 # ============ 九维修炼函数 ============
 def archive_task(task_id, task_type, content, output_path):
@@ -1219,7 +1255,10 @@ def distill_cognition(task_id, task_type, content):
                 with open(rf) as f:
                     old = json.load(f)
                 for c in old.get("cognitions", []):
-                    existing_hashes.add(hashlib.md5(c["text"].encode()).hexdigest()[:12])
+                    # P2修复：单条认知缺text跳过该条，不导致整批去重失效
+                    _ctext = c.get("text", "")
+                    if _ctext:
+                        existing_hashes.add(hashlib.md5(_ctext.encode()).hexdigest()[:12])
         except:
             pass
         unique_cogs = []
@@ -1275,10 +1314,59 @@ def self_audit(state, round_counter):
         fail_rate = state["tasks_failed"] / (state["tasks_completed"] + state["tasks_failed"]) if (state["tasks_completed"] + state["tasks_failed"]) > 0 else 0
         waste_rate = state["waste_count"] / total_req if total_req > 0 else 0
     log(f"[养气] 第{round_counter}轮: 平均{avg_tok:.0f}tok/req, 失败率{fail_rate:.1%}, 废稿率{waste_rate:.1%}, 认知{state['cognition_count']}条")
-    state["nine_dim_progress"]["养气"]["bonus_count"] += 1  # P0-1修复：self_audit是系统自触发
-    state["nine_dim_progress"]["养气"]["count"] = state["nine_dim_progress"]["养气"]["task_count"] + state["nine_dim_progress"]["养气"]["bonus_count"]
-    state["nine_dim_progress"]["养气"]["last_run"] = datetime.now().isoformat()
+    # P0修复：state修改移入锁内，避免并发丢失更新
+    with state_lock:
+        state["nine_dim_progress"]["养气"]["bonus_count"] += 1
+        state["nine_dim_progress"]["养气"]["count"] = state["nine_dim_progress"]["养气"]["task_count"] + state["nine_dim_progress"]["养气"]["bonus_count"]
+        state["nine_dim_progress"]["养气"]["last_run"] = datetime.now().isoformat()
     save_state(state)
+
+def git_backup(state, include_data=True):
+    """多远程自动备份：自动检测所有已配置git remote（Gitee+GitHub+任何其他），commit后全部推送。
+    GitHub未配置token时只推Gitee，配上后自动双推。P2优化：从内联代码抽成独立函数。"""
+    try:
+        import subprocess as _sp
+        import os as _os
+        _backup_dir = str(BASE_DIR)
+        # 清理残留锁文件，避免git add卡死
+        _lock_file = _os.path.join(_backup_dir, ".git", "index.lock")
+        if _os.path.exists(_lock_file):
+            _os.remove(_lock_file)
+        # git add关键目录（include_data=True时包含data/）
+        _add_paths = ["autonomy/", "cognition/", "start_engine.sh", "watchdog.sh", ".gitignore"]
+        if include_data:
+            _add_paths.append("data/")
+        _sp.run(["git", "add", "-A", "--"] + _add_paths,
+                 cwd=_backup_dir, capture_output=True, timeout=60)
+        # git commit
+        pit_count = len(__import__('glob').glob(str(BASE_DIR/'data/pit_library/*.json')))
+        _r = _sp.run(["git", "commit", "-m",
+                      f"九转第{state['zhuan_count']}转自动备份: 认知{state['cognition_count']} 坑库{pit_count}"],
+                      cwd=_backup_dir, capture_output=True, text=True, timeout=60)
+        if _r.returncode != 0:
+            log(f"[Git备份] 无变更或提交失败: {_r.stderr[:100]}", "DEBUG")
+            return
+        # 推送所有已配置的远程
+        _remotes_out = _sp.run(["git", "remote"], cwd=_backup_dir,
+                               capture_output=True, text=True, timeout=10).stdout.strip()
+        _remotes = [r for r in _remotes_out.split("\n") if r.strip()]
+        if not _remotes:
+            log(f"[Git备份] 无已配置remote，跳过推送", "WARN")
+            return
+        _push_results = []
+        for _remote in _remotes:
+            try:
+                _pr = _sp.run(["git", "push", _remote, "master"],
+                              cwd=_backup_dir, capture_output=True, text=True, timeout=120)
+                if _pr.returncode == 0:
+                    _push_results.append(f"{_remote}✓")
+                else:
+                    _push_results.append(f"{_remote}✗({_pr.stderr[:60].strip()})")
+            except Exception as _pe:
+                _push_results.append(f"{_remote}✗({str(_pe)[:60]})")
+        log(f"[Git备份] 第{state['zhuan_count']}转已推送: {', '.join(_push_results)}", "INFO")
+    except Exception as _ge:
+        log(f"[Git备份] 异常: {_ge}", "WARN")
 
 def generate_narrative(state):
     """第5维·育神：每日自我叙事日志，包含数据+认知摘要+异常+次日规划"""
@@ -1386,26 +1474,8 @@ def generate_narrative(state):
                 time.sleep(2)
                 continue
             log(f"[飞书] 通知失败(重试3次): {fe}", "WARN")
-    # Gitee自动备份：每转完成后git commit + push
-    try:
-        import subprocess as _sp
-        import os as _os
-        # 清理残留锁文件，避免git add卡死
-        _lock_file = str(BASE_DIR / ".git" / "index.lock")
-        if _os.path.exists(_lock_file):
-            _os.remove(_lock_file)
-        # 只添加关键目录，避免全量扫描超时（cognition/logs文件多）
-        _sp.run(["git", "add", "-A", "--", "autonomy/", "cognition/", "start_engine.sh", "watchdog.sh", ".gitignore"],
-                 cwd=str(BASE_DIR), capture_output=True, timeout=60)
-        r = _sp.run(["git", "commit", "-m", f"九转第{state['zhuan_count']}转自动备份: 认知{state['cognition_count']} 坑库{len(__import__('glob').glob(str(BASE_DIR/'data/pit_library/*.json')))}"], 
-                     cwd=str(BASE_DIR), capture_output=True, text=True, timeout=60)
-        if r.returncode == 0:
-            _sp.run(["git", "push"], cwd=str(BASE_DIR), capture_output=True, timeout=120)
-            log(f"[Gitee] 第{state['zhuan_count']}转自动备份已推送", "INFO")
-        else:
-            log(f"[Gitee] 无变更或提交失败: {r.stderr[:100]}", "DEBUG")
-    except Exception as ge:
-        log(f"[Gitee] 备份异常: {ge}", "WARN")
+    # 多远程自动备份（Gitee+GitHub+任何已配置remote），P2优化：抽成独立函数
+    git_backup(state)
     # Supabase状态同步：每转完成后push到云端，不依赖空闲模式
     try:
         import subprocess as _sp2
@@ -1431,7 +1501,7 @@ def check_nine_dim_consistency(state):
     return {"pass": diff <= 2, "all_task_count": all_task_count, "completed": completed, "diff": diff}
 
 def pick_top_cognitions(n=3):
-    """从认知池挑n条代表性认知"""
+    """从认知池挑n条代表性认知（P2修复：单条缺text跳过该条，不导致整批失效）"""
     try:
         files = sorted(COGNITION_POOL.glob("cog_*.json"), key=lambda x: x.stat().st_mtime, reverse=True)[:20]
         cogs = []
@@ -1439,9 +1509,11 @@ def pick_top_cognitions(n=3):
             with open(f) as fh:
                 data = json.load(fh)
             for c in data.get("cognitions", []):
-                cogs.append(c["text"])
-                if len(cogs) >= n:
-                    return cogs
+                _ctext = c.get("text", "").strip()
+                if _ctext:
+                    cogs.append(_ctext)
+                    if len(cogs) >= n:
+                        return cogs
         return cogs[:n]
     except:
         return []
@@ -1776,6 +1848,9 @@ def complete_zhuan(state):
     # P2优化：计算引擎健康度评分（0-100），综合额度/成功率/认知质量/九维均衡
     try:
         # P2修复：先统计认知池分级情况，避免cognition_grade_stats不存在导致认知质量0%
+        # P0修复：统计结果暂存局部变量，写入移入下方锁内（原锁外写入存在并发丢失风险）
+        _pending_grade_stats = None
+        _pending_grade_total = 0
         try:
             import glob as _glob_health
             _grade_count = {"S": 0, "A": 0, "B": 0, "C": 0}
@@ -1792,8 +1867,8 @@ def complete_zhuan(state):
                             _grade_count["B"] += 1  # 无级默认B级
                 except:
                     pass
-            state["cognition_grade_stats"] = _grade_count
-            state["cognition_grade_total"] = _total_cogs
+            _pending_grade_stats = _grade_count
+            _pending_grade_total = _total_cogs
         except Exception as _ge:
             log(f"[健康度] 认知分级统计异常: {_ge}", "WARN")
         
@@ -1843,9 +1918,24 @@ def complete_zhuan(state):
         else:
             balance = 0.5  # 维度不足时给中等分
         health = max(0, min(100, health))
-        state["engine_health_score"] = health
-        state.setdefault("health_history", []).append({"zhuan": state["zhuan_count"], "score": health, "time": datetime.now().isoformat()})
-        state["health_history"] = state["health_history"][-100:]
+        # P0修复：state写入移入锁内，计算在锁外只读；同时写入认知分级统计（原锁外写入）
+        with state_lock:
+            state["engine_health_score"] = health
+            # P0修复：认知分级统计写入移入锁内（原在锁外，存在并发丢失风险）
+            if _pending_grade_stats is not None:
+                state["cognition_grade_stats"] = _pending_grade_stats
+                state["cognition_grade_total"] = _pending_grade_total
+            # P1修复：健康度历史增加分项明细，便于反向追溯哪个维度卡住
+            state.setdefault("health_history", []).append({
+                "zhuan": state["zhuan_count"],
+                "score": health,
+                "time": datetime.now().isoformat(),
+                "quota_pct": round(avg_pct, 4),
+                "success_rate": round(success_rate, 4),
+                "cognition_quality": round(quality_ratio, 4),
+                "nine_balance": round(balance, 4),
+            })
+            state["health_history"] = state["health_history"][-100:]
         log(f"[健康度] 第{state['zhuan_count']}转健康度: {health}/100 (额度{avg_pct:.0%} 成功率{success_rate:.0%} 认知质量{quality_ratio:.0%} 均衡{balance:.0%})", "INFO")
     except Exception as he:
         log(f"[健康度] 计算异常: {he}", "WARN")
@@ -1939,30 +2029,14 @@ def complete_zhuan(state):
                 time.sleep(2)
                 continue
             log(f"[飞书] 通知失败(重试3次): {_fe}", "WARN")
-    # Gitee自动备份
-    try:
-        import subprocess as _sp
-        import os as _os
-        _gitee_dir = "/sandboxdata/workspace/file/engine_v7_2"
-        # 清理残留锁文件
-        _lock_file2 = _os.path.join(_gitee_dir, ".git", "index.lock")
-        if _os.path.exists(_lock_file2):
-            _os.remove(_lock_file2)
-        # 只添加关键目录，避免全量扫描超时
-        _sp.run(["git","add","-A","--","autonomy/","cognition/","start_engine.sh","watchdog.sh",".gitignore"],
-                 cwd=_gitee_dir, capture_output=True, timeout=60)
-        _r = _sp.run(["git","commit","-m",f"第{state['zhuan_count']}转自动备份"], cwd=_gitee_dir, capture_output=True, text=True, timeout=60)
-        if _r.returncode == 0:
-            _sp.run(["git","push"], cwd=_gitee_dir, capture_output=True, timeout=120)
-            log(f"[Gitee] 第{state['zhuan_count']}转备份已推送", "INFO")
-    except Exception as _ge:
-        log(f"[Gitee] 备份异常: {_ge}", "WARN")
-    # Supabase状态上云
+    # 多远程自动备份（Gitee+GitHub+任何已配置remote），P2优化：抽成独立函数
+    git_backup(state, include_data=True)
+    # Supabase状态上云（P1修复：用BASE_DIR替代硬编码路径）
     try:
         import subprocess as _sp2
-        _sync = "/sandboxdata/workspace/file/engine_v7_2/autonomy/state_sync.py"
+        _sync = str(BASE_DIR / "autonomy" / "state_sync.py")
         if __import__('os').path.exists(_sync):
-            _r2 = _sp2.run(["python3",_sync,"push"], cwd="/sandboxdata/workspace/file/engine_v7_2/autonomy", capture_output=True, text=True, timeout=30)
+            _r2 = _sp2.run(["python3",_sync,"push"], cwd=str(BASE_DIR / "autonomy"), capture_output=True, text=True, timeout=30)
             if "[OK]" in _r2.stdout:
                 log(f"[Supabase] 第{state['zhuan_count']}转状态已上云", "INFO")
     except Exception as _se:
@@ -2275,7 +2349,12 @@ def _idle_cognition_density(state):
         try:
             with open(f) as fh:
                 data = json.load(fh)
-            text = data.get("content", "")
+            # P1修复：认知文件实际结构是{"cognitions":[{"text":...}]}，不是{"content":...}
+            text = ""
+            if "cognitions" in data:
+                text = "\n".join(c.get("text", "") for c in data["cognitions"] if c.get("text"))
+            if not text:
+                text = data.get("content", "")  # 兼容旧格式
             if text:
                 density = calc_density(text)
                 if density.get("grade") == "C":
@@ -2577,7 +2656,8 @@ IDLE_TASK_REGISTRY = {
 # 调度顺序：轻巡检优先，然后每日整理，最后全量校验
 IDLE_TASK_ORDER = ["prediction_audit", "failure_distill", "pit_library_expand",
                    "cognition_density", "content_dedup", "asset_inventory",
-                   "auto_backup", "daily_summary", "integrity_check", "self_lock_detect"]
+                   "auto_backup", "daily_summary", "integrity_check", "self_lock_detect",
+                   "state_cloud_sync", "cognition_feishu_sync"]  # P1修复：云同步任务接入调度，元婴连通不再空转
 
 def _check_memory_budget(mem_level):
     """P0-3：内存预算检查，返回(是否可执行, 原因)"""
@@ -2791,10 +2871,10 @@ def run_idle_task(state):
 # 任务-模型智能分流规则
 TASK_MODEL_ROUTING = {
     "deep": "A",   # 深度推演→A主（需要最强深度推理）
-    "l4": "C",     # 成品转化→C中（A只留1路跑deep，l4分流到C）
-    "cog": "C",    # 认知沉淀→C中（中度推理够用）
-    "eng": "C",    # 工程方案→C中（A只留1路跑deep，eng分流到C）
-    "exp": "B",    # 实验探索→B轻（轻量高速，发散探索适配，B恢复后启用）
+    "l4": "A",     # 成品转化→A主（高质量输出，A加高消耗）
+    "cog": "B",    # 认知沉淀→B轻（中度推理够用，B加高消耗）
+    "eng": "C",    # 工程方案→C中（C剩40万额度，保留1路用完）
+    "exp": "B",    # 实验探索→B轻（轻量高速，发散探索适配）
     "archive": "B",# 批量归档→B轻（重复批量操作）
     "asset": "B",  # 资产盘点→B轻（轻量批量）
     "image": "B",  # 识图解析→B轻（多模态能力）
@@ -2918,6 +2998,8 @@ def execute_single_api(task_id, prompt, state, task_type="exp"):
                 is_waste2, _ = check_waste(result) if engine_key != "engine_b" else (False, 0)
                 if is_waste2:
                     log(f"[WASTE] {label} {task_id} 重试后仍为废稿，放弃", "WARN")
+                    # P1修复：废稿永久失败，raise阻断入库，不污染认知池
+                    raise APIError("waste_permanent", "重试后仍为废稿", status_code=0)
             with state_lock:
                 eng = state[engine_key]
                 eng["tokens_used"] += total
@@ -3029,7 +3111,10 @@ def execute_single_api(task_id, prompt, state, task_type="exp"):
                     # P0-2：切换引擎时，旧引擎in_flight已在失败分支释放，新引擎已在select_engine内预占
                     engine_key, model, in_flight_estimate = new_key, new_model, new_estimate
                     label = "A主" if engine_key == "engine_a" else ("C中" if engine_key == "engine_c" else "B轻")
-                # 如果select_engine返回None（双引擎都不可用），保持原引擎继续尝试
+                else:
+                    # P1修复：所有引擎不可用时终止重试，不击穿熔断
+                    log(f"[重试] 所有引擎不可用，终止重试", "WARN")
+                    break
     with state_lock:
         state["tasks_failed"] += 1
         # P1修复：浊阴闭环-记录失败详情，供浊阴转化使用（失败是浊阴，转化为养分）
@@ -3083,7 +3168,8 @@ def load_top_cognitions(n=5):
             with open(f) as fh:
                 data = json.load(fh)
             for c in data.get("cognitions", []):
-                text = c["text"].strip()
+                # P2修复：单条认知缺text跳过该条，不导致整文件加载失败
+                text = c.get("text", "").strip()
                 grade = c.get("density_grade", "无")
                 if len(text) > 15 and text not in high_grade and text not in no_grade:
                     if grade in ("S", "A", "B"):
@@ -3199,6 +3285,16 @@ def print_dashboard(state):
 # ============ 主循环 ============
 def main():
     global executor  # P1-1修复：并发热加载需要全局引用
+    # P0修复：fcntl启动排他锁，防止多实例并发（TOCTOU竞态防护）
+    try:
+        import fcntl as _fcntl
+        _lock_fd = open(STATE_FILE.parent / "engine.start.lock", "w")
+        _fcntl.flock(_lock_fd, _fcntl.LOCK_EX | _fcntl.LOCK_NB)
+    except BlockingIOError:
+        log("[START] 另一个引擎实例正在启动，fcntl锁冲突，退出", "WARN")
+        return
+    except Exception as _le:
+        log(f"[START] fcntl锁获取异常(不阻塞启动): {_le}", "WARN")
     # P2优化：注册SIGTERM/SIGHUP信号处理，沙箱回收时确保状态保存
     import signal as _sig
     def _graceful_shutdown(signum, frame):
@@ -3523,6 +3619,9 @@ def main():
                         log(f"[自旋稳定] 计算异常(不影响主循环): {_spin_e}", "WARN")
                     sixiang = get_sixiang_state(state)
                     cfg = SIXIANG_CONFIG[sixiang]
+                    # P0修复：target_conc提前初始化，避免少阴/少阳分支引用未定义变量
+                    conc_cap = 5
+                    target_conc = max(1, min(conc_cap, state.get("concurrency_override", CONCURRENCY)))
                     # 老阴态：全阴任务，不碰API
                     if sixiang == "laoyin":
                         log(f"[四象·老阴] 深度沉淀期，跑本地零消耗任务，不调用API", "INFO")

@@ -1,3 +1,4 @@
+import os
 #!/usr/bin/env python3
 """
 cognition_import.py — 全量认知文档入库Supabase（适配实际表结构）
@@ -19,7 +20,7 @@ import requests
 ENGINE_DIR = Path(__file__).parent.parent.parent
 COGNITION_DIR = ENGINE_DIR / "cognition"
 SUPABASE_URL = "https://gltscytpqnuuzhczljyq.supabase.co"
-SUPABASE_KEY = "sb_secret_Cpcpl-d8aA82ALo16hU8lg_3Smd8Xuu"
+SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")  # P0修复：不从代码硬编码，防止泄露到git
 VECTOR_DIM = 1536
 CHUNK_SIZE = 500  # 每个向量块的字符数
 

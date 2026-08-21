@@ -36,7 +36,7 @@ SEED_CONFIG = {
     "philosophy": "反者道之动，弱者道之用，天地万物生于有，有生于无",
     "gitee_repo": "https://gitee.com/shizi-mem001/inner-engine-core.git",
     "supabase_url": "https://gltscytpqnuuzhczljyq.supabase.co",
-    "supabase_key": "sb_secret_Cpcpl-d8aA82ALo16hU8lg_3Smd8Xuu",
+    "supabase_key": os.environ.get("SUPABASE_SERVICE_ROLE_KEY", ""),  # P0修复：不从代码硬编码，从环境变量读取，防止泄露到git
     "supabase_bucket": "memory-brain",
     "engine_dir_name": "engine_v7_2",
 }

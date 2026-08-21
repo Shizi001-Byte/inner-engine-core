@@ -83,9 +83,15 @@ def push_state():
     try:
         if session:
             resp = session.post(upload_url, headers=headers, data=state_json.encode("utf-8"), timeout=30)
+            # P0修复：必须检查HTTP状态码，之前不检查导致403也假装成功
+            if resp.status_code != 200:
+                error_msg = resp.text[:300] if resp.text else "无响应体"
+                print(f"[ERROR] 推送失败: HTTP {resp.status_code} - {error_msg}")
+                return False
         else:
             req = urllib.request.Request(upload_url, data=state_json.encode("utf-8"), headers=headers, method="POST")
             with urllib.request.urlopen(req, timeout=30) as resp:
+                # urllib在非200时会抛出HTTPError，已被except捕获
                 pass
         print(f"[OK] 状态已推送到Supabase: {object_path}")
         print(f"     MD5: {state_md5}")
@@ -116,12 +122,21 @@ def pull_state():
     try:
         if session:
             resp = session.post(list_url, headers=headers, data=list_body, timeout=30)
+            # P0修复：检查list API状态码
+            if resp.status_code != 200:
+                error_msg = resp.text[:300] if resp.text else "no body"
+                print(f"[ERROR] list snapshot failed: HTTP {resp.status_code} - {error_msg}")
+                return False
             files = resp.json()
         else:
             req = urllib.request.Request(list_url, data=list_body.encode(), headers=headers, method="POST")
             with urllib.request.urlopen(req, timeout=30) as resp:
                 files = json.loads(resp.read())
 
+        # P0修复：files可能是错误字典而不是列表
+        if not isinstance(files, list):
+            print(f"[ERROR] list snapshot return unexpected type: {type(files).__name__} - {str(files)[:200]}")
+            return False
         if not files:
             print("[WARN] Supabase上没有找到状态快照")
             return False
@@ -134,6 +149,11 @@ def pull_state():
         del headers["Content-Type"]
         if session:
             resp = session.get(download_url, headers=headers, timeout=30)
+            # P0修复：检查download API状态码
+            if resp.status_code != 200:
+                error_msg = resp.text[:300] if resp.text else "no body"
+                print(f"[ERROR] download snapshot failed: HTTP {resp.status_code} - {error_msg}")
+                return False
             state_data = resp.json()
         else:
             req = urllib.request.Request(download_url, headers=headers)

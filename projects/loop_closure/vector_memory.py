@@ -1,3 +1,4 @@
+import os
 #!/usr/bin/env python3
 """
 vector_memory.py — 向量语义检索接入（模块1.3）
@@ -19,7 +20,7 @@ import requests
 # ============ 配置 ============
 ENGINE_DIR = Path(__file__).parent.parent.parent
 SUPABASE_URL = "https://gltscytpqnuuzhczljyq.supabase.co"
-SUPABASE_KEY = "sb_secret_Cpcpl-d8aA82ALo16hU8lg_3Smd8Xuu"
+SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")  # P0修复：不从代码硬编码，防止泄露到git
 LOCAL_INDEX_FILE = Path(__file__).parent / "data" / "vector_local_index.json"
 
 
