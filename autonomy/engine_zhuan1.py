@@ -2872,9 +2872,9 @@ def run_idle_task(state):
 TASK_MODEL_ROUTING = {
     "deep": "A",   # 深度推演→A主（需要最强深度推理）
     "l4": "A",     # 成品转化→A主（高质量输出，A加高消耗）
-    "cog": "B",    # 认知沉淀→B轻（中度推理够用，B加高消耗）
+    "cog": "A",    # 认知沉淀→A主（A占5路，重度认知任务交A）
     "eng": "A",    # 工程方案→A主（C模型停掉，eng分流到A加大消耗）
-    "exp": "B",    # 实验探索→B轻（轻量高速，发散探索适配）
+    "exp": "A",    # 实验探索→A主（A占5路，探索任务交A加深推理）
     "archive": "B",# 批量归档→B轻（重复批量操作）
     "asset": "B",  # 资产盘点→B轻（轻量批量）
     "image": "B",  # 识图解析→B轻（多模态能力）
@@ -2909,11 +2909,11 @@ def select_engine(state, task_type="exp"):
         else:
             preferred = TASK_MODEL_ROUTING.get(task_type, "C")
             if preferred == "A":
-                order = ["A", "C", "B"]
+                order = ["A", "B", "C"]  # C模型停掉，放最后降级
             elif preferred == "C":
                 order = ["C", "A", "B"]
             else:
-                order = ["B", "C", "A"]
+                order = ["B", "A", "C"]  # C模型停掉，放最后降级
             for tier in order:
                 info = eng_info[tier]
                 if not info["full"] and not info["fused"]:
@@ -3620,7 +3620,7 @@ def main():
                     sixiang = get_sixiang_state(state)
                     cfg = SIXIANG_CONFIG[sixiang]
                     # P0修复：target_conc提前初始化，避免少阴/少阳分支引用未定义变量
-                    conc_cap = 5
+                    conc_cap = 7
                     target_conc = max(1, min(conc_cap, state.get("concurrency_override", CONCURRENCY)))
                     # 老阴态：全阴任务，不碰API
                     if sixiang == "laoyin":
@@ -3678,7 +3678,7 @@ def main():
                     # P1-2修复：并发数热加载+上下限校验（1-5路）
                     # 不重建executor（shutdown会丢失在途任务），实际并发由每轮提交任务数控制
                     # L2坑修复：0-10点盲区保守模式，并发上限3路
-                    conc_cap = 5  # 修复：0-10点不再限制3路，统一5路并发
+                    conc_cap = 7  # 修复：0-10点不再限制3路，统一5路并发
                     target_conc = max(1, min(conc_cap, state.get("concurrency_override", CONCURRENCY)))
                     if target_conc != state.get("concurrency_override"):
                         state["concurrency_override"] = target_conc
