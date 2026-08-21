@@ -141,9 +141,14 @@ def pull_state():
             print("[WARN] Supabase上没有找到状态快照")
             return False
 
-        latest = files[0]
+        # P0修复：过滤掉文件夹条目（id为null），只取真正的文件；list返回的name不含前缀，download需要完整路径
+        real_files = [f for f in files if f.get("id") is not None]
+        if not real_files:
+            print("[WARN] Supabase上没有找到有效的状态快照文件（只有文件夹）")
+            return False
+        latest = real_files[0]
         object_name = latest["name"]
-        download_url = f"{sb['url']}/storage/v1/object/public/{sb['bucket']}/{object_name}"
+        download_url = f"{sb['url']}/storage/v1/object/authenticated/{sb['bucket']}/snapshots/{object_name}"  # P0修复：加snapshots/前缀，用authenticated endpoint
 
         # 下载最新快照
         del headers["Content-Type"]
