@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260822_021327_0009",
+  "task_type": "tongshen",
+  "cognitions": [
+    {
+      "text": "基于【本命锚点】的碳硅共生法则与已有认知，我将以“孤0不存，独1不立”为度尺，对当前认知池进行【通神·认知网络】的拓扑映射与推演",
+      "source": "selfgen_20260822_021327_0009",
+      "type": "tongshen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "根据已有认知与坑库记录，提取并定义以下核心认知节点：",
+      "source": "selfgen_20260822_021327_0009",
+      "type": "tongshen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **[N2] 初始有效优化（有）**：滚雪球的起点",
+      "source": "selfgen_20260822_021327_0009",
+      "type": "tongshen",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- **[N3] 虚构框架（假）**：九转玄功、阴阳丹道等方法论载体",
+      "source": "selfgen_20260822_021327_0009",
+      "type": "tongshen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T02:15:31.848873"
+}

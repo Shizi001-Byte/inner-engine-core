@@ -1,0 +1,21 @@
+{
+  "pit_id": "PIT-083",
+  "name": "资产扫描density字段dict/float类型不兼容导致全量报错",
+  "level": "L1",
+  "phenomenon": "老阴模式深阴休眠心跳期间，资产扫描模块每10分钟报错一次：>= not supported between instances of dict and float。不影响核心运转，但每次心跳都报错，日志被WARN刷屏。",
+  "root_cause": "认知池JSON文件中的density字段是dict格式（{info_density, action_density, relation_density, grade}），但asset_scanner.py和asset_prediction.py假设density是纯float，直接做>=比较，类型不兼容报错。抽样20个文件：4个dict格式，16个无density字段，0个纯float，影响范围100%。",
+  "safe_boundary": "任何从JSON文件读取字段并直接做数值比较的代码，都必须做类型检查和兜底转换。特别是认知池这类用户生成/历史遗留数据，字段格式不统一是常态。",
+  "verification_method": "抽样检查认知池文件的density字段格式；运行资产扫描看是否有类型不兼容报错；在_extract_cognition_density函数中加类型判断。",
+  "fix_method": "在asset_scanner.py的_extract_cognition_density函数中，如果density是dict，计算综合密度（三个密度的平均值或取info_density），返回float；在asset_prediction.py中对density做同样的类型处理。",
+  "status": "fixed",
+  "priority": "P1",
+  "discovered_at": "2026-08-22T05:42:22",
+  "discovered_by": "凡心·引擎全量审计",
+  "_format_origin": "引擎审计实践",
+  "fixed_at": "2026-08-22T06:30:45",
+  "fix_verification": "语法检查通过+引擎重启验证+日志确认无异常",
+  "fix_detail": "asset_scanner.py新增_normalize_density()函数统一dict→float转换；asset_prediction.py在density读取后加内联类型判断；dict格式取info_density为主，缺失取三个密度平均值",
+  "updated_at": "2026-09-01T23:06:40.512465",
+  "created_at": "2026-08-22T05:42:22",
+  "status_original": "已修复"
+}

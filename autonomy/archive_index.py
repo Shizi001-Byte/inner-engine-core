@@ -58,10 +58,18 @@ def extract_tags(content: str, title: str, task_type: str, zhuan: int) -> dict:
 
 
 def load_index() -> dict:
+    default_idx = {"index_version": "1.0", "total_docs": 0, "docs": [], "tag_stats": {}}
     if INDEX_FILE.exists():
-        with open(INDEX_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {"index_version": "1.0", "total_docs": 0, "docs": [], "tag_stats": {}}
+        try:
+            with open(INDEX_FILE, "r", encoding="utf-8") as f:
+                idx = json.load(f)
+            # P1修复：兼容性检查——旧格式文件没有docs字段，重新初始化
+            if not isinstance(idx, dict) or "docs" not in idx:
+                return default_idx
+            return idx
+        except Exception:
+            return default_idx
+    return default_idx
 
 
 def save_index(index: dict):

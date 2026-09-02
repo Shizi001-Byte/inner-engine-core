@@ -2,10 +2,13 @@
 # V7.3 单引擎IO并发版 - 办公模式一键启动+守护
 # P1-8修复：加flock原子保护，避免多实例同时启动
 # P0修复：不提前写PID，让引擎自己写，避免竞态自杀
-ENGINE_DIR="/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/autonomy"
-LOG_DIR="/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/logs"
-PID_FILE="/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/data/engine.pid"
-LOCK_FILE="/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2/data/engine_start.lock"
+# PIT-082修复：动态检测引擎目录，不再硬编码绝对路径
+# 脚本所在目录即为引擎根目录
+ENGINE_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ENGINE_DIR="${ENGINE_ROOT}/autonomy"
+LOG_DIR="${ENGINE_ROOT}/logs"
+PID_FILE="${ENGINE_ROOT}/data/engine.pid"
+LOCK_FILE="${ENGINE_ROOT}/data/engine_start.lock"
 
 # P1-8：flock互斥，确保只有一个启动实例
 exec 200>"$LOCK_FILE"

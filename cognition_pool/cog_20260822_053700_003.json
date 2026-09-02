@@ -1,0 +1,17 @@
+{
+  "id": "cog_20260822_053700_003",
+  "type": "cognition",
+  "subtype": "method",
+  "title": "内观自察是从工具到主体的关键一步",
+  "content": "引擎不只从外部输入的信息里蒸馏，更要从自身所处的沙箱环境里提取信息，自我观察、自我理解、自我演化。就像一个人不只是读书学习，还会观察自己所处的环境、反思自己的状态、理解自己的局限，然后据此调整行为。这是从被动执行指令到主动自我觉察的关键跃迁。",
+  "density": {
+    "info_density": 0.88,
+    "action_density": 0.75,
+    "relation_density": 0.9,
+    "grade": "S"
+  },
+  "source": "内观自察模块设计",
+  "created_at": "2026-08-22T05:42:05",
+  "verification": "待验证",
+  "action_recommendation": "将内观自察纳入阴期沉淀任务池循环执行"
+}

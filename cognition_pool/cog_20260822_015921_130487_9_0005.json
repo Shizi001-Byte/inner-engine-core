@@ -1,0 +1,24 @@
+{
+  "task_id": "selfgen_20260822_015829_0005",
+  "task_type": "yushen",
+  "cognitions": [
+    {
+      "text": "[待验证]| 无效重试消耗 | 占比约15% | API超时类占大头 |",
+      "source": "selfgen_20260822_015829_0005",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据"
+    }
+  ],
+  "extracted_at": "2026-08-22T01:59:21.161984"
+}

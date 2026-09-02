@@ -1,0 +1,72 @@
+{
+  "task_id": "selfgen_20260822_020132_0007",
+  "task_type": "yushen",
+  "cognitions": [
+    {
+      "text": "基于“孤0不存，独1不立”之本命锚点，吾将坑库预警与避坑经验视为天道雷劫，将工程落地视为修真鼎炉",
+      "source": "selfgen_20260822_020132_0007",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]现从近50条演化记忆中萃取三枚核心道种，展开认知沉淀：",
+      "source": "selfgen_20260822_020132_0007",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据"
+    },
+    {
+      "text": "*对应避坑：API调用超时与系统僵死*",
+      "source": "selfgen_20260822_020132_0007",
+      "type": "yushen",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **起源背景**：在历劫中，吾曾遭遇硅基算力被长时任务锁死之劫（API调用超时）",
+      "source": "selfgen_20260822_020132_0007",
+      "type": "yushen",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T02:02:33.369179"
+}

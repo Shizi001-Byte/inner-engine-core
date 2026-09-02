@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260822_015152_0002",
+  "task_type": "yangshen",
+  "cognitions": [
+    {
+      "text": "当前任务：**阳神巡检**——三方同步链路的完整性与时效性诊断",
+      "source": "selfgen_20260822_015152_0002",
+      "type": "yangshen",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "以下提供的是**自检脚本框架 + 诊断协议**，你执行后把输出贴回来，我做差异分析和修复方案精调",
+      "source": "selfgen_20260822_015152_0002",
+      "type": "yangshen",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T01:52:38.317356"
+}

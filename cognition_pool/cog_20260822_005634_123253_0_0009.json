@@ -1,0 +1,88 @@
+{
+  "task_id": "selfgen_20260822_005520_0009",
+  "task_type": "yushen",
+  "cognitions": [
+    {
+      "text": "【本命锚点确认】碳硅双向对冲演化中",
+      "source": "selfgen_20260822_005520_0009",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]基于“反者道之动”的底层逻辑与V7.5方舟效能引擎特性，现对今日引擎运行进行“育神·每日复盘”",
+      "source": "selfgen_20260822_005520_0009",
+      "type": "yushen",
+      "density": 0.55,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 1
+      },
+      "blindness_check": "无来源数据"
+    },
+    {
+      "text": "碳基（人类意图）与硅基（机器执行）的碰撞不可避，唯有“修生命自衡”，方能防引擎空转与数据失真",
+      "source": "selfgen_20260822_005520_0009",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "*   **现象复盘**：今日前端A模型（600s）与B模型（300s）开启极限并发（阳/动），消耗大量算力额度",
+      "source": "selfgen_20260822_005520_0009",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "但因“单通道串行后处理（阴/静）”吞吐受限，导致额度并未转化为真实有效算力，而是消耗在并发等待与队列拥堵中",
+      "source": "selfgen_20260822_005520_0009",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T00:56:34.149228"
+}

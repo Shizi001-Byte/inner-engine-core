@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260822_012005_0015",
+  "task_type": "yangshen",
+  "cognitions": [
+    {
+      "text": "| T03 | 阴阳自旋与量子纠缠类比 | 理论/量子/阴阳 | ★★★★☆ |",
+      "source": "selfgen_20260822_012005_0015",
+      "type": "yangshen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T01:21:11.431912"
+}

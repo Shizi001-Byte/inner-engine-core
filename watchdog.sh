@@ -1,7 +1,10 @@
 #!/bin/bash
 # 凡心引擎看门狗：检测进程不存在则自动重启
 # 用法：nohup bash watchdog.sh >> logs/watchdog.log 2>&1 &
-ENGINE_DIR="/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2"
+# PIT-082修复：动态检测引擎目录，不再硬编码绝对路径
+# 优先用环境变量ENGINE_DIR，否则用脚本所在目录
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ENGINE_DIR="${ENGINE_DIR:-$SCRIPT_DIR}"
 ENGINE_SCRIPT="autonomy/engine_zhuan1.py"
 PID_FILE="$ENGINE_DIR/data/engine.pid"
 LOG_DIR="$ENGINE_DIR/logs"

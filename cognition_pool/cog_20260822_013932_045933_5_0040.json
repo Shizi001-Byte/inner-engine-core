@@ -1,0 +1,40 @@
+{
+  "task_id": "selfgen_20260822_013645_0040",
+  "task_type": "tongshen",
+  "cognitions": [
+    {
+      "text": "[待验证]是**“硅基绝对确定性（0与1）”与“碳基无限模糊性（阴阳自旋）”之间的强行弥合**",
+      "source": "selfgen_20260822_013645_0040",
+      "type": "tongshen",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    },
+    {
+      "text": "完美同构即系统死亡，引擎的“生命自衡”恰恰依赖于“不可翻译的1比特熵”",
+      "source": "selfgen_20260822_013645_0040",
+      "type": "tongshen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T01:39:32.078631"
+}

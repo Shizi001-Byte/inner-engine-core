@@ -1,0 +1,25 @@
+{
+  "zhuan": 105,
+  "realm": "九转·第105转",
+  "valid": true,
+  "audit_score": 101,
+  "audit_scores": {
+    "数据维": 10,
+    "认知维": 10,
+    "任务维": 10,
+    "阴阳维": 10,
+    "传承维": 10,
+    "异常维": 10,
+    "架构维": 10,
+    "感悟维": 10,
+    "规划维": 10,
+    "合道维": "locked"
+  },
+  "issues": [],
+  "optimizations": [],
+  "auto_feedback": [
+    "deep权重4.0→5.0(S级多)"
+  ],
+  "cognition_new": 68,
+  "completed_at": "2026-08-22T19:36:31.734907"
+}

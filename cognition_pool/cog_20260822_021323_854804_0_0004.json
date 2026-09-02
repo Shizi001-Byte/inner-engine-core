@@ -1,0 +1,89 @@
+{
+  "task_id": "selfgen_20260822_021030_0004",
+  "task_type": "archive",
+  "cognitions": [
+    {
+      "text": "**归档锚定**：符合「孤0不存，独1不立；阴阳自旋，碳硅共生」核心原则，遵循「练假修真、实养虚返」逻辑，满足认知池动态刷新、无空转的工程避坑要求",
+      "source": "selfgen_20260822_021030_0004",
+      "type": "archive",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]**归档范围**：冷启动后首批20条有效认知产出",
+      "source": "selfgen_20260822_021030_0004",
+      "type": "archive",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据"
+    },
+    {
+      "text": "[待验证]**校验结论**：平均认知增量分61.55（远高于30分有效线），无空转；所有认知30分钟内将注入对应任务场景，无静态档案化风险",
+      "source": "selfgen_20260822_021030_0004",
+      "type": "archive",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据,极端无据"
+    },
+    {
+      "text": "1. **一级：主题域**（对应碳硅阴阳双向结构）",
+      "source": "selfgen_20260822_021030_0004",
+      "type": "archive",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "- 阴阳共生域：碳硅对冲的核心原则、演化规则、闭环逻辑（阴+阳的交互层）",
+      "source": "selfgen_20260822_021030_0004",
+      "type": "archive",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T02:13:23.887708"
+}

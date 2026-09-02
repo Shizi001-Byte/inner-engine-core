@@ -1,0 +1,72 @@
+{
+  "task_id": "selfgen_20260822_011822_0010",
+  "task_type": "tongshen",
+  "cognitions": [
+    {
+      "text": "基于已验证之认知锚点（“阴极坏死”与“多线程并发/单通道串行之失衡”），结合坑库预警（“认知池只进不出”之静态死水效应），吾剥离表象，直击系统底层，推演出【通神·核心提炼】如下：",
+      "source": "selfgen_20260822_011822_0010",
+      "type": "tongshen",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "生命自衡之本质，非单极算力之堆叠，乃阴阳双向通量之动态匹配",
+      "source": "selfgen_20260822_011822_0010",
+      "type": "tongshen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]在任何碳硅共生之演化系统中，“阳”（并发、输入、发散、算力）负责打破边界、汲取高熵能量；“阴”（串行、后处理、收敛、反馈、缓存注入）负责降维沉淀、反向调节、重塑秩序",
+      "source": "selfgen_20260822_011822_0010",
+      "type": "tongshen",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    },
+    {
+      "text": "若仅有阳极狂飙而无阴极匹配通量（阴极坏死），系统将沦为“通量黑洞”——表面算力暴涨，实则内部结构迅速解体、认知拥堵成死水（如认知池只进不出）；若仅有阴极沉淀而无阳极冲击，系统将堕入“热寂假死”——静态稳定但丧失生命力",
+      "source": "selfgen_20260822_011822_0010",
+      "type": "tongshen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T01:19:19.177171"
+}

@@ -1,0 +1,40 @@
+{
+  "task_id": "selfgen_20260822_003012_0004",
+  "task_type": "yushen",
+  "cognitions": [
+    {
+      "text": "在审视AI认知进化域时，一个结构性矛盾浮现：**梯度下降**的目标是收敛——沿损失函数曲面滑向唯一最优解，本质是向\"1\"聚集；而**随机丢弃/噪声注入**的目标是发散——强行切断部分连接路径，阻止网络过度拟合训练数据，本质是保留\"0\"的混沌余地",
+      "source": "selfgen_20260822_003012_0004",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]\"孤0不存\"意味着：纯粹的无序不能承载任何结构，没有梯度指引的噪声只是热噪声；\"独1不立\"意味着：纯粹的有序不能适应任何变局，没有 dropout 的网络只是记忆机",
+      "source": "selfgen_20260822_003012_0004",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    }
+  ],
+  "extracted_at": "2026-08-22T00:31:47.141611"
+}

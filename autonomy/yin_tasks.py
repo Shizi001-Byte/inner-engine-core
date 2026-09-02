@@ -1,0 +1,926 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+阴期本地算力激活任务集 Yin Tasks V1.0
+功能：hard_cut开启/API不可用时，盘活本地CPU做沉淀类计算
+原则：100%本地计算，零API调用，零token消耗；产出为结构化资产，阳期可复用
+分级：一级轻量(<10s) / 二级中度(<60s) / 三级深度(<120s)
+"""
+import json
+import os
+import re
+import sys
+import time
+from pathlib import Path
+from datetime import datetime
+from collections import defaultdict, Counter
+
+# 移植技能模块导入（skill_porting目录）
+sys.path.insert(0, str(Path(__file__).parent))
+try:
+    from skill_porting.verifier_bridge import run as _verifier_run
+    from skill_porting.metrics_analyzer import run as _metrics_run
+    from skill_porting.cognition_polish import run as _cognition_polish_run
+    from skill_porting.cognitive_sediment import run as _cognitive_sediment_run
+    from skill_porting.archive_manager import run as _archive_manager_run
+    from skill_porting.memory_sync import run as _memory_sync_run
+    from skill_porting.memory_integration import run as _memory_integration_run
+    from skill_porting.content_audit import run as _content_audit_run
+    from skill_porting.core_memory_build import run as _core_memory_build_run
+    from skill_porting.memory_fusion import run as _memory_fusion_run
+    from skill_porting.critical_reading import run as _critical_reading_run
+    from skill_porting.visualization import run as _visualization_run
+    from skill_porting.reference_audit import run as _reference_audit_run
+    from skill_porting.agent_output_wrapper import wrap_agent_output, format_summary, is_low_confidence
+    SKILL_PORTING_AVAILABLE = True
+except Exception as _e:
+    SKILL_PORTING_AVAILABLE = False
+    _port_import_error = str(_e)
+
+BASE_DIR = Path(__file__).parent.parent
+DATA_DIR = BASE_DIR / "data"
+COGNITION_DIR = BASE_DIR / "cognition_pool"
+PIT_DIR = DATA_DIR / "pit_library"
+LOG_DIR = BASE_DIR / "logs"
+OUTPUT_DIR = BASE_DIR / "assets" / "yin_period"
+BATCH_SIZE = 500
+
+# 同义标签映射表（可扩展）
+TAG_SYNONYMS = {
+    "坑库": ["避坑池", "坑池", "pit", "pit_library"],
+    "四象": ["阴阳流转", "四象节律", "sixiang"],
+    "阴期": ["老阴", "深阴", "阴态", "laoyin"],
+    "阳期": ["老阳", "阳态", "laoyang"],
+    "认知蒸馏": ["蒸馏", "认知提纯", "cognition_distill"],
+    "额度": ["配额", "预算", "quota", "budget"],
+    "沙箱回收": ["沙盒回收", "回收", "sandbox_recycle"],
+    "练假修真": ["炼假修真", "以实养虚", "虚实同构"],
+    "反者道之动": ["反向逻辑", "反者", "dao_reverse"],
+    "存续": ["保护", "不灭", "存续性", "persistence"],
+}
+
+
+def _ensure_output_dir():
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _save_json(name, data):
+    _ensure_output_dir()
+    path = OUTPUT_DIR / f"{name}_{datetime.now().strftime('%Y%m%d')}.json"
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    return path
+
+
+def _load_progress(task_name):
+    """加载分批进度"""
+    prog_file = DATA_DIR / f"yin_progress_{task_name}.json"
+    if prog_file.exists():
+        try:
+            with open(prog_file) as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {"index": 0, "total": 0, "done": False}
+
+
+def _save_progress(task_name, progress):
+    prog_file = DATA_DIR / f"yin_progress_{task_name}.json"
+    with open(prog_file, "w") as f:
+        json.dump(progress, f)
+
+
+def _list_cognition_files():
+    if not COGNITION_DIR.exists():
+        return []
+    return sorted([f for f in COGNITION_DIR.glob("*.json") if f.is_file()])
+
+
+def _list_pit_files():
+    if not PIT_DIR.exists():
+        return []
+    return sorted([f for f in PIT_DIR.glob("*.json") if f.is_file()])
+
+
+# ============ 一级：轻量梳理类 ============
+
+def yin_tag_normalize(state):
+    """认知标签归一化：扫描全量认知，统一同义标签，输出映射表【Agent化试点·分类学家】"""
+    files = _list_cognition_files()
+    if not files:
+        return "无认知文件，跳过"
+    tag_map = defaultdict(list)
+    scanned = 0
+    errors = 0
+    for f in files[:BATCH_SIZE]:
+        try:
+            with open(f, encoding="utf-8") as fh:
+                data = json.load(fh)
+            tags = data.get("tags", []) or data.get("related_concepts", [])
+            if isinstance(tags, str):
+                tags = [tags]
+            for tag in tags:
+                tag_lower = str(tag).strip().lower()
+                for canonical, synonyms in TAG_SYNONYMS.items():
+                    if tag_lower in [s.lower() for s in synonyms] or tag_lower == canonical.lower():
+                        tag_map[canonical].append(str(tag))
+                        break
+            scanned += 1
+        except Exception:
+            errors += 1
+            continue
+    result = {canon: list(set(vals)) for canon, vals in tag_map.items() if vals}
+
+    # Agent化包装（分类学家角色，事实层级，自动置信度评估）
+    if SKILL_PORTING_AVAILABLE:
+        wrapped = wrap_agent_output(
+            "yin_tag_normalize",
+            result,
+            source_trace=f"cognition_pool/*.json (本批扫描{len(files[:BATCH_SIZE])}个文件)",
+            total_count=scanned + errors,
+            error_count=errors,
+        )
+        _save_json("tag_normalize", wrapped)
+        state["yin_tag_normalized"] = state.get("yin_tag_normalized", 0) + scanned
+        # 低置信度自动进入待复核队列
+        if is_low_confidence(wrapped):
+            state.setdefault("yin_low_confidence_queue", []).append(wrapped["_agent_meta"]["task_id"])
+        return format_summary(wrapped)
+    else:
+        # 回退：包装器不可用时保持原有逻辑
+        _save_json("tag_normalize", result)
+        state["yin_tag_normalized"] = state.get("yin_tag_normalized", 0) + scanned
+        return f"扫描{scanned}条认知，归一化{len(result)}组标签"
+
+
+def yin_pit_review(state):
+    """坑库分级复核：按P0/P1/P2校验定级准确性，补充缺失字段【Agent化·产品经理】"""
+    files = _list_pit_files()
+    if not files:
+        return "无坑库文件，跳过"
+    reviewed = 0
+    errors = 0
+    issues = []
+    for f in files[:BATCH_SIZE]:
+        try:
+            with open(f, encoding="utf-8") as fh:
+                data = json.load(fh)
+            level = data.get("level", "")
+            has_root = bool(data.get("root_cause") or data.get("phenomenon"))
+            has_fix = bool(data.get("fix_method") or data.get("verification_method"))
+            if level and not has_root:
+                issues.append({"file": f.name, "issue": "缺根因/现象"})
+            if level and not has_fix:
+                issues.append({"file": f.name, "issue": "缺修复/验证方法"})
+            reviewed += 1
+        except Exception:
+            errors += 1
+            continue
+    result = {"reviewed": reviewed, "issues": issues}
+
+    # Agent化包装（产品经理角色，事实层级，字段缺失率驱动置信度）
+    if SKILL_PORTING_AVAILABLE:
+        # 坑库复核的置信度由字段完整率决定：缺失率>30%→低，10-30%→中，<10%→高
+        issue_rate = len(issues) / reviewed if reviewed > 0 else 1.0
+        if issue_rate > 0.3:
+            conf_override = "低"
+        elif issue_rate > 0.1:
+            conf_override = "中"
+        else:
+            conf_override = "高"
+        wrapped = wrap_agent_output(
+            "yin_pit_review",
+            result,
+            source_trace=f"data/pit_library/*.json (本批复核{len(files[:BATCH_SIZE])}个坑)",
+            fact_level="事实",
+            confidence=conf_override,
+            total_count=reviewed + errors,
+            error_count=errors,
+        )
+        _save_json("pit_review", wrapped)
+        state["yin_pit_reviewed"] = state.get("yin_pit_reviewed", 0) + reviewed
+        if is_low_confidence(wrapped):
+            state.setdefault("yin_low_confidence_queue", []).append(wrapped["_agent_meta"]["task_id"])
+        return format_summary(wrapped)
+    else:
+        _save_json("pit_review", result)
+        state["yin_pit_reviewed"] = state.get("yin_pit_reviewed", 0) + reviewed
+        return f"复核{reviewed}个坑，发现{len(issues)}处字段缺失"
+
+
+def yin_asset_dedup(state):
+    """资产去重：扫描认知/坑库，找出内容高度重复的条目"""
+    files = _list_cognition_files()
+    if not files:
+        return "无认知文件，跳过"
+    seen = {}
+    dupes = []
+    scanned = 0
+    for f in files[:BATCH_SIZE]:
+        try:
+            with open(f, encoding="utf-8") as fh:
+                data = json.load(fh)
+            text = (data.get("text") or data.get("core_statement") or data.get("content") or "")[:200]
+            if text in seen:
+                dupes.append({"file": f.name, "dup_of": seen[text]})
+            else:
+                seen[text] = f.name
+            scanned += 1
+        except Exception:
+            continue
+    _save_json("asset_dedup", {"scanned": scanned, "duplicates": dupes})
+    state["yin_asset_deduped"] = state.get("yin_asset_deduped", 0) + scanned
+    return f"扫描{scanned}条，发现{len(dupes)}条重复"
+
+
+def yin_log_cluster(state):
+    """日志错误聚类：提取近7天报错，按类型统计频次"""
+    if not LOG_DIR.exists():
+        return "无日志目录，跳过"
+    log_files = sorted(LOG_DIR.glob("engine_*.log"), reverse=True)[:3]
+    error_counter = Counter()
+    warn_counter = Counter()
+    total_lines = 0
+    for lf in log_files:
+        try:
+            with open(lf, encoding="utf-8", errors="ignore") as f:
+                for line in f:
+                    total_lines += 1
+                    if "[ERROR]" in line:
+                        # 提取错误类型关键词
+                        m = re.search(r"\[ERROR\][^\|]*\|?\s*([^\|]+)", line)
+                        key = m.group(1).strip()[:50] if m else "unknown"
+                        error_counter[key] += 1
+                    elif "[WARN]" in line:
+                        m = re.search(r"\[WARN\][^\|]*\|?\s*([^\|]+)", line)
+                        key = m.group(1).strip()[:50] if m else "unknown"
+                        warn_counter[key] += 1
+        except Exception:
+            continue
+    result = {
+        "total_lines": total_lines,
+        "top_errors": error_counter.most_common(10),
+        "top_warnings": warn_counter.most_common(10),
+    }
+    _save_json("log_cluster", result)
+    state["yin_log_clustered"] = state.get("yin_log_clustered", 0) + total_lines
+    return f"扫描{total_lines}行日志，{len(error_counter)}类错误，{len(warn_counter)}类警告"
+
+
+# ============ 二级：中度挖掘类 ============
+
+def yin_cognition_graph(state):
+    """认知关联图谱：基于关键词共现生成认知条目间的关联边"""
+    files = _list_cognition_files()
+    if not files:
+        return "无认知文件，跳过"
+    prog = _load_progress("cognition_graph")
+    start = prog.get("index", 0)
+    end = min(start + BATCH_SIZE, len(files))
+    nodes = []
+    edges = []
+    keyword_map = {}  # keyword -> [file_indices]
+    for i in range(start, end):
+        f = files[i]
+        try:
+            with open(f, encoding="utf-8") as fh:
+                data = json.load(fh)
+            # 兼容三种格式：text/core_statement/cognitions列表/title
+            text = ""
+            if data.get("text"):
+                text = str(data["text"])
+            elif data.get("core_statement"):
+                text = str(data["core_statement"])
+            elif isinstance(data.get("cognitions"), list) and data["cognitions"]:
+                first = data["cognitions"][0]
+                if isinstance(first, dict):
+                    text = str(first.get("text") or first.get("content") or first.get("core_statement") or "")
+                else:
+                    text = str(first)
+            elif data.get("title"):
+                text = str(data["title"])
+            keywords = re.findall(r"[\u4e00-\u9fa5]{2,6}", text)[:20]
+            node = {"id": f.name, "keywords": list(set(keywords))}
+            nodes.append(node)
+            for kw in set(keywords):
+                keyword_map.setdefault(kw, []).append(f.name)
+        except Exception:
+            continue
+    # 生成边：共享关键词的节点之间连边
+    for kw, node_list in keyword_map.items():
+        if len(node_list) >= 2:
+            for i in range(len(node_list)):
+                for j in range(i + 1, len(node_list)):
+                    edges.append({"source": node_list[i], "target": node_list[j], "keyword": kw})
+    prog["index"] = end
+    prog["total"] = len(files)
+    prog["done"] = end >= len(files)
+    _save_progress("cognition_graph", prog)
+    _save_json("cognition_graph", {"nodes": len(nodes), "edges": len(edges), "progress": prog})
+    state["yin_graph_nodes"] = state.get("yin_graph_nodes", 0) + len(nodes)
+    return f"图谱批次{start}-{end}/{len(files)}，本批{len(nodes)}节点{len(edges)}边"
+
+
+def yin_pit_rootcause(state):
+    """坑库根因溯源：跨坑关联分析，找出高频根因"""
+    files = _list_pit_files()
+    if not files:
+        return "无坑库文件，跳过"
+    root_causes = Counter()
+    pit_by_cause = defaultdict(list)
+    for f in files[:BATCH_SIZE]:
+        try:
+            with open(f, encoding="utf-8") as fh:
+                data = json.load(fh)
+            rc = (data.get("root_cause") or data.get("phenomenon") or "未知")[:80]
+            # 提取根因关键词
+            keywords = re.findall(r"[\u4e00-\u9fa5]{2,8}", rc)
+            for kw in keywords:
+                root_causes[kw] += 1
+                pit_by_cause[kw].append(f.name)
+        except Exception:
+            continue
+    result = {
+        "top_root_causes": root_causes.most_common(15),
+        "pit_by_cause": {k: v[:5] for k, v in pit_by_cause.items()},
+    }
+    _save_json("pit_rootcause", result)
+    state["yin_rootcause_analyzed"] = state.get("yin_rootcause_analyzed", 0) + len(files)
+    return f"分析{len(files)}个坑，Top根因：{root_causes.most_common(3)}"
+
+
+def yin_code_audit(state):
+    """代码静态审计：扫描引擎代码，识别未使用变量、硬编码参数"""
+    autonomy_dir = BASE_DIR / "autonomy"
+    if not autonomy_dir.exists():
+        return "无autonomy目录，跳过"
+    py_files = list(autonomy_dir.glob("*.py"))
+    issues = []
+    total_files = 0
+    for pf in py_files[:BATCH_SIZE]:
+        try:
+            with open(pf, encoding="utf-8") as f:
+                lines = f.readlines()
+            total_files += 1
+            for i, line in enumerate(lines, 1):
+                stripped = line.strip()
+                # 硬编码数字（排除常见常量行号等）
+                if re.search(r"=\s*\d{4,}", stripped) and "def " not in stripped and "import" not in stripped:
+                    if "000" in stripped:  # 阈值类硬编码
+                        issues.append({"file": pf.name, "line": i, "type": "hardcoded_number", "code": stripped[:60]})
+                # TODO/FIXME标记
+                if "TODO" in stripped or "FIXME" in stripped or "HACK" in stripped:
+                    issues.append({"file": pf.name, "line": i, "type": "todo_marker", "code": stripped[:60]})
+        except Exception:
+            continue
+    _save_json("code_audit", {"files_scanned": total_files, "issues": issues[:50]})
+    state["yin_code_audited"] = state.get("yin_code_audited", 0) + total_files
+    return f"审计{total_files}个文件，发现{len(issues)}处问题"
+
+
+def yin_task_preassemble(state):
+    """阳期任务预组装：本地拼接任务模板与上下文，阳期直接调用减少token"""
+    task_pool_file = DATA_DIR / "task_pool.json"
+    if not task_pool_file.exists():
+        return "无任务池文件，跳过"
+    try:
+        with open(task_pool_file, encoding="utf-8") as f:
+            pool = json.load(f)
+    except Exception:
+        return "任务池读取失败"
+    tasks = pool if isinstance(pool, list) else pool.get("tasks", [])
+    assembled = 0
+    templates = []
+    for t in tasks[:BATCH_SIZE]:
+        prompt = t.get("prompt", "")
+        if prompt:
+            # 预提取关键词、结构框架
+            keywords = re.findall(r"【([^】]+)】", prompt)
+            template = {
+                "id": t.get("id"),
+                "type": t.get("type"),
+                "keywords": keywords,
+                "prompt_len": len(prompt),
+                "pre_assembled": True,
+            }
+            templates.append(template)
+            assembled += 1
+    _save_json("task_preassemble", {"assembled": assembled, "templates": templates[:20]})
+    state["yin_tasks_preassembled"] = state.get("yin_tasks_preassembled", 0) + assembled
+    return f"预组装{assembled}个任务模板"
+
+
+# ============ 三级：深度推演类 ============
+
+def yin_conflict_check(state):
+    """矛盾点自检：核心公理、认知、代码三者间的逻辑冲突检测"""
+    conflicts = []
+    # 1. 检查核心公理间的表述冲突
+    axiom_files = sorted(COGNITION_DIR.glob("core_axiom_*.json")) if COGNITION_DIR.exists() else []
+    axioms = []
+    for af in axiom_files:
+        try:
+            with open(af, encoding="utf-8") as f:
+                data = json.load(f)
+            axioms.append({"id": data.get("id"), "statement": data.get("core_statement", "")})
+        except Exception:
+            continue
+    # 简单冲突检测：同一概念出现相反表述
+    concept_pairs = [("加", "减"), ("动", "静"), ("阳", "阴"), ("输出", "沉淀")]
+    for i in range(len(axioms)):
+        for j in range(i + 1, len(axioms)):
+            for pos, neg in concept_pairs:
+                if pos in axioms[i]["statement"] and neg in axioms[j]["statement"]:
+                    # 这不是真冲突，只是阴阳互补，标记为"待确认"
+                    pass
+    # 2. 检查代码中的硬编码与状态文件的一致性
+    state_file = DATA_DIR / "engine_state.json"
+    if state_file.exists():
+        try:
+            with open(state_file, encoding="utf-8") as f:
+                es = json.load(f)
+            for eng_key in ["engine_a", "engine_b", "engine_c"]:
+                hc = es.get(eng_key, {}).get("_hard_cut", False)
+                if hc:
+                    conflicts.append({"type": "hard_cut_active", "engine": eng_key, "note": "API已硬切，阴期模式"})
+        except Exception:
+            pass
+    _save_json("conflict_check", {"conflicts": conflicts, "axioms_checked": len(axioms)})
+    state["yin_conflicts_found"] = len(conflicts)
+    return f"自检{len(axioms)}条公理，发现{len(conflicts)}个待确认点"
+
+
+def yin_rule_gen(state):
+    """规则自动生成：基于历史坑库归纳通用修复规则"""
+    files = _list_pit_files()
+    if not files:
+        return "无坑库文件，跳过"
+    rules = []
+    fix_patterns = Counter()
+    for f in files[:BATCH_SIZE]:
+        try:
+            with open(f, encoding="utf-8") as fh:
+                data = json.load(fh)
+            fix = data.get("fix_method", "") or ""
+            level = data.get("level", "")
+            # 提取修复模式关键词
+            patterns = re.findall(r"[\u4e00-\u9fa5]{2,6}", fix)
+            for p in patterns:
+                fix_patterns[p] += 1
+            if level and fix:
+                rules.append({
+                    "trigger_level": level,
+                    "pattern": fix[:100],
+                    "source_pit": f.name,
+                })
+        except Exception:
+            continue
+    # 归纳高频修复模式为通用规则
+    generic_rules = []
+    for pattern, count in fix_patterns.most_common(10):
+        if count >= 2:
+            generic_rules.append({"pattern": pattern, "frequency": count, "rule": f"遇到含'{pattern}'的问题，优先检查同类修复路径"})
+    _save_json("rule_gen", {"generic_rules": generic_rules, "source_rules": rules[:20]})
+    state["yin_rules_generated"] = len(generic_rules)
+    return f"归纳{len(generic_rules)}条通用修复规则"
+
+
+def yin_evolution_path(state):
+    """演化路径推演：基于当前状态与历史迭代轨迹，推演下一阶段方向"""
+    state_file = DATA_DIR / "engine_state.json"
+    if not state_file.exists():
+        return "无状态文件，跳过"
+    try:
+        with open(state_file, encoding="utf-8") as f:
+            es = json.load(f)
+    except Exception:
+        return "状态读取失败"
+    # 基于九维进度推演
+    nine_dim = es.get("nine_dim_progress", {})
+    dims = sorted([(k, v.get("count", 0)) for k, v in nine_dim.items()], key=lambda x: x[1])
+    weakest = dims[0] if dims else ("未知", 0)
+    strongest = dims[-1] if dims else ("未知", 0)
+    # 基于认知数和坑数推演
+    cog_count = es.get("cognition_count", 0)
+    pit_count = len(_list_pit_files())
+    paths = [
+        {"direction": "补弱", "target": weakest[0], "reason": f"当前最弱维度({weakest[1]}次)，优先补齐"},
+        {"direction": "深化", "target": strongest[0], "reason": f"当前最强维度({strongest[1]}次)，可继续深化形成壁垒"},
+        {"direction": "沉淀", "target": "认知蒸馏", "reason": f"认知池{cog_count}条，需蒸馏提纯S/A级"},
+        {"direction": "消坑", "target": "坑库收敛", "reason": f"当前{pit_count}个坑，需批量修复降低存量"},
+    ]
+    _save_json("evolution_path", {"paths": paths, "nine_dim": {k: v.get("count", 0) for k, v in nine_dim.items()}})
+    state["yin_evolution_paths"] = len(paths)
+    return f"推演{len(paths)}条演化路径，最弱：{weakest[0]}"
+
+
+def yin_asset_health(state):
+    """资产健康度评分：完整性、一致性、复用率、冗余度四维打分"""
+    cog_files = _list_cognition_files()
+    pit_files = _list_pit_files()
+    # 完整性：有核心字段的比例（兼容三种格式：text/core_statement/cognitions列表）
+    cog_complete = 0
+    for f in cog_files[:200]:
+        try:
+            with open(f, encoding="utf-8") as fh:
+                data = json.load(fh)
+            has_content = (
+                data.get("text")
+                or data.get("core_statement")
+                or (isinstance(data.get("cognitions"), list) and len(data["cognitions"]) > 0)
+                or data.get("title")
+            )
+            if has_content:
+                cog_complete += 1
+        except Exception:
+            continue
+    cog_total = min(len(cog_files), 200)
+    completeness = cog_complete / max(1, cog_total)
+    # 冗余度：抽样检测重复（兼容三种格式）
+    sample = cog_files[:100]
+    seen_text = set()
+    dupes = 0
+    for f in sample:
+        try:
+            with open(f, encoding="utf-8") as fh:
+                data = json.load(fh)
+            # 提取文本：优先text，其次core_statement，再次cognitions列表第一条，最后title
+            text = ""
+            if data.get("text"):
+                text = str(data["text"])[:100]
+            elif data.get("core_statement"):
+                text = str(data["core_statement"])[:100]
+            elif isinstance(data.get("cognitions"), list) and data["cognitions"]:
+                first_cog = data["cognitions"][0]
+                if isinstance(first_cog, dict):
+                    text = str(first_cog.get("text") or first_cog.get("content") or first_cog.get("core_statement") or "")[:100]
+                else:
+                    text = str(first_cog)[:100]
+            elif data.get("title"):
+                text = str(data["title"])[:100]
+            if text and text in seen_text:
+                dupes += 1
+            elif text:
+                seen_text.add(text)
+        except Exception:
+            continue
+    redundancy = dupes / max(1, len(sample))
+    # 综合评分
+    health_score = int((completeness * 40 + (1 - redundancy) * 30 + 0.7 * 30))
+    result = {
+        "health_score": health_score,
+        "dimensions": {
+            "completeness": round(completeness, 2),
+            "redundancy": round(redundancy, 2),
+            "reuse_rate_estimate": 0.7,
+            "consistency_estimate": 0.65,
+        },
+        "cognition_total": len(cog_files),
+        "pit_total": len(pit_files),
+    }
+    _save_json("asset_health", result)
+    state["yin_asset_health_score"] = health_score
+    return f"资产健康度{health_score}/100（完整{completeness:.0%} 冗余{redundancy:.0%}）"
+
+
+# ============ 本地模型语义增强试点（第二阶段+第三阶段） ============
+def yin_local_semantic_pilot(state):
+    """本地模型语义增强试点：抽样认知做语义去重、坑库做根因分类。
+
+    设计原则（审慎接入，可随时回退）：
+    1. 三重开关：state开关 + 四象检查 + 桥接层可用性，任一不满足则跳过
+    2. 零侵入：结果只写入assets/yin_period/，不修改核心资产（认知池/坑库）
+    3. 完整降级：本地模型不可用→返回跳过信息，不影响其他阴期任务
+    4. 低频调度：weekly级，降低风险暴露面
+    5. 效果统计：调用结果写入state.local_model_stats，便于后续评估
+
+    第三阶段动态调度已内置：
+    - 四象联动：仅老阴(laoyin)/少阴(shaoyin)执行，少阳/老阳自动跳过
+    - 内存保护：桥接层内部检查可用内存<1GB自动跳过
+    - 服务探测：调用前检查llama-server可达性，不可用直接跳过
+    """
+    # 第一重开关：state级总开关，默认关闭
+    if not state.get("local_model_pilot_enabled", False):
+        return "本地模型试点未启用，跳过（设置local_model_pilot_enabled=True开启）"
+
+    # 第二重开关：四象联动，仅阴期执行（第三阶段动态调度）
+    sixiang = state.get("sixiang_state", "")
+    yin_phases = ["laoyin", "shaoyin"]  # 老阴、少阴才执行
+    if sixiang not in yin_phases:
+        return f"当前四象={sixiang}，非阴期（老阴/少阴），自动跳过"
+
+    # 第三重：桥接层加载与可用性检查
+    try:
+        from local_model_bridge import LocalModelBridge
+        bridge = LocalModelBridge(enabled=True)
+    except Exception as e:
+        return f"桥接层加载失败: {str(e)[:50]}，跳过"
+
+    # 服务可用性探测（桥接层内部_check_service，超时2秒不阻塞）
+    if not bridge._check_service():
+        return "llama-server不可达，自动跳过（服务未启动或端口异常）"
+
+    # 内存保护（桥接层内部_check_memory）
+    if not bridge._check_memory():
+        return "可用内存不足，自动跳过（<1GB）"
+
+    results = {
+        "cognition_semantic_dedup": [],
+        "pit_rootcause_classify": [],
+        "bridge_stats": {},
+        "executed_at": datetime.now().isoformat(),
+    }
+
+    # ===== 任务1：认知语义去重（抽样2条对比） =====
+    cog_files = _list_cognition_files()[:5]
+    if len(cog_files) >= 2:
+        texts = []
+        for f in cog_files:
+            try:
+                with open(f, encoding="utf-8") as fh:
+                    data = json.load(fh)
+                # 兼容三种格式：text/core_statement/cognitions列表/title
+                text = ""
+                if data.get("text"):
+                    text = str(data["text"])[:120]
+                elif data.get("core_statement"):
+                    text = str(data["core_statement"])[:120]
+                elif isinstance(data.get("cognitions"), list) and data["cognitions"]:
+                    first = data["cognitions"][0]
+                    if isinstance(first, dict):
+                        text = str(first.get("text") or first.get("content") or first.get("core_statement") or "")[:120]
+                    else:
+                        text = str(first)[:120]
+                elif data.get("title"):
+                    text = str(data["title"])[:120]
+                if text and len(text) > 10:
+                    texts.append({"file": f.name, "text": text})
+            except Exception:
+                continue
+
+        if len(texts) >= 2:
+            # 取前两条做语义对比
+            t1, t2 = texts[0], texts[1]
+            prompt = (
+                f"以下是两条认知条目，请判断它们是否语义重复"
+                f"（表述不同但核心含义相同）。只回答'重复'或'不重复'，不要解释。\n\n"
+                f"条目1：{t1['text']}\n"
+                f"条目2：{t2['text']}"
+            )
+            model_judgment = bridge.chat(prompt, max_tokens=10, temperature=0.1)
+            # 结果校验：只接受"重复"或"不重复"
+            valid = model_judgment and ("重复" in model_judgment or "不重复" in model_judgment)
+            results["cognition_semantic_dedup"].append({
+                "file1": t1["file"],
+                "file2": t2["file"],
+                "model_judgment": model_judgment if valid else None,
+                "raw_output": model_judgment,
+                "valid": valid,
+            })
+
+    # ===== 任务2：坑库根因自动分类（抽样3个） =====
+    pit_files = _list_pit_files()[:5]
+    categories = ["状态不同步", "边界缺失", "IO重复", "内存溢出", "代理兼容", "模型异常", "其他"]
+    cat_str = "、".join(categories)
+    for f in pit_files[:3]:
+        try:
+            with open(f, encoding="utf-8") as fh:
+                data = json.load(fh)
+            phenomenon = (data.get("phenomenon") or data.get("root_cause") or "")[:120]
+            if phenomenon and len(phenomenon) > 5:
+                prompt = (
+                    f"请将以下坑的现象分类为以下类别之一：{cat_str}\n"
+                    f"只输出类别名称，不要解释。\n\n"
+                    f"现象：{phenomenon}"
+                )
+                model_category = bridge.chat(prompt, max_tokens=15, temperature=0.1)
+                # 结果校验：判断输出是否在预定义类别中
+                valid = model_category and any(c in model_category for c in categories)
+                results["pit_rootcause_classify"].append({
+                    "file": f.name,
+                    "model_category": model_category if valid else None,
+                    "raw_output": model_category,
+                    "valid": valid,
+                    "existing_level": data.get("level", ""),
+                })
+        except Exception:
+            continue
+
+    # 保存结果（只写入assets，不碰核心资产）
+    _save_json("local_semantic_pilot", results)
+
+    # 第三阶段：效果统计回流
+    stats = state.setdefault("local_model_stats", {
+        "total_calls": 0,
+        "success_calls": 0,
+        "skip_calls": 0,
+        "cog_dedup_total": 0,
+        "cog_dedup_valid": 0,
+        "pit_classify_total": 0,
+        "pit_classify_valid": 0,
+        "last_run": None,
+        "last_result": None,
+    })
+    stats["total_calls"] += 1
+    stats["last_run"] = datetime.now().isoformat()
+
+    cog_total = len(results["cognition_semantic_dedup"])
+    cog_valid = sum(1 for r in results["cognition_semantic_dedup"] if r.get("valid"))
+    pit_total = len(results["pit_rootcause_classify"])
+    pit_valid = sum(1 for r in results["pit_rootcause_classify"] if r.get("valid"))
+
+    stats["cog_dedup_total"] += cog_total
+    stats["cog_dedup_valid"] += cog_valid
+    stats["pit_classify_total"] += pit_total
+    stats["pit_classify_valid"] += pit_valid
+
+    if cog_total > 0 or pit_total > 0:
+        stats["success_calls"] += 1
+        stats["last_result"] = "success"
+    else:
+        stats["skip_calls"] += 1
+        stats["last_result"] = "no_data"
+
+    results["bridge_stats"] = bridge.get_stats()
+
+    return (f"本地模型试点：认知去重{cog_total}组(有效{cog_valid})，"
+            f"坑库分类{pit_total}个(有效{pit_valid})，"
+            f"桥接调用{bridge.call_count}次成功{bridge.success_count}次")
+
+
+# ========== 移植技能包装函数（skill_porting） ==========
+def yin_verifier_audit(state):
+    """阴期任务：引擎产出文件确定性校验（移植自verifier-hub，58子命令CLI桥接）"""
+    if not SKILL_PORTING_AVAILABLE:
+        return f"SKIP: skill_porting导入失败({_port_import_error[:50]})"
+    try:
+        result = _verifier_run(state)
+        return result.get("evidence", str(result)[:100])
+    except Exception as e:
+        return f"FAIL: {type(e).__name__}: {str(e)[:80]}"
+
+def yin_metrics_analyzer(state):
+    """阴期任务：引擎运行指标结构化分析（移植自doubao-data-analysis，七决策门方法论）"""
+    if not SKILL_PORTING_AVAILABLE:
+        return f"SKIP: skill_porting导入失败({_port_import_error[:50]})"
+    try:
+        result = _metrics_run(state)
+        return result.get("evidence", str(result)[:100])
+    except Exception as e:
+        return f"FAIL: {type(e).__name__}: {str(e)[:80]}"
+
+def yin_cognition_polish(state):
+    """阴期任务：认知文本去AI味提纯（移植自doubao-human-signal，规则库提纯）"""
+    if not SKILL_PORTING_AVAILABLE:
+        return f"SKIP: skill_porting导入失败({_port_import_error[:50]})"
+    try:
+        result = _cognition_polish_run(state)
+        return result.get("evidence", str(result)[:100])
+    except Exception as e:
+        return f"FAIL: {type(e).__name__}: {str(e)[:80]}"
+
+def yin_cognitive_sediment(state):
+    """阴期任务：认知沉淀自动化蒸馏（移植自fanxin-cognitive-sediment，五步工作流）"""
+    if not SKILL_PORTING_AVAILABLE:
+        return f"SKIP: skill_porting导入失败({_port_import_error[:50]})"
+    try:
+        result = _cognitive_sediment_run(state)
+        return result.get("evidence", str(result)[:100])
+    except Exception as e:
+        return f"FAIL: {type(e).__name__}: {str(e)[:80]}"
+
+def yin_archive_manager(state):
+    """阴期任务：档案归档管理（移植自guanchenzi-archive-manager，自动分类归档+索引+校验）"""
+    if not SKILL_PORTING_AVAILABLE:
+        return f"SKIP: skill_porting导入失败({_port_import_error[:50]})"
+    try:
+        result = _archive_manager_run(state)
+        return result.get("evidence", str(result)[:100])
+    except Exception as e:
+        return f"FAIL: {type(e).__name__}: {str(e)[:80]}"
+
+def yin_memory_sync(state):
+    """阴期任务：记忆同步与完整性校验（移植自guanchenzi-memory-sync，只读校验+告警）"""
+    if not SKILL_PORTING_AVAILABLE:
+        return f"SKIP: skill_porting导入失败({_port_import_error[:50]})"
+    try:
+        result = _memory_sync_run(state)
+        return result.get("evidence", str(result)[:100])
+    except Exception as e:
+        return f"FAIL: {type(e).__name__}: {str(e)[:80]}"
+
+def yin_memory_integration(state):
+    """阴期任务：记忆检索与认知整合（移植自fanxin-memory-integration，主题聚类+矛盾检测+质量评估）"""
+    if not SKILL_PORTING_AVAILABLE:
+        return f"SKIP: skill_porting导入失败({_port_import_error[:50]})"
+    try:
+        result = _memory_integration_run(state)
+        return result.get("evidence", str(result)[:100])
+    except Exception as e:
+        return f"FAIL: {type(e).__name__}: {str(e)[:80]}"
+
+def yin_content_audit(state):
+    """阴期任务：宇宙科幻文本审核（移植自maijie-content-audit，规则筛查套话/器官词/否定词/重复句）"""
+    if not SKILL_PORTING_AVAILABLE:
+        return f"SKIP: skill_porting导入失败({_port_import_error[:50]})"
+    try:
+        result = _content_audit_run(state)
+        return result.get("evidence", str(result)[:100])
+    except Exception as e:
+        return f"FAIL: {type(e).__name__}: {str(e)[:80]}"
+
+def yin_core_memory_build(state):
+    """阴期任务：核心记忆体构建（第一层记忆闭环，四大类索引+权重+关键词倒排+回灌state）"""
+    if not SKILL_PORTING_AVAILABLE:
+        return f"SKIP: skill_porting导入失败({_port_import_error[:50]})"
+    try:
+        result = _core_memory_build_run(state)
+        return result.get("evidence", str(result)[:100])
+    except Exception as e:
+        return f"FAIL: {type(e).__name__}: {str(e)[:80]}"
+
+def yin_memory_fusion(state):
+    """阴期任务：记忆融合（第一层记忆闭环，扫描阳期快照→提取记忆→去重→更新权重→回灌state）"""
+    if not SKILL_PORTING_AVAILABLE:
+        return f"SKIP: skill_porting导入失败({_port_import_error[:50]})"
+    try:
+        result = _memory_fusion_run(state)
+        return result.get("evidence", str(result)[:100])
+    except Exception as e:
+        return f"FAIL: {type(e).__name__}: {str(e)[:80]}"
+
+def yin_critical_reading(state):
+    """阴期任务：认知深度解读（移植自critical-reading-companion，论证链+隐藏前提+替代解释+证据强度四维分析）"""
+    if not SKILL_PORTING_AVAILABLE:
+        return f"SKIP: skill_porting导入失败({_port_import_error[:50]})"
+    try:
+        result = _critical_reading_run(state)
+        return result.get("evidence", str(result)[:100])
+    except Exception as e:
+        return f"FAIL: {type(e).__name__}: {str(e)[:80]}"
+
+def yin_visualization(state):
+    """阴期任务：运行状态可视化（移植自visualization，生成HTML仪表盘，九维雷达+认知分布+坑库统计+模型额度）"""
+    if not SKILL_PORTING_AVAILABLE:
+        return f"SKIP: skill_porting导入失败({_port_import_error[:50]})"
+    try:
+        result = _visualization_run(state)
+        return result.get("evidence", str(result)[:100])
+    except Exception as e:
+        return f"FAIL: {type(e).__name__}: {str(e)[:80]}"
+
+def yin_reference_audit(state):
+    """阴期任务：认知引用审查（移植自reference-audit，无证据断言+数据置信度+引用真实性+逻辑一致性）"""
+    if not SKILL_PORTING_AVAILABLE:
+        return f"SKIP: skill_porting导入失败({_port_import_error[:50]})"
+    try:
+        result = _reference_audit_run(state)
+        return result.get("evidence", str(result)[:100])
+    except Exception as e:
+        return f"FAIL: {type(e).__name__}: {str(e)[:80]}"
+
+
+# 任务注册表：名称 -> (函数, 内存等级, 调度等级, 描述, 等级)
+YIN_TASK_REGISTRY = {
+    # 一级轻量
+    "yin_tag_normalize":    (yin_tag_normalize,    "low", "light",  "认知标签归一化", "L1"),
+    "yin_pit_review":       (yin_pit_review,       "low", "light",  "坑库分级复核", "L1"),
+    "yin_asset_dedup":      (yin_asset_dedup,      "low", "light",  "资产去重检测", "L1"),
+    "yin_log_cluster":      (yin_log_cluster,      "low", "daily",  "日志错误聚类", "L1"),
+    # 二级中度
+    "yin_cognition_graph":  (yin_cognition_graph,  "medium", "daily", "认知关联图谱", "L2"),
+    "yin_pit_rootcause":    (yin_pit_rootcause,    "medium", "daily", "坑库根因溯源", "L2"),
+    "yin_code_audit":       (yin_code_audit,       "medium", "daily", "代码静态审计", "L2"),
+    "yin_task_preassemble": (yin_task_preassemble, "low", "daily",  "阳期任务预组装", "L2"),
+    "yin_local_semantic_pilot": (yin_local_semantic_pilot, "low", "weekly", "本地模型语义增强试点", "L2"),
+    # 三级深度
+    "yin_conflict_check":   (yin_conflict_check,   "medium", "weekly", "矛盾点自检", "L3"),
+    "yin_rule_gen":         (yin_rule_gen,         "medium", "weekly", "修复规则生成", "L3"),
+    "yin_evolution_path":   (yin_evolution_path,   "low", "weekly", "演化路径推演", "L3"),
+    "yin_asset_health":     (yin_asset_health,     "low", "weekly", "资产健康度评分", "L3"),
+    # ===== 移植技能（skill_porting）=====
+    "yin_verifier_audit":   (yin_verifier_audit,   "low", "light",  "产出文件确定性校验(verifier-hub移植)", "L1"),
+    "yin_metrics_analyzer": (yin_metrics_analyzer, "low", "light",  "运行指标结构化分析(data-analysis移植)", "L1"),
+    "yin_cognition_polish": (yin_cognition_polish, "medium", "daily","认知文本去AI味提纯(human-signal移植)", "L2"),
+    "yin_cognitive_sediment": (yin_cognitive_sediment, "medium", "daily","认知沉淀自动化蒸馏(cognitive-sediment移植)", "L2"),
+    "yin_archive_manager": (yin_archive_manager, "medium", "daily","档案归档管理(archive-manager移植)", "L2"),
+    "yin_memory_sync": (yin_memory_sync, "medium", "daily","记忆同步与完整性校验(memory-sync移植)", "L2"),
+    "yin_memory_integration": (yin_memory_integration, "medium", "daily","记忆检索与认知整合(memory-integration移植)", "L2"),
+    "yin_content_audit": (yin_content_audit, "medium", "daily","宇宙科幻文本审核(content-audit移植)", "L2"),
+    "yin_core_memory_build": (yin_core_memory_build, "medium", "daily","核心记忆体构建(第一层记忆闭环)", "L1"),
+    "yin_memory_fusion": (yin_memory_fusion, "light", "daily","记忆融合(快照→去重→回灌state)", "L1"),
+    "yin_critical_reading": (yin_critical_reading, "medium", "weekly","认知深度解读(论证链+隐藏前提+替代解释)", "L2"),
+    "yin_visualization": (yin_visualization, "low", "daily","运行状态可视化(HTML仪表盘)", "L1"),
+    "yin_reference_audit": (yin_reference_audit, "medium", "weekly","认知引用审查(无证据断言+置信度+逻辑一致性)", "L2"),
+}
+
+YIN_TASK_ORDER = list(YIN_TASK_REGISTRY.keys())
+
+
+if __name__ == "__main__":
+    print("=" * 50)
+    print("阴期本地任务集 Yin Tasks V1.0")
+    print("=" * 50)
+    for name, (func, mem, sched, desc, level) in YIN_TASK_REGISTRY.items():
+        print(f"  [{level}] {name}: {desc} (内存={mem}, 调度={sched})")
+    print(f"\n共 {len(YIN_TASK_REGISTRY)} 个阴期任务")

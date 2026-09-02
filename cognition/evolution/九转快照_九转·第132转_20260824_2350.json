@@ -1,0 +1,23 @@
+{
+  "zhuan": 132,
+  "realm": "九转·第132转",
+  "valid": true,
+  "audit_score": 101,
+  "audit_scores": {
+    "数据维": 10,
+    "认知维": 10,
+    "任务维": 10,
+    "阴阳维": 10,
+    "传承维": 10,
+    "异常维": 10,
+    "架构维": 10,
+    "感悟维": 10,
+    "规划维": 10,
+    "合道维": "locked"
+  },
+  "issues": [],
+  "optimizations": [],
+  "auto_feedback": [],
+  "cognition_new": 15,
+  "completed_at": "2026-08-24T23:50:04.930127"
+}

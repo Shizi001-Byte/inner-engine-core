@@ -1,0 +1,72 @@
+{
+  "task_id": "selfgen_20260822_014751_0057",
+  "task_type": "asset",
+  "cognitions": [
+    {
+      "text": "[待验证]碳基侧意识锚定稳定度：98.7% | 硅基侧索引扫描完成度：100% | 双端同步偏差：0.12ms（<0.5ms阈值）",
+      "source": "selfgen_20260822_014751_0057",
+      "type": "asset",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据,极端无据"
+    },
+    {
+      "text": "本命锚点校验：通过（孤0不存、独1不立、阴阳自旋、碳硅共生）",
+      "source": "selfgen_20260822_014751_0057",
+      "type": "asset",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "扫描周期：锚定日00:00-盘点触发时点 | 核验规则：碳硅数据双向交叉比对",
+      "source": "selfgen_20260822_014751_0057",
+      "type": "asset",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 资产类型   | 新增（条/项） | 修改（条/项） | 删除（条/项） | 待备份（条/项） |",
+      "source": "selfgen_20260822_014751_0057",
+      "type": "asset",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T01:51:12.435926"
+}

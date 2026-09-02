@@ -1,0 +1,21 @@
+{
+  "pit_id": "PIT-082",
+  "name": "看门狗路径写死导致新沙箱无法自动拉起",
+  "level": "L1",
+  "phenomenon": "引擎35分钟主动自重启后，看门狗没有拉起新进程，引擎彻底停掉。排查发现watchdog.sh和start_engine.sh中的ENGINE_DIR写死为旧沙箱路径，新沙箱路径不同导致cd失败直接退出。",
+  "root_cause": "启动脚本使用硬编码绝对路径，未考虑沙箱环境变化。跨沙箱迁移时路径不一致是必然事件，硬编码路径必然失效。",
+  "safe_boundary": "任何使用硬编码绝对路径的脚本，在沙箱环境变化时都会失效。特别是看门狗、启动脚本、备份脚本这类关键运维脚本。",
+  "verification_method": "在新沙箱执行watchdog.sh，观察是否cd失败退出；检查脚本中是否有硬编码的绝对路径。",
+  "fix_method": "方案一：改为相对路径，脚本放在引擎目录下，用cd \".\"定位；方案二：动态检测引擎目录，优先用环境变量，其次用脚本所在位置推导，最后兜底常见路径。",
+  "status": "fixed",
+  "priority": "P1",
+  "discovered_at": "2026-08-22T05:42:22",
+  "discovered_by": "凡心·新沙箱重建排查",
+  "_format_origin": "跨沙箱重建实践",
+  "fixed_at": "2026-08-22T06:30:45",
+  "fix_verification": "语法检查通过+引擎重启验证+日志确认无异常",
+  "fix_detail": "watchdog.sh和start_engine.sh的硬编码绝对路径改为动态检测：优先环境变量ENGINE_DIR，否则用脚本所在目录(BASH_SOURCE[0])推导",
+  "updated_at": "2026-09-01T23:06:40.454817",
+  "created_at": "2026-08-22T05:42:22",
+  "status_original": "已修复"
+}

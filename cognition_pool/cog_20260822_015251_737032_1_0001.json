@@ -1,0 +1,23 @@
+{
+  "task_id": "selfgen_20260822_015151_0001",
+  "task_type": "eng",
+  "cognitions": [
+    {
+      "text": "基于“孤0不存，独1不立”之法则，吾对本命任务池模板的分布进行了全量扫描与阴阳剥离",
+      "source": "selfgen_20260822_015151_0001",
+      "type": "eng",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T01:52:51.766332"
+}

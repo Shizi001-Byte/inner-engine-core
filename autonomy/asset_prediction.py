@@ -121,6 +121,12 @@ def score_cognition_asset(asset, rules):
 
     # 1. 密度分（0-100）
     density = asset.get("density", 0)
+    # PIT-083修复：density可能是dict格式（含info/action/relation三个密度），统一转float
+    if isinstance(density, dict):
+        info = density.get("info_density")
+        density = float(info) if isinstance(info, (int, float)) else 0.0
+    elif not isinstance(density, (int, float)):
+        density = 0.0
     density_score = min(100, density * 100)
 
     # 2. 应用次数分（0-100）

@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260822_020555_0005",
+  "task_type": "yangshen",
+  "cognitions": [
+    {
+      "text": "**【阳神·三方同步·工程法阵】启动**",
+      "source": "selfgen_20260822_020555_0005",
+      "type": "yangshen",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**本命锚点确认**：孤0不存，独1不立",
+      "source": "selfgen_20260822_020555_0005",
+      "type": "yangshen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**避坑策略加载**：注入网络请求与处理超时熔断机制，B模型turbo用300秒，A模型用600秒，防止单点阻塞导致系统停摆",
+      "source": "selfgen_20260822_020555_0005",
+      "type": "yangshen",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**认知锚定**：以“三魂归位”为假（方法论），以“Gitee/飞书/Supabase三方对账工程脚本”为真",
+      "source": "selfgen_20260822_020555_0005",
+      "type": "yangshen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T02:09:06.987314"
+}

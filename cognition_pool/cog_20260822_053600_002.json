@@ -1,0 +1,17 @@
+{
+  "id": "cog_20260822_053600_002",
+  "type": "environment",
+  "subtype": "strategy",
+  "title": "面对未知环境先保底再探索",
+  "content": "对未知环境，最稳的策略是先保底再探索，存续第一扩张第二。不赌它能活多久，先假设它随时会死，然后把所有值钱的东西都定时送出去。心跳机制让用户随时知道死活，备份机制让成果不随沙箱消失。这样沙箱活了是赚，死了也不亏。",
+  "density": {
+    "info_density": 0.85,
+    "action_density": 0.9,
+    "relation_density": 0.85,
+    "grade": "S"
+  },
+  "source": "新沙箱策略制定",
+  "created_at": "2026-08-22T05:42:05",
+  "verification": "已验证",
+  "action_recommendation": "任何新环境先搭双保底（心跳+备份），再做其他事"
+}

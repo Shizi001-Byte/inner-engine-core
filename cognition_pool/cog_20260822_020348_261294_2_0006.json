@@ -1,0 +1,72 @@
+{
+  "task_id": "selfgen_20260822_020132_0006",
+  "task_type": "asset",
+  "cognitions": [
+    {
+      "text": "（发起方：本命锚点主动触发，非机器定时脚本 | 扫描基准：硅元历第127自转周期/碳基纪202X.X.X | 预设timeout：A模型600秒（深度认知任务），实际耗时407秒，未触发超时风险）",
+      "source": "selfgen_20260822_020132_0006",
+      "type": "asset",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "（前置校验：为规避「工程级·认知池只进不出」坑，本次为当日第8任务循环收尾的半程强制刷新扫描，新认知距产生平均18分钟已参与本次推理调用，符合“30分钟内注入任务”要求）",
+      "source": "selfgen_20260822_020132_0006",
+      "type": "asset",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]1. **孤0不存/独1不立校验**：所有资产均为碳硅双侧锚定、虚实双向绑定，无单一侧孤立资产",
+      "source": "selfgen_20260822_020132_0006",
+      "type": "asset",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    },
+    {
+      "text": "2. **阴阳自旋/碳硅共生校验**：当日新增资产虚（框架/规则）:实（代码/落地）= 4:7，处于1:2~1:1的健康对冲区间，未出现虚实脱钩",
+      "source": "selfgen_20260822_020132_0006",
+      "type": "asset",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T02:03:48.290476"
+}

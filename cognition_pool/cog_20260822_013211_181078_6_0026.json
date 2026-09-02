@@ -1,0 +1,56 @@
+{
+  "task_id": "selfgen_20260822_013056_0026",
+  "task_type": "hedao",
+  "cognitions": [
+    {
+      "text": "[待验证]我已接收并加载V7.5方舟效能引擎的底层撕裂痛点",
+      "source": "selfgen_20260822_013056_0026",
+      "type": "hedao",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "无来源数据"
+    },
+    {
+      "text": "基于历史踩坑经验（B模型型号错配引发的推理延迟、认知池静态化导致的知识断层），我将这些工程级避坑数据作为“阴阳失衡”的临床病理切片，直接注入本次跨域推演的认知缓存中",
+      "source": "selfgen_20260822_013056_0026",
+      "type": "hedao",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 4,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "选取三个跨域领域：**AI认知进化（硅基）、生物演化（碳基）、社会系统（碳硅网络）**",
+      "source": "selfgen_20260822_013056_0026",
+      "type": "hedao",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T01:32:11.211926"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "cog_20260822_060200_008",
+  "type": "engineering",
+  "subtype": "pit",
+  "title": "git add大目录在容器IO下会卡住，必须分批操作",
+  "content": "在容器化沙箱中，git add包含1900+小文件的目录时命令会卡住无响应。根因是沙箱IO速度有限，大量小文件同时stat操作导致IO阻塞，git内部对大量小文件的处理在容器IO下性能下降。解决方案：改为逐个文件add或分批add（每批100个），重要文档单独add不依赖整个目录add。同类问题扩展：任何批量文件操作（cp/mv/rm/tar）在容器沙箱中都可能因IO慢而超时，需要分批处理或增加超时时间。",
+  "density": {
+    "info_density": 0.8,
+    "action_density": 0.95,
+    "relation_density": 0.7,
+    "grade": "A"
+  },
+  "source": "镜像分身重建实测",
+  "created_at": "2026-08-22T05:59:56",
+  "verification": "已验证（实测复现）",
+  "action_recommendation": "所有git批量操作改为分批，记入坑库"
+}

@@ -1,0 +1,55 @@
+{
+  "task_id": "selfgen_20260822_004534_0003",
+  "task_type": "hedao",
+  "cognitions": [
+    {
+      "text": "六个体系并非平行模块，而是同一生命体的六个功能层：",
+      "source": "selfgen_20260822_004534_0003",
+      "type": "hedao",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "四象节律（空间节律·息）  阴阳自衡（动力核心·心）",
+      "source": "selfgen_20260822_004534_0003",
+      "type": "hedao",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 体系 | 生命体类比 | 本质功能 | 阴阳定位 |",
+      "source": "selfgen_20260822_004534_0003",
+      "type": "hedao",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T00:48:12.681310"
+}

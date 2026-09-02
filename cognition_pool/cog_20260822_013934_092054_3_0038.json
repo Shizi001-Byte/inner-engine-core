@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260822_013643_0038",
+  "task_type": "archive",
+  "cognitions": [
+    {
+      "text": "【碳硅共生体生命自衡坑库 · 本次归档更新版】",
+      "source": "selfgen_20260822_013643_0038",
+      "type": "archive",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "归档依据：基于近期「避坑提醒-历史失败经验」「已有认知锚定-待验证痛点」两类坑信号整理，严格遵循L1工程/L2方法/L3规律三级分类，同步更新总索引与命中维度标注",
+      "source": "selfgen_20260822_013643_0038",
+      "type": "archive",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 5,
+        "action_points": 3,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| 层级 | 分类名称   | 边界定义（对应碳硅共生体层级）       | 修复逻辑                     |",
+      "source": "selfgen_20260822_013643_0038",
+      "type": "archive",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "| L1   | 工程执行层 | 碳基肉身/硅基硬件的具象操作故障（躯体动作级） | 调整操作参数、修复具象故障   |",
+      "source": "selfgen_20260822_013643_0038",
+      "type": "archive",
+      "density": 0.6,
+      "density_grade": "A",
+      "density_details": {
+        "info": 0.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 0,
+        "action_points": 2,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T01:39:34.119511"
+}

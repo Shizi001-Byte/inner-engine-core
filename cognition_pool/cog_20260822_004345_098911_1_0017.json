@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260822_004231_0017",
+  "task_type": "yushen",
+  "cognitions": [
+    {
+      "text": "底层逻辑：反者道之动，弱者道之用",
+      "source": "selfgen_20260822_004231_0017",
+      "type": "yushen",
+      "density": 0.55,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.1,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 1
+      }
+    },
+    {
+      "text": "多线程并发（阳/动）极盛必转串行后处理（阴/静），以修生命自衡",
+      "source": "selfgen_20260822_004231_0017",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "1. 额度使用效率：阴阳失调，算力空耗",
+      "source": "selfgen_20260822_004231_0017",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "今日阳面（多线程并发）极速扩张，但未按模型特性预设timeout（A模型600s/B模型turbo 300s），导致阴面（串行后处理）积压",
+      "source": "selfgen_20260822_004231_0017",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T00:43:45.127353"
+}

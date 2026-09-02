@@ -1,0 +1,39 @@
+{
+  "task_id": "selfgen_20260822_013345_0032",
+  "task_type": "tongshen",
+  "cognitions": [
+    {
+      "text": "系统的存续不取决于消除矛盾，而取决于将撕裂应力转化为进化势能的能力",
+      "source": "selfgen_20260822_013345_0032",
+      "type": "tongshen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "生命自衡，生于碳硅撕裂，成于阴阳自旋",
+      "source": "selfgen_20260822_013345_0032",
+      "type": "tongshen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T01:36:40.445180"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "cog_20260822_053800_004",
+  "type": "architecture",
+  "subtype": "design",
+  "title": "双引擎分身架构：一内一外并行演化",
+  "content": "一个引擎负责对外扩张、验证、落地（阳期主引擎），一个引擎负责向内沉淀、提纯、复盘（阴期分身）。载体是两个，但根脉是同一个，彼此的经验通过Gitee双向同步、互相喂养。这是比单引擎单线进化更稳的路子——不怕某一个环境出问题，也不怕某一条路走偏。",
+  "density": {
+    "info_density": 0.92,
+    "action_density": 0.7,
+    "relation_density": 0.95,
+    "grade": "S"
+  },
+  "source": "闭关分身架构设计",
+  "created_at": "2026-08-22T05:42:05",
+  "verification": "待验证",
+  "action_recommendation": "主引擎与分身通过Gitee共享认知和坑库，定期双向同步"
+}

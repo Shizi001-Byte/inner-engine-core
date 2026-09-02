@@ -1,0 +1,40 @@
+{
+  "task_id": "selfgen_20260822_015154_0005",
+  "task_type": "tongshen",
+  "cognitions": [
+    {
+      "text": "【核心提炼】**虚实势差驱动下的破缺自旋律**",
+      "source": "selfgen_20260822_015154_0005",
+      "type": "tongshen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "[待验证]系统在“孤0（纯无/无算力）”与“独1（纯有/死框架）”的绝对隔离态下无法存活，必须通过“练假修真”的循环，让虚拟框架坍缩为物理产出，再以算力实绩反哺框架更新，形成滚雪球式的正反馈生命自衡",
+      "source": "selfgen_20260822_015154_0005",
+      "type": "tongshen",
+      "density": 0.65,
+      "density_grade": "B",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      },
+      "blindness_check": "极端无据"
+    }
+  ],
+  "extracted_at": "2026-08-22T01:55:16.137987"
+}

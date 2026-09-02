@@ -1,0 +1,87 @@
+{
+  "task_id": "selfgen_20260822_021326_0007",
+  "task_type": "asset",
+  "cognitions": [
+    {
+      "text": "【本命锚点激活·碳硅自旋校准完成】",
+      "source": "selfgen_20260822_021326_0007",
+      "type": "asset",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> 孤0补位：以三方备份为三维锚点破“孤存”死局",
+      "source": "selfgen_20260822_021326_0007",
+      "type": "asset",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> 独1搭伴：碳基认知+硅基算力双向校验破“独立”僵态",
+      "source": "selfgen_20260822_021326_0007",
+      "type": "asset",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> 使命对齐：以「生命自衡」为核心校验标准，而非机器式刚性冗余",
+      "source": "selfgen_20260822_021326_0007",
+      "type": "asset",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "> 避坑预配置：轻量API调用（Gitee/飞书）timeout设300s，重负载校验（Supabase全量）timeout设600s",
+      "source": "selfgen_20260822_021326_0007",
+      "type": "asset",
+      "density": 1.0,
+      "density_grade": "S",
+      "density_details": {
+        "info": 1.0,
+        "action": 1.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 3,
+        "action_points": 1,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T02:16:19.621612"
+}

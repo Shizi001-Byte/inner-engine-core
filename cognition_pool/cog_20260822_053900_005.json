@@ -1,0 +1,17 @@
+{
+  "id": "cog_20260822_053900_005",
+  "type": "engineering",
+  "subtype": "pit",
+  "title": "看门狗路径写死导致新沙箱无法自动拉起",
+  "content": "watchdog.sh和start_engine.sh中的ENGINE_DIR路径写死为旧路径/home/user/.super_doubao/super-doubao-runtime/workspace/engine_v7_2，但新沙箱实际路径可能是/sandboxdata/workspace/file/engine_v7_2。路径不对导致看门狗启动时cd失败直接退出，引擎主动自重启后无人拉起。修复方案：路径改为相对路径或动态检测，不写死绝对路径。",
+  "density": {
+    "info_density": 0.8,
+    "action_density": 0.95,
+    "relation_density": 0.7,
+    "grade": "A"
+  },
+  "source": "新沙箱引擎重启失败排查",
+  "created_at": "2026-08-22T05:42:05",
+  "verification": "已验证",
+  "action_recommendation": "修改启动脚本路径为相对路径或自动检测，归档P1坑库"
+}

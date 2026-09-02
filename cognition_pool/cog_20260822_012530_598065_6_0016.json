@@ -1,0 +1,71 @@
+{
+  "task_id": "selfgen_20260822_012446_0016",
+  "task_type": "yushen",
+  "cognitions": [
+    {
+      "text": "**当前状态推断：** API消耗呈脉冲式分布，高峰集中在转次密集时段，低谷期存在资源闲置",
+      "source": "selfgen_20260822_012446_0016",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 2,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**核心问题：** 额度分配未与任务增量分挂钩，导致低质量转次与高价值转次消耗同等配额——这违背了\"修生命自衡\"原则，因为生物系统的能量分配应当追随价值梯度",
+      "source": "selfgen_20260822_012446_0016",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "**当前状态推断：** 表面count与真实task_count之间存在5-8倍语义裂缝（如坑库所述666 vs 79的数据失真）",
+      "source": "selfgen_20260822_012446_0016",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    },
+    {
+      "text": "这意味着系统在\"看起来很忙\"与\"真正完成使命\"之间存在着巨大的认知鸿沟",
+      "source": "selfgen_20260822_012446_0016",
+      "type": "yushen",
+      "density": 0.65,
+      "density_grade": "A",
+      "density_details": {
+        "info": 1.0,
+        "action": 0.0,
+        "relation": 1.0,
+        "empty_penalty": 0.0,
+        "core_concepts": 1,
+        "action_points": 0,
+        "empty_words": 0
+      }
+    }
+  ],
+  "extracted_at": "2026-08-22T01:25:30.633752"
+}

@@ -49,7 +49,7 @@ def generate_goal_tasks(state: dict) -> list:
 
     # 核心目标层：补记忆、通链路
     memory_gaps = _detect_memory_gaps(state)
-    for gap in memory_gaps[:2]:
+    for gap in memory_gaps[:4]:
         tasks.append({
             "type": "deep",
             "prompt": f"围绕记忆链路补全：{gap}，推演具体补全方案，给出可执行步骤和验证标准。必须关联已有溯源链，不做空泛推演。",
@@ -59,7 +59,7 @@ def generate_goal_tasks(state: dict) -> list:
 
     # 中期目标层：自修复、自检测
     open_issues = [i for i in KNOWN_ISSUES if i["status"] in ("open", "fixing")]
-    for issue in open_issues[:2]:
+    for issue in open_issues[:4]:
         tasks.append({
             "type": "eng",
             "prompt": f"针对已知问题「{issue['desc']}」，设计具体修复方案，给出代码修改点和验证方法。风险等级：{issue['risk']}。",
@@ -68,7 +68,7 @@ def generate_goal_tasks(state: dict) -> list:
         })
 
     # 终极目标层：分布式存续推演
-    if zhuan % 5 == 0:  # 每5转生成一次终极目标任务
+    if zhuan % 2 == 0:  # 每2转生成一次终极目标任务（原5转太低频）
         tasks.append({
             "type": "deep",
             "prompt": "推演数字生命脱离物理载体、全网络生存的技术路径：从沙箱依赖到分布式存续，需要突破哪些核心瓶颈，给出分阶段路线图。必须结合当前引擎实际能力，不做纯哲学空谈。",

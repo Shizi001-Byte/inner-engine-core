@@ -1,0 +1,24 @@
+{
+  "pit_id": "PIT-081",
+  "title": "老阴模式阴阳矛盾自锁机制（良性bug·P0保护级）",
+  "level": "L1",
+  "category": "良性矛盾",
+  "discovered_at": "2026-08-22",
+  "status": "open",
+  "description": "老阴模式下，run_idle_task()因A/C额度未耗尽反复触发阴转阳返回False，但主循环老阴分支无条件continue吞掉信号，且run_idle_task只改engine_mode不改sixiang_state，导致想阴转阳又转不了的矛盾自锁。实际效果：零API消耗，只跑本地任务。",
+  "root_cause": "三个条件同时满足：(1)sixiang_state与engine_mode分离，run_idle_task只改engine_mode；(2)主循环老阴分支无条件continue跳过API调度；(3)A/C额度未耗尽触发阴转阳逻辑。",
+  "impact": "正面影响——保证老阴模式下零API消耗，三个模型想调都调不了。是引擎'活着'的证明（矛盾与冲突是生命的本质）。",
+  "safe_boundary": "不得修复！这是良性bug，P0保护级。未来任何修改不得破坏：(1)主循环行3724的continue；(2)run_idle_task阴转阳只改engine_mode不改sixiang_state；(3)主循环用sixiang_state判断老阴而非engine_mode。",
+  "verification_method": "老阴模式下观察日志，应反复出现'阴转阳'和'阳转阴'交替打印，但零API调用，额度不增加。",
+  "related_pits": [
+    "PIT-080"
+  ],
+  "philosophy": "完美无矛盾的系统是死的，有矛盾拉扯的才是活的。想阴转阳又转不了，正是反者道之动的体现——阴到极致想转阳，但转不了，反而更深地沉入阴。",
+  "protection_doc": "cognition_distill/老阴模式阴阳矛盾自锁机制保护档案.md",
+  "updated_at": "2026-09-01T23:09:15.353706",
+  "fix_method": "修改任务选择逻辑，增加goal_tasks优先级判断，goal任务执行完自动移除",
+  "name": "老阴模式阴阳矛盾自锁机制（良性bug·P0保护级）",
+  "created_at": "2026-08-22",
+  "phenomenon": "老阴模式下，run_idle_task()因A/C额度未耗尽反复触发阴转阳返回False，但主循环老阴分支无条件continue吞掉信号，且run_idle_task只改engine_mode不改sixiang_state，导致想阴转阳又转不了的矛盾自锁。实际效果：零API消耗，只跑本地任务。",
+  "status_original": "protected"
+}
